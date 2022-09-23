@@ -65,7 +65,7 @@ class __TwigTemplate_0d553a1d26daaa9ccf47ef4ae8cb485ea265b0e4d955d08e79bb4f80dd4
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Hello HomeController!";
+        echo "Alpha-Bétise";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -136,7 +136,7 @@ class __TwigTemplate_0d553a1d26daaa9ccf47ef4ae8cb485ea265b0e4d955d08e79bb4f80dd4
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}Alpha-Bétise{% endblock %}
 
 {% block body %}
 <style>
@@ -154,6 +154,6 @@ class __TwigTemplate_0d553a1d26daaa9ccf47ef4ae8cb485ea265b0e4d955d08e79bb4f80dd4
     </ul>
 </div>
 {% endblock %}
-", "home/index.html.twig", "C:\\Users\\Stagiaire01\\Desktop\\Alpha-Betise\\templates\\home\\index.html.twig");
+", "home/index.html.twig", "C:\\Users\\Daryl.H\\OneDrive\\Bureau\\Alpha-Betise\\templates\\home\\index.html.twig");
     }
 }

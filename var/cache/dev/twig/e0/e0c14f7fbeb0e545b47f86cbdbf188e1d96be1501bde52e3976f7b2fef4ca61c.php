@@ -53,23 +53,38 @@ class __TwigTemplate_a9387c616c797e4f4b5697ca02d9fe9483237b254c7e705f73774b9ea62
         $this->displayBlock('title', $context, $blocks);
         echo "</title>
         <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>\">
+        <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css\"
+    integrity=\"sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx\" crossorigin=\"anonymous\">
         ";
-        // line 8
+        // line 10
         echo "        ";
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 11
+        // line 13
         echo "
         ";
-        // line 12
+        // line 14
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 15
+        // line 17
         echo "    </head>
     <body>
-        ";
-        // line 17
+    ";
+        // line 19
+        $this->loadTemplate("partial/header.html.twig ", "base.html.twig", 19)->display($context);
+        // line 20
+        echo "        ";
         $this->displayBlock('body', $context, $blocks);
-        // line 18
-        echo "    </body>
+        // line 21
+        echo "    ";
+        $this->loadTemplate("partial/footer.html.twig ", "base.html.twig", 21)->display($context);
+        // line 22
+        echo "    <script src=\"https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js\"
+    integrity=\"sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk\" crossorigin=\"anonymous\">
+  </script>
+
+  <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js\"
+    integrity=\"sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK\" crossorigin=\"anonymous\">
+  </script>
+    </body>
 </html>
 ";
         
@@ -99,7 +114,7 @@ class __TwigTemplate_a9387c616c797e4f4b5697ca02d9fe9483237b254c7e705f73774b9ea62
 
     }
 
-    // line 8
+    // line 10
     public function block_stylesheets($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -109,7 +124,7 @@ class __TwigTemplate_a9387c616c797e4f4b5697ca02d9fe9483237b254c7e705f73774b9ea62
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        // line 9
+        // line 11
         echo "            ";
         echo twig_escape_filter($this->env, $this->env->getFunction('encore_entry_link_tags')->getCallable()("app"), "html", null, true);
         echo "
@@ -122,7 +137,7 @@ class __TwigTemplate_a9387c616c797e4f4b5697ca02d9fe9483237b254c7e705f73774b9ea62
 
     }
 
-    // line 12
+    // line 14
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -132,7 +147,7 @@ class __TwigTemplate_a9387c616c797e4f4b5697ca02d9fe9483237b254c7e705f73774b9ea62
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 13
+        // line 15
         echo "            ";
         echo twig_escape_filter($this->env, $this->env->getFunction('encore_entry_script_tags')->getCallable()("app"), "html", null, true);
         echo "
@@ -145,7 +160,7 @@ class __TwigTemplate_a9387c616c797e4f4b5697ca02d9fe9483237b254c7e705f73774b9ea62
 
     }
 
-    // line 17
+    // line 20
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -168,9 +183,14 @@ class __TwigTemplate_a9387c616c797e4f4b5697ca02d9fe9483237b254c7e705f73774b9ea62
         return "base.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  149 => 17,  136 => 13,  126 => 12,  113 => 9,  103 => 8,  84 => 5,  72 => 18,  70 => 17,  66 => 15,  64 => 12,  61 => 11,  58 => 8,  53 => 5,  47 => 1,);
+        return array (  164 => 20,  151 => 15,  141 => 14,  128 => 11,  118 => 10,  99 => 5,  80 => 22,  77 => 21,  74 => 20,  72 => 19,  68 => 17,  66 => 14,  63 => 13,  60 => 10,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -181,6 +201,8 @@ class __TwigTemplate_a9387c616c797e4f4b5697ca02d9fe9483237b254c7e705f73774b9ea62
         <meta charset=\"UTF-8\">
         <title>{% block title %}Welcome!{% endblock %}</title>
         <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>\">
+        <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css\"
+    integrity=\"sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx\" crossorigin=\"anonymous\">
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
@@ -191,9 +213,18 @@ class __TwigTemplate_a9387c616c797e4f4b5697ca02d9fe9483237b254c7e705f73774b9ea62
         {% endblock %}
     </head>
     <body>
+    {% include \"partial/header.html.twig \" %}
         {% block body %}{% endblock %}
+    {% include \"partial/footer.html.twig \" %}
+    <script src=\"https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js\"
+    integrity=\"sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk\" crossorigin=\"anonymous\">
+  </script>
+
+  <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js\"
+    integrity=\"sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK\" crossorigin=\"anonymous\">
+  </script>
     </body>
 </html>
-", "base.html.twig", "C:\\Users\\Stagiaire01\\Desktop\\Alpha-Betise\\templates\\base.html.twig");
+", "base.html.twig", "C:\\Users\\Daryl.H\\OneDrive\\Bureau\\Alpha-Betise\\templates\\base.html.twig");
     }
 }
