@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
@@ -16,9 +16,9 @@
         {% endblock %}
     </head>
     <body>
-    {% include "partial/header.html.twig " %}
+    {% include "partials/header.html.twig " %}
         {% block body %}{% endblock %}
-    {% include "partial/footer.html.twig " %}
+    {% include "partials/footer.html.twig " %}
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
   </script>

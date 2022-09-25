@@ -8,7 +8,10 @@
 return [
     false, // $matchHost
     [ // $staticRoutes
+        '/contacts' => [[['_route' => 'app_contacts', '_controller' => 'App\\Controller\\ContactsController::index'], null, null, null, false, false, null]],
         '/' => [[['_route' => 'app_home', '_controller' => 'App\\Controller\\HomeController::index'], null, null, null, false, false, null]],
+        '/meeting' => [[['_route' => 'app_meeting', '_controller' => 'App\\Controller\\MeetingController::index'], null, null, null, false, false, null]],
+        '/reading/tips' => [[['_route' => 'app_reading_tips', '_controller' => 'App\\Controller\\ReadingTipsController::index'], null, null, null, false, false, null]],
         '/_profiler' => [[['_route' => '_profiler_home', '_controller' => 'web_profiler.controller.profiler::homeAction'], null, null, null, true, false, null]],
         '/_profiler/search' => [[['_route' => '_profiler_search', '_controller' => 'web_profiler.controller.profiler::searchAction'], null, null, null, false, false, null]],
         '/_profiler/search_bar' => [[['_route' => '_profiler_search_bar', '_controller' => 'web_profiler.controller.profiler::searchBarAction'], null, null, null, false, false, null]],
