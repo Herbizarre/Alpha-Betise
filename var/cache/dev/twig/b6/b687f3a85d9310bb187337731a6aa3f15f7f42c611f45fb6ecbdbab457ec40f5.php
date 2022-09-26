@@ -59,6 +59,6 @@ class __TwigTemplate_39bcfa78438613d5ea58efbd9b71ad757ce9ae010e35bf64be7590e2f64
 
     public function getSourceContext()
     {
-        return new Source("", "partials/footer.html.twig ", "C:\\Users\\ydumi\\Downloads\\Alpha-Betise\\Alpha-Betise\\templates\\partials\\footer.html.twig");
+        return new Source("", "partials/footer.html.twig ", "C:\\Users\\Stagiaire01\\Alpha-Betise\\templates\\partials\\footer.html.twig");
     }
 }

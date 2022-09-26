@@ -8,14 +8,11 @@
 return [
     false, // $matchHost
     [ // $staticRoutes
-<<<<<<< HEAD
-        '/contacts' => [[['_route' => 'app_contacts', '_controller' => 'App\\Controller\\ContactsController::index'], null, null, null, false, false, null]],
-=======
         '/admin' => [[['_route' => 'admin', '_controller' => 'App\\Controller\\Admin\\DashboardController::index'], null, null, null, false, false, null]],
         '/book' => [[['_route' => 'app_book_index', '_controller' => 'App\\Controller\\BookController::index'], null, ['GET' => 0], null, true, false, null]],
         '/book/new' => [[['_route' => 'app_book_new', '_controller' => 'App\\Controller\\BookController::new'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],
         '/conseils' => [[['_route' => 'app_conseils', '_controller' => 'App\\Controller\\ConseilsController::index'], null, null, null, false, false, null]],
->>>>>>> conseilsLecture
+        '/contacts' => [[['_route' => 'app_contacts', '_controller' => 'App\\Controller\\ContactsController::index'], null, null, null, false, false, null]],
         '/' => [[['_route' => 'app_home', '_controller' => 'App\\Controller\\HomeController::index'], null, null, null, false, false, null]],
         '/meeting' => [[['_route' => 'app_meeting', '_controller' => 'App\\Controller\\MeetingController::index'], null, null, null, false, false, null]],
         '/reading/tips' => [[['_route' => 'app_reading_tips', '_controller' => 'App\\Controller\\ReadingTipsController::index'], null, null, null, false, false, null]],

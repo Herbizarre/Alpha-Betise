@@ -41,28 +41,25 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
 
         // line 1
         echo "<nav class=\"navbar navbar-expand-sm navbar-dark\" style=\"background-color: #000;\">
-    <a class=\"navbar-brand\" href=\"#\">Navbar</a>
+    <a class=\"navbar-brand\" href=\"#\">Logo</a>
     <button class=\"navbar-toggler d-lg-none\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapsibleNavId\" aria-controls=\"collapsibleNavId\"
         aria-expanded=\"false\" aria-label=\"Toggle navigation\"></button>
     <div class=\"collapse navbar-collapse\" id=\"collapsibleNavId\">
         <ul class=\"navbar-nav me-auto mt-2 mt-lg-0\">
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/\" aria-current=\"page\">Accueil <span class=\"visually-hidden\">(current)</span></a>
+                <a class=\"nav-link\" href=\"#\" aria-current=\"page\">Accueil <span class=\"visually-hidden\">(current)</span></a>
             </li>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"#\">Rencontres</a>
+                <a class=\"nav-link\" href=\"/meeting\">Rencontres</a>
             </li>
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/conseils\">Conseils de lecture</a>
             </li>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/book\">La librairie</a>
+                <a class=\"nav-link\" href=\"#\">La librairie</a>
             </li>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"#\">Contact</a>
-            </li>
-            <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/admin\">Admin</a>
+                <a class=\"nav-link\" href=\"/contacts#\">Contact</a>
             </li>
         </ul>
         <form class=\"d-flex my-2 my-lg-0\">
@@ -92,28 +89,25 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
     public function getSourceContext()
     {
         return new Source("<nav class=\"navbar navbar-expand-sm navbar-dark\" style=\"background-color: #000;\">
-    <a class=\"navbar-brand\" href=\"#\">Navbar</a>
+    <a class=\"navbar-brand\" href=\"#\">Logo</a>
     <button class=\"navbar-toggler d-lg-none\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapsibleNavId\" aria-controls=\"collapsibleNavId\"
         aria-expanded=\"false\" aria-label=\"Toggle navigation\"></button>
     <div class=\"collapse navbar-collapse\" id=\"collapsibleNavId\">
         <ul class=\"navbar-nav me-auto mt-2 mt-lg-0\">
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/\" aria-current=\"page\">Accueil <span class=\"visually-hidden\">(current)</span></a>
+                <a class=\"nav-link\" href=\"#\" aria-current=\"page\">Accueil <span class=\"visually-hidden\">(current)</span></a>
             </li>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"#\">Rencontres</a>
+                <a class=\"nav-link\" href=\"/meeting\">Rencontres</a>
             </li>
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/conseils\">Conseils de lecture</a>
             </li>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/book\">La librairie</a>
+                <a class=\"nav-link\" href=\"#\">La librairie</a>
             </li>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"#\">Contact</a>
-            </li>
-            <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/admin\">Admin</a>
+                <a class=\"nav-link\" href=\"/contacts#\">Contact</a>
             </li>
         </ul>
         <form class=\"d-flex my-2 my-lg-0\">
@@ -121,6 +115,6 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
             <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Search</button>
         </form>
     </div>
-</nav>", "partials/header.html.twig ", "C:\\Users\\ydumi\\Downloads\\Alpha-Betise\\Alpha-Betise\\templates\\partials\\header.html.twig");
+</nav>", "partials/header.html.twig ", "C:\\Users\\Stagiaire01\\Alpha-Betise\\templates\\partials\\header.html.twig");
     }
 }
