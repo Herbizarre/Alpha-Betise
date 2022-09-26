@@ -1671,6 +1671,10 @@ class __TwigTemplate_3ff28eba2d8bfa4bf1a2f86417a7672b793c647032d6d11de76cd3078bf
         </tbody>
     </table>
 {% endmacro %}
+<<<<<<< HEAD
 ", "@Doctrine/Collector/db.html.twig", "C:\\Users\\Jchan\\Desktop\\Alpha-Betise\\vendor\\doctrine\\doctrine-bundle\\Resources\\views\\Collector\\db.html.twig");
+=======
+", "@Doctrine/Collector/db.html.twig", "C:\\wamp64\\www\\symfony5\\Alpha-Betise\\vendor\\doctrine\\doctrine-bundle\\Resources\\views\\Collector\\db.html.twig");
+>>>>>>> conseilsLecture
     }
 }

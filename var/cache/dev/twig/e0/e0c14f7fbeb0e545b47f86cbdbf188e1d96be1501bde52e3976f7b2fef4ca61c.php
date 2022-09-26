@@ -225,6 +225,10 @@ class __TwigTemplate_a9387c616c797e4f4b5697ca02d9fe9483237b254c7e705f73774b9ea62
   </script>
     </body>
 </html>
+<<<<<<< HEAD
 ", "base.html.twig", "C:\\Users\\Jchan\\Desktop\\Alpha-Betise\\templates\\base.html.twig");
+=======
+", "base.html.twig", "C:\\wamp64\\www\\symfony5\\Alpha-Betise\\templates\\base.html.twig");
+>>>>>>> conseilsLecture
     }
 }

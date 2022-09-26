@@ -50,16 +50,27 @@ class __TwigTemplate_6493ad77221c9ad9ad51ad9aff7958a8a21a0eb345c8ae898b73d7aabd5
                 <a class=\"nav-link\" href=\"#\" aria-current=\"page\">Accueil <span class=\"visually-hidden\">(current)</span></a>
             </li>
             <li class=\"nav-item\">
+<<<<<<< HEAD
                 <a class=\"nav-link\" href=\"/meeting\">Rencontres</a>
             </li>
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/reading/tips\">Conseils de lecture</a>
+=======
+                <a class=\"nav-link\" href=\"#\">Rencontres</a>
+            </li>
+            <li class=\"nav-item\">
+                <a class=\"nav-link\" href=\"/conseils\">Conseils de lecture</a>
+>>>>>>> conseilsLecture
             </li>
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"#\">La librairie</a>
             </li>
             <li class=\"nav-item\">
+<<<<<<< HEAD
                 <a class=\"nav-link\" href=\"/contacts#\">Contact</a>
+=======
+                <a class=\"nav-link\" href=\"#\">Contact</a>
+>>>>>>> conseilsLecture
             </li>
         </ul>
         <form class=\"d-flex my-2 my-lg-0\">
@@ -98,16 +109,27 @@ class __TwigTemplate_6493ad77221c9ad9ad51ad9aff7958a8a21a0eb345c8ae898b73d7aabd5
                 <a class=\"nav-link\" href=\"#\" aria-current=\"page\">Accueil <span class=\"visually-hidden\">(current)</span></a>
             </li>
             <li class=\"nav-item\">
+<<<<<<< HEAD
                 <a class=\"nav-link\" href=\"/meeting\">Rencontres</a>
             </li>
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/reading/tips\">Conseils de lecture</a>
+=======
+                <a class=\"nav-link\" href=\"#\">Rencontres</a>
+            </li>
+            <li class=\"nav-item\">
+                <a class=\"nav-link\" href=\"/conseils\">Conseils de lecture</a>
+>>>>>>> conseilsLecture
             </li>
             <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"#\">La librairie</a>
             </li>
             <li class=\"nav-item\">
+<<<<<<< HEAD
                 <a class=\"nav-link\" href=\"/contacts#\">Contact</a>
+=======
+                <a class=\"nav-link\" href=\"#\">Contact</a>
+>>>>>>> conseilsLecture
             </li>
         </ul>
         <form class=\"d-flex my-2 my-lg-0\">
@@ -115,6 +137,10 @@ class __TwigTemplate_6493ad77221c9ad9ad51ad9aff7958a8a21a0eb345c8ae898b73d7aabd5
             <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Search</button>
         </form>
     </div>
+<<<<<<< HEAD
 </nav>", "partials/header.html.twig ", "C:\\Users\\Jchan\\Desktop\\Alpha-Betise\\templates\\partials\\header.html.twig");
+=======
+</nav>", "partials/header.html.twig ", "C:\\wamp64\\www\\symfony5\\Alpha-Betise\\templates\\partials\\header.html.twig");
+>>>>>>> conseilsLecture
     }
 }

@@ -2080,6 +2080,10 @@ class __TwigTemplate_2cb52f35de5e8b160b425a8534b97ffd030035a8f9d3725dea3f9e9cfd1
         {{ tree.form_tree_details(childName, childData, forms_by_hash) }}
     {% endfor %}
 {% endmacro %}
+<<<<<<< HEAD
 ", "@WebProfiler/Collector/form.html.twig", "C:\\Users\\Jchan\\Desktop\\Alpha-Betise\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\form.html.twig");
+=======
+", "@WebProfiler/Collector/form.html.twig", "C:\\wamp64\\www\\symfony5\\Alpha-Betise\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\form.html.twig");
+>>>>>>> conseilsLecture
     }
 }

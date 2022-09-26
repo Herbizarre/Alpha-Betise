@@ -1208,6 +1208,10 @@ div.sf-toolbar .sf-toolbar-block a:hover {
         display: none !important;
     }
 }
+<<<<<<< HEAD
 ", "@WebProfiler/Profiler/toolbar.css.twig", "C:\\Users\\Jchan\\Desktop\\Alpha-Betise\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\toolbar.css.twig");
+=======
+", "@WebProfiler/Profiler/toolbar.css.twig", "C:\\wamp64\\www\\symfony5\\Alpha-Betise\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\toolbar.css.twig");
+>>>>>>> conseilsLecture
     }
 }

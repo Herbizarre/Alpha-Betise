@@ -222,6 +222,10 @@ class __TwigTemplate_a165053ffd56f95353752ca48be29596f0c3f651e13d7d98c0212c56e97
         {% block body '' %}
     </body>
 </html>
+<<<<<<< HEAD
 ", "@WebProfiler/Profiler/base.html.twig", "C:\\Users\\Jchan\\Desktop\\Alpha-Betise\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\base.html.twig");
+=======
+", "@WebProfiler/Profiler/base.html.twig", "C:\\wamp64\\www\\symfony5\\Alpha-Betise\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\base.html.twig");
+>>>>>>> conseilsLecture
     }
 }

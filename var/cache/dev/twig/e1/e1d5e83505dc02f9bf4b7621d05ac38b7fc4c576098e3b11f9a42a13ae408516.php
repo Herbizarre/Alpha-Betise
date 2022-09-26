@@ -59,6 +59,10 @@ class __TwigTemplate_71662320051307e2ac959a113c8bb6f084d34295087d1e9592be52b2ac8
 
     public function getSourceContext()
     {
+<<<<<<< HEAD
         return new Source("", "partials/footer.html.twig ", "C:\\Users\\Jchan\\Desktop\\Alpha-Betise\\templates\\partials\\footer.html.twig");
+=======
+        return new Source("", "partials/footer.html.twig ", "C:\\wamp64\\www\\symfony5\\Alpha-Betise\\templates\\partials\\footer.html.twig");
+>>>>>>> conseilsLecture
     }
 }

@@ -227,6 +227,10 @@ class __TwigTemplate_dec880f6584454149dbd77242cb171dafa387872debad10669571da3d46
         </div>
     {% endif %}
 {% endblock %}
+<<<<<<< HEAD
 ", "@WebProfiler/Collector/exception.html.twig", "C:\\Users\\Jchan\\Desktop\\Alpha-Betise\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\exception.html.twig");
+=======
+", "@WebProfiler/Collector/exception.html.twig", "C:\\wamp64\\www\\symfony5\\Alpha-Betise\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\exception.html.twig");
+>>>>>>> conseilsLecture
     }
 }
