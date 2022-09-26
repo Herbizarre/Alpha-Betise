@@ -69,13 +69,13 @@ class __TwigTemplate_a9387c616c797e4f4b5697ca02d9fe9483237b254c7e705f73774b9ea62
     <body>
     ";
         // line 19
-        $this->loadTemplate("partial/header.html.twig ", "base.html.twig", 19)->display($context);
+        $this->loadTemplate("partials/header.html.twig ", "base.html.twig", 19)->display($context);
         // line 20
         echo "        ";
         $this->displayBlock('body', $context, $blocks);
         // line 21
         echo "    ";
-        $this->loadTemplate("partial/footer.html.twig ", "base.html.twig", 21)->display($context);
+        $this->loadTemplate("partials/footer.html.twig ", "base.html.twig", 21)->display($context);
         // line 22
         echo "    <script src=\"https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js\"
     integrity=\"sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk\" crossorigin=\"anonymous\">
@@ -213,9 +213,9 @@ class __TwigTemplate_a9387c616c797e4f4b5697ca02d9fe9483237b254c7e705f73774b9ea62
         {% endblock %}
     </head>
     <body>
-    {% include \"partial/header.html.twig \" %}
+    {% include \"partials/header.html.twig \" %}
         {% block body %}{% endblock %}
-    {% include \"partial/footer.html.twig \" %}
+    {% include \"partials/footer.html.twig \" %}
     <script src=\"https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js\"
     integrity=\"sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk\" crossorigin=\"anonymous\">
   </script>
@@ -225,6 +225,6 @@ class __TwigTemplate_a9387c616c797e4f4b5697ca02d9fe9483237b254c7e705f73774b9ea62
   </script>
     </body>
 </html>
-", "base.html.twig", "C:\\Users\\Daryl.H\\OneDrive\\Bureau\\Alpha-Betise\\templates\\base.html.twig");
+", "base.html.twig", "C:\\wamp64\\www\\symfony5\\Alpha-Betise\\templates\\base.html.twig");
     }
 }

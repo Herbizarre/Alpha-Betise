@@ -1,0 +1,71 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Book index{% endblock %}
+
+{% block body %}
+    <h1>Book index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Rate</th>
+                <th>Author</th>
+                <th>HomeEdition</th>
+                <th>Disponibility</th>
+                <th>PriceBook</th>
+                <th>CouvertureBook</th>
+                <th>CommentLibraire</th>
+                <th>CommentUser</th>
+                <th>CodeEAN</th>
+                <th>CodeISBN</th>
+                <th>Editeur</th>
+                <th>PublicationDate</th>
+                <th>Collection</th>
+                <th>PageNumber</th>
+                <th>Dimension</th>
+                <th>Poids</th>
+                <th>Langue</th>
+                <th>LangueOriginale</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for book in books %}
+            <tr>
+                <td>{{ book.id }}</td>
+                <td>{{ book.title }}</td>
+                <td>{{ book.rate }}</td>
+                <td>{{ book.author }}</td>
+                <td>{{ book.homeEdition }}</td>
+                <td>{{ book.disponibility }}</td>
+                <td>{{ book.priceBook }}</td>
+                <td>{{ book.couvertureBook }}</td>
+                <td>{{ book.commentLibraire }}</td>
+                <td>{{ book.commentUser }}</td>
+                <td>{{ book.codeEAN }}</td>
+                <td>{{ book.codeISBN }}</td>
+                <td>{{ book.editeur }}</td>
+                <td>{{ book.publicationDate ? book.publicationDate|date('Y-m-d') : '' }}</td>
+                <td>{{ book.collection }}</td>
+                <td>{{ book.pageNumber }}</td>
+                <td>{{ book.dimension }}</td>
+                <td>{{ book.poids }}</td>
+                <td>{{ book.langue }}</td>
+                <td>{{ book.langueOriginale }}</td>
+                <td>
+                    <a href="{{ path('app_book_show', {'id': book.id}) }}">show</a>
+                    <a href="{{ path('app_book_edit', {'id': book.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="21">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_book_new') }}">Create new</a>
+{% endblock %}
