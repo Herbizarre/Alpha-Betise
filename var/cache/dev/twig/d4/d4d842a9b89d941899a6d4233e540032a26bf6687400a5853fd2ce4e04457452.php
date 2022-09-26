@@ -65,6 +65,7 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
         <form class=\"d-flex my-2 my-lg-0\">
             <input class=\"form-control me-sm-2\" type=\"text\" placeholder=\"Search\">
             <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Search</button>
+            <a href=\"/register\"><button class=\"btn btn-outline-warning my-2 my-sm-0\">inscription</button></a>
         </form>
     </div>
 </nav>";
@@ -113,6 +114,7 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
         <form class=\"d-flex my-2 my-lg-0\">
             <input class=\"form-control me-sm-2\" type=\"text\" placeholder=\"Search\">
             <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Search</button>
+            <a href=\"/register\"><button class=\"btn btn-outline-warning my-2 my-sm-0\">inscription</button></a>
         </form>
     </div>
 </nav>", "partials/header.html.twig ", "C:\\Users\\Stagiaire01\\Alpha-Betise\\templates\\partials\\header.html.twig");

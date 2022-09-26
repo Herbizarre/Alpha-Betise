@@ -331,6 +331,6 @@ class __TwigTemplate_599eb59b5763e6d693691f869d8298d99d50dfd1add7d1505c81270daa5
 
     <a href=\"{{ path('app_book_new') }}\">Create new</a>
 {% endblock %}
-", "book/index.html.twig", "C:\\Users\\ydumi\\Downloads\\Alpha-Betise\\Alpha-Betise\\templates\\book\\index.html.twig");
+", "book/index.html.twig", "C:\\Users\\Stagiaire01\\Alpha-Betise\\templates\\book\\index.html.twig");
     }
 }
