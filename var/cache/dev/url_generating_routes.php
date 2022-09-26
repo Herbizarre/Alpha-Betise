@@ -12,6 +12,7 @@ return [
     'app_conseils' => [[], ['_controller' => 'App\\Controller\\ConseilsController::index'], [], [['text', '/conseils']], [], [], []],
     'app_contacts' => [[], ['_controller' => 'App\\Controller\\ContactsController::index'], [], [['text', '/contacts']], [], [], []],
     'app_home' => [[], ['_controller' => 'App\\Controller\\HomeController::index'], [], [['text', '/']], [], [], []],
+    'app_library' => [[], ['_controller' => 'App\\Controller\\LibraryController::index'], [], [['text', '/library']], [], [], []],
     'app_meeting' => [[], ['_controller' => 'App\\Controller\\MeetingController::index'], [], [['text', '/meeting']], [], [], []],
     'app_reading_tips' => [[], ['_controller' => 'App\\Controller\\ReadingTipsController::index'], [], [['text', '/reading/tips']], [], [], []],
     '_preview_error' => [['code', '_format'], ['_controller' => 'error_controller::preview', '_format' => 'html'], ['code' => '\\d+'], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', '\\d+', 'code', true], ['text', '/_error']], [], [], []],
