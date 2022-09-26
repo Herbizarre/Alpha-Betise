@@ -56,10 +56,10 @@ class __TwigTemplate_06379b6ee112d1fc067fc90ffa8a6ee77239c08c1846dfc453de30587c4
                 <a class=\"nav-link\" href=\"#\">Conseils de lecture</a>
             </li>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"#\">La librairie</a>
+                <a class=\"nav-link\" href=\"/librairie\">La librairie</a>
             </li>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"#\">Contact</a>
+                <a class=\"nav-link\" href=\"/contact\">Contact</a>
             </li>
         </ul>
         <form class=\"d-flex my-2 my-lg-0\">
@@ -104,10 +104,10 @@ class __TwigTemplate_06379b6ee112d1fc067fc90ffa8a6ee77239c08c1846dfc453de30587c4
                 <a class=\"nav-link\" href=\"#\">Conseils de lecture</a>
             </li>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"#\">La librairie</a>
+                <a class=\"nav-link\" href=\"/librairie\">La librairie</a>
             </li>
             <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"#\">Contact</a>
+                <a class=\"nav-link\" href=\"/contact\">Contact</a>
             </li>
         </ul>
         <form class=\"d-flex my-2 my-lg-0\">
