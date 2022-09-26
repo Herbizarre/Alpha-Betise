@@ -122,3 +122,12 @@ c0231e,127.0.0.1,GET,http://127.0.0.1:8000/,1664149312,,200
 36c65b,127.0.0.1,GET,http://127.0.0.1:8000/book/,1664155913,,500
 740a03,127.0.0.1,GET,http://127.0.0.1:8000/book/,1664155913,36c65b,500
 a0d77a,127.0.0.1,GET,http://127.0.0.1:8000/book/,1664157547,,200
+a98d36,127.0.0.1,GET,http://127.0.0.1:8000/,1664199424,,200
+ee2996,127.0.0.1,GET,http://127.0.0.1:8000/book/,1664199465,,200
+8c2fbd,127.0.0.1,GET,http://127.0.0.1:8000/admin,1664199486,,200
+9017f2,127.0.0.1,GET,http://127.0.0.1:8000/favicon.ico,1664199506,0dd5d3,404
+0dd5d3,127.0.0.1,GET,http://127.0.0.1:8000/favicon.ico,1664199506,,404
+e57dff,127.0.0.1,GET,http://127.0.0.1:8000/admin?crudAction=index&crudControllerFqcn=App%5CController%5CAdmin%5CBookCrudController&menuIndex=1&signature=WtmGYoN7-FjGrlFxzb6stjiaXcZXiioNmoxX-uCsXsE&submenuIndex=-1,1664199525,,200
+311830,127.0.0.1,GET,http://127.0.0.1:8000/admin?crudAction=edit&crudControllerFqcn=App%5CController%5CAdmin%5CBookCrudController&entityId=1&menuIndex=1&referrer=http%3A%2F%2F127.0.0.1%3A8000%2Fadmin%3FcrudAction%3Dindex%26crudControllerFqcn%3DApp%255CController%255CAdmin%255CBookCrudController%26menuIndex%3D1%26signature%3DWtmGYoN7-FjGrlFxzb6stjiaXcZXiioNmoxX-uCsXsE%26submenuIndex%3D-1&signature=w2WfjgrbxMxfV8Fz2nv837J3u5evRiE1XwSZaOaiYsc&submenuIndex=-1,1664199594,,200
+700641,127.0.0.1,GET,http://127.0.0.1:8000/admin?crudAction=index&crudControllerFqcn=App%5CController%5CAdmin%5CBookCrudController&menuIndex=1&signature=WtmGYoN7-FjGrlFxzb6stjiaXcZXiioNmoxX-uCsXsE&submenuIndex=-1,1664199737,,200
+0d23e7,127.0.0.1,GET,http://127.0.0.1:8000/admin?menuIndex=0&signature=-EtIplneXUCfgHEx9BNHAWKqknGbzkQKLA3O5LBB4tE&submenuIndex=-1,1664199977,,200
