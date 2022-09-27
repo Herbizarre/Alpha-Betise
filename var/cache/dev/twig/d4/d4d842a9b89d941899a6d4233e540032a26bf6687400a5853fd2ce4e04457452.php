@@ -41,7 +41,6 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
 
         // line 1
         echo "<nav class=\"navbar navbar-expand-sm navbar-dark\" style=\"background-color: #000;\">
-<<<<<<< HEAD
 \t<a class=\"navbar-brand\" href=\"#\">Logo</a>
 \t<button class=\"navbar-toggler d-lg-none\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapsibleNavId\" aria-controls=\"collapsibleNavId\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"></button>
 \t<div class=\"collapse navbar-collapse\" id=\"collapsibleNavId\">
@@ -112,27 +111,6 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
         }
         // line 59
         echo "            <li><hr>
-=======
-    <a class=\"navbar-brand\" href=\"#\">Logo</a>
-    <button class=\"navbar-toggler d-lg-none\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapsibleNavId\" aria-controls=\"collapsibleNavId\"
-        aria-expanded=\"false\" aria-label=\"Toggle navigation\"></button>
-    <div class=\"collapse navbar-collapse\" id=\"collapsibleNavId\">
-        <ul class=\"navbar-nav me-auto mt-2 mt-lg-0\">
-            <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"#\" aria-current=\"page\">Accueil <span class=\"visually-hidden\">(current)</span></a>
-            </li>
-            <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/meeting\">Rencontres</a>
-            </li>
-            <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/conseils\">Conseils de lecture</a>
-            </li>
-            <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/library\">La librairie</a>
-            </li>
-            <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/contacts#\">Contact</a>
->>>>>>> 6591aaed3f55e01219691622e4121fafabb87171
             </li>
 \t\t\t";
         // line 61
@@ -175,7 +153,6 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
     public function getSourceContext()
     {
         return new Source("<nav class=\"navbar navbar-expand-sm navbar-dark\" style=\"background-color: #000;\">
-<<<<<<< HEAD
 \t<a class=\"navbar-brand\" href=\"#\">Logo</a>
 \t<button class=\"navbar-toggler d-lg-none\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapsibleNavId\" aria-controls=\"collapsibleNavId\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"></button>
 \t<div class=\"collapse navbar-collapse\" id=\"collapsibleNavId\">
@@ -241,35 +218,6 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
 \t\t</ul>
 \t</div>
 {% endif %}</div></div></nav>
-", "partials/header.html.twig ", "C:\\Users\\Stagiaire01\\Alpha-Betise\\templates\\partials\\header.html.twig");
-=======
-    <a class=\"navbar-brand\" href=\"#\">Logo</a>
-    <button class=\"navbar-toggler d-lg-none\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapsibleNavId\" aria-controls=\"collapsibleNavId\"
-        aria-expanded=\"false\" aria-label=\"Toggle navigation\"></button>
-    <div class=\"collapse navbar-collapse\" id=\"collapsibleNavId\">
-        <ul class=\"navbar-nav me-auto mt-2 mt-lg-0\">
-            <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"#\" aria-current=\"page\">Accueil <span class=\"visually-hidden\">(current)</span></a>
-            </li>
-            <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/meeting\">Rencontres</a>
-            </li>
-            <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/conseils\">Conseils de lecture</a>
-            </li>
-            <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/library\">La librairie</a>
-            </li>
-            <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"/contacts#\">Contact</a>
-            </li>
-        </ul>
-        <form class=\"d-flex my-2 my-lg-0\">
-            <input class=\"form-control me-sm-2\" type=\"text\" placeholder=\"Search\">
-            <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Search</button>
-        </form>
-    </div>
-</nav>", "partials/header.html.twig ", "C:\\Users\\lunic\\projet-symfony\\Alpha-Betise\\templates\\partials\\header.html.twig");
->>>>>>> 6591aaed3f55e01219691622e4121fafabb87171
+", "partials/header.html.twig ", "C:\\Users\\lunic\\projet-symfony\\Alpha-Betise\\templates\\partials\\header.html.twig");
     }
 }
