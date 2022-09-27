@@ -1,29 +1,68 @@
 <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #000;">
-    <a class="navbar-brand" href="#">Logo</a>
-    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-        aria-expanded="false" aria-label="Toggle navigation"></button>
-    <div class="collapse navbar-collapse" id="collapsibleNavId">
-        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-                <a class="nav-link" href="#" aria-current="page">Accueil <span class="visually-hidden">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/meeting">Rencontres</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/conseils">Conseils de lecture</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">La librairie</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/contacts#">Contact</a>
-            </li>
-        </ul>
-        <form class="d-flex my-2 my-lg-0">
-            <input class="form-control me-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            <a href="/register"><button class="btn btn-outline-warning my-2 my-sm-0">inscription</button></a>
-        </form>
+	<a class="navbar-brand" href="#">Logo</a>
+	<button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
+	<div class="collapse navbar-collapse" id="collapsibleNavId">
+		<ul class="navbar-nav me-auto mt-2 mt-lg-0">
+			<li class="nav-item">
+				<a class="nav-link" href="#" aria-current="page">Accueil
+					<span class="visually-hidden">(current)</span>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/meeting">Rencontres</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/conseils">Conseils de lecture</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">La librairie</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/contacts#">Contact</a>
+			</li>
+		</ul>
+		<form class="d-flex my-2 my-lg-0">
+			<input class="form-control me-sm-2" type="text" placeholder="Search">
+			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		</form>
+		<a href="/login">
+			<button class="btn btn-outline-success my-2 my-sm-0">connexion</button>
+		</a>
+		<a href="/register">
+			<button class="btn btn-outline-success my-2 my-sm-0">inscription</button>
+		</a>
+
+
+	</div>
+	&nbsp &nbsp
+	{% if is_granted("ROLE_USER") %}
+		<div class="dropdown text-end">
+			<a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+				<img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+			</a>
+			<ul class="dropdown-menu text-small">
+				<li>
+					<a class="dropdown-item" href="#">Panier</a>
+				</li>
+				<li>
+					<a class="dropdown-item" href="#">Paramètre</a>
+				</li>
+				<li>
+					<a class="dropdown-item" href="#">Profil</a>
+				</li>
+			{% endif %}
+			{% if is_granted("ROLE_ADMIN") %}
+				<li>
+					<a class="dropdown-item" href="{{ path('admin') }}">Dashboard</a>
+				</li>
+			{% endif %}
+			<li><hr></li>
+			{% if is_granted("ROLE_USER") %}
+				<a class="dropdown-item" href="{{ path('app_logout') }}">Déconnexion</a>
+			</li>
+		</ul>
+	</div>
+    {% endif %}
+        </div>   
     </div>
 </nav>
