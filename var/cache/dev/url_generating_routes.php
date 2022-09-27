@@ -13,6 +13,7 @@ return [
     'app_contacts' => [[], ['_controller' => 'App\\Controller\\ContactsController::index'], [], [['text', '/contacts']], [], [], []],
     'app_data_roles' => [[], ['_controller' => 'App\\Controller\\DataRolesController::index'], [], [['text', '/data']], [], [], []],
     'app_home' => [[], ['_controller' => 'App\\Controller\\HomeController::index'], [], [['text', '/']], [], [], []],
+    'app_library' => [[], ['_controller' => 'App\\Controller\\LibraryController::index'], [], [['text', '/library']], [], [], []],
     'app_meeting' => [[], ['_controller' => 'App\\Controller\\MeetingController::index'], [], [['text', '/meeting']], [], [], []],
     'app_reading_tips' => [[], ['_controller' => 'App\\Controller\\ReadingTipsController::index'], [], [['text', '/reading/tips']], [], [], []],
     'app_register' => [[], ['_controller' => 'App\\Controller\\RegistrationController::register'], [], [['text', '/register']], [], [], []],
