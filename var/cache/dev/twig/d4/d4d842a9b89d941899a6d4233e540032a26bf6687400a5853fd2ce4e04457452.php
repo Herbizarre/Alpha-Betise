@@ -46,7 +46,7 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
 \t<div class=\"collapse navbar-collapse\" id=\"collapsibleNavId\">
 \t\t<ul class=\"navbar-nav me-auto mt-2 mt-lg-0\">
 \t\t\t<li class=\"nav-item\">
-\t\t\t\t<a class=\"nav-link\" href=\"#\" aria-current=\"page\">Accueil
+\t\t\t\t<a class=\"nav-link\" href=\"/\" aria-current=\"page\">Accueil
 \t\t\t\t\t<span class=\"visually-hidden\">(current)</span>
 \t\t\t\t</a>
 \t\t\t</li>
@@ -159,7 +159,7 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
 \t<div class=\"collapse navbar-collapse\" id=\"collapsibleNavId\">
 \t\t<ul class=\"navbar-nav me-auto mt-2 mt-lg-0\">
 \t\t\t<li class=\"nav-item\">
-\t\t\t\t<a class=\"nav-link\" href=\"#\" aria-current=\"page\">Accueil
+\t\t\t\t<a class=\"nav-link\" href=\"/\" aria-current=\"page\">Accueil
 \t\t\t\t\t<span class=\"visually-hidden\">(current)</span>
 \t\t\t\t</a>
 \t\t\t</li>
@@ -221,6 +221,6 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
         </div>   
     </div>
 </nav>
-", "partials/header.html.twig ", "C:\\Users\\Stagiaire01\\Alpha-Betise\\templates\\partials\\header.html.twig");
+", "partials/header.html.twig ", "C:\\Users\\ydumi\\Desktop\\Alpha-Betise\\templates\\partials\\header.html.twig");
     }
 }

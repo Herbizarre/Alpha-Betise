@@ -5,4 +5,8 @@
 {% block body %}
     <h1>Conseils de Lecture</h1>
 
+    {% for book in book %}
+        {{ include('partials/detailBook.html.twig',{'book': book}) }}
+    {% endfor %}
+
 {% endblock %}

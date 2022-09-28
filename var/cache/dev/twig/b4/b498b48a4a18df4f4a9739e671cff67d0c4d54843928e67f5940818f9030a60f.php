@@ -154,10 +154,6 @@ class __TwigTemplate_0d553a1d26daaa9ccf47ef4ae8cb485ea265b0e4d955d08e79bb4f80dd4
     </ul>
 </div>
 {% endblock %}
-<<<<<<< HEAD
-", "home/index.html.twig", "C:\\Users\\Jchan\\Desktop\\Alpha-Betise\\templates\\home\\index.html.twig");
-=======
 ", "home/index.html.twig", "C:\\wamp64\\www\\symfony5\\Alpha-Betise\\templates\\home\\index.html.twig");
->>>>>>> conseilsLecture
     }
 }
