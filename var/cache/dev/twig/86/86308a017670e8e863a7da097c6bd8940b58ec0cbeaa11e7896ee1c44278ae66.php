@@ -154,6 +154,6 @@ class __TwigTemplate_e56a76cb0137ef841b5e8054cce754d60ab0aebaa92fc3008da90cb2313
     </ul>
 </div>
 {% endblock %}
-", "meeting/index.html.twig", "C:\\Users\\Stagiaire01\\Alpha-Betise\\templates\\meeting\\index.html.twig");
+", "meeting/index.html.twig", "C:\\Users\\ydumi\\Desktop\\Alpha-Betise\\templates\\meeting\\index.html.twig");
     }
 }

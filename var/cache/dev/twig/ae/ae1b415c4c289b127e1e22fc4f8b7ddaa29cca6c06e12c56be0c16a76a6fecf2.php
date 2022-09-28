@@ -154,10 +154,6 @@ class __TwigTemplate_446572e0fff3db9ea764e92d76cf524d6cb729b77eb75cd3210d6c551bb
     </ul>
 </div>
 {% endblock %}
-<<<<<<< HEAD
-", "contacts/index.html.twig", "C:\\Users\\Stagiaire01\\Alpha-Betise\\templates\\contacts\\index.html.twig");
-=======
 ", "contacts/index.html.twig", "C:\\Users\\lunic\\projet-symfony\\Alpha-Betise\\templates\\contacts\\index.html.twig");
->>>>>>> 6591aaed3f55e01219691622e4121fafabb87171
     }
 }

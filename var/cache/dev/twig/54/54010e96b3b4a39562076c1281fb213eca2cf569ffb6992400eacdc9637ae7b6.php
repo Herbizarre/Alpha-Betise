@@ -479,10 +479,6 @@ class __TwigTemplate_527980048fa058afe990d0d92b52647c2d4085e47d626d2625800651fc7
         </div>
     {% endfor %}
 {% endblock %}
-<<<<<<< HEAD
-", "@WebProfiler/Collector/validator.html.twig", "C:\\Users\\Jchan\\Desktop\\Alpha-Betise\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\validator.html.twig");
-=======
 ", "@WebProfiler/Collector/validator.html.twig", "C:\\wamp64\\www\\symfony5\\Alpha-Betise\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\validator.html.twig");
->>>>>>> conseilsLecture
     }
 }

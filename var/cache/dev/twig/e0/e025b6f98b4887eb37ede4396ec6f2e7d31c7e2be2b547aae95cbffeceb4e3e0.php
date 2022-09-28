@@ -843,10 +843,6 @@ class __TwigTemplate_2b827fd060b6e462b9230458a0ee15dbe3fbc10b62d1745f2b32ba9ab1f
     </table>
     {% endfor %}
 {% endmacro %}
-<<<<<<< HEAD
-", "@WebProfiler/Collector/messenger.html.twig", "C:\\Users\\Jchan\\Desktop\\Alpha-Betise\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\messenger.html.twig");
-=======
 ", "@WebProfiler/Collector/messenger.html.twig", "C:\\wamp64\\www\\symfony5\\Alpha-Betise\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\messenger.html.twig");
->>>>>>> conseilsLecture
     }
 }

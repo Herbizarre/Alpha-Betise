@@ -900,10 +900,6 @@ class __TwigTemplate_dd0d46ad746a05381737b1d529b4fc6faaf76adfcfdf0c97e82fed8724c
         {% endautoescape %}</script>
     </div>
 {% endmacro %}
-<<<<<<< HEAD
-", "@WebProfiler/Collector/time.html.twig", "C:\\Users\\Jchan\\Desktop\\Alpha-Betise\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\time.html.twig");
-=======
 ", "@WebProfiler/Collector/time.html.twig", "C:\\wamp64\\www\\symfony5\\Alpha-Betise\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\time.html.twig");
->>>>>>> conseilsLecture
     }
 }

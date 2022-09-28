@@ -557,10 +557,6 @@ class __TwigTemplate_5e16f2e55461020a5c328a669edd8f0eb8f36c6fdca93b403b1e9041f43
         {% endif %}
     </div>
 {% endblock %}
-<<<<<<< HEAD
-", "@WebProfiler/Collector/http_client.html.twig", "C:\\Users\\Jchan\\Desktop\\Alpha-Betise\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\http_client.html.twig");
-=======
 ", "@WebProfiler/Collector/http_client.html.twig", "C:\\wamp64\\www\\symfony5\\Alpha-Betise\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\http_client.html.twig");
->>>>>>> conseilsLecture
     }
 }

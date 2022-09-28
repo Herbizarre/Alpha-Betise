@@ -482,10 +482,6 @@ class __TwigTemplate_8a07aeaa9621212895d9062c3c7c24f02b7ff1e7d22fcae87259cd7acf4
         {% endfor %}
     </table>
 {% endmacro %}
-<<<<<<< HEAD
-", "@WebProfiler/Collector/events.html.twig", "C:\\Users\\Jchan\\Desktop\\Alpha-Betise\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\events.html.twig");
-=======
 ", "@WebProfiler/Collector/events.html.twig", "C:\\wamp64\\www\\symfony5\\Alpha-Betise\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\events.html.twig");
->>>>>>> conseilsLecture
     }
 }
