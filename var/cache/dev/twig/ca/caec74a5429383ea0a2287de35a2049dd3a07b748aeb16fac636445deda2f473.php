@@ -86,41 +86,9 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 7
-        echo "\t<style>
-\t\t.cardBook {
-\t\t\twidth: 350px;
-\t\t}
-        .carousel {
-\t\t\tmargin-bottom: 4rem;
-\t\t}
-\t\t/* Since positioning the image, we need to help out the caption */
-\t\t.carousel-caption {
-\t\t\tbottom: 3rem;
-\t\t\tz-index: 10;
-\t\t}
-
-\t\t/* Declare heights because of positioning of img element */
-\t\t.carousel-item {
-\t\t\theight: 30rem;
-\t\t}
-\t\t.carousel-item > img {
-\t\t\tposition: absolute;
-\t\t\ttop: 0;
-\t\t\tleft: 0;
-\t\t\tmin-width: 100%;
-\t\t\theight: 100%;
-\t\t}
-
-\t\t.col-lg-4 img {
-\t\t\tbox-shadow: 2px 5px 5px gray;
-\t\t}
-\t\t.card {
-\t\t\tbox-shadow: 5px 5px 5px gray;
-\t\t}
-\t</style>
-";
-        // line 40
-        echo "<div id=\"myCarousel\" class=\"carousel slide\" data-bs-ride=\"carousel\">
+        echo "\t";
+        // line 8
+        echo "\t<div id=\"myCarousel\" class=\"carousel slide\" data-bs-ride=\"carousel\">
 \t\t<div class=\"carousel-indicators\">
 \t\t\t<button type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide-to=\"0\" class=\"active\" aria-current=\"true\" aria-label=\"Slide 1\"></button>
 \t\t\t<button type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide-to=\"1\" aria-label=\"Slide 2\"></button>
@@ -128,7 +96,7 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 \t\t</div>
 \t\t<div class=\"carousel-inner\">
 \t\t\t<div class=\"carousel-item active\">
-\t\t\t\t<img src=\"/assets/images/boutiqueSlide1.jpg\">
+\t\t\t\t<img src=\"/assets/images/slider3.png\" alt=\"image d'enfant en pleine lecture\">
 \t\t\t\t<div class=\"container\">
 \t\t\t\t\t<div class=\"carousel-caption text-start\">
 \t\t\t\t\t\t<h2>Achats en ligne.</h2>
@@ -140,7 +108,7 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t\t<div class=\"carousel-item\">
-\t\t\t\t<img src=\"/assets/images/boutiqueSlide2.jpg\">
+\t\t\t\t<img src=\"/assets/images/slider2.png\" alt=\"image d'enfant en pleine lecture\">
 \t\t\t\t<div class=\"container\">
 \t\t\t\t\t<div class=\"carousel-caption\">
 \t\t\t\t\t\t<h2>Livraison</h2>
@@ -152,7 +120,7 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t\t<div class=\"carousel-item\">
-\t\t\t\t<img src=\"/assets/images/boutiqueSlide3.jpg\">
+\t\t\t\t<img src=\"/assets/images/slider1.png\" alt=\"image d'enfant en pleine lecture\">
 \t\t\t\t<div class=\"container\">
 \t\t\t\t\t<div class=\"carousel-caption text-end\">
 \t\t\t\t\t\t<h2>Ventes</h2>
@@ -175,78 +143,52 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 \t</div>
 
 
-";
-        // line 96
-        echo "\t.<div class=\"container\">
-\t\t.<div class=\"row\">
-\t\t\t<div class=\"col\">
-\t\t\t\t<div class=\"cardBook\">
-\t\t\t\t\t<div class=\"card\">
-\t\t\t\t\t\t<img class=\"card-img-top\" src=\"holder.js/100x180/\" alt='Image du livre\"...\"'>
-\t\t\t\t\t\t<div class=\"card-body\">
-\t\t\t\t\t\t\t<h4 class=\"card-title\">Titre</h4>
-\t\t\t\t\t\t\t<p class=\"card-text\">Auteur</p>
-\t\t\t\t\t\t\t<p class=\"card-text\">Description du livre</p>
-\t\t\t\t\t\t\t<p class=\"card-text\">prix</p>
-\t\t\t\t\t\t\t<a name=\"\" id=\"\" class=\"btn btn-primary\" href=\"#\" role=\"button\">details</a>
-\t\t\t\t\t\t</div>
+\t";
+        // line 64
+        echo "\t<div class=\"book-item\">
+\t\t";
+        // line 65
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["books"]) || array_key_exists("books", $context) ? $context["books"] : (function () { throw new RuntimeError('Variable "books" does not exist.', 65, $this->source); })()));
+        foreach ($context['_seq'] as $context["_key"] => $context["book"]) {
+            // line 66
+            echo "\t\t\t<div class=\"cardBookHome\">
+\t\t\t\t<div class=\"card\">
+\t\t\t\t\t<img class=\"card-img-top\" src=\"/assets/uploads/book/";
+            // line 68
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "couvertureBook", [], "any", false, false, false, 68), "html", null, true);
+            echo "\" alt='Image du livre\"...\"'>
+\t\t\t\t\t<div class=\"card-body\">
+\t\t\t\t\t\t<h3 class=\"card-title\">";
+            // line 70
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "title", [], "any", false, false, false, 70), "html", null, true);
+            echo "&nbsp;";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "rate", [], "any", false, false, false, 70), "html", null, true);
+            echo "</h3>
+\t\t\t\t\t\t<p class=\"card-text\"><strong>";
+            // line 71
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "author", [], "any", false, false, false, 71), "html", null, true);
+            echo "</strong></p>
+\t\t\t\t\t\t<p class=\"card-text\">";
+            // line 72
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "commentLibraire", [], "any", false, false, false, 72), "html", null, true);
+            echo "</p>
+\t\t\t\t\t\t<p class=\"card-text\">";
+            // line 73
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "priceBook", [], "any", false, false, false, 73), "html", null, true);
+            echo "€</p>
+\t\t\t\t\t\t<a class=\"btn btn-primary\" href=\"#\" role=\"button\">details</a>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
 \t\t\t</div>
-&nbsp
-\t\t\t<div class=\"col\">
-\t\t\t\t<div class=\"cardBook\">
-\t\t\t\t\t<div class=\"card\">
-\t\t\t\t\t\t<img class=\"card-img-top\" src=\"holder.js/100x180/\" alt='Image du livre\"...\"'>
-\t\t\t\t\t\t<div class=\"card-body\">
-\t\t\t\t\t\t\t<h4 class=\"card-title\">Titre</h4>
-\t\t\t\t\t\t\t<p class=\"card-text\">Auteur</p>
-\t\t\t\t\t\t\t<p class=\"card-text\">Description du livre</p>
-\t\t\t\t\t\t\t<p class=\"card-text\">prix</p>
-\t\t\t\t\t\t\t<a name=\"\" id=\"\" class=\"btn btn-primary\" href=\"#\" role=\"button\">details</a>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t</div>
-\t\t</div>
-\t</div>
-</div>
-
-\t.<div class=\"container\">
-\t\t.<div class=\"row\">
-\t\t\t<div class=\"col\">
-\t\t\t\t<div class=\"cardBook\">
-\t\t\t\t\t<div class=\"card\">
-\t\t\t\t\t\t<img class=\"card-img-top\" src=\"holder.js/100x180/\" alt='Image du livre\"...\"'>
-\t\t\t\t\t\t<div class=\"card-body\">
-\t\t\t\t\t\t\t<h4 class=\"card-title\">Titre</h4>
-\t\t\t\t\t\t\t<p class=\"card-text\">Auteur</p>
-\t\t\t\t\t\t\t<p class=\"card-text\">Description du livre</p>
-\t\t\t\t\t\t\t<p class=\"card-text\">prix</p>
-\t\t\t\t\t\t\t<a name=\"\" id=\"\" class=\"btn btn-primary\" href=\"#\" role=\"button\">details</a>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t</div>
-&nbsp
-\t\t\t<div class=\"col\">
-\t\t\t\t<div class=\"cardBook\">
-\t\t\t\t\t<div class=\"card\">
-\t\t\t\t\t\t<img class=\"card-img-top\" src=\"holder.js/100x180/\" alt='Image du livre\"...\"'>
-\t\t\t\t\t\t<div class=\"card-body\">
-\t\t\t\t\t\t\t<h4 class=\"card-title\">Titre</h4>
-\t\t\t\t\t\t\t<p class=\"card-text\">Auteur</p>
-\t\t\t\t\t\t\t<p class=\"card-text\">Description du livre</p>
-\t\t\t\t\t\t\t<p class=\"card-text\">prix</p>
-\t\t\t\t\t\t\t<a name=\"\" id=\"\" class=\"btn btn-primary\" href=\"#\" role=\"button\">details</a>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t</div>
-\t\t</div>
-\t</div>
-</div>
-";
+\t\t";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['book'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 79
+        echo "\t</div>
+</div>";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -267,7 +209,7 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 
     public function getDebugInfo()
     {
-        return array (  180 => 96,  123 => 40,  89 => 7,  79 => 6,  59 => 3,  36 => 1,);
+        return array (  190 => 79,  178 => 73,  174 => 72,  170 => 71,  164 => 70,  159 => 68,  155 => 66,  151 => 65,  148 => 64,  91 => 8,  89 => 7,  79 => 6,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -278,40 +220,8 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 {% endblock %}
 
 {% block body %}
-\t<style>
-\t\t.cardBook {
-\t\t\twidth: 350px;
-\t\t}
-        .carousel {
-\t\t\tmargin-bottom: 4rem;
-\t\t}
-\t\t/* Since positioning the image, we need to help out the caption */
-\t\t.carousel-caption {
-\t\t\tbottom: 3rem;
-\t\t\tz-index: 10;
-\t\t}
-
-\t\t/* Declare heights because of positioning of img element */
-\t\t.carousel-item {
-\t\t\theight: 30rem;
-\t\t}
-\t\t.carousel-item > img {
-\t\t\tposition: absolute;
-\t\t\ttop: 0;
-\t\t\tleft: 0;
-\t\t\tmin-width: 100%;
-\t\t\theight: 100%;
-\t\t}
-
-\t\t.col-lg-4 img {
-\t\t\tbox-shadow: 2px 5px 5px gray;
-\t\t}
-\t\t.card {
-\t\t\tbox-shadow: 5px 5px 5px gray;
-\t\t}
-\t</style>
-{# -----------------Caroussel---------------------- #}
-<div id=\"myCarousel\" class=\"carousel slide\" data-bs-ride=\"carousel\">
+\t{# -----------------Caroussel---------------------- #}
+\t<div id=\"myCarousel\" class=\"carousel slide\" data-bs-ride=\"carousel\">
 \t\t<div class=\"carousel-indicators\">
 \t\t\t<button type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide-to=\"0\" class=\"active\" aria-current=\"true\" aria-label=\"Slide 1\"></button>
 \t\t\t<button type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide-to=\"1\" aria-label=\"Slide 2\"></button>
@@ -319,7 +229,7 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 \t\t</div>
 \t\t<div class=\"carousel-inner\">
 \t\t\t<div class=\"carousel-item active\">
-\t\t\t\t<img src=\"/assets/images/boutiqueSlide1.jpg\">
+\t\t\t\t<img src=\"/assets/images/slider3.png\" alt=\"image d'enfant en pleine lecture\">
 \t\t\t\t<div class=\"container\">
 \t\t\t\t\t<div class=\"carousel-caption text-start\">
 \t\t\t\t\t\t<h2>Achats en ligne.</h2>
@@ -331,7 +241,7 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t\t<div class=\"carousel-item\">
-\t\t\t\t<img src=\"/assets/images/boutiqueSlide2.jpg\">
+\t\t\t\t<img src=\"/assets/images/slider2.png\" alt=\"image d'enfant en pleine lecture\">
 \t\t\t\t<div class=\"container\">
 \t\t\t\t\t<div class=\"carousel-caption\">
 \t\t\t\t\t\t<h2>Livraison</h2>
@@ -343,7 +253,7 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t\t<div class=\"carousel-item\">
-\t\t\t\t<img src=\"/assets/images/boutiqueSlide3.jpg\">
+\t\t\t\t<img src=\"/assets/images/slider1.png\" alt=\"image d'enfant en pleine lecture\">
 \t\t\t\t<div class=\"container\">
 \t\t\t\t\t<div class=\"carousel-caption text-end\">
 \t\t\t\t\t\t<h2>Ventes</h2>
@@ -366,77 +276,24 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 \t</div>
 
 
-{# ------------------- Apercu de livre ---------------- #}
-\t.<div class=\"container\">
-\t\t.<div class=\"row\">
-\t\t\t<div class=\"col\">
-\t\t\t\t<div class=\"cardBook\">
-\t\t\t\t\t<div class=\"card\">
-\t\t\t\t\t\t<img class=\"card-img-top\" src=\"holder.js/100x180/\" alt='Image du livre\"...\"'>
-\t\t\t\t\t\t<div class=\"card-body\">
-\t\t\t\t\t\t\t<h4 class=\"card-title\">Titre</h4>
-\t\t\t\t\t\t\t<p class=\"card-text\">Auteur</p>
-\t\t\t\t\t\t\t<p class=\"card-text\">Description du livre</p>
-\t\t\t\t\t\t\t<p class=\"card-text\">prix</p>
-\t\t\t\t\t\t\t<a name=\"\" id=\"\" class=\"btn btn-primary\" href=\"#\" role=\"button\">details</a>
-\t\t\t\t\t\t</div>
+\t{# ------------------- Apercu de livre ---------------- #}
+\t<div class=\"book-item\">
+\t\t{% for book in books %}
+\t\t\t<div class=\"cardBookHome\">
+\t\t\t\t<div class=\"card\">
+\t\t\t\t\t<img class=\"card-img-top\" src=\"/assets/uploads/book/{{book.couvertureBook}}\" alt='Image du livre\"...\"'>
+\t\t\t\t\t<div class=\"card-body\">
+\t\t\t\t\t\t<h3 class=\"card-title\">{{ book.title }}&nbsp;{{ book.rate }}</h3>
+\t\t\t\t\t\t<p class=\"card-text\"><strong>{{book.author}}</strong></p>
+\t\t\t\t\t\t<p class=\"card-text\">{{ book.commentLibraire }}</p>
+\t\t\t\t\t\t<p class=\"card-text\">{{ book.priceBook }}€</p>
+\t\t\t\t\t\t<a class=\"btn btn-primary\" href=\"#\" role=\"button\">details</a>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
 \t\t\t</div>
-&nbsp
-\t\t\t<div class=\"col\">
-\t\t\t\t<div class=\"cardBook\">
-\t\t\t\t\t<div class=\"card\">
-\t\t\t\t\t\t<img class=\"card-img-top\" src=\"holder.js/100x180/\" alt='Image du livre\"...\"'>
-\t\t\t\t\t\t<div class=\"card-body\">
-\t\t\t\t\t\t\t<h4 class=\"card-title\">Titre</h4>
-\t\t\t\t\t\t\t<p class=\"card-text\">Auteur</p>
-\t\t\t\t\t\t\t<p class=\"card-text\">Description du livre</p>
-\t\t\t\t\t\t\t<p class=\"card-text\">prix</p>
-\t\t\t\t\t\t\t<a name=\"\" id=\"\" class=\"btn btn-primary\" href=\"#\" role=\"button\">details</a>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t</div>
-\t\t</div>
+\t\t{% endfor %}
 \t</div>
-</div>
-
-\t.<div class=\"container\">
-\t\t.<div class=\"row\">
-\t\t\t<div class=\"col\">
-\t\t\t\t<div class=\"cardBook\">
-\t\t\t\t\t<div class=\"card\">
-\t\t\t\t\t\t<img class=\"card-img-top\" src=\"holder.js/100x180/\" alt='Image du livre\"...\"'>
-\t\t\t\t\t\t<div class=\"card-body\">
-\t\t\t\t\t\t\t<h4 class=\"card-title\">Titre</h4>
-\t\t\t\t\t\t\t<p class=\"card-text\">Auteur</p>
-\t\t\t\t\t\t\t<p class=\"card-text\">Description du livre</p>
-\t\t\t\t\t\t\t<p class=\"card-text\">prix</p>
-\t\t\t\t\t\t\t<a name=\"\" id=\"\" class=\"btn btn-primary\" href=\"#\" role=\"button\">details</a>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t</div>
-&nbsp
-\t\t\t<div class=\"col\">
-\t\t\t\t<div class=\"cardBook\">
-\t\t\t\t\t<div class=\"card\">
-\t\t\t\t\t\t<img class=\"card-img-top\" src=\"holder.js/100x180/\" alt='Image du livre\"...\"'>
-\t\t\t\t\t\t<div class=\"card-body\">
-\t\t\t\t\t\t\t<h4 class=\"card-title\">Titre</h4>
-\t\t\t\t\t\t\t<p class=\"card-text\">Auteur</p>
-\t\t\t\t\t\t\t<p class=\"card-text\">Description du livre</p>
-\t\t\t\t\t\t\t<p class=\"card-text\">prix</p>
-\t\t\t\t\t\t\t<a name=\"\" id=\"\" class=\"btn btn-primary\" href=\"#\" role=\"button\">details</a>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t</div>
-\t\t</div>
-\t</div>
-</div>
-{% endblock %}
-", "home/index.html.twig", "C:\\Users\\lunic\\projet-symfony\\Alpha-Betise\\templates\\home\\index.html.twig");
+</div>{% endblock %}
+", "home/index.html.twig", "C:\\wamp64\\www\\Symfony5\\Alpha-Betise\\templates\\home\\index.html.twig");
     }
 }
