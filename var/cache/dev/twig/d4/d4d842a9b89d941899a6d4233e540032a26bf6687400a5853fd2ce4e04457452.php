@@ -57,10 +57,10 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
 \t\t\t\t<a class=\"nav-link\" href=\"/conseils\">Conseils de lecture</a>
 \t\t\t</li>
 \t\t\t<li class=\"nav-item\">
-\t\t\t\t<a class=\"nav-link\" href=\"#\">La librairie</a>
+\t\t\t\t<a class=\"nav-link\" href=\"/library\">La librairie</a>
 \t\t\t</li>
 \t\t\t<li class=\"nav-item\">
-\t\t\t\t<a class=\"nav-link\" href=\"/contacts#\">Contact</a>
+\t\t\t\t<a class=\"nav-link\" href=\"/contacts\">Contact</a>
 \t\t\t</li>
 \t\t</ul>
 \t\t<form class=\"d-flex my-2 my-lg-0\">
@@ -74,9 +74,9 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
 \t\t\t<button class=\"btn btn-outline-success my-2 my-sm-0\">inscription</button>
 \t\t</a>
 
-\t</div>&nbsp &nbsp
 
-
+\t</div>
+\t&nbsp &nbsp
 \t";
         // line 38
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_USER")) {
@@ -110,22 +110,23 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
 \t\t\t";
         }
         // line 59
-        echo "            <li><hr>
-            </li>
+        echo "\t\t\t<li><hr></li>
 \t\t\t";
-        // line 61
+        // line 60
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_USER")) {
-            // line 62
+            // line 61
             echo "\t\t\t\t<a class=\"dropdown-item\" href=\"";
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
             echo "\">Déconnexion</a>
 \t\t\t</li>
 \t\t</ul>
 \t</div>
-";
+    ";
         }
         // line 66
-        echo "</div></div></nav>
+        echo "        </div>   
+    </div>
+</nav>
 ";
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
@@ -147,7 +148,7 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
 
     public function getDebugInfo()
     {
-        return array (  128 => 66,  119 => 62,  117 => 61,  113 => 59,  107 => 56,  104 => 55,  101 => 54,  84 => 39,  82 => 38,  43 => 1,);
+        return array (  127 => 66,  118 => 61,  116 => 60,  113 => 59,  107 => 56,  104 => 55,  101 => 54,  84 => 39,  82 => 38,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -169,10 +170,10 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
 \t\t\t\t<a class=\"nav-link\" href=\"/conseils\">Conseils de lecture</a>
 \t\t\t</li>
 \t\t\t<li class=\"nav-item\">
-\t\t\t\t<a class=\"nav-link\" href=\"#\">La librairie</a>
+\t\t\t\t<a class=\"nav-link\" href=\"/library\">La librairie</a>
 \t\t\t</li>
 \t\t\t<li class=\"nav-item\">
-\t\t\t\t<a class=\"nav-link\" href=\"/contacts#\">Contact</a>
+\t\t\t\t<a class=\"nav-link\" href=\"/contacts\">Contact</a>
 \t\t\t</li>
 \t\t</ul>
 \t\t<form class=\"d-flex my-2 my-lg-0\">
@@ -186,9 +187,9 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
 \t\t\t<button class=\"btn btn-outline-success my-2 my-sm-0\">inscription</button>
 \t\t</a>
 
-\t</div>&nbsp &nbsp
 
-
+\t</div>
+\t&nbsp &nbsp
 \t{% if is_granted(\"ROLE_USER\") %}
 \t\t<div class=\"dropdown text-end\">
 \t\t\t<a href=\"#\" class=\"d-block link-dark text-decoration-none dropdown-toggle\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
@@ -210,14 +211,16 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
 \t\t\t\t\t<a class=\"dropdown-item\" href=\"{{ path('admin') }}\">Dashboard</a>
 \t\t\t\t</li>
 \t\t\t{% endif %}
-            <li><hr>
-            </li>
+\t\t\t<li><hr></li>
 \t\t\t{% if is_granted(\"ROLE_USER\") %}
 \t\t\t\t<a class=\"dropdown-item\" href=\"{{ path('app_logout') }}\">Déconnexion</a>
 \t\t\t</li>
 \t\t</ul>
 \t</div>
-{% endif %}</div></div></nav>
-", "partials/header.html.twig ", "C:\\Users\\lunic\\projet-symfony\\Alpha-Betise\\templates\\partials\\header.html.twig");
+    {% endif %}
+        </div>   
+    </div>
+</nav>
+", "partials/header.html.twig ", "C:\\Users\\Daryl.H\\OneDrive\\Bureau\\projet-git\\Alpha-Betise\\templates\\partials\\header.html.twig");
     }
 }
