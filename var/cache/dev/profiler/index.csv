@@ -4007,3 +4007,8 @@ b93828,127.0.0.1,GET,http://127.0.0.1:8000/newsletters/,1664801602,792b87,500
 792b87,127.0.0.1,POST,http://127.0.0.1:8000/newsletters/,1664801602,,500
 72140b,127.0.0.1,GET,http://127.0.0.1:8000/newsletters/assets/bootstrap/css/style.css,1664802157,9807ac,404
 9807ac,127.0.0.1,GET,http://127.0.0.1:8000/newsletters/assets/bootstrap/css/style.css,1664802157,,404
+6081e6,127.0.0.1,GET,http://127.0.0.1:8000/,1664816888,,200
+f69914,127.0.0.1,GET,http://127.0.0.1:8000/,1664817958,,200
+e00ee5,127.0.0.1,GET,http://127.0.0.1:8000/newsletters/,1664817961,,200
+9d3d99,127.0.0.1,GET,http://127.0.0.1:8000/newsletters/assets/bootstrap/css/style.css,1664817962,4399e7,404
+4399e7,127.0.0.1,GET,http://127.0.0.1:8000/newsletters/assets/bootstrap/css/style.css,1664817962,,404
