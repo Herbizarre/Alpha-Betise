@@ -162,6 +162,10 @@ class __TwigTemplate_e92cd471bc0c0593c3ef359b15a876d91b609491cc2fe5170955f7bac6a
     {% endfor %}
 
 {% endblock %}
+<<<<<<< HEAD
 ", "conseils/index.html.twig", "C:\\Users\\ydumi\\Desktop\\Alpha-Betise\\templates\\conseils\\index.html.twig");
+=======
+", "conseils/index.html.twig", "C:\\Users\\Daryl.H\\OneDrive\\Bureau\\projet-git\\Alpha-Betise\\templates\\conseils\\index.html.twig");
+>>>>>>> contact
     }
 }

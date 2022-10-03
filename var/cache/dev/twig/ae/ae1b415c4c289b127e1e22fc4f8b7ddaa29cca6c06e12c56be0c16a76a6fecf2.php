@@ -65,7 +65,7 @@ class __TwigTemplate_446572e0fff3db9ea764e92d76cf524d6cb729b77eb75cd3210d6c551bb
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Hello ContactsController!";
+        echo "Contact";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -86,28 +86,58 @@ class __TwigTemplate_446572e0fff3db9ea764e92d76cf524d6cb729b77eb75cd3210d6c551bb
 
         // line 6
         echo "<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    #form,#description{
+        width:400px;
+        height:300px;
+        margin:auto;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+    #form{
+        background-color: beige;
+        border-radius : 10px;
+        padding: 15px;
+    }
+    .separation{
+        width:70%;
+        height:1px;
+        background-color: black;
+    }
+
+    ";
+        // line 38
+        echo "
 </style>
+    <div id=\"form\">
+        <h1>Contactez-nous</h1>
+        <div class=\"separation\"></div>
+        <label> Email : </label>";
+        // line 43
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock(twig_get_attribute($this->env, $this->source, (isset($context["formulaire"]) || array_key_exists("formulaire", $context) ? $context["formulaire"] : (function () { throw new RuntimeError('Variable "formulaire" does not exist.', 43, $this->source); })()), "email", [], "any", false, false, false, 43), 'form');
+        echo "
+        <label> Message : </label> ";
+        // line 44
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock(twig_get_attribute($this->env, $this->source, (isset($context["formulaire"]) || array_key_exists("formulaire", $context) ? $context["formulaire"] : (function () { throw new RuntimeError('Variable "formulaire" does not exist.', 44, $this->source); })()), "message", [], "any", false, false, false, 44), 'form');
+        echo "
 
-<div class=\"example-wrapper\">
-    <h1>Hello ";
-        // line 12
-        echo twig_escape_filter($this->env, (isset($context["controller_name"]) || array_key_exists("controller_name", $context) ? $context["controller_name"] : (function () { throw new RuntimeError('Variable "controller_name" does not exist.', 12, $this->source); })()), "html", null, true);
-        echo "! ✅</h1>
+        <input name=\"\" id=\"\" class=\"btn btn-primary\" type=\"button\" value=\"Envoyer\">
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href=\"";
-        // line 16
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\CodeExtension']->getFileLink("C:/Users/Jchan/Desktop/Alpha-Betise/src/Controller/ContactsController.php", 0), "html", null, true);
-        echo "\">src/Controller/ContactsController.php</a></code></li>
-        <li>Your template at <code><a href=\"";
-        // line 17
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\CodeExtension']->getFileLink("C:/Users/Jchan/Desktop/Alpha-Betise/templates/contacts/index.html.twig", 0), "html", null, true);
-        echo "\">templates/contacts/index.html.twig</a></code></li>
-    </ul>
-</div>
+    
+    </div>
+
+    <div id=\"description\">
+        <p>Numéro de téléphone : 0690123465 <br>
+        Le siege social se situe au : <br/> CWTC Complexe World Trade Center <br/>
+        Route du CWTC 97122 ZI de Jarry <br/> Baie Mahault, 97122, Guadeloupe <br/>
+        </p>
+        <img src=\"assets/images/librairie-enfant.jpg\" width=\"300\" height=\"300\">
+        ";
+        // line 59
+        echo "    </div>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -129,31 +159,75 @@ class __TwigTemplate_446572e0fff3db9ea764e92d76cf524d6cb729b77eb75cd3210d6c551bb
 
     public function getDebugInfo()
     {
-        return array (  107 => 17,  103 => 16,  96 => 12,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  140 => 59,  124 => 44,  120 => 43,  113 => 38,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Hello ContactsController!{% endblock %}
+{% block title %}Contact{% endblock %}
 
 {% block body %}
 <style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    #form,#description{
+        width:400px;
+        height:300px;
+        margin:auto;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+    #form{
+        background-color: beige;
+        border-radius : 10px;
+        padding: 15px;
+    }
+    .separation{
+        width:70%;
+        height:1px;
+        background-color: black;
+    }
+
+    {# .img{
+        width:250px;
+        height:250px;
+        margin:auto;
+        background-image: url(../assets/images/librairie-enfant.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    } #}
+
 </style>
+    <div id=\"form\">
+        <h1>Contactez-nous</h1>
+        <div class=\"separation\"></div>
+        <label> Email : </label>{{form(formulaire.email)}}
+        <label> Message : </label> {{form(formulaire.message)}}
 
-<div class=\"example-wrapper\">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+        <input name=\"\" id=\"\" class=\"btn btn-primary\" type=\"button\" value=\"Envoyer\">
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href=\"{{ 'C:/Users/Jchan/Desktop/Alpha-Betise/src/Controller/ContactsController.php'|file_link(0) }}\">src/Controller/ContactsController.php</a></code></li>
-        <li>Your template at <code><a href=\"{{ 'C:/Users/Jchan/Desktop/Alpha-Betise/templates/contacts/index.html.twig'|file_link(0) }}\">templates/contacts/index.html.twig</a></code></li>
-    </ul>
-</div>
+    
+    </div>
+
+    <div id=\"description\">
+        <p>Numéro de téléphone : 0690123465 <br>
+        Le siege social se situe au : <br/> CWTC Complexe World Trade Center <br/>
+        Route du CWTC 97122 ZI de Jarry <br/> Baie Mahault, 97122, Guadeloupe <br/>
+        </p>
+        <img src=\"assets/images/librairie-enfant.jpg\" width=\"300\" height=\"300\">
+        {# <div class=\"img\">
+        </div> #}
+    </div>
 {% endblock %}
+<<<<<<< HEAD
 ", "contacts/index.html.twig", "C:\\Users\\lunic\\projet-symfony\\Alpha-Betise\\templates\\contacts\\index.html.twig");
+=======
+", "contacts/index.html.twig", "C:\\Users\\Daryl.H\\OneDrive\\Bureau\\projet-git\\Alpha-Betise\\templates\\contacts\\index.html.twig");
+>>>>>>> contact
     }
 }

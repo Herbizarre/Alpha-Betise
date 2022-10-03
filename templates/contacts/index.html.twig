@@ -1,20 +1,60 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ContactsController!{% endblock %}
+{% block title %}Contact{% endblock %}
 
 {% block body %}
 <style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    #form,#description{
+        width:400px;
+        height:300px;
+        margin:auto;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+    #form{
+        background-color: beige;
+        border-radius : 10px;
+        padding: 15px;
+    }
+    .separation{
+        width:70%;
+        height:1px;
+        background-color: black;
+    }
+
+    {# .img{
+        width:250px;
+        height:250px;
+        margin:auto;
+        background-image: url(../assets/images/librairie-enfant.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    } #}
+
 </style>
+    <div id="form">
+        <h1>Contactez-nous</h1>
+        <div class="separation"></div>
+        <label> Email : </label>{{form(formulaire.email)}}
+        <label> Message : </label> {{form(formulaire.message)}}
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+        <input name="" id="" class="btn btn-primary" type="button" value="Envoyer">
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/Users/Jchan/Desktop/Alpha-Betise/src/Controller/ContactsController.php'|file_link(0) }}">src/Controller/ContactsController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/Users/Jchan/Desktop/Alpha-Betise/templates/contacts/index.html.twig'|file_link(0) }}">templates/contacts/index.html.twig</a></code></li>
-    </ul>
-</div>
+    
+    </div>
+
+    <div id="description">
+        <p>Numéro de téléphone : 0690123465 <br>
+        Le siege social se situe au : <br/> CWTC Complexe World Trade Center <br/>
+        Route du CWTC 97122 ZI de Jarry <br/> Baie Mahault, 97122, Guadeloupe <br/>
+        </p>
+        <img src="assets/images/librairie-enfant.jpg" width="300" height="300">
+        {# <div class="img">
+        </div> #}
+    </div>
 {% endblock %}
