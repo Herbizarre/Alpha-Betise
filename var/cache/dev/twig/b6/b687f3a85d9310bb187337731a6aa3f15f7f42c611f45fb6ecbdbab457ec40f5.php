@@ -40,65 +40,68 @@ class __TwigTemplate_39bcfa78438613d5ea58efbd9b71ad757ce9ae010e35bf64be7590e2f64
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "partials/footer.html.twig "));
 
         // line 1
-        echo "<div class=\"container\">
-  <footer class=\"py-5\">
-    <div class=\"row\">
-      <div class=\"col-6 col-md-2 mb-3\">
-        <h5>Section</h5>
-        <ul class=\"nav flex-column\">
-          <li class=\"nav-item mb-2\"><a href=\"#\" class=\"nav-link p-0 text-muted\">Home</a></li>
-          <li class=\"nav-item mb-2\"><a href=\"#\" class=\"nav-link p-0 text-muted\">Features</a></li>
-          <li class=\"nav-item mb-2\"><a href=\"#\" class=\"nav-link p-0 text-muted\">Pricing</a></li>
-          <li class=\"nav-item mb-2\"><a href=\"#\" class=\"nav-link p-0 text-muted\">FAQs</a></li>
-          <li class=\"nav-item mb-2\"><a href=\"#\" class=\"nav-link p-0 text-muted\">About</a></li>
-        </ul>
-      </div>
+        echo "<hr>
+";
+        // line 3
+        echo "\t<footer>
+\t\t<div class=\"row\">
+\t\t\t<div class=\"col-md-3 offset-md-1 mb-3\">
+\t\t\t\t\t<h5>Souscription à la newsletter</h5>
+\t\t\t\t\t<p>Monthly digest of what's new and exciting from us.</p>
+\t\t\t\t\t<a href=\"/newsletters\"><button class=\"btn btn-primary\" type=\"button\">Subscribe</button></a>
 
-      <div class=\"col-6 col-md-2 mb-3\">
-        <h5>Section</h5>
-        <ul class=\"nav flex-column\">
-          <li class=\"nav-item mb-2\"><a href=\"#\" class=\"nav-link p-0 text-muted\">Home</a></li>
-          <li class=\"nav-item mb-2\"><a href=\"#\" class=\"nav-link p-0 text-muted\">Features</a></li>
-          <li class=\"nav-item mb-2\"><a href=\"#\" class=\"nav-link p-0 text-muted\">Pricing</a></li>
-          <li class=\"nav-item mb-2\"><a href=\"#\" class=\"nav-link p-0 text-muted\">FAQs</a></li>
-          <li class=\"nav-item mb-2\"><a href=\"#\" class=\"nav-link p-0 text-muted\">About</a></li>
-        </ul>
-      </div>
+\t\t\t</div>
+      <div class=\"col-md-3\"></div>
+\t\t\t<div class=\"col-6 col-md-2 mb-3\">
+\t\t\t\t<h5>Section</h5>
+\t\t\t\t<ul class=\"nav flex-column\">
+\t\t\t\t\t<li class=\"nav-item mb-2\">
+\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">Home</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"nav-item mb-2\">
+\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">Features</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"nav-item mb-2\">
+\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">Pricing</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"nav-item mb-2\">
+\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">FAQs</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"nav-item mb-2\">
+\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">About</a>
+\t\t\t\t\t</li>
+\t\t\t\t</ul>
+\t\t\t</div>
 
-      <div class=\"col-6 col-md-2 mb-3\">
-        <h5>Section</h5>
-        <ul class=\"nav flex-column\">
-          <li class=\"nav-item mb-2\"><a href=\"#\" class=\"nav-link p-0 text-muted\">Home</a></li>
-          <li class=\"nav-item mb-2\"><a href=\"#\" class=\"nav-link p-0 text-muted\">Features</a></li>
-          <li class=\"nav-item mb-2\"><a href=\"#\" class=\"nav-link p-0 text-muted\">Pricing</a></li>
-          <li class=\"nav-item mb-2\"><a href=\"#\" class=\"nav-link p-0 text-muted\">FAQs</a></li>
-          <li class=\"nav-item mb-2\"><a href=\"#\" class=\"nav-link p-0 text-muted\">About</a></li>
-        </ul>
-      </div>
 
-      <div class=\"col-md-5 offset-md-1 mb-3\">
-        <form>
-          <h5>Subscribe to our newsletter</h5>
-          <p>Monthly digest of what's new and exciting from us.</p>
-          <div class=\"d-flex flex-column flex-sm-row w-100 gap-2\">
-            <label for=\"newsletter1\" class=\"visually-hidden\">Email address</label>
-            <input id=\"newsletter1\" type=\"text\" class=\"form-control\" placeholder=\"Email address\">
-            <button class=\"btn btn-primary\" type=\"button\">Subscribe</button>
-          </div>
-        </form>
-      </div>
-    </div>
+\t\t\t<div class=\"col-6 col-md-2 mb-3\">
+\t\t\t\t<h5>Section</h5>
+\t\t\t\t<ul class=\"nav flex-column\">
+\t\t\t\t\t<li class=\"nav-item mb-2\">
+\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">Home</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"nav-item mb-2\">
+\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">Features</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"nav-item mb-2\">
+\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">Pricing</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"nav-item mb-2\">
+\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">FAQs</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"nav-item mb-2\">
+\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">About</a>
+\t\t\t\t\t</li>
+\t\t\t\t</ul>
+\t\t\t</div>
 
-    <div class=\"d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top\">
-      <p>&copy; 2022 Company, Inc. All rights reserved.</p>
-      <ul class=\"list-unstyled d-flex\">
-        <li class=\"ms-3\"><a class=\"link-dark\" href=\"#\"><svg class=\"bi\" width=\"24\" height=\"24\"><use xlink:href=\"#twitter\"/></svg></a></li>
-        <li class=\"ms-3\"><a class=\"link-dark\" href=\"#\"><svg class=\"bi\" width=\"24\" height=\"24\"><use xlink:href=\"#instagram\"/></svg></a></li>
-        <li class=\"ms-3\"><a class=\"link-dark\" href=\"#\"><svg class=\"bi\" width=\"24\" height=\"24\"><use xlink:href=\"#facebook\"/></svg></a></li>
-      </ul>
-    </div>
-  </footer>
 
+\t\t</div>
+
+\t\t<div class=\"d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top\">
+\t\t\t<p>&copy; 2022 Company, Inc. All rights reserved.</p>
+\t\t</div>
+\t</footer>
 ";
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
@@ -115,70 +118,73 @@ class __TwigTemplate_39bcfa78438613d5ea58efbd9b71ad757ce9ae010e35bf64be7590e2f64
 
     public function getDebugInfo()
     {
-        return array (  43 => 1,);
+        return array (  46 => 3,  43 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<div class=\"container\">
-  <footer class=\"py-5\">
-    <div class=\"row\">
-      <div class=\"col-6 col-md-2 mb-3\">
-        <h5>Section</h5>
-        <ul class=\"nav flex-column\">
-          <li class=\"nav-item mb-2\"><a href=\"#\" class=\"nav-link p-0 text-muted\">Home</a></li>
-          <li class=\"nav-item mb-2\"><a href=\"#\" class=\"nav-link p-0 text-muted\">Features</a></li>
-          <li class=\"nav-item mb-2\"><a href=\"#\" class=\"nav-link p-0 text-muted\">Pricing</a></li>
-          <li class=\"nav-item mb-2\"><a href=\"#\" class=\"nav-link p-0 text-muted\">FAQs</a></li>
-          <li class=\"nav-item mb-2\"><a href=\"#\" class=\"nav-link p-0 text-muted\">About</a></li>
-        </ul>
-      </div>
+        return new Source("<hr>
+{# <div class=\"container\"> #}
+\t<footer>
+\t\t<div class=\"row\">
+\t\t\t<div class=\"col-md-3 offset-md-1 mb-3\">
+\t\t\t\t\t<h5>Souscription à la newsletter</h5>
+\t\t\t\t\t<p>Monthly digest of what's new and exciting from us.</p>
+\t\t\t\t\t<a href=\"/newsletters\"><button class=\"btn btn-primary\" type=\"button\">Subscribe</button></a>
 
-      <div class=\"col-6 col-md-2 mb-3\">
-        <h5>Section</h5>
-        <ul class=\"nav flex-column\">
-          <li class=\"nav-item mb-2\"><a href=\"#\" class=\"nav-link p-0 text-muted\">Home</a></li>
-          <li class=\"nav-item mb-2\"><a href=\"#\" class=\"nav-link p-0 text-muted\">Features</a></li>
-          <li class=\"nav-item mb-2\"><a href=\"#\" class=\"nav-link p-0 text-muted\">Pricing</a></li>
-          <li class=\"nav-item mb-2\"><a href=\"#\" class=\"nav-link p-0 text-muted\">FAQs</a></li>
-          <li class=\"nav-item mb-2\"><a href=\"#\" class=\"nav-link p-0 text-muted\">About</a></li>
-        </ul>
-      </div>
+\t\t\t</div>
+      <div class=\"col-md-3\"></div>
+\t\t\t<div class=\"col-6 col-md-2 mb-3\">
+\t\t\t\t<h5>Section</h5>
+\t\t\t\t<ul class=\"nav flex-column\">
+\t\t\t\t\t<li class=\"nav-item mb-2\">
+\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">Home</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"nav-item mb-2\">
+\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">Features</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"nav-item mb-2\">
+\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">Pricing</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"nav-item mb-2\">
+\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">FAQs</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"nav-item mb-2\">
+\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">About</a>
+\t\t\t\t\t</li>
+\t\t\t\t</ul>
+\t\t\t</div>
 
-      <div class=\"col-6 col-md-2 mb-3\">
-        <h5>Section</h5>
-        <ul class=\"nav flex-column\">
-          <li class=\"nav-item mb-2\"><a href=\"#\" class=\"nav-link p-0 text-muted\">Home</a></li>
-          <li class=\"nav-item mb-2\"><a href=\"#\" class=\"nav-link p-0 text-muted\">Features</a></li>
-          <li class=\"nav-item mb-2\"><a href=\"#\" class=\"nav-link p-0 text-muted\">Pricing</a></li>
-          <li class=\"nav-item mb-2\"><a href=\"#\" class=\"nav-link p-0 text-muted\">FAQs</a></li>
-          <li class=\"nav-item mb-2\"><a href=\"#\" class=\"nav-link p-0 text-muted\">About</a></li>
-        </ul>
-      </div>
 
-      <div class=\"col-md-5 offset-md-1 mb-3\">
-        <form>
-          <h5>Subscribe to our newsletter</h5>
-          <p>Monthly digest of what's new and exciting from us.</p>
-          <div class=\"d-flex flex-column flex-sm-row w-100 gap-2\">
-            <label for=\"newsletter1\" class=\"visually-hidden\">Email address</label>
-            <input id=\"newsletter1\" type=\"text\" class=\"form-control\" placeholder=\"Email address\">
-            <button class=\"btn btn-primary\" type=\"button\">Subscribe</button>
-          </div>
-        </form>
-      </div>
-    </div>
+\t\t\t<div class=\"col-6 col-md-2 mb-3\">
+\t\t\t\t<h5>Section</h5>
+\t\t\t\t<ul class=\"nav flex-column\">
+\t\t\t\t\t<li class=\"nav-item mb-2\">
+\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">Home</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"nav-item mb-2\">
+\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">Features</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"nav-item mb-2\">
+\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">Pricing</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"nav-item mb-2\">
+\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">FAQs</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"nav-item mb-2\">
+\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">About</a>
+\t\t\t\t\t</li>
+\t\t\t\t</ul>
+\t\t\t</div>
 
-    <div class=\"d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top\">
-      <p>&copy; 2022 Company, Inc. All rights reserved.</p>
-      <ul class=\"list-unstyled d-flex\">
-        <li class=\"ms-3\"><a class=\"link-dark\" href=\"#\"><svg class=\"bi\" width=\"24\" height=\"24\"><use xlink:href=\"#twitter\"/></svg></a></li>
-        <li class=\"ms-3\"><a class=\"link-dark\" href=\"#\"><svg class=\"bi\" width=\"24\" height=\"24\"><use xlink:href=\"#instagram\"/></svg></a></li>
-        <li class=\"ms-3\"><a class=\"link-dark\" href=\"#\"><svg class=\"bi\" width=\"24\" height=\"24\"><use xlink:href=\"#facebook\"/></svg></a></li>
-      </ul>
-    </div>
-  </footer>
 
+\t\t</div>
+
+\t\t<div class=\"d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top\">
+\t\t\t<p>&copy; 2022 Company, Inc. All rights reserved.</p>
+\t\t</div>
+\t</footer>
+{# </div> #}
 ", "partials/footer.html.twig ", "C:\\wamp64\\www\\Symfony5\\Alpha-Betise\\templates\\partials\\footer.html.twig");
     }
 }

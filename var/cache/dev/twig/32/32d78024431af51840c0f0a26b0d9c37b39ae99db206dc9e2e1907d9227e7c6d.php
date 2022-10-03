@@ -84,6 +84,6 @@ class __TwigTemplate_ec0173831223328230739958983b6fa4732c457dbf5c0c3d3ec1641bac7
     {{ form_widget(form) }}
     <button class=\"btn\">{{ button_label|default('Save') }}</button>
 {{ form_end(form) }}
-", "book/_form.html.twig", "C:\\Users\\Stagiaire01\\Alpha-Betise\\templates\\book\\_form.html.twig");
+", "book/_form.html.twig", "C:\\wamp64\\www\\Symfony5\\Alpha-Betise\\templates\\book\\_form.html.twig");
     }
 }

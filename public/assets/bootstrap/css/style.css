@@ -29,25 +29,9 @@
     height:100%;
 }
 
+
 .card {
     box-shadow: 5px 5px 5px gray;
-}
-
-/* card Books */
-.cardBookHome img {
-    width: 600px;
-    height: 400px;
-
-}
-.cardBookHome {
-    width: 600px;
-    height: 500px;
-
-}
-.book-item{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 /* PAGE CONSEILS */
@@ -55,9 +39,6 @@
     width: 300px;
 }
 
-footer ul li{
- color:aliceblue;
-}
 
 
 

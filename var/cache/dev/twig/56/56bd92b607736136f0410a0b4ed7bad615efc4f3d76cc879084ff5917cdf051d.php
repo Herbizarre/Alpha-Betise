@@ -140,6 +140,6 @@ class __TwigTemplate_4dc79340fb580afb80c11621a550c25e9510c422faad3244d4d958ef25e
 
     {{ include('book/_delete_form.html.twig') }}
 {% endblock %}
-", "book/edit.html.twig", "C:\\Users\\Stagiaire01\\Alpha-Betise\\templates\\book\\edit.html.twig");
+", "book/edit.html.twig", "C:\\wamp64\\www\\Symfony5\\Alpha-Betise\\templates\\book\\edit.html.twig");
     }
 }

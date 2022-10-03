@@ -354,6 +354,15 @@
       <tag name="controller.service_arguments"/>
       <tag name="routing.route_loader"/>
     </service>
+    <service id="SensioLabs\Security\SecurityChecker" class="SensioLabs\Security\SecurityChecker" autowire="true" autoconfigure="true"/>
+    <service id="SensioLabs\Security\Command\SecurityCheckerCommand" class="SensioLabs\Security\Command\SecurityCheckerCommand" autowire="true" autoconfigure="true">
+      <tag name="console.command"/>
+      <tag name="container.no_preload"/>
+      <argument type="service" id="SensioLabs\Security\SecurityChecker"/>
+      <call method="setName">
+        <argument>security:check</argument>
+      </call>
+    </service>
     <service id="App\Controller\Admin\BookCrudController" class="App\Controller\Admin\BookCrudController" public="true" autowire="true" autoconfigure="true">
       <tag name="ea.crud_controller"/>
       <tag name="controller.service_arguments"/>
@@ -398,6 +407,13 @@
         <argument type="service" id=".service_locator.GNc8e5B.App\Controller\DataRolesController"/>
       </call>
     </service>
+    <service id="App\Controller\DetailsBookController" class="App\Controller\DetailsBookController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.GNc8e5B.App\Controller\DetailsBookController"/>
+      </call>
+    </service>
     <service id="App\Controller\HomeController" class="App\Controller\HomeController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
       <tag name="container.service_subscriber"/>
@@ -417,6 +433,13 @@
       <tag name="container.service_subscriber"/>
       <call method="setContainer">
         <argument type="service" id=".service_locator.GNc8e5B.App\Controller\MeetingController"/>
+      </call>
+    </service>
+    <service id="App\Controller\NewslettersController" class="App\Controller\NewslettersController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.GNc8e5B.App\Controller\NewslettersController"/>
       </call>
     </service>
     <service id="App\Controller\ReadingTipsController" class="App\Controller\ReadingTipsController" public="true" autowire="true" autoconfigure="true">
@@ -444,10 +467,25 @@
     <service id="App\Form\BookType" class="App\Form\BookType" autowire="true" autoconfigure="true">
       <tag name="form.type"/>
     </service>
+    <service id="App\Form\NewslettersUsersType" class="App\Form\NewslettersUsersType" autowire="true" autoconfigure="true">
+      <tag name="form.type"/>
+    </service>
     <service id="App\Form\RegistrationFormType" class="App\Form\RegistrationFormType" autowire="true" autoconfigure="true">
       <tag name="form.type"/>
     </service>
     <service id="App\Repository\BookRepository" class="App\Repository\BookRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id="App\Repository\Newsletters\CategoryRepository" class="App\Repository\Newsletters\CategoryRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id="App\Repository\Newsletters\NewslettersRepository" class="App\Repository\Newsletters\NewslettersRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id="App\Repository\Newsletters\UsersRepository" class="App\Repository\Newsletters\UsersRepository" autowire="true" autoconfigure="true">
       <tag name="doctrine.repository_service"/>
       <argument type="service" id="doctrine"/>
     </service>
@@ -1242,6 +1280,7 @@
       </argument>
       <argument type="collection">
         <argument>App\Form\BookType</argument>
+        <argument>App\Form\NewslettersUsersType</argument>
         <argument>App\Form\RegistrationFormType</argument>
         <argument>Symfony\Component\Form\Extension\Core\Type\FormType</argument>
         <argument>Symfony\Component\Form\Extension\Core\Type\ChoiceType</argument>
@@ -3509,7 +3548,7 @@
       <argument type="service" id="form.registry"/>
     </service>
     <service id="form.extension" class="Symfony\Component\Form\Extension\DependencyInjection\DependencyInjectionExtension">
-      <argument type="service" id=".service_locator.vv9OMtK"/>
+      <argument type="service" id=".service_locator.BxLh3_7"/>
       <argument type="collection">
         <argument key="Symfony\Component\Form\Extension\Core\Type\FormType" type="iterator">
           <argument type="service" id="form.type_extension.form.transformation_failure_handling"/>
@@ -4408,7 +4447,7 @@
       <factory class="Doctrine\ORM\EntityManager" method="create"/>
     </service>
     <service id="doctrine.orm.container_repository_factory" class="Doctrine\Bundle\DoctrineBundle\Repository\ContainerRepositoryFactory">
-      <argument type="service" id=".service_locator.XRqSNbB"/>
+      <argument type="service" id=".service_locator.Cly.NqW"/>
     </service>
     <service id="doctrine.orm.manager_configurator.abstract" class="Doctrine\Bundle\DoctrineBundle\ManagerConfigurator" abstract="true">
       <argument type="collection"/>
@@ -6789,6 +6828,8 @@
       <argument type="service" id="EasyCorp\Bundle\EasyAdminBundle\Registry\CrudControllerRegistry"/>
       <deprecated package="easycorp/easyadmin-bundle" version="3.2.0">The "%service_id%" service is deprecated, use "EasyCorp\Bundle\EasyAdminBundle\Router\AdminUrlGenerator" instead.</deprecated>
     </service>
+    <service id=".instanceof.Symfony\Component\Console\Command\Command.0.SensioLabs\Security\Command\SecurityCheckerCommand" class="SensioLabs\Security\Command\SecurityCheckerCommand" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.SensioLabs\Security\Command\SecurityCheckerCommand" class="SensioLabs\Security\Command\SecurityCheckerCommand" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\Admin\BookCrudController" class="App\Controller\Admin\BookCrudController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\Admin\BookCrudController" class="App\Controller\Admin\BookCrudController" autowire="true" abstract="true"/>
     <service id=".instanceof.EasyCorp\Bundle\EasyAdminBundle\Contracts\Controller\CrudControllerInterface.0.App\Controller\Admin\BookCrudController" class="App\Controller\Admin\BookCrudController" autowire="true" abstract="true"/>
@@ -6809,6 +6850,9 @@
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\DataRolesController" class="App\Controller\DataRolesController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\DataRolesController" class="App\Controller\DataRolesController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\DataRolesController" class="App\Controller\DataRolesController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\DetailsBookController" class="App\Controller\DetailsBookController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\DetailsBookController" class="App\Controller\DetailsBookController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\DetailsBookController" class="App\Controller\DetailsBookController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\HomeController" class="App\Controller\HomeController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\HomeController" class="App\Controller\HomeController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\HomeController" class="App\Controller\HomeController" autowire="true" autoconfigure="true" abstract="true"/>
@@ -6818,6 +6862,9 @@
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\MeetingController" class="App\Controller\MeetingController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\MeetingController" class="App\Controller\MeetingController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\MeetingController" class="App\Controller\MeetingController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\NewslettersController" class="App\Controller\NewslettersController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\NewslettersController" class="App\Controller\NewslettersController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\NewslettersController" class="App\Controller\NewslettersController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\ReadingTipsController" class="App\Controller\ReadingTipsController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\ReadingTipsController" class="App\Controller\ReadingTipsController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\ReadingTipsController" class="App\Controller\ReadingTipsController" autowire="true" autoconfigure="true" abstract="true"/>
@@ -6829,10 +6876,18 @@
     <service id=".abstract.instanceof.App\Controller\SecurityController" class="App\Controller\SecurityController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\BookType" class="App\Form\BookType" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Form\BookType" class="App\Form\BookType" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\NewslettersUsersType" class="App\Form\NewslettersUsersType" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Form\NewslettersUsersType" class="App\Form\NewslettersUsersType" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\RegistrationFormType" class="App\Form\RegistrationFormType" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Form\RegistrationFormType" class="App\Form\RegistrationFormType" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\BookRepository" class="App\Repository\BookRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\BookRepository" class="App\Repository\BookRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\Newsletters\CategoryRepository" class="App\Repository\Newsletters\CategoryRepository" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\Newsletters\CategoryRepository" class="App\Repository\Newsletters\CategoryRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\Newsletters\NewslettersRepository" class="App\Repository\Newsletters\NewslettersRepository" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\Newsletters\NewslettersRepository" class="App\Repository\Newsletters\NewslettersRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\Newsletters\UsersRepository" class="App\Repository\Newsletters\UsersRepository" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\Newsletters\UsersRepository" class="App\Repository\Newsletters\UsersRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\UserRepository" class="App\Repository\UserRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\UserRepository" class="App\Repository\UserRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.EasyCorp\Bundle\EasyAdminBundle\Contracts\Filter\FilterConfiguratorInterface.0.EasyCorp\Bundle\EasyAdminBundle\Filter\Configurator\ChoiceConfigurator" class="EasyCorp\Bundle\EasyAdminBundle\Filter\Configurator\ChoiceConfigurator" abstract="true"/>
@@ -7319,18 +7374,32 @@
         <argument key="book" type="service_closure" id=".errored..service_locator.qkm.aLw.App\Entity\Book"/>
       </argument>
     </service>
-    <service id=".service_locator.5XllAAP" class="Symfony\Component\DependencyInjection\ServiceLocator">
-      <tag name="container.service_locator"/>
-      <argument type="collection">
-        <argument key="book" type="service_closure" id=".errored..service_locator.5XllAAP.App\Entity\Book"/>
-        <argument key="bookRepository" type="service_closure" id="App\Repository\BookRepository"/>
-      </argument>
-    </service>
     <service id=".service_locator.mR_209Y" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="entityManager" type="service_closure" id="doctrine.orm.default_entity_manager"/>
         <argument key="userRepository" type="service_closure" id="App\Repository\UserRepository"/>
+      </argument>
+    </service>
+    <service id=".service_locator.sTohNiY" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="book" type="service_closure" id=".errored..service_locator.sTohNiY.App\Entity\Book"/>
+        <argument key="bookRepository" type="service_closure" id="App\Repository\BookRepository"/>
+      </argument>
+    </service>
+    <service id=".service_locator.2lrQJM3" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="mailerInterface" type="service_closure" id="mailer.mailer"/>
+        <argument key="managerRegistry" type="service_closure" id="doctrine"/>
+      </argument>
+    </service>
+    <service id=".service_locator.logGoD_" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="managerRegistry" type="service_closure" id="doctrine"/>
+        <argument key="user" type="service_closure" id=".errored..service_locator.logGoD_.App\Entity\Newsletters\Users"/>
       </argument>
     </service>
     <service id=".service_locator.4u5os03" class="Symfony\Component\DependencyInjection\ServiceLocator">
@@ -7352,7 +7421,7 @@
         <argument key="authenticationUtils" type="service_closure" id="security.authentication_utils"/>
       </argument>
     </service>
-    <service id=".service_locator.Aoj_u2t" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.x3BCSZE" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\Admin\BookCrudController::autocomplete" type="service_closure" id=".service_locator.ZOQ9v2d"/>
@@ -7377,14 +7446,17 @@
         <argument key="App\Controller\Admin\BookCrudController::renderFilters" type="service_closure" id=".service_locator.ZOQ9v2d"/>
         <argument key="App\Controller\Admin\BookCrudController::updateEntity" type="service_closure" id=".service_locator.l2QwsaZ"/>
         <argument key="App\Controller\Admin\DashboardController::configureUserMenu" type="service_closure" id=".service_locator.q6hA_O0"/>
-        <argument key="App\Controller\BookController::delete" type="service_closure" id=".service_locator.5XllAAP"/>
-        <argument key="App\Controller\BookController::edit" type="service_closure" id=".service_locator.5XllAAP"/>
+        <argument key="App\Controller\BookController::delete" type="service_closure" id=".service_locator.sTohNiY"/>
+        <argument key="App\Controller\BookController::edit" type="service_closure" id=".service_locator.sTohNiY"/>
         <argument key="App\Controller\BookController::index" type="service_closure" id=".service_locator.2vrAr7L"/>
         <argument key="App\Controller\BookController::new" type="service_closure" id=".service_locator.2vrAr7L"/>
         <argument key="App\Controller\BookController::show" type="service_closure" id=".service_locator.qkm.aLw"/>
         <argument key="App\Controller\ConseilsController::index" type="service_closure" id=".service_locator.2vrAr7L"/>
         <argument key="App\Controller\DataRolesController::index" type="service_closure" id=".service_locator.mR_209Y"/>
+        <argument key="App\Controller\DetailsBookController::showBook" type="service_closure" id=".service_locator.sTohNiY"/>
         <argument key="App\Controller\HomeController::index" type="service_closure" id=".service_locator.2vrAr7L"/>
+        <argument key="App\Controller\NewslettersController::confirm" type="service_closure" id=".service_locator.logGoD_"/>
+        <argument key="App\Controller\NewslettersController::index" type="service_closure" id=".service_locator.2lrQJM3"/>
         <argument key="App\Controller\RegistrationController::register" type="service_closure" id=".service_locator.4u5os03"/>
         <argument key="App\Controller\RegistrationController::verifyUserEmail" type="service_closure" id=".service_locator.mzjt3rI"/>
         <argument key="App\Controller\SecurityController::login" type="service_closure" id=".service_locator.UDgw6Ol"/>
@@ -7416,14 +7488,17 @@
         <argument key="App\Controller\Admin\BookCrudController:renderFilters" type="service_closure" id=".service_locator.ZOQ9v2d"/>
         <argument key="App\Controller\Admin\BookCrudController:updateEntity" type="service_closure" id=".service_locator.l2QwsaZ"/>
         <argument key="App\Controller\Admin\DashboardController:configureUserMenu" type="service_closure" id=".service_locator.q6hA_O0"/>
-        <argument key="App\Controller\BookController:delete" type="service_closure" id=".service_locator.5XllAAP"/>
-        <argument key="App\Controller\BookController:edit" type="service_closure" id=".service_locator.5XllAAP"/>
+        <argument key="App\Controller\BookController:delete" type="service_closure" id=".service_locator.sTohNiY"/>
+        <argument key="App\Controller\BookController:edit" type="service_closure" id=".service_locator.sTohNiY"/>
         <argument key="App\Controller\BookController:index" type="service_closure" id=".service_locator.2vrAr7L"/>
         <argument key="App\Controller\BookController:new" type="service_closure" id=".service_locator.2vrAr7L"/>
         <argument key="App\Controller\BookController:show" type="service_closure" id=".service_locator.qkm.aLw"/>
         <argument key="App\Controller\ConseilsController:index" type="service_closure" id=".service_locator.2vrAr7L"/>
         <argument key="App\Controller\DataRolesController:index" type="service_closure" id=".service_locator.mR_209Y"/>
+        <argument key="App\Controller\DetailsBookController:showBook" type="service_closure" id=".service_locator.sTohNiY"/>
         <argument key="App\Controller\HomeController:index" type="service_closure" id=".service_locator.2vrAr7L"/>
+        <argument key="App\Controller\NewslettersController:confirm" type="service_closure" id=".service_locator.logGoD_"/>
+        <argument key="App\Controller\NewslettersController:index" type="service_closure" id=".service_locator.2lrQJM3"/>
         <argument key="App\Controller\RegistrationController:register" type="service_closure" id=".service_locator.4u5os03"/>
         <argument key="App\Controller\RegistrationController:verifyUserEmail" type="service_closure" id=".service_locator.mzjt3rI"/>
         <argument key="App\Controller\SecurityController:login" type="service_closure" id=".service_locator.UDgw6Ol"/>
@@ -7501,10 +7576,11 @@
       <argument type="service" id="debug.argument_resolver.not_tagged_controller.inner"/>
       <argument type="service" id="debug.stopwatch"/>
     </service>
-    <service id=".service_locator.vv9OMtK" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.BxLh3_7" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Form\BookType" type="service_closure" id="App\Form\BookType"/>
+        <argument key="App\Form\NewslettersUsersType" type="service_closure" id="App\Form\NewslettersUsersType"/>
         <argument key="App\Form\RegistrationFormType" type="service_closure" id="App\Form\RegistrationFormType"/>
         <argument key="EasyCorp\Bundle\EasyAdminBundle\Form\Type\CrudFormType" type="service_closure" id="EasyCorp\Bundle\EasyAdminBundle\Form\Type\CrudFormType"/>
         <argument key="EasyCorp\Bundle\EasyAdminBundle\Form\Type\FileUploadType" type="service_closure" id="EasyCorp\Bundle\EasyAdminBundle\Form\Type\FileUploadType"/>
@@ -7594,10 +7670,13 @@
         <argument key="doctrine.orm.messenger.doctrine_schema_subscriber" type="service_closure" id="doctrine.orm.messenger.doctrine_schema_subscriber"/>
       </argument>
     </service>
-    <service id=".service_locator.XRqSNbB" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.Cly.NqW" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Repository\BookRepository" type="service_closure" id="App\Repository\BookRepository"/>
+        <argument key="App\Repository\Newsletters\CategoryRepository" type="service_closure" id="App\Repository\Newsletters\CategoryRepository"/>
+        <argument key="App\Repository\Newsletters\NewslettersRepository" type="service_closure" id="App\Repository\Newsletters\NewslettersRepository"/>
+        <argument key="App\Repository\Newsletters\UsersRepository" type="service_closure" id="App\Repository\Newsletters\UsersRepository"/>
         <argument key="App\Repository\UserRepository" type="service_closure" id="App\Repository\UserRepository"/>
       </argument>
     </service>
@@ -7973,6 +8052,12 @@
       <argument type="service" id="service_container"/>
       <factory service=".service_locator.GNc8e5B" method="withContext"/>
     </service>
+    <service id=".service_locator.GNc8e5B.App\Controller\DetailsBookController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\DetailsBookController"/>
+      <argument>App\Controller\DetailsBookController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.GNc8e5B" method="withContext"/>
+    </service>
     <service id=".service_locator.GNc8e5B.App\Controller\HomeController" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator_context" id="App\Controller\HomeController"/>
       <argument>App\Controller\HomeController</argument>
@@ -7988,6 +8073,12 @@
     <service id=".service_locator.GNc8e5B.App\Controller\MeetingController" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator_context" id="App\Controller\MeetingController"/>
       <argument>App\Controller\MeetingController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.GNc8e5B" method="withContext"/>
+    </service>
+    <service id=".service_locator.GNc8e5B.App\Controller\NewslettersController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\NewslettersController"/>
+      <argument>App\Controller\NewslettersController</argument>
       <argument type="service" id="service_container"/>
       <factory service=".service_locator.GNc8e5B" method="withContext"/>
     </service>
@@ -8193,12 +8284,12 @@
       <argument type="service" id="EasyCorp\Bundle\EasyAdminBundle\Router\AdminUrlGenerator"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">
-      <argument type="service" id=".service_locator.Aoj_u2t"/>
+      <argument type="service" id=".service_locator.x3BCSZE"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver">
-      <argument type="service" id=".service_locator.Aoj_u2t"/>
+      <argument type="service" id=".service_locator.x3BCSZE"/>
     </service>
     <service id="debug.traced.messenger.bus.default.inner" class="Symfony\Component\Messenger\MessageBus">
       <argument type="iterator">
@@ -8244,7 +8335,8 @@
     <service id=".errored..service_locator.2dc0eaX.EasyCorp\Bundle\EasyAdminBundle\Config\KeyValueStore" class="EasyCorp\Bundle\EasyAdminBundle\Config\KeyValueStore"/>
     <service id=".errored..service_locator.q6hA_O0.Symfony\Component\Security\Core\User\UserInterface" class="Symfony\Component\Security\Core\User\UserInterface"/>
     <service id=".errored..service_locator.qkm.aLw.App\Entity\Book" class="App\Entity\Book"/>
-    <service id=".errored..service_locator.5XllAAP.App\Entity\Book" class="App\Entity\Book"/>
+    <service id=".errored..service_locator.sTohNiY.App\Entity\Book" class="App\Entity\Book"/>
+    <service id=".errored..service_locator.logGoD_.App\Entity\Newsletters\Users" class="App\Entity\Newsletters\Users"/>
     <service id=".console.command.about.lazy" class="Symfony\Component\Console\Command\LazyCommand">
       <argument>about</argument>
       <argument type="collection"/>
@@ -8742,8 +8834,9 @@
     </service>
     <service id="console.command_loader" class="Symfony\Component\Console\CommandLoader\ContainerCommandLoader" public="true">
       <tag name="container.no_preload"/>
-      <argument type="service" id=".service_locator.eIyMlqt"/>
+      <argument type="service" id=".service_locator.MQFUsPU"/>
       <argument type="collection">
+        <argument key="security:check">SensioLabs\Security\Command\SecurityCheckerCommand</argument>
         <argument key="about">console.command.about</argument>
         <argument key="assets:install">console.command.assets_install</argument>
         <argument key="cache:clear">console.command.cache_clear</argument>
@@ -8851,9 +8944,10 @@
         <argument key="make:stimulus-controller">maker.auto_command.make_stimulus_controller</argument>
       </argument>
     </service>
-    <service id=".service_locator.eIyMlqt" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.MQFUsPU" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
+        <argument key="SensioLabs\Security\Command\SecurityCheckerCommand" type="service_closure" id="SensioLabs\Security\Command\SecurityCheckerCommand"/>
         <argument key="console.command.about" type="service_closure" id=".console.command.about.lazy"/>
         <argument key="console.command.assets_install" type="service_closure" id=".console.command.assets_install.lazy"/>
         <argument key="console.command.cache_clear" type="service_closure" id=".console.command.cache_clear.lazy"/>
@@ -9214,7 +9308,7 @@
     <service id="SymfonyCasts\Bundle\VerifyEmail\VerifyEmailHelperInterface" alias="symfonycasts.verify_email.helper"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.gSv9zYw" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.Aoj_u2t"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.x3BCSZE"/>
     <service id="session" alias=".session.do-not-use" public="true">
       <deprecated package="symfony/framework-bundle" version="5.3">The "%alias_id%" service and "SessionInterface" alias are deprecated, use "$requestStack-&gt;getSession()" instead.</deprecated>
     </service>
@@ -9243,10 +9337,13 @@
     <service id=".service_locator.rAlqQ78" alias=".service_locator.3on9uHL"/>
     <service id=".service_locator.tbo4Jjv" alias=".service_locator.bgO__Zr"/>
     <service id=".service_locator.AiNHu2k" alias=".service_locator.mR_209Y"/>
+    <service id=".service_locator.5XllAAP" alias=".service_locator.sTohNiY"/>
+    <service id=".service_locator.fYs2M1v" alias=".service_locator.2lrQJM3"/>
+    <service id=".service_locator.s7TrjrB" alias=".service_locator.logGoD_"/>
     <service id=".service_locator.Dby0_1s" alias=".service_locator.4u5os03"/>
-    <service id=".service_locator.Gjq9CV4" alias=".service_locator.Aoj_u2t"/>
+    <service id=".service_locator.sLVgqXi" alias=".service_locator.x3BCSZE"/>
     <service id=".service_locator.wKF4yn1" alias=".service_locator.19_mNxd"/>
-    <service id=".service_locator.Pe.rGDM" alias=".service_locator.vv9OMtK"/>
+    <service id=".service_locator.QHD3Tnf" alias=".service_locator.BxLh3_7"/>
     <service id=".service_locator.nk0lT0X" alias=".service_locator.1kmbKC8"/>
     <service id=".service_locator.O24_MAy" alias=".service_locator.yY.p4P7"/>
     <service id=".service_locator.opmh_Hv" alias=".service_locator.ipvtXDO"/>
@@ -9290,8 +9387,10 @@
     <service id=".service_locator.vS1lpro" alias=".service_locator.q6hA_O0"/>
     <service id=".service_locator.91bl9q4" alias=".service_locator.2vrAr7L"/>
     <service id=".service_locator.tDonIgo" alias=".service_locator.qkm.aLw"/>
-    <service id=".service_locator..uz1PSi" alias=".service_locator.5XllAAP"/>
     <service id=".service_locator..UFoFul" alias=".service_locator.mR_209Y"/>
+    <service id=".service_locator.PsoMZZO" alias=".service_locator.sTohNiY"/>
+    <service id=".service_locator.RWeCX4z" alias=".service_locator.2lrQJM3"/>
+    <service id=".service_locator.p5ShgRt" alias=".service_locator.logGoD_"/>
     <service id=".service_locator.LzwvCJx" alias=".service_locator.4u5os03"/>
     <service id=".service_locator.x2Wrf61" alias=".service_locator.mzjt3rI"/>
     <service id=".service_locator.kXCVHeG" alias=".service_locator.UDgw6Ol"/>

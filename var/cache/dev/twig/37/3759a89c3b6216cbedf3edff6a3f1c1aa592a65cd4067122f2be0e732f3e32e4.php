@@ -75,6 +75,6 @@ class __TwigTemplate_c0f441f56a909e37a8dbd5f34d84c63c96fa6bc22cedd726c53b4799bd4
 {# @var field \\EasyCorp\\Bundle\\EasyAdminBundle\\Dto\\FieldDto #}
 {# @var entity \\EasyCorp\\Bundle\\EasyAdminBundle\\Dto\\EntityDto #}
 <time datetime=\"{{ field.value|date('H:i:s') }}\">{{ field.formattedValue }}</time>
-", "@EasyAdmin/crud/field/time.html.twig", "C:\\Users\\Stagiaire01\\Alpha-Betise\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\field\\time.html.twig");
+", "@EasyAdmin/crud/field/time.html.twig", "C:\\wamp64\\www\\Symfony5\\Alpha-Betise\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\field\\time.html.twig");
     }
 }

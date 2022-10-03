@@ -94,6 +94,6 @@ class __TwigTemplate_2149ef53e6518b088a3fd6870cc0d2d32e2bfaf37cfbe14edcd6cecdd89
 <p>
     Cheers!
 </p>
-", "registration/confirmation_email.html.twig", "C:\\Users\\Stagiaire01\\Alpha-Betise\\templates\\registration\\confirmation_email.html.twig");
+", "registration/confirmation_email.html.twig", "C:\\wamp64\\www\\Symfony5\\Alpha-Betise\\templates\\registration\\confirmation_email.html.twig");
     }
 }

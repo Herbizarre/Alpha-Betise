@@ -61,6 +61,6 @@ class __TwigTemplate_2a43515eaa499284d674fadf28fa18e465aa2a414c01c1962575bda7304
     {
         return new Source("{# this template is rendered when an error or exception occurs while
    trying to get the value of the field (by default nothing is displayed) #}
-", "@EasyAdmin/label/undefined.html.twig", "C:\\Users\\Stagiaire01\\Alpha-Betise\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\label\\undefined.html.twig");
+", "@EasyAdmin/label/undefined.html.twig", "C:\\wamp64\\www\\Symfony5\\Alpha-Betise\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\label\\undefined.html.twig");
     }
 }

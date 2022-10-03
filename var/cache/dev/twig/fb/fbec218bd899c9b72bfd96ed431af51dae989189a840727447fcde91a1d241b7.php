@@ -90,40 +90,58 @@ class __TwigTemplate_e92cd471bc0c0593c3ef359b15a876d91b609491cc2fe5170955f7bac6a
     ";
         // line 8
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable($context["book"]);
-        $context['loop'] = [
-          'parent' => $context['_parent'],
-          'index0' => 0,
-          'index'  => 1,
-          'first'  => true,
-        ];
-        if (is_array($context['_seq']) || (is_object($context['_seq']) && $context['_seq'] instanceof \Countable)) {
-            $length = count($context['_seq']);
-            $context['loop']['revindex0'] = $length - 1;
-            $context['loop']['revindex'] = $length;
-            $context['loop']['length'] = $length;
-            $context['loop']['last'] = 1 === $length;
-        }
+        $context['_seq'] = twig_ensure_traversable(twig_reverse_filter($this->env, $context["book"]));
         foreach ($context['_seq'] as $context["_key"] => $context["book"]) {
             // line 9
-            echo "        ";
-            echo twig_include($this->env, $context, "partials/detailBook.html.twig", ["book" => $context["book"]]);
-            echo "
+            echo "<div class=\"card mb-3\" style=\"min-width: 540px;\">
+    <div class=\"row g-0\">
+        <div class=\"col-md-4\">
+            <img id=\"book\" src=\"/assets/uploads/book/";
+            // line 12
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "couvertureBook", [], "any", false, false, false, 12), "html", null, true);
+            echo "\" alt=\"";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "title", [], "any", false, false, false, 12), "html", null, true);
+            echo "\" class=\"img-fluid rounded-start\">
+        </div>
+        <div class=\"col-md-8\">
+            <div class=\"card-body\">
+                <h3 class=\"mb-0\">";
+            // line 16
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "title", [], "any", false, false, false, 16), "html", null, true);
+            echo "</h3>
+                <span class=\"mb-1 text-muted\">";
+            // line 17
+            echo twig_escape_filter($this->env, (twig_get_attribute($this->env, $this->source, $context["book"], "priceBook", [], "any", false, false, false, 17) / 100), "html", null, true);
+            echo " €</span>
+                <p class=\"card-text mb-auto\"><strong>";
+            // line 18
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "author", [], "any", false, false, false, 18), "html", null, true);
+            echo "</strong></p>
+                <p class=\"card-text mb-auto\">";
+            // line 19
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "editeur", [], "any", false, false, false, 19), "html", null, true);
+            echo "</p>
+                <p class=\"card-text mb-auto\">";
+            // line 20
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "rate", [], "any", false, false, false, 20), "html", null, true);
+            echo "</p>
+                <p class=\"card-text mb-auto\">";
+            // line 21
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "commentLibraire", [], "any", false, false, false, 21), "html", null, true);
+            echo "</p>
+            </div>
+        </div>
+    </div>
+</div>
+
     ";
-            ++$context['loop']['index0'];
-            ++$context['loop']['index'];
-            $context['loop']['first'] = false;
-            if (isset($context['loop']['length'])) {
-                --$context['loop']['revindex0'];
-                --$context['loop']['revindex'];
-                $context['loop']['last'] = 0 === $context['loop']['revindex0'];
-            }
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['book'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 11
+        // line 28
         echo "
+
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -145,7 +163,7 @@ class __TwigTemplate_e92cd471bc0c0593c3ef359b15a876d91b609491cc2fe5170955f7bac6a
 
     public function getDebugInfo()
     {
-        return array (  126 => 11,  109 => 9,  92 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  143 => 28,  130 => 21,  126 => 20,  122 => 19,  118 => 18,  114 => 17,  110 => 16,  101 => 12,  96 => 9,  92 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -157,9 +175,27 @@ class __TwigTemplate_e92cd471bc0c0593c3ef359b15a876d91b609491cc2fe5170955f7bac6a
 {% block body %}
     <h1>Conseils de Lecture</h1>
 
-    {% for book in book %}
-        {{ include('partials/detailBook.html.twig',{'book': book}) }}
+    {% for book in book|reverse %}
+<div class=\"card mb-3\" style=\"min-width: 540px;\">
+    <div class=\"row g-0\">
+        <div class=\"col-md-4\">
+            <img id=\"book\" src=\"/assets/uploads/book/{{book.couvertureBook}}\" alt=\"{{book.title}}\" class=\"img-fluid rounded-start\">
+        </div>
+        <div class=\"col-md-8\">
+            <div class=\"card-body\">
+                <h3 class=\"mb-0\">{{book.title}}</h3>
+                <span class=\"mb-1 text-muted\">{{book.priceBook /100 }} €</span>
+                <p class=\"card-text mb-auto\"><strong>{{book.author}}</strong></p>
+                <p class=\"card-text mb-auto\">{{book.editeur}}</p>
+                <p class=\"card-text mb-auto\">{{book.rate}}</p>
+                <p class=\"card-text mb-auto\">{{book.commentLibraire}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
     {% endfor %}
+
 
 {% endblock %}
 ", "conseils/index.html.twig", "C:\\wamp64\\www\\Symfony5\\Alpha-Betise\\templates\\conseils\\index.html.twig");

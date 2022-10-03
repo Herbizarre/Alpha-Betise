@@ -112,6 +112,16 @@ class Book
      */
     private $langueOriginale;
 
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $isBest;
+
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $isNew;
+
     public function getId(): ?int
     {
         return $this->id;

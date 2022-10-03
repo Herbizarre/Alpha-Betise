@@ -17,6 +17,7 @@ return [
         '/' => [[['_route' => 'app_home', '_controller' => 'App\\Controller\\HomeController::index'], null, null, null, false, false, null]],
         '/library' => [[['_route' => 'app_library', '_controller' => 'App\\Controller\\LibraryController::index'], null, null, null, false, false, null]],
         '/meeting' => [[['_route' => 'app_meeting', '_controller' => 'App\\Controller\\MeetingController::index'], null, null, null, false, false, null]],
+        '/newsletters' => [[['_route' => 'newslettershomeNewsletters', '_controller' => 'App\\Controller\\NewslettersController::index'], null, null, null, true, false, null]],
         '/reading/tips' => [[['_route' => 'app_reading_tips', '_controller' => 'App\\Controller\\ReadingTipsController::index'], null, null, null, false, false, null]],
         '/register' => [[['_route' => 'app_register', '_controller' => 'App\\Controller\\RegistrationController::register'], null, null, null, false, false, null]],
         '/verify/email' => [[['_route' => 'app_verify_email', '_controller' => 'App\\Controller\\RegistrationController::verifyUserEmail'], null, null, null, false, false, null]],
@@ -35,19 +36,21 @@ return [
                     .'|/edit(*:36)'
                     .'|(*:43)'
                 .')'
+                .'|/([^/]++)/details(*:68)'
+                .'|/newsletters/confirm/([^/]++)/([^/]++)(*:113)'
                 .'|/_(?'
-                    .'|error/(\\d+)(?:\\.([^/]++))?(*:82)'
-                    .'|wdt/([^/]++)(*:101)'
+                    .'|error/(\\d+)(?:\\.([^/]++))?(*:152)'
+                    .'|wdt/([^/]++)(*:172)'
                     .'|profiler/([^/]++)(?'
                         .'|/(?'
-                            .'|search/results(*:147)'
-                            .'|router(*:161)'
+                            .'|search/results(*:218)'
+                            .'|router(*:232)'
                             .'|exception(?'
-                                .'|(*:181)'
-                                .'|\\.css(*:194)'
+                                .'|(*:252)'
+                                .'|\\.css(*:265)'
                             .')'
                         .')'
-                        .'|(*:204)'
+                        .'|(*:275)'
                     .')'
                 .')'
             .')/?$}sDu',
@@ -56,13 +59,15 @@ return [
         24 => [[['_route' => 'app_book_show', '_controller' => 'App\\Controller\\BookController::show'], ['id'], ['GET' => 0], null, false, true, null]],
         36 => [[['_route' => 'app_book_edit', '_controller' => 'App\\Controller\\BookController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
         43 => [[['_route' => 'app_book_delete', '_controller' => 'App\\Controller\\BookController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
-        82 => [[['_route' => '_preview_error', '_controller' => 'error_controller::preview', '_format' => 'html'], ['code', '_format'], null, null, false, true, null]],
-        101 => [[['_route' => '_wdt', '_controller' => 'web_profiler.controller.profiler::toolbarAction'], ['token'], null, null, false, true, null]],
-        147 => [[['_route' => '_profiler_search_results', '_controller' => 'web_profiler.controller.profiler::searchResultsAction'], ['token'], null, null, false, false, null]],
-        161 => [[['_route' => '_profiler_router', '_controller' => 'web_profiler.controller.router::panelAction'], ['token'], null, null, false, false, null]],
-        181 => [[['_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception_panel::body'], ['token'], null, null, false, false, null]],
-        194 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
-        204 => [
+        68 => [[['_route' => 'app_details_book', '_controller' => 'App\\Controller\\DetailsBookController::showBook'], ['id'], ['GET' => 0], null, false, false, null]],
+        113 => [[['_route' => 'newsletterscomfirm', '_controller' => 'App\\Controller\\NewslettersController::confirm'], ['id', 'token'], null, null, false, true, null]],
+        152 => [[['_route' => '_preview_error', '_controller' => 'error_controller::preview', '_format' => 'html'], ['code', '_format'], null, null, false, true, null]],
+        172 => [[['_route' => '_wdt', '_controller' => 'web_profiler.controller.profiler::toolbarAction'], ['token'], null, null, false, true, null]],
+        218 => [[['_route' => '_profiler_search_results', '_controller' => 'web_profiler.controller.profiler::searchResultsAction'], ['token'], null, null, false, false, null]],
+        232 => [[['_route' => '_profiler_router', '_controller' => 'web_profiler.controller.router::panelAction'], ['token'], null, null, false, false, null]],
+        252 => [[['_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception_panel::body'], ['token'], null, null, false, false, null]],
+        265 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
+        275 => [
             [['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],

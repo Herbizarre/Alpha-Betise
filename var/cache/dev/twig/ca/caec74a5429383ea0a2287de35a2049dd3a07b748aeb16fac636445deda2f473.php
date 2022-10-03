@@ -89,11 +89,6 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
         echo "\t";
         // line 8
         echo "\t<div id=\"myCarousel\" class=\"carousel slide\" data-bs-ride=\"carousel\">
-\t\t<div class=\"carousel-indicators\">
-\t\t\t<button type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide-to=\"0\" class=\"active\" aria-current=\"true\" aria-label=\"Slide 1\"></button>
-\t\t\t<button type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide-to=\"1\" aria-label=\"Slide 2\"></button>
-\t\t\t<button type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide-to=\"2\" aria-label=\"Slide 3\"></button>
-\t\t</div>
 \t\t<div class=\"carousel-inner\">
 \t\t\t<div class=\"carousel-item active\">
 \t\t\t\t<img src=\"/assets/images/slider3.png\" alt=\"image d'enfant en pleine lecture\">
@@ -142,53 +137,102 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 \t\t</button>
 \t</div>
 
+\t";
+        // line 58
+        echo "
+\t<div class=\"card mb-3 border-primary\">
+\t\t<div class=\"row g-0\">
+\t\t\t<div class=\"col-md-4 m-auto\">
+\t\t\t\t<h2>Prochains évenements
+\t\t\t\t</h2>
+\t\t\t\t&nbsp; &nbsp;
+\t\t\t\t<h3>...........................................</h3>
+\t\t\t</div>
+\t\t</div>
+\t</div>
+
 
 \t";
-        // line 64
-        echo "\t<div class=\"book-item\">
-\t\t";
-        // line 65
+        // line 72
+        echo "\t<div class=\"container-fluid\">
+\t\t<div class=\"row\">
+
+\t\t\t";
+        // line 75
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["books"]) || array_key_exists("books", $context) ? $context["books"] : (function () { throw new RuntimeError('Variable "books" does not exist.', 65, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable(twig_reverse_filter($this->env, twig_slice($this->env, (isset($context["books"]) || array_key_exists("books", $context) ? $context["books"] : (function () { throw new RuntimeError('Variable "books" does not exist.', 75, $this->source); })()), 0, 3)));
         foreach ($context['_seq'] as $context["_key"] => $context["book"]) {
-            // line 66
-            echo "\t\t\t<div class=\"cardBookHome\">
-\t\t\t\t<div class=\"card\">
-\t\t\t\t\t<img class=\"card-img-top\" src=\"/assets/uploads/book/";
-            // line 68
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "couvertureBook", [], "any", false, false, false, 68), "html", null, true);
-            echo "\" alt='Image du livre\"...\"'>
-\t\t\t\t\t<div class=\"card-body\">
-\t\t\t\t\t\t<h3 class=\"card-title\">";
-            // line 70
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "title", [], "any", false, false, false, 70), "html", null, true);
+            // line 76
+            echo "
+\t\t\t\t<div class=\" card card-fluid mb-4 \" style=\"max-width:900px; margin:auto; min-height:450px;\">
+\t\t\t\t\t<div class=\"row\">
+\t\t\t\t\t\t<div class=\"col-sm-5 \">
+\t\t\t\t\t\t\t<img src=\"/assets/uploads/book/";
+            // line 80
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "couvertureBook", [], "any", false, false, false, 80), "html", null, true);
+            echo "\" class=\"img-fluid rounded\" alt=\"Image du livre ";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "title", [], "any", false, false, false, 80), "html", null, true);
+            echo "\" style=\"max-height:400px;\">
+\t\t\t\t\t\t\t<center>
+\t\t\t\t\t\t\t\t<p class=\"card-text\" style=\"font-size:1.9em;\">
+\t\t\t\t\t\t\t\t\t<strong>";
+            // line 83
+            echo twig_escape_filter($this->env, (twig_get_attribute($this->env, $this->source, $context["book"], "priceBook", [], "any", false, false, false, 83) / 100), "html", null, true);
+            echo "&nbsp; €</strong>
+\t\t\t\t\t\t\t\t</p>
+\t\t\t\t\t\t\t</center>
+\t\t\t\t\t\t\t<br>
+\t\t\t\t\t\t</div>
+
+
+\t\t\t\t\t\t<div class=\"col-sm-7\">
+\t\t\t\t\t\t\t<div class=\"card-body\">
+\t\t\t\t\t\t\t\t<h3 class=\"card-title\" style=\"font-size:2em;\">";
+            // line 92
+            echo twig_escape_filter($this->env, twig_upper_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "title", [], "any", false, false, false, 92)), "html", null, true);
             echo "&nbsp;";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "rate", [], "any", false, false, false, 70), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "rate", [], "any", false, false, false, 92), "html", null, true);
             echo "</h3>
-\t\t\t\t\t\t<p class=\"card-text\"><strong>";
-            // line 71
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "author", [], "any", false, false, false, 71), "html", null, true);
-            echo "</strong></p>
-\t\t\t\t\t\t<p class=\"card-text\">";
-            // line 72
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "commentLibraire", [], "any", false, false, false, 72), "html", null, true);
+\t\t\t\t\t\t\t\t<p class=\"card-text\">
+\t\t\t\t\t\t\t\t\t<strong>";
+            // line 94
+            echo twig_escape_filter($this->env, twig_upper_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "author", [], "any", false, false, false, 94)), "html", null, true);
+            echo "</strong>
+\t\t\t\t\t\t\t\t</p>
+\t\t\t\t\t\t\t\t<p class=\"card-text\">";
+            // line 96
+            echo twig_escape_filter($this->env, (twig_slice($this->env, twig_striptags(twig_get_attribute($this->env, $this->source, $context["book"], "commentLibraire", [], "any", false, false, false, 96)), 0, 150) . "..."), "html", null, true);
             echo "</p>
-\t\t\t\t\t\t<p class=\"card-text\">";
-            // line 73
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "priceBook", [], "any", false, false, false, 73), "html", null, true);
-            echo "€</p>
-\t\t\t\t\t\t<a class=\"btn btn-primary\" href=\"#\" role=\"button\">details</a>
+\t\t\t\t\t\t\t\t<p class=\"card-text\">
+\t\t\t\t\t\t\t\t\t<a href=\"";
+            // line 98
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_details_book", ["id" => twig_get_attribute($this->env, $this->source, $context["book"], "id", [], "any", false, false, false, 98)]), "html", null, true);
+            echo "\">
+\t\t\t\t\t\t\t\t\t\t<small class=\"text-muted\">Plus de Détails>></small>
+\t\t\t\t\t\t\t\t\t</a>
+\t\t\t\t\t\t\t\t</p>
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t</div>
+
+
 \t\t\t\t\t</div>
 \t\t\t\t</div>
-\t\t\t</div>
-\t\t";
+\t\t\t";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['book'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 79
-        echo "\t</div>
-</div>";
+        // line 109
+        echo "\t\t</div>
+\t</div>
+\t<center>
+\t\t<a href=\"/conseils\">
+\t\t\t<button class=\"btn btn-outline-secondary my-2 my-sm-0\">Afficher plus >></button>
+\t\t</a>
+\t</center><br>
+";
+        // line 117
+        echo "\t";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -209,7 +253,7 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 
     public function getDebugInfo()
     {
-        return array (  190 => 79,  178 => 73,  174 => 72,  170 => 71,  164 => 70,  159 => 68,  155 => 66,  151 => 65,  148 => 64,  91 => 8,  89 => 7,  79 => 6,  59 => 3,  36 => 1,);
+        return array (  235 => 117,  226 => 109,  209 => 98,  204 => 96,  199 => 94,  192 => 92,  180 => 83,  172 => 80,  166 => 76,  162 => 75,  157 => 72,  142 => 58,  91 => 8,  89 => 7,  79 => 6,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -222,11 +266,6 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 {% block body %}
 \t{# -----------------Caroussel---------------------- #}
 \t<div id=\"myCarousel\" class=\"carousel slide\" data-bs-ride=\"carousel\">
-\t\t<div class=\"carousel-indicators\">
-\t\t\t<button type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide-to=\"0\" class=\"active\" aria-current=\"true\" aria-label=\"Slide 1\"></button>
-\t\t\t<button type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide-to=\"1\" aria-label=\"Slide 2\"></button>
-\t\t\t<button type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide-to=\"2\" aria-label=\"Slide 3\"></button>
-\t\t</div>
 \t\t<div class=\"carousel-inner\">
 \t\t\t<div class=\"carousel-item active\">
 \t\t\t\t<img src=\"/assets/images/slider3.png\" alt=\"image d'enfant en pleine lecture\">
@@ -275,25 +314,80 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 \t\t</button>
 \t</div>
 
+\t{# -----------------------Prochain évenement----------------------- #}
+
+\t<div class=\"card mb-3 border-primary\">
+\t\t<div class=\"row g-0\">
+\t\t\t<div class=\"col-md-4 m-auto\">
+\t\t\t\t<h2>Prochains évenements
+\t\t\t\t</h2>
+\t\t\t\t&nbsp; &nbsp;
+\t\t\t\t<h3>...........................................</h3>
+\t\t\t</div>
+\t\t</div>
+\t</div>
+
 
 \t{# ------------------- Apercu de livre ---------------- #}
-\t<div class=\"book-item\">
-\t\t{% for book in books %}
-\t\t\t<div class=\"cardBookHome\">
-\t\t\t\t<div class=\"card\">
-\t\t\t\t\t<img class=\"card-img-top\" src=\"/assets/uploads/book/{{book.couvertureBook}}\" alt='Image du livre\"...\"'>
-\t\t\t\t\t<div class=\"card-body\">
-\t\t\t\t\t\t<h3 class=\"card-title\">{{ book.title }}&nbsp;{{ book.rate }}</h3>
-\t\t\t\t\t\t<p class=\"card-text\"><strong>{{book.author}}</strong></p>
-\t\t\t\t\t\t<p class=\"card-text\">{{ book.commentLibraire }}</p>
-\t\t\t\t\t\t<p class=\"card-text\">{{ book.priceBook }}€</p>
-\t\t\t\t\t\t<a class=\"btn btn-primary\" href=\"#\" role=\"button\">details</a>
+\t<div class=\"container-fluid\">
+\t\t<div class=\"row\">
+
+\t\t\t{% for book in books|slice(0,3)|reverse %}
+
+\t\t\t\t<div class=\" card card-fluid mb-4 \" style=\"max-width:900px; margin:auto; min-height:450px;\">
+\t\t\t\t\t<div class=\"row\">
+\t\t\t\t\t\t<div class=\"col-sm-5 \">
+\t\t\t\t\t\t\t<img src=\"/assets/uploads/book/{{book.couvertureBook}}\" class=\"img-fluid rounded\" alt=\"Image du livre {{ book.title }}\" style=\"max-height:400px;\">
+\t\t\t\t\t\t\t<center>
+\t\t\t\t\t\t\t\t<p class=\"card-text\" style=\"font-size:1.9em;\">
+\t\t\t\t\t\t\t\t\t<strong>{{ book.priceBook /100 }}&nbsp; €</strong>
+\t\t\t\t\t\t\t\t</p>
+\t\t\t\t\t\t\t</center>
+\t\t\t\t\t\t\t<br>
+\t\t\t\t\t\t</div>
+
+
+\t\t\t\t\t\t<div class=\"col-sm-7\">
+\t\t\t\t\t\t\t<div class=\"card-body\">
+\t\t\t\t\t\t\t\t<h3 class=\"card-title\" style=\"font-size:2em;\">{{ book.title | upper}}&nbsp;{{ book.rate }}</h3>
+\t\t\t\t\t\t\t\t<p class=\"card-text\">
+\t\t\t\t\t\t\t\t\t<strong>{{book.author | upper}}</strong>
+\t\t\t\t\t\t\t\t</p>
+\t\t\t\t\t\t\t\t<p class=\"card-text\">{{ book.commentLibraire|striptags|slice(0, 150)~ '...' }}</p>
+\t\t\t\t\t\t\t\t<p class=\"card-text\">
+\t\t\t\t\t\t\t\t\t<a href=\"{{ path('app_details_book', {'id': book.id}) }}\">
+\t\t\t\t\t\t\t\t\t\t<small class=\"text-muted\">Plus de Détails>></small>
+\t\t\t\t\t\t\t\t\t</a>
+\t\t\t\t\t\t\t\t</p>
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t</div>
+
+
 \t\t\t\t\t</div>
 \t\t\t\t</div>
-\t\t\t</div>
-\t\t{% endfor %}
+\t\t\t{% endfor %}
+\t\t</div>
 \t</div>
-</div>{% endblock %}
+\t<center>
+\t\t<a href=\"/conseils\">
+\t\t\t<button class=\"btn btn-outline-secondary my-2 my-sm-0\">Afficher plus >></button>
+\t\t</a>
+\t</center><br>
+{# --------------newsletter------------ #}
+\t{# <div class=\"card mb-3 border-primary\">
+\t\t<div class=\"row g-0\">
+\t\t\t<div class=\"col-md-4 m-auto\">
+
+\t\t\t\t{% for message in app.flashes('message') %}
+\t\t\t\t\t<div>
+\t\t\t\t\t\t{{ message }}
+\t\t\t\t\t</div>
+\t\t\t\t{% endfor %}
+
+\t\t\t</div>
+\t\t</div>
+\t</div> #}
+{% endblock %}
 ", "home/index.html.twig", "C:\\wamp64\\www\\Symfony5\\Alpha-Betise\\templates\\home\\index.html.twig");
     }
 }

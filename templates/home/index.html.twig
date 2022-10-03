@@ -6,11 +6,6 @@
 {% block body %}
 	{# -----------------Caroussel---------------------- #}
 	<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-		<div class="carousel-indicators">
-			<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-			<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-			<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
 				<img src="/assets/images/slider3.png" alt="image d'enfant en pleine lecture">
@@ -59,22 +54,77 @@
 		</button>
 	</div>
 
+	{# -----------------------Prochain évenement----------------------- #}
+
+	<div class="card mb-3 border-primary">
+		<div class="row g-0">
+			<div class="col-md-4 m-auto">
+				<h2>Prochains évenements
+				</h2>
+				&nbsp; &nbsp;
+				<h3>...........................................</h3>
+			</div>
+		</div>
+	</div>
+
 
 	{# ------------------- Apercu de livre ---------------- #}
-	<div class="book-item">
-		{% for book in books %}
-			<div class="cardBookHome">
-				<div class="card">
-					<img class="card-img-top" src="/assets/uploads/book/{{book.couvertureBook}}" alt='Image du livre"..."'>
-					<div class="card-body">
-						<h3 class="card-title">{{ book.title }}&nbsp;{{ book.rate }}</h3>
-						<p class="card-text"><strong>{{book.author}}</strong></p>
-						<p class="card-text">{{ book.commentLibraire }}</p>
-						<p class="card-text">{{ book.priceBook }}€</p>
-						<a class="btn btn-primary" href="#" role="button">details</a>
+	<div class="container-fluid">
+		<div class="row">
+
+			{% for book in books|slice(0,3)|reverse %}
+
+				<div class=" card card-fluid mb-4 " style="max-width:900px; margin:auto; min-height:450px;">
+					<div class="row">
+						<div class="col-sm-5 ">
+							<img src="/assets/uploads/book/{{book.couvertureBook}}" class="img-fluid rounded" alt="Image du livre {{ book.title }}" style="max-height:400px;">
+							<center>
+								<p class="card-text" style="font-size:1.9em;">
+									<strong>{{ book.priceBook /100 }}&nbsp; €</strong>
+								</p>
+							</center>
+							<br>
+						</div>
+
+
+						<div class="col-sm-7">
+							<div class="card-body">
+								<h3 class="card-title" style="font-size:2em;">{{ book.title | upper}}&nbsp;{{ book.rate }}</h3>
+								<p class="card-text">
+									<strong>{{book.author | upper}}</strong>
+								</p>
+								<p class="card-text">{{ book.commentLibraire|striptags|slice(0, 150)~ '...' }}</p>
+								<p class="card-text">
+									<a href="{{ path('app_details_book', {'id': book.id}) }}">
+										<small class="text-muted">Plus de Détails>></small>
+									</a>
+								</p>
+							</div>
+						</div>
+
+
 					</div>
 				</div>
-			</div>
-		{% endfor %}
+			{% endfor %}
+		</div>
 	</div>
-</div>{% endblock %}
+	<center>
+		<a href="/conseils">
+			<button class="btn btn-outline-secondary my-2 my-sm-0">Afficher plus >></button>
+		</a>
+	</center><br>
+{# --------------newsletter------------ #}
+	{# <div class="card mb-3 border-primary">
+		<div class="row g-0">
+			<div class="col-md-4 m-auto">
+
+				{% for message in app.flashes('message') %}
+					<div>
+						{{ message }}
+					</div>
+				{% endfor %}
+
+			</div>
+		</div>
+	</div> #}
+{% endblock %}
