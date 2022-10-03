@@ -1,0 +1,111 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Détails du Livre
+{% endblock %}
+
+{% block body %}
+<br><br>
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-sm">
+				<div class="container-fluid">
+					<div class="card mb-3" style="max-width: 100vw;">
+						<div class="row g-0">
+							<div class="col-md-4 ">
+								<img src="/assets/uploads/book/{{book.couvertureBook}}" style="margin:auto;" class="img-fluid rounded" alt="Image du livre {{ book.title }}">
+								<center>
+									<p class="card-text" style="font-size:1.9em;">
+										<strong>{{ book.priceBook /100 }}&nbsp; €</strong>
+									</p>
+									<button class="btn btn-outline-secondary my-2 my-sm-0">Ajouter au panier</button>
+								</center>
+								<br>
+							</div>
+
+							<div class="col-md-8">
+								<table class="table">
+									<tbody>
+										<tr>
+											<th>Titre</th>
+											<td>{{ book.title  | upper }}</td>
+										</tr>
+										<tr>
+											<th>Notes</th>
+											<td>{{ book.rate }}</td>
+										</tr>
+										<tr>
+											<th>Auteur</th>
+											<td>{{ book.author | upper }}</td>
+										</tr>
+										<tr>
+											<th>Maison d'édition</th>
+											<td>{{ book.homeEdition }}</td>
+										</tr>
+										<tr>
+											<th>Disponibilité</th>
+											<td>{{ book.disponibility }}</td>
+										</tr>
+										<tr>
+											<th>Prix du livre</th>
+											<td>{{ book.priceBook /100 }}&nbsp;€</td>
+										</tr>
+										<tr>
+											<th>Synopsis</th>
+											<td>{{ book.commentLibraire }}</td>
+										</tr>
+										<tr>
+											<th>Commentaire des Clients</th>
+											<td>{{ book.commentUser }}</td>
+										</tr>
+										<tr>
+											<th>Code EAN</th>
+											<td>{{ book.codeEAN }}</td>
+										</tr>
+										<tr>
+											<th>Code ISBN</th>
+											<td>{{ book.codeISBN }}</td>
+										</tr>
+										<tr>
+											<th>Edition</th>
+											<td>{{ book.editeur }}</td>
+										</tr>
+										<tr>
+											<th>Date de Publication</th>
+											<td>{{ book.publicationDate ? book.publicationDate|date('Y-m-d') : '' }}</td>
+										</tr>
+										<tr>
+											<th>Collection</th>
+											<td>{{ book.collection }}</td>
+										</tr>
+										<tr>
+											<th>Nombre de pages</th>
+											<td>{{ book.pageNumber }}</td>
+										</tr>
+										<tr>
+											<th>Dimension</th>
+											<td>{{ book.dimension }}</td>
+										</tr>
+										<tr>
+											<th>Poids</th>
+											<td>{{ book.poids }}</td>
+										</tr>
+										<tr>
+											<th>Langue</th>
+											<td>{{ book.langue }}</td>
+										</tr>
+										<tr>
+											<th>Langue Originale de L'oeuvre</th>
+											<td>{{ book.langueOriginale }}</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+{% endblock %}

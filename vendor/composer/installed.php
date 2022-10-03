@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => '__root__',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '008645db50568b34c9bc71559954161cb06a96f7',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         '__root__' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '008645db50568b34c9bc71559954161cb06a96f7',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -593,6 +593,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'sensiolabs/security-checker' => array(
+            'pretty_version' => 'v6.0.3',
+            'version' => '6.0.3.0',
+            'reference' => 'a576c01520d9761901f269c4934ba55448be4a54',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../sensiolabs/security-checker',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'symfony/amqp-messenger' => array(
             'pretty_version' => 'v5.4.11',
             'version' => '5.4.11.0',
@@ -909,9 +918,9 @@
             'dev_requirement' => false,
         ),
         'symfony/mime' => array(
-            'pretty_version' => 'v5.4.12',
-            'version' => '5.4.12.0',
-            'reference' => '03876e9c5a36f5b45e7d9a381edda5421eff8a90',
+            'pretty_version' => 'v5.4.13',
+            'version' => '5.4.13.0',
+            'reference' => 'bb2ccf759e2b967dcd11bdee5bdf30dddd2290bd',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/mime',
             'aliases' => array(),

@@ -5,8 +5,26 @@
 {% block body %}
     <h1>Conseils de Lecture</h1>
 
-    {% for book in book %}
-        {{ include('partials/detailBook.html.twig',{'book': book}) }}
+    {% for book in book|reverse %}
+<div class="card mb-3" style="min-width: 540px;">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img id="book" src="/assets/uploads/book/{{book.couvertureBook}}" alt="{{book.title}}" class="img-fluid rounded-start">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h3 class="mb-0">{{book.title}}</h3>
+                <span class="mb-1 text-muted">{{book.priceBook /100 }} €</span>
+                <p class="card-text mb-auto"><strong>{{book.author}}</strong></p>
+                <p class="card-text mb-auto">{{book.editeur}}</p>
+                <p class="card-text mb-auto">{{book.rate}}</p>
+                <p class="card-text mb-auto">{{book.commentLibraire}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
     {% endfor %}
+
 
 {% endblock %}
