@@ -1249,3 +1249,17 @@ a5bda9,127.0.0.1,GET,http://127.0.0.1:8000/contacts,1664569757,,200
 116949,127.0.0.1,GET,http://127.0.0.1:8000/contacts,1664809300,,200
 c3572d,127.0.0.1,GET,http://127.0.0.1:8000/contacts,1664809305,,200
 4a71b7,127.0.0.1,GET,http://127.0.0.1:8000/contacts,1664809308,,200
+0896a3,127.0.0.1,GET,http://127.0.0.1:8000/,1664812538,,200
+956aed,127.0.0.1,GET,http://127.0.0.1:8000/assets/images/boutiqueSlide1.jpg,1664812539,62c23a,404
+62c23a,127.0.0.1,GET,http://127.0.0.1:8000/assets/images/boutiqueSlide1.jpg,1664812539,,404
+ab8d6e,127.0.0.1,GET,http://127.0.0.1:8000/assets/images/boutiqueSlide2.jpg,1664812539,9d27f5,404
+9d27f5,127.0.0.1,GET,http://127.0.0.1:8000/assets/images/boutiqueSlide2.jpg,1664812539,,404
+ad5dbd,127.0.0.1,GET,http://127.0.0.1:8000/assets/images/boutiqueSlide3.jpg,1664812540,0496db,404
+0496db,127.0.0.1,GET,http://127.0.0.1:8000/assets/images/boutiqueSlide3.jpg,1664812540,,404
+79cbb3,127.0.0.1,GET,http://127.0.0.1:8000/holder.js/100x180/,1664812540,8ce244,404
+8ce244,127.0.0.1,GET,http://127.0.0.1:8000/holder.js/100x180/,1664812541,,404
+48ac9e,127.0.0.1,GET,http://127.0.0.1:8000/contacts,1664812553,,200
+ed88d8,127.0.0.1,GET,http://127.0.0.1:8000/library,1664812555,,200
+e041e8,127.0.0.1,GET,http://127.0.0.1:8000/conseils,1664812556,,200
+263b8a,127.0.0.1,GET,http://127.0.0.1:8000/meeting,1664812557,,200
+493a8c,127.0.0.1,GET,http://127.0.0.1:8000/contacts,1664812565,,200
