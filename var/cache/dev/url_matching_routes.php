@@ -13,6 +13,7 @@ return [
         '/book/new' => [[['_route' => 'app_book_new', '_controller' => 'App\\Controller\\BookController::new'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],
         '/calendar' => [[['_route' => 'app_calendar_index', '_controller' => 'App\\Controller\\CalendarController::index'], null, ['GET' => 0], null, true, false, null]],
         '/calendar/new' => [[['_route' => 'app_calendar_new', '_controller' => 'App\\Controller\\CalendarController::new'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        '/cart' => [[['_route' => 'panier', '_controller' => 'App\\Controller\\CartController::index'], null, null, null, false, false, null]],
         '/conseils' => [[['_route' => 'app_conseils', '_controller' => 'App\\Controller\\ConseilsController::index'], null, null, null, false, false, null]],
         '/contacts' => [[['_route' => 'app_contacts', '_controller' => 'App\\Controller\\ContactsController::index'], null, null, null, false, false, null]],
         '/data' => [[['_route' => 'app_data_roles', '_controller' => 'App\\Controller\\DataRolesController::index'], null, null, null, false, false, null]],
@@ -38,26 +39,35 @@ return [
                     .'|/edit(*:36)'
                     .'|(*:43)'
                 .')'
-                .'|/calendar/([^/]++)(?'
-                    .'|(*:72)'
-                    .'|/edit(*:84)'
-                    .'|(*:91)'
+                .'|/ca(?'
+                    .'|lendar/([^/]++)(?'
+                        .'|(*:75)'
+                        .'|/edit(*:87)'
+                        .'|(*:94)'
+                    .')'
+                    .'|rt/(?'
+                        .'|add/([^/]++)(*:120)'
+                        .'|delete(?'
+                            .'|/([^/]++)(*:146)'
+                            .'|All/([^/]++)(*:166)'
+                        .')'
+                    .')'
                 .')'
-                .'|/([^/]++)/details(*:116)'
-                .'|/newsletters/confirm/([^/]++)/([^/]++)(*:162)'
+                .'|/([^/]++)/details(*:194)'
+                .'|/newsletters/confirm/([^/]++)/([^/]++)(*:240)'
                 .'|/_(?'
-                    .'|error/(\\d+)(?:\\.([^/]++))?(*:201)'
-                    .'|wdt/([^/]++)(*:221)'
+                    .'|error/(\\d+)(?:\\.([^/]++))?(*:279)'
+                    .'|wdt/([^/]++)(*:299)'
                     .'|profiler/([^/]++)(?'
                         .'|/(?'
-                            .'|search/results(*:267)'
-                            .'|router(*:281)'
+                            .'|search/results(*:345)'
+                            .'|router(*:359)'
                             .'|exception(?'
-                                .'|(*:301)'
-                                .'|\\.css(*:314)'
+                                .'|(*:379)'
+                                .'|\\.css(*:392)'
                             .')'
                         .')'
-                        .'|(*:324)'
+                        .'|(*:402)'
                     .')'
                 .')'
             .')/?$}sDu',
@@ -66,18 +76,21 @@ return [
         24 => [[['_route' => 'app_book_show', '_controller' => 'App\\Controller\\BookController::show'], ['id'], ['GET' => 0], null, false, true, null]],
         36 => [[['_route' => 'app_book_edit', '_controller' => 'App\\Controller\\BookController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
         43 => [[['_route' => 'app_book_delete', '_controller' => 'App\\Controller\\BookController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
-        72 => [[['_route' => 'app_calendar_show', '_controller' => 'App\\Controller\\CalendarController::show'], ['id'], ['GET' => 0], null, false, true, null]],
-        84 => [[['_route' => 'app_calendar_edit', '_controller' => 'App\\Controller\\CalendarController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
-        91 => [[['_route' => 'app_calendar_delete', '_controller' => 'App\\Controller\\CalendarController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
-        116 => [[['_route' => 'app_details_book', '_controller' => 'App\\Controller\\DetailsBookController::showBook'], ['id'], ['GET' => 0], null, false, false, null]],
-        162 => [[['_route' => 'newsletterscomfirm', '_controller' => 'App\\Controller\\NewslettersController::confirm'], ['id', 'token'], null, null, false, true, null]],
-        201 => [[['_route' => '_preview_error', '_controller' => 'error_controller::preview', '_format' => 'html'], ['code', '_format'], null, null, false, true, null]],
-        221 => [[['_route' => '_wdt', '_controller' => 'web_profiler.controller.profiler::toolbarAction'], ['token'], null, null, false, true, null]],
-        267 => [[['_route' => '_profiler_search_results', '_controller' => 'web_profiler.controller.profiler::searchResultsAction'], ['token'], null, null, false, false, null]],
-        281 => [[['_route' => '_profiler_router', '_controller' => 'web_profiler.controller.router::panelAction'], ['token'], null, null, false, false, null]],
-        301 => [[['_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception_panel::body'], ['token'], null, null, false, false, null]],
-        314 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
-        324 => [
+        75 => [[['_route' => 'app_calendar_show', '_controller' => 'App\\Controller\\CalendarController::show'], ['id'], ['GET' => 0], null, false, true, null]],
+        87 => [[['_route' => 'app_calendar_edit', '_controller' => 'App\\Controller\\CalendarController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        94 => [[['_route' => 'app_calendar_delete', '_controller' => 'App\\Controller\\CalendarController::delete'], ['id'], ['POST' => 0], null, false, true, null]],
+        120 => [[['_route' => 'cartAdd', '_controller' => 'App\\Controller\\CartController::addToCart'], ['id'], null, null, false, true, null]],
+        146 => [[['_route' => 'cartDelete', '_controller' => 'App\\Controller\\CartController::deleteFromCart'], ['id'], null, null, false, true, null]],
+        166 => [[['_route' => 'cartDeleteAll', '_controller' => 'App\\Controller\\CartController::deleteAllCart'], ['id'], null, null, false, true, null]],
+        194 => [[['_route' => 'app_details_book', '_controller' => 'App\\Controller\\DetailsBookController::showBook'], ['id'], ['GET' => 0], null, false, false, null]],
+        240 => [[['_route' => 'newsletterscomfirm', '_controller' => 'App\\Controller\\NewslettersController::confirm'], ['id', 'token'], null, null, false, true, null]],
+        279 => [[['_route' => '_preview_error', '_controller' => 'error_controller::preview', '_format' => 'html'], ['code', '_format'], null, null, false, true, null]],
+        299 => [[['_route' => '_wdt', '_controller' => 'web_profiler.controller.profiler::toolbarAction'], ['token'], null, null, false, true, null]],
+        345 => [[['_route' => '_profiler_search_results', '_controller' => 'web_profiler.controller.profiler::searchResultsAction'], ['token'], null, null, false, false, null]],
+        359 => [[['_route' => '_profiler_router', '_controller' => 'web_profiler.controller.router::panelAction'], ['token'], null, null, false, false, null]],
+        379 => [[['_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception_panel::body'], ['token'], null, null, false, false, null]],
+        392 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
+        402 => [
             [['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],

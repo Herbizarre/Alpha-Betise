@@ -1,7 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Détails du Livre
-{% endblock %}
+{% block title %}Détails du Livre{% endblock %}
 
 {% block body %}
 <br><br>
@@ -18,11 +17,11 @@
 									<p class="card-text" style="font-size:1.9em;">
 										<strong>{{ book.priceBook /100 }}&nbsp; €</strong>
 									</p>
-									<button class="btn btn-outline-secondary my-2 my-sm-0">Ajouter au panier</button>
+									{# <button class="btn btn-outline-secondary my-2 my-sm-0">Ajouter au panier</button> #}
+									<a href="{{path('cartAdd',{'id':book.id})}}"><i class="fa-solid fa-basket-shopping fa-beat"></i> Ajouter au panier</a>
 								</center>
 								<br>
 							</div>
-
 							<div class="col-md-8">
 								<table class="table">
 									<tbody>

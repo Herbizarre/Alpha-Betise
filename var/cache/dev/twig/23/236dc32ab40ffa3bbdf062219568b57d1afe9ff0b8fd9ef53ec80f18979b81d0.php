@@ -54,31 +54,33 @@ class __TwigTemplate_8e9c3150c869d1f4e9fca035a62975b18c9e4a0d016082cddeb3babe0b9
         echo "</title>
         <!--style perso-->
         <link rel=\"stylesheet\" href=\"assets/bootstrap/css/style.css\">
+            <!--ICONES-->
+        <script src=\"https://kit.fontawesome.com/cb75c9308b.js\" crossorigin=\"anonymous\"></script>
         <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>\">
         <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css\"
     integrity=\"sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx\" crossorigin=\"anonymous\">
         ";
-        // line 12
+        // line 14
         echo "        ";
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 15
+        // line 17
         echo "
         ";
-        // line 16
+        // line 18
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 19
+        // line 21
         echo "    </head>
     <body>
     ";
-        // line 21
-        $this->loadTemplate("partials/header.html.twig ", "base.html.twig", 21)->display($context);
-        // line 22
+        // line 23
+        $this->loadTemplate("partials/header.html.twig ", "base.html.twig", 23)->display($context);
+        // line 24
         echo "        ";
         $this->displayBlock('body', $context, $blocks);
-        // line 23
+        // line 25
         echo "    ";
-        $this->loadTemplate("partials/footer.html.twig ", "base.html.twig", 23)->display($context);
-        // line 24
+        $this->loadTemplate("partials/footer.html.twig ", "base.html.twig", 25)->display($context);
+        // line 26
         echo "    <script src=\"https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js\"
     integrity=\"sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk\" crossorigin=\"anonymous\">
   </script>
@@ -116,7 +118,7 @@ class __TwigTemplate_8e9c3150c869d1f4e9fca035a62975b18c9e4a0d016082cddeb3babe0b9
 
     }
 
-    // line 12
+    // line 14
     public function block_stylesheets($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -126,7 +128,7 @@ class __TwigTemplate_8e9c3150c869d1f4e9fca035a62975b18c9e4a0d016082cddeb3babe0b9
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        // line 13
+        // line 15
         echo "            ";
         echo twig_escape_filter($this->env, $this->env->getFunction('encore_entry_link_tags')->getCallable()("app"), "html", null, true);
         echo "
@@ -139,7 +141,7 @@ class __TwigTemplate_8e9c3150c869d1f4e9fca035a62975b18c9e4a0d016082cddeb3babe0b9
 
     }
 
-    // line 16
+    // line 18
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -149,7 +151,7 @@ class __TwigTemplate_8e9c3150c869d1f4e9fca035a62975b18c9e4a0d016082cddeb3babe0b9
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 17
+        // line 19
         echo "            ";
         echo twig_escape_filter($this->env, $this->env->getFunction('encore_entry_script_tags')->getCallable()("app"), "html", null, true);
         echo "
@@ -162,7 +164,7 @@ class __TwigTemplate_8e9c3150c869d1f4e9fca035a62975b18c9e4a0d016082cddeb3babe0b9
 
     }
 
-    // line 22
+    // line 24
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -192,7 +194,7 @@ class __TwigTemplate_8e9c3150c869d1f4e9fca035a62975b18c9e4a0d016082cddeb3babe0b9
 
     public function getDebugInfo()
     {
-        return array (  166 => 22,  153 => 17,  143 => 16,  130 => 13,  120 => 12,  101 => 5,  82 => 24,  79 => 23,  76 => 22,  74 => 21,  70 => 19,  68 => 16,  65 => 15,  62 => 12,  53 => 5,  47 => 1,);
+        return array (  168 => 24,  155 => 19,  145 => 18,  132 => 15,  122 => 14,  103 => 5,  84 => 26,  81 => 25,  78 => 24,  76 => 23,  72 => 21,  70 => 18,  67 => 17,  64 => 14,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -204,6 +206,8 @@ class __TwigTemplate_8e9c3150c869d1f4e9fca035a62975b18c9e4a0d016082cddeb3babe0b9
         <title>{% block title %}Welcome!{% endblock %}</title>
         <!--style perso-->
         <link rel=\"stylesheet\" href=\"assets/bootstrap/css/style.css\">
+            <!--ICONES-->
+        <script src=\"https://kit.fontawesome.com/cb75c9308b.js\" crossorigin=\"anonymous\"></script>
         <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>\">
         <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css\"
     integrity=\"sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx\" crossorigin=\"anonymous\">
@@ -229,6 +233,6 @@ class __TwigTemplate_8e9c3150c869d1f4e9fca035a62975b18c9e4a0d016082cddeb3babe0b9
   </script>
     </body>
 </html>
-", "base.html.twig", "C:\\wamp64\\www\\Symfony5\\Alpha-Betise\\templates\\base.html.twig");
+", "base.html.twig", "C:\\Users\\ydumi\\Desktop\\Alpha-Betise\\templates\\base.html.twig");
     }
 }
