@@ -1962,3 +1962,4 @@ e7927e,127.0.0.1,GET,http://127.0.0.1:8000/,1664888435,,200
 1cbe0f,127.0.0.1,GET,http://127.0.0.1:8000/favicon.ico,1664888440,cbbd90,404
 cbbd90,127.0.0.1,GET,http://127.0.0.1:8000/favicon.ico,1664888440,,404
 137b5c,127.0.0.1,GET,http://127.0.0.1:8000/admin?crudAction=index&crudControllerFqcn=App%5CController%5CAdmin%5CBookCrudController&menuIndex=1&signature=WtmGYoN7-FjGrlFxzb6stjiaXcZXiioNmoxX-uCsXsE&submenuIndex=-1,1664888442,,200
+bc61ad,127.0.0.1,GET,http://127.0.0.1:8000/,1664896124,,200

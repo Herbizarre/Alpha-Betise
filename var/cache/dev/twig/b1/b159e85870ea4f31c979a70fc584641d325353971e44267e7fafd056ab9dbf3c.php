@@ -1349,6 +1349,6 @@ class __TwigTemplate_b569d962f93f9d3656138a9137fb2ed7824a0dd6e7fcd902688bb85cd37
         <span>{{ route|default(controller) }}</span>
     {%- endif %}
 {% endmacro %}
-", "@WebProfiler/Collector/request.html.twig", "C:\\wamp64\\www\\Symfony5\\Alpha-Betise\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\request.html.twig");
+", "@WebProfiler/Collector/request.html.twig", "C:\\wamp\\www\\symfony\\Alpha-Betise2\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\request.html.twig");
     }
 }

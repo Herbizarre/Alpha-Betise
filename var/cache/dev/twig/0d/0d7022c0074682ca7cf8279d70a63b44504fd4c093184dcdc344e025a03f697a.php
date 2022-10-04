@@ -760,6 +760,6 @@ class __TwigTemplate_a25f1ff18c2caecd9399bd658899da02abc4d5b24d81965d81753318aa3
         </div>
     {% endfor %}
 {% endblock %}
-", "@WebProfiler/Collector/mailer.html.twig", "C:\\wamp64\\www\\Symfony5\\Alpha-Betise\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\mailer.html.twig");
+", "@WebProfiler/Collector/mailer.html.twig", "C:\\wamp\\www\\symfony\\Alpha-Betise2\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\mailer.html.twig");
     }
 }
