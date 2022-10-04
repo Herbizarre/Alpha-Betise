@@ -25,14 +25,16 @@ class __TwigTemplate_e56a76cb0137ef841b5e8054cce754d60ab0aebaa92fc3008da90cb2313
         $this->source = $this->getSourceContext();
 
         $this->blocks = [
+            'head' => [$this, 'block_head'],
             'title' => [$this, 'block_title'],
+            'stylesheets' => [$this, 'block_stylesheets'],
             'body' => [$this, 'block_body'],
         ];
     }
 
     protected function doGetParent(array $context)
     {
-        // line 1
+        // line 4
         return "base.html.twig";
     }
 
@@ -45,7 +47,7 @@ class __TwigTemplate_e56a76cb0137ef841b5e8054cce754d60ab0aebaa92fc3008da90cb2313
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "meeting/index.html.twig"));
 
-        $this->parent = $this->loadTemplate("base.html.twig", "meeting/index.html.twig", 1);
+        $this->parent = $this->loadTemplate("base.html.twig", "meeting/index.html.twig", 4);
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
@@ -55,7 +57,28 @@ class __TwigTemplate_e56a76cb0137ef841b5e8054cce754d60ab0aebaa92fc3008da90cb2313
 
     }
 
-    // line 3
+    // line 1
+    public function block_head($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "head"));
+
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "head"));
+
+        // line 2
+        echo "<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css\" integrity=\"sha256-5veQuRbWaECuYxwap/IOE/DAwNxgm4ikX7nrgsqYp88=\" crossorigin=\"anonymous\">
+";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
+
+    }
+
+    // line 6
     public function block_title($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -65,7 +88,7 @@ class __TwigTemplate_e56a76cb0137ef841b5e8054cce754d60ab0aebaa92fc3008da90cb2313
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Hello MeetingController!";
+        echo "Calendrier";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -74,7 +97,31 @@ class __TwigTemplate_e56a76cb0137ef841b5e8054cce754d60ab0aebaa92fc3008da90cb2313
 
     }
 
-    // line 5
+    // line 9
+    public function block_stylesheets($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
+
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
+
+        // line 10
+        echo "
+<style>
+#calendrier { margin: 1em auto; width:75%;  font: 12px/1.5 sans-serif;  background: #F5F5F5; }
+</style>
+";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
+
+    }
+
+    // line 15
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -84,30 +131,44 @@ class __TwigTemplate_e56a76cb0137ef841b5e8054cce754d60ab0aebaa92fc3008da90cb2313
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 6
-        echo "<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class=\"example-wrapper\">
-    <h1>Hello ";
-        // line 12
-        echo twig_escape_filter($this->env, (isset($context["controller_name"]) || array_key_exists("controller_name", $context) ? $context["controller_name"] : (function () { throw new RuntimeError('Variable "controller_name" does not exist.', 12, $this->source); })()), "html", null, true);
-        echo "! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href=\"";
         // line 16
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\CodeExtension']->getFileLink("C:/Users/Jchan/Desktop/Alpha-Betise/src/Controller/MeetingController.php", 0), "html", null, true);
-        echo "\">src/Controller/MeetingController.php</a></code></li>
-        <li>Your template at <code><a href=\"";
+        echo "<center>
+    <a href=\"";
         // line 17
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\CodeExtension']->getFileLink("C:/Users/Jchan/Desktop/Alpha-Betise/templates/meeting/index.html.twig", 0), "html", null, true);
-        echo "\">templates/meeting/index.html.twig</a></code></li>
-    </ul>
-</div>
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_calendar_new");
+        echo "\">Ajouter un évènement</a> 
+     <a href=\"";
+        // line 18
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_calendar_index");
+        echo "\">Liste des évènements</a>
+</center>
+<div id=\"calendrier\">
+ </div>
+
+<script>
+    window.onload = () => {
+        let calendarElt = document.querySelector(\"#calendrier\")
+        let calendar = new FullCalendar.Calendar(calendarElt, {
+            initialView: 'timeGridWeek',
+            locale: 'fr',
+            timeZone: 'Europe/Caracas',
+            headerToolbar: {
+                start: 'prev,next today',
+                center: 'title',
+                end: 'dayGridMonth,timeGridWeek,timeGridDay'
+            },
+            events: ";
+        // line 35
+        echo (isset($context["re"]) || array_key_exists("re", $context) ? $context["re"] : (function () { throw new RuntimeError('Variable "re" does not exist.', 35, $this->source); })());
+        echo ",
+            editable: true,
+            eventResizableFromStart: true
+        })
+        
+        calendar.render()
+    }
+</script>
+<script src=\"https://cdn.jsdelivr.net/npm/fullcalendar@6.0.0-beta.1/main.min.js\" integrity=\"sha256-c4doXULXQ0gMSZGKpmX/LkbOrfilyX1qiMseZ5oloAQ=\" crossorigin=\"anonymous\"></script>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -129,31 +190,55 @@ class __TwigTemplate_e56a76cb0137ef841b5e8054cce754d60ab0aebaa92fc3008da90cb2313
 
     public function getDebugInfo()
     {
-        return array (  107 => 17,  103 => 16,  96 => 12,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  162 => 35,  142 => 18,  138 => 17,  135 => 16,  125 => 15,  111 => 10,  101 => 9,  82 => 6,  71 => 2,  61 => 1,  38 => 4,);
     }
 
     public function getSourceContext()
     {
-        return new Source("{% extends 'base.html.twig' %}
-
-{% block title %}Hello MeetingController!{% endblock %}
-
-{% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class=\"example-wrapper\">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href=\"{{ 'C:/Users/Jchan/Desktop/Alpha-Betise/src/Controller/MeetingController.php'|file_link(0) }}\">src/Controller/MeetingController.php</a></code></li>
-        <li>Your template at <code><a href=\"{{ 'C:/Users/Jchan/Desktop/Alpha-Betise/templates/meeting/index.html.twig'|file_link(0) }}\">templates/meeting/index.html.twig</a></code></li>
-    </ul>
-</div>
+        return new Source("{% block head %}
+<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css\" integrity=\"sha256-5veQuRbWaECuYxwap/IOE/DAwNxgm4ikX7nrgsqYp88=\" crossorigin=\"anonymous\">
 {% endblock %}
-", "meeting/index.html.twig", "C:\\Users\\ydumi\\Desktop\\Alpha-Betise\\templates\\meeting\\index.html.twig");
+{% extends 'base.html.twig' %}
+
+{% block title %}Calendrier{% endblock %}
+
+
+{% block stylesheets %}
+
+<style>
+#calendrier { margin: 1em auto; width:75%;  font: 12px/1.5 sans-serif;  background: #F5F5F5; }
+</style>
+{% endblock %}
+{% block body %}
+<center>
+    <a href=\"{{ path('app_calendar_new') }}\">Ajouter un évènement</a> 
+     <a href=\"{{ path('app_calendar_index') }}\">Liste des évènements</a>
+</center>
+<div id=\"calendrier\">
+ </div>
+
+<script>
+    window.onload = () => {
+        let calendarElt = document.querySelector(\"#calendrier\")
+        let calendar = new FullCalendar.Calendar(calendarElt, {
+            initialView: 'timeGridWeek',
+            locale: 'fr',
+            timeZone: 'Europe/Caracas',
+            headerToolbar: {
+                start: 'prev,next today',
+                center: 'title',
+                end: 'dayGridMonth,timeGridWeek,timeGridDay'
+            },
+            events: {{ re|raw }},
+            editable: true,
+            eventResizableFromStart: true
+        })
+        
+        calendar.render()
+    }
+</script>
+<script src=\"https://cdn.jsdelivr.net/npm/fullcalendar@6.0.0-beta.1/main.min.js\" integrity=\"sha256-c4doXULXQ0gMSZGKpmX/LkbOrfilyX1qiMseZ5oloAQ=\" crossorigin=\"anonymous\"></script>
+{% endblock %}
+", "meeting/index.html.twig", "C:\\wamp64\\www\\Symfony5\\Alpha-Betise\\templates\\meeting\\index.html.twig");
     }
 }

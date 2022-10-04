@@ -154,6 +154,6 @@ class __TwigTemplate_5ed16fd318161a3bacda8edda6e8b763220961d3e3f78060e41e3e84e96
     </ul>
 </div>
 {% endblock %}
-", "data_roles/index.html.twig", "C:\\Users\\Stagiaire01\\Alpha-Betise\\templates\\data_roles\\index.html.twig");
+", "data_roles/index.html.twig", "C:\\wamp64\\www\\Symfony5\\Alpha-Betise\\templates\\data_roles\\index.html.twig");
     }
 }

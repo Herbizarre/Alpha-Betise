@@ -1,0 +1,4 @@
+<h2>Votre inscription</h2>
+<p>Vous êtes inscrit(e) à la newsletters</p>
+<p>Veuilez cliquer sur le lien suivant pour finaliser votre inscription</p>
+<a href="{{ absolute_url(path('homeNewsletters_confirm',{id: user.id, token: token})) }}">{{ absolute_url(path ('homeNewsletters_confirm',{id: user.id, token: token})) }}</a>

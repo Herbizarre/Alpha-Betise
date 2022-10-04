@@ -145,6 +145,6 @@ class __TwigTemplate_67ace513b18530835e8c4d904244676fb828f94c7269745257e22b7273b
         <img src=\"{{ asset(image) }}\">
     </div>
 {% endfor %}
-", "@EasyAdmin/crud/field/image.html.twig", "C:\\Users\\Stagiaire01\\Alpha-Betise\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\field\\image.html.twig");
+", "@EasyAdmin/crud/field/image.html.twig", "C:\\wamp64\\www\\Symfony5\\Alpha-Betise\\vendor\\easycorp\\easyadmin-bundle\\src\\Resources\\views\\crud\\field\\image.html.twig");
     }
 }

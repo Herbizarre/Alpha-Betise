@@ -134,10 +134,8 @@ class __TwigTemplate_446572e0fff3db9ea764e92d76cf524d6cb729b77eb75cd3210d6c551bb
         Le siege social se situe au : <br/> CWTC Complexe World Trade Center <br/>
         Route du CWTC 97122 ZI de Jarry <br/> Baie Mahault, 97122, Guadeloupe <br/>
         </p>
-        <img src=\"assets/images/librairie-enfant.jpg\" width=\"300\" height=\"300\">
-        ";
-        // line 59
-        echo "    </div>
+        <img src=\"assets/images/librairie-enfant.jpg\" style=\"max-width:400px;\">
+    </div>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -159,7 +157,7 @@ class __TwigTemplate_446572e0fff3db9ea764e92d76cf524d6cb729b77eb75cd3210d6c551bb
 
     public function getDebugInfo()
     {
-        return array (  140 => 59,  124 => 44,  120 => 43,  113 => 38,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  124 => 44,  120 => 43,  113 => 38,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -219,15 +217,9 @@ class __TwigTemplate_446572e0fff3db9ea764e92d76cf524d6cb729b77eb75cd3210d6c551bb
         Le siege social se situe au : <br/> CWTC Complexe World Trade Center <br/>
         Route du CWTC 97122 ZI de Jarry <br/> Baie Mahault, 97122, Guadeloupe <br/>
         </p>
-        <img src=\"assets/images/librairie-enfant.jpg\" width=\"300\" height=\"300\">
-        {# <div class=\"img\">
-        </div> #}
+        <img src=\"assets/images/librairie-enfant.jpg\" style=\"max-width:400px;\">
     </div>
 {% endblock %}
-<<<<<<< HEAD
-", "contacts/index.html.twig", "C:\\Users\\lunic\\projet-symfony\\Alpha-Betise\\templates\\contacts\\index.html.twig");
-=======
-", "contacts/index.html.twig", "C:\\Users\\Daryl.H\\OneDrive\\Bureau\\projet-git\\Alpha-Betise\\templates\\contacts\\index.html.twig");
->>>>>>> contact
+", "contacts/index.html.twig", "C:\\wamp64\\www\\Symfony5\\Alpha-Betise\\templates\\contacts\\index.html.twig");
     }
 }

@@ -139,6 +139,6 @@ class __TwigTemplate_73a2bc057d9195c1b685348f58e0ef482889e5989d052f9e5e545175cba
         </div>
     </div>
 </div>
-{% endblock %}", "partials/detailBook.html.twig", "C:\\Users\\Daryl.H\\OneDrive\\Bureau\\projet-git\\Alpha-Betise\\templates\\partials\\detailBook.html.twig");
+{% endblock %}", "partials/detailBook.html.twig", "C:\\wamp64\\www\\Symfony5\\Alpha-Betise\\templates\\partials\\detailBook.html.twig");
     }
 }

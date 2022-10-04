@@ -86,166 +86,176 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 7
-        echo "\t<style>
-\t\t.cardBook {
-\t\t\twidth: 350px;
-\t\t}
-        .carousel {
-\t\t\tmargin-bottom: 4rem;
-\t\t}
-\t\t/* Since positioning the image, we need to help out the caption */
-\t\t.carousel-caption {
-\t\t\tbottom: 3rem;
-\t\t\tz-index: 10;
-\t\t}
-
-\t\t/* Declare heights because of positioning of img element */
-\t\t.carousel-item {
-\t\t\theight: 30rem;
-\t\t}
-\t\t.carousel-item > img {
-\t\t\tposition: absolute;
-\t\t\ttop: 0;
-\t\t\tleft: 0;
-\t\t\tmin-width: 100%;
-\t\t\theight: 100%;
-\t\t}
-
-\t\t.col-lg-4 img {
-\t\t\tbox-shadow: 2px 5px 5px gray;
-\t\t}
-\t\t.card {
-\t\t\tbox-shadow: 5px 5px 5px gray;
-\t\t}
-\t</style>
-";
-        // line 40
-        echo "<div id=\"myCarousel\" class=\"carousel slide\" data-bs-ride=\"carousel\">
-\t\t<div class=\"carousel-indicators\">
-\t\t\t<button type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide-to=\"0\" class=\"active\" aria-current=\"true\" aria-label=\"Slide 1\"></button>
-\t\t\t<button type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide-to=\"1\" aria-label=\"Slide 2\"></button>
-\t\t\t<button type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide-to=\"2\" aria-label=\"Slide 3\"></button>
-\t\t</div>
+        echo "\t";
+        // line 8
+        echo "\t<div id=\"myCarousel\" class=\"carousel slide\" data-bs-ride=\"carousel\">
 \t\t<div class=\"carousel-inner\">
+
 \t\t\t<div class=\"carousel-item active\">
-\t\t\t\t<img src=\"/assets/images/boutiqueSlide1.jpg\">
-\t\t\t\t<div class=\"container\">
-\t\t\t\t\t<div class=\"carousel-caption text-start\">
-\t\t\t\t\t\t<h2>Achats en ligne.</h2>
-\t\t\t\t\t\t<p>Achetez l'article de vos rèves en quelques clics</p>
-\t\t\t\t\t\t<p>
-\t\t\t\t\t\t\t<a class=\"btn btn-lg btn-warning border-dark btn-outline-dark\" href=\"#\">Boutique</a>
-\t\t\t\t\t\t</p>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
+\t\t\t\t<img class=\"img-fluid\" src=\"/assets/images/librairie-enfant.jpg\" alt=\"image d'enfant en pleine lecture\">
 \t\t\t</div>
+
 \t\t\t<div class=\"carousel-item\">
-\t\t\t\t<img src=\"/assets/images/boutiqueSlide2.jpg\">
-\t\t\t\t<div class=\"container\">
-\t\t\t\t\t<div class=\"carousel-caption\">
-\t\t\t\t\t\t<h2>Livraison</h2>
-\t\t\t\t\t\t<p>Envoyez ou Reçevez vos achats où que vous soyez !</p>
-\t\t\t\t\t\t<p>
-\t\t\t\t\t\t\t<a class=\"btn btn-lg btn-warning border-dark btn-outline-dark\" href=\"#\">Livrer</a>
-\t\t\t\t\t\t</p>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
+\t\t\t\t<img class=\"img-fluid\" src=\"/assets/images/slider2.png\" alt=\"image d'enfant en pleine lecture\">
 \t\t\t</div>
+
 \t\t\t<div class=\"carousel-item\">
-\t\t\t\t<img src=\"/assets/images/boutiqueSlide3.jpg\">
-\t\t\t\t<div class=\"container\">
-\t\t\t\t\t<div class=\"carousel-caption text-end\">
-\t\t\t\t\t\t<h2>Ventes</h2>
-\t\t\t\t\t\t<p>Gagner de l'argent facilement en vendant vos objets</p>
-\t\t\t\t\t\t<p>
-\t\t\t\t\t\t\t<a class=\"btn btn-lg btn-warning border-dark btn-outline-dark\" href=\"#\">Ventes d'articles</a>
-\t\t\t\t\t\t</p>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
+\t\t\t\t<img class=\"img-fluid\" src=\"/assets/images/slider1.png\" alt=\"image d'enfant en pleine lecture\">
 \t\t\t</div>
 \t\t</div>
+
 \t\t<button class=\"carousel-control-prev\" type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide=\"prev\">
 \t\t\t<span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>
 \t\t\t<span class=\"visually-hidden\">Previous</span>
 \t\t</button>
+\t\t
 \t\t<button class=\"carousel-control-next\" type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide=\"next\">
 \t\t\t<span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>
 \t\t\t<span class=\"visually-hidden\">Next</span>
 \t\t</button>
 \t</div>
 
+\t";
+        // line 36
+        echo "
+\t<div class=\"card mb-3 border-warning\">
+\t\t<div class=\"row g-0\">
+\t\t\t<div class=\"col-md-4 m-auto\">
+\t\t\t<h3>Prochain évenement :</h3>
+\t\t\t\t";
+        // line 41
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(twig_reverse_filter($this->env, twig_slice($this->env, $context["calendars"], 0, 1)));
+        foreach ($context['_seq'] as $context["_key"] => $context["calendars"]) {
+            // line 42
+            echo "\t\t\t\t\t<div>
+\t\t\t\t\t\t<u><h6 class=\"text-danger\">";
+            // line 43
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["calendars"], "title", [], "any", false, false, false, 43), "html", null, true);
+            echo "</h6></u>
 
-";
-        // line 96
-        echo "\t.<div class=\"container\">
-\t\t.<div class=\"row\">
-\t\t\t<div class=\"col\">
-\t\t\t\t<div class=\"cardBook\">
-\t\t\t\t\t<div class=\"card\">
-\t\t\t\t\t\t<img class=\"card-img-top\" src=\"holder.js/100x180/\" alt='Image du livre\"...\"'>
-\t\t\t\t\t\t<div class=\"card-body\">
-\t\t\t\t\t\t\t<h4 class=\"card-title\">Titre</h4>
-\t\t\t\t\t\t\t<p class=\"card-text\">Auteur</p>
-\t\t\t\t\t\t\t<p class=\"card-text\">Description du livre</p>
-\t\t\t\t\t\t\t<p class=\"card-text\">prix</p>
-\t\t\t\t\t\t\t<a name=\"\" id=\"\" class=\"btn btn-primary\" href=\"#\" role=\"button\">details</a>
+\t\t\t\t\t\t<p>Le : ";
+            // line 45
+            ((twig_get_attribute($this->env, $this->source, $context["calendars"], "start", [], "any", false, false, false, 45)) ? (print (twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["calendars"], "start", [], "any", false, false, false, 45), "d-m-Y"), "html", null, true))) : (print ("")));
+            echo "</p>
+\t\t\t\t\t</div>
+\t\t\t\t";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['calendars'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 48
+        echo "\t\t\t</div>
+\t\t</div>
+\t</div>
+
+
+\t";
+        // line 54
+        echo "\t<div class=\"container-fluid\">
+\t\t<div class=\"row\">
+
+\t\t\t";
+        // line 57
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(twig_slice($this->env, twig_reverse_filter($this->env, (isset($context["books"]) || array_key_exists("books", $context) ? $context["books"] : (function () { throw new RuntimeError('Variable "books" does not exist.', 57, $this->source); })())), 0, 4));
+        foreach ($context['_seq'] as $context["_key"] => $context["book"]) {
+            // line 58
+            echo "
+\t\t\t\t<div class=\" card card-fluid mb-4 \" style=\"max-width:900px; margin:auto; min-height:450px;\">
+\t\t\t\t\t<div class=\"row\">
+\t\t\t\t\t\t<div class=\"col-sm-5 \">
+\t\t\t\t\t\t\t<img src=\"/assets/uploads/book/";
+            // line 62
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "couvertureBook", [], "any", false, false, false, 62), "html", null, true);
+            echo "\" class=\"img-fluid rounded\" alt=\"Image du livre ";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "title", [], "any", false, false, false, 62), "html", null, true);
+            echo "\" style=\"max-height:400px;\">
+\t\t\t\t\t\t\t<center>
+\t\t\t\t\t\t\t\t<p class=\"card-text\" style=\"font-size:1.9em;\">
+\t\t\t\t\t\t\t\t\t<strong>";
+            // line 65
+            echo twig_escape_filter($this->env, (twig_get_attribute($this->env, $this->source, $context["book"], "priceBook", [], "any", false, false, false, 65) / 100), "html", null, true);
+            echo "&nbsp; €</strong>
+\t\t\t\t\t\t\t\t</p>
+\t\t\t\t\t\t\t</center>
+\t\t\t\t\t\t\t<br>
 \t\t\t\t\t\t</div>
+
+
+\t\t\t\t\t\t<div class=\"col-sm-7\">
+\t\t\t\t\t\t\t<div class=\"card-body\">
+\t\t\t\t\t\t\t\t<h3 class=\"card-title\" style=\"font-size:2em;\">";
+            // line 74
+            echo twig_escape_filter($this->env, twig_upper_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "title", [], "any", false, false, false, 74)), "html", null, true);
+            echo "&nbsp;";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "rate", [], "any", false, false, false, 74), "html", null, true);
+            echo "</h3>
+\t\t\t\t\t\t\t\t<p class=\"card-text\">
+\t\t\t\t\t\t\t\t\t<strong>";
+            // line 76
+            echo twig_escape_filter($this->env, twig_upper_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "author", [], "any", false, false, false, 76)), "html", null, true);
+            echo "</strong>
+\t\t\t\t\t\t\t\t</p>
+\t\t\t\t\t\t\t\t<p class=\"card-text\">";
+            // line 78
+            echo twig_escape_filter($this->env, (twig_slice($this->env, twig_striptags(twig_get_attribute($this->env, $this->source, $context["book"], "commentLibraire", [], "any", false, false, false, 78)), 0, 150) . "..."), "html", null, true);
+            echo "</p>
+\t\t\t\t\t\t\t\t<p class=\"card-text\">
+\t\t\t\t\t\t\t\t\t<a href=\"";
+            // line 80
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_details_book", ["id" => twig_get_attribute($this->env, $this->source, $context["book"], "id", [], "any", false, false, false, 80)]), "html", null, true);
+            echo "\">
+\t\t\t\t\t\t\t\t\t\t<small class=\"text-muted\">Plus de Détails>></small>
+\t\t\t\t\t\t\t\t\t</a>
+\t\t\t\t\t\t\t\t</p>
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t</div>
+
+
 \t\t\t\t\t</div>
 \t\t\t\t</div>
-\t\t\t</div>
-&nbsp
-\t\t\t<div class=\"col\">
-\t\t\t\t<div class=\"cardBook\">
-\t\t\t\t\t<div class=\"card\">
-\t\t\t\t\t\t<img class=\"card-img-top\" src=\"holder.js/100x180/\" alt='Image du livre\"...\"'>
-\t\t\t\t\t\t<div class=\"card-body\">
-\t\t\t\t\t\t\t<h4 class=\"card-title\">Titre</h4>
-\t\t\t\t\t\t\t<p class=\"card-text\">Auteur</p>
-\t\t\t\t\t\t\t<p class=\"card-text\">Description du livre</p>
-\t\t\t\t\t\t\t<p class=\"card-text\">prix</p>
-\t\t\t\t\t\t\t<a name=\"\" id=\"\" class=\"btn btn-primary\" href=\"#\" role=\"button\">details</a>
-\t\t\t\t\t\t</div>
+\t\t\t";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['book'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 91
+        echo "\t\t</div>
+\t</div>
+\t<center>
+\t\t<a href=\"/conseils\">
+\t\t\t<button class=\"btn btn-outline-secondary my-2 my-sm-0\">Afficher plus >></button>
+\t\t</a>
+\t</center><br>
+\t";
+        // line 99
+        echo "\t<div class=\"card mb-3 border-success\">
+\t\t<div class=\"row g-0\">
+\t\t\t<div class=\"col-md-4 m-auto\">
+
+\t\t\t\t";
+        // line 103
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(twig_reverse_filter($this->env, twig_slice($this->env, $context["users"], 0, 1)));
+        foreach ($context['_seq'] as $context["_key"] => $context["users"]) {
+            // line 104
+            echo "\t\t\t\t\t<div>
+\t\t\t\t\t\t<p>";
+            // line 105
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["users"], "email", [], "any", false, false, false, 105), "html", null, true);
+            echo " c'est inscrit a notre newsletter</p>
 \t\t\t\t\t</div>
-\t\t\t\t</div>
+\t\t\t\t";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['users'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 108
+        echo "
 \t\t\t</div>
 \t\t</div>
 \t</div>
-</div>
-
-\t.<div class=\"container\">
-\t\t.<div class=\"row\">
-\t\t\t<div class=\"col\">
-\t\t\t\t<div class=\"cardBook\">
-\t\t\t\t\t<div class=\"card\">
-\t\t\t\t\t\t<img class=\"card-img-top\" src=\"holder.js/100x180/\" alt='Image du livre\"...\"'>
-\t\t\t\t\t\t<div class=\"card-body\">
-\t\t\t\t\t\t\t<h4 class=\"card-title\">Titre</h4>
-\t\t\t\t\t\t\t<p class=\"card-text\">Auteur</p>
-\t\t\t\t\t\t\t<p class=\"card-text\">Description du livre</p>
-\t\t\t\t\t\t\t<p class=\"card-text\">prix</p>
-\t\t\t\t\t\t\t<a name=\"\" id=\"\" class=\"btn btn-primary\" href=\"#\" role=\"button\">details</a>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t</div>
-&nbsp
-\t\t\t<div class=\"col\">
-\t\t\t\t<div class=\"cardBook\">
-\t\t\t\t\t<div class=\"card\">
-\t\t\t\t\t\t<img class=\"card-img-top\" src=\"holder.js/100x180/\" alt='Image du livre\"...\"'>
-\t\t\t\t\t\t<div class=\"card-body\">
-\t\t\t\t\t\t\t<h4 class=\"card-title\">Titre</h4>
-\t\t\t\t\t\t\t<p class=\"card-text\">Auteur</p>
-\t\t\t\t\t\t\t<p class=\"card-text\">Description du livre</p>
-\t\t\t\t\t\t\t<p class=\"card-text\">prix</p>
-\t\t\t\t\t\t\t<a name=\"\" id=\"\" class=\"btn btn-primary\" href=\"#\" role=\"button\">details</a>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t</div>
-\t\t</div>
-\t</div>
-</div>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -267,7 +277,7 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 
     public function getDebugInfo()
     {
-        return array (  180 => 96,  123 => 40,  89 => 7,  79 => 6,  59 => 3,  36 => 1,);
+        return array (  255 => 108,  246 => 105,  243 => 104,  239 => 103,  233 => 99,  224 => 91,  207 => 80,  202 => 78,  197 => 76,  190 => 74,  178 => 65,  170 => 62,  164 => 58,  160 => 57,  155 => 54,  148 => 48,  139 => 45,  134 => 43,  131 => 42,  127 => 41,  120 => 36,  91 => 8,  89 => 7,  79 => 6,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -278,165 +288,112 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 {% endblock %}
 
 {% block body %}
-\t<style>
-\t\t.cardBook {
-\t\t\twidth: 350px;
-\t\t}
-        .carousel {
-\t\t\tmargin-bottom: 4rem;
-\t\t}
-\t\t/* Since positioning the image, we need to help out the caption */
-\t\t.carousel-caption {
-\t\t\tbottom: 3rem;
-\t\t\tz-index: 10;
-\t\t}
-
-\t\t/* Declare heights because of positioning of img element */
-\t\t.carousel-item {
-\t\t\theight: 30rem;
-\t\t}
-\t\t.carousel-item > img {
-\t\t\tposition: absolute;
-\t\t\ttop: 0;
-\t\t\tleft: 0;
-\t\t\tmin-width: 100%;
-\t\t\theight: 100%;
-\t\t}
-
-\t\t.col-lg-4 img {
-\t\t\tbox-shadow: 2px 5px 5px gray;
-\t\t}
-\t\t.card {
-\t\t\tbox-shadow: 5px 5px 5px gray;
-\t\t}
-\t</style>
-{# -----------------Caroussel---------------------- #}
-<div id=\"myCarousel\" class=\"carousel slide\" data-bs-ride=\"carousel\">
-\t\t<div class=\"carousel-indicators\">
-\t\t\t<button type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide-to=\"0\" class=\"active\" aria-current=\"true\" aria-label=\"Slide 1\"></button>
-\t\t\t<button type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide-to=\"1\" aria-label=\"Slide 2\"></button>
-\t\t\t<button type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide-to=\"2\" aria-label=\"Slide 3\"></button>
-\t\t</div>
+\t{# -----------------Caroussel---------------------- #}
+\t<div id=\"myCarousel\" class=\"carousel slide\" data-bs-ride=\"carousel\">
 \t\t<div class=\"carousel-inner\">
+
 \t\t\t<div class=\"carousel-item active\">
-\t\t\t\t<img src=\"/assets/images/boutiqueSlide1.jpg\">
-\t\t\t\t<div class=\"container\">
-\t\t\t\t\t<div class=\"carousel-caption text-start\">
-\t\t\t\t\t\t<h2>Achats en ligne.</h2>
-\t\t\t\t\t\t<p>Achetez l'article de vos rèves en quelques clics</p>
-\t\t\t\t\t\t<p>
-\t\t\t\t\t\t\t<a class=\"btn btn-lg btn-warning border-dark btn-outline-dark\" href=\"#\">Boutique</a>
-\t\t\t\t\t\t</p>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
+\t\t\t\t<img class=\"img-fluid\" src=\"/assets/images/librairie-enfant.jpg\" alt=\"image d'enfant en pleine lecture\">
 \t\t\t</div>
+
 \t\t\t<div class=\"carousel-item\">
-\t\t\t\t<img src=\"/assets/images/boutiqueSlide2.jpg\">
-\t\t\t\t<div class=\"container\">
-\t\t\t\t\t<div class=\"carousel-caption\">
-\t\t\t\t\t\t<h2>Livraison</h2>
-\t\t\t\t\t\t<p>Envoyez ou Reçevez vos achats où que vous soyez !</p>
-\t\t\t\t\t\t<p>
-\t\t\t\t\t\t\t<a class=\"btn btn-lg btn-warning border-dark btn-outline-dark\" href=\"#\">Livrer</a>
-\t\t\t\t\t\t</p>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
+\t\t\t\t<img class=\"img-fluid\" src=\"/assets/images/slider2.png\" alt=\"image d'enfant en pleine lecture\">
 \t\t\t</div>
+
 \t\t\t<div class=\"carousel-item\">
-\t\t\t\t<img src=\"/assets/images/boutiqueSlide3.jpg\">
-\t\t\t\t<div class=\"container\">
-\t\t\t\t\t<div class=\"carousel-caption text-end\">
-\t\t\t\t\t\t<h2>Ventes</h2>
-\t\t\t\t\t\t<p>Gagner de l'argent facilement en vendant vos objets</p>
-\t\t\t\t\t\t<p>
-\t\t\t\t\t\t\t<a class=\"btn btn-lg btn-warning border-dark btn-outline-dark\" href=\"#\">Ventes d'articles</a>
-\t\t\t\t\t\t</p>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
+\t\t\t\t<img class=\"img-fluid\" src=\"/assets/images/slider1.png\" alt=\"image d'enfant en pleine lecture\">
 \t\t\t</div>
 \t\t</div>
+
 \t\t<button class=\"carousel-control-prev\" type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide=\"prev\">
 \t\t\t<span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>
 \t\t\t<span class=\"visually-hidden\">Previous</span>
 \t\t</button>
+\t\t
 \t\t<button class=\"carousel-control-next\" type=\"button\" data-bs-target=\"#myCarousel\" data-bs-slide=\"next\">
 \t\t\t<span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>
 \t\t\t<span class=\"visually-hidden\">Next</span>
 \t\t</button>
 \t</div>
 
+\t{# -----------------------Prochain évenement----------------------- #}
 
-{# ------------------- Apercu de livre ---------------- #}
-\t.<div class=\"container\">
-\t\t.<div class=\"row\">
-\t\t\t<div class=\"col\">
-\t\t\t\t<div class=\"cardBook\">
-\t\t\t\t\t<div class=\"card\">
-\t\t\t\t\t\t<img class=\"card-img-top\" src=\"holder.js/100x180/\" alt='Image du livre\"...\"'>
-\t\t\t\t\t\t<div class=\"card-body\">
-\t\t\t\t\t\t\t<h4 class=\"card-title\">Titre</h4>
-\t\t\t\t\t\t\t<p class=\"card-text\">Auteur</p>
-\t\t\t\t\t\t\t<p class=\"card-text\">Description du livre</p>
-\t\t\t\t\t\t\t<p class=\"card-text\">prix</p>
-\t\t\t\t\t\t\t<a name=\"\" id=\"\" class=\"btn btn-primary\" href=\"#\" role=\"button\">details</a>
-\t\t\t\t\t\t</div>
+\t<div class=\"card mb-3 border-warning\">
+\t\t<div class=\"row g-0\">
+\t\t\t<div class=\"col-md-4 m-auto\">
+\t\t\t<h3>Prochain évenement :</h3>
+\t\t\t\t{% for calendars in calendars|slice(0,1)|reverse %}
+\t\t\t\t\t<div>
+\t\t\t\t\t\t<u><h6 class=\"text-danger\">{{ calendars.title }}</h6></u>
+
+\t\t\t\t\t\t<p>Le : {{ calendars.start ? calendars.start|date('d-m-Y') : '' }}</p>
 \t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t</div>
-&nbsp
-\t\t\t<div class=\"col\">
-\t\t\t\t<div class=\"cardBook\">
-\t\t\t\t\t<div class=\"card\">
-\t\t\t\t\t\t<img class=\"card-img-top\" src=\"holder.js/100x180/\" alt='Image du livre\"...\"'>
-\t\t\t\t\t\t<div class=\"card-body\">
-\t\t\t\t\t\t\t<h4 class=\"card-title\">Titre</h4>
-\t\t\t\t\t\t\t<p class=\"card-text\">Auteur</p>
-\t\t\t\t\t\t\t<p class=\"card-text\">Description du livre</p>
-\t\t\t\t\t\t\t<p class=\"card-text\">prix</p>
-\t\t\t\t\t\t\t<a name=\"\" id=\"\" class=\"btn btn-primary\" href=\"#\" role=\"button\">details</a>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
+\t\t\t\t{% endfor %}
 \t\t\t</div>
 \t\t</div>
 \t</div>
-</div>
 
-\t.<div class=\"container\">
-\t\t.<div class=\"row\">
-\t\t\t<div class=\"col\">
-\t\t\t\t<div class=\"cardBook\">
-\t\t\t\t\t<div class=\"card\">
-\t\t\t\t\t\t<img class=\"card-img-top\" src=\"holder.js/100x180/\" alt='Image du livre\"...\"'>
-\t\t\t\t\t\t<div class=\"card-body\">
-\t\t\t\t\t\t\t<h4 class=\"card-title\">Titre</h4>
-\t\t\t\t\t\t\t<p class=\"card-text\">Auteur</p>
-\t\t\t\t\t\t\t<p class=\"card-text\">Description du livre</p>
-\t\t\t\t\t\t\t<p class=\"card-text\">prix</p>
-\t\t\t\t\t\t\t<a name=\"\" id=\"\" class=\"btn btn-primary\" href=\"#\" role=\"button\">details</a>
+
+\t{# ------------------- Apercu de livre ---------------- #}
+\t<div class=\"container-fluid\">
+\t\t<div class=\"row\">
+
+\t\t\t{% for book in books|reverse|slice(0,4) %}
+
+\t\t\t\t<div class=\" card card-fluid mb-4 \" style=\"max-width:900px; margin:auto; min-height:450px;\">
+\t\t\t\t\t<div class=\"row\">
+\t\t\t\t\t\t<div class=\"col-sm-5 \">
+\t\t\t\t\t\t\t<img src=\"/assets/uploads/book/{{book.couvertureBook}}\" class=\"img-fluid rounded\" alt=\"Image du livre {{ book.title }}\" style=\"max-height:400px;\">
+\t\t\t\t\t\t\t<center>
+\t\t\t\t\t\t\t\t<p class=\"card-text\" style=\"font-size:1.9em;\">
+\t\t\t\t\t\t\t\t\t<strong>{{ book.priceBook /100 }}&nbsp; €</strong>
+\t\t\t\t\t\t\t\t</p>
+\t\t\t\t\t\t\t</center>
+\t\t\t\t\t\t\t<br>
 \t\t\t\t\t\t</div>
+
+
+\t\t\t\t\t\t<div class=\"col-sm-7\">
+\t\t\t\t\t\t\t<div class=\"card-body\">
+\t\t\t\t\t\t\t\t<h3 class=\"card-title\" style=\"font-size:2em;\">{{ book.title | upper}}&nbsp;{{ book.rate }}</h3>
+\t\t\t\t\t\t\t\t<p class=\"card-text\">
+\t\t\t\t\t\t\t\t\t<strong>{{book.author | upper}}</strong>
+\t\t\t\t\t\t\t\t</p>
+\t\t\t\t\t\t\t\t<p class=\"card-text\">{{ book.commentLibraire|striptags|slice(0, 150)~ '...' }}</p>
+\t\t\t\t\t\t\t\t<p class=\"card-text\">
+\t\t\t\t\t\t\t\t\t<a href=\"{{ path('app_details_book', {'id': book.id}) }}\">
+\t\t\t\t\t\t\t\t\t\t<small class=\"text-muted\">Plus de Détails>></small>
+\t\t\t\t\t\t\t\t\t</a>
+\t\t\t\t\t\t\t\t</p>
+\t\t\t\t\t\t\t</div>
+\t\t\t\t\t\t</div>
+
+
 \t\t\t\t\t</div>
 \t\t\t\t</div>
-\t\t\t</div>
-&nbsp
-\t\t\t<div class=\"col\">
-\t\t\t\t<div class=\"cardBook\">
-\t\t\t\t\t<div class=\"card\">
-\t\t\t\t\t\t<img class=\"card-img-top\" src=\"holder.js/100x180/\" alt='Image du livre\"...\"'>
-\t\t\t\t\t\t<div class=\"card-body\">
-\t\t\t\t\t\t\t<h4 class=\"card-title\">Titre</h4>
-\t\t\t\t\t\t\t<p class=\"card-text\">Auteur</p>
-\t\t\t\t\t\t\t<p class=\"card-text\">Description du livre</p>
-\t\t\t\t\t\t\t<p class=\"card-text\">prix</p>
-\t\t\t\t\t\t\t<a name=\"\" id=\"\" class=\"btn btn-primary\" href=\"#\" role=\"button\">details</a>
-\t\t\t\t\t\t</div>
+\t\t\t{% endfor %}
+\t\t</div>
+\t</div>
+\t<center>
+\t\t<a href=\"/conseils\">
+\t\t\t<button class=\"btn btn-outline-secondary my-2 my-sm-0\">Afficher plus >></button>
+\t\t</a>
+\t</center><br>
+\t{# --------------newsletter------------ #}
+\t<div class=\"card mb-3 border-success\">
+\t\t<div class=\"row g-0\">
+\t\t\t<div class=\"col-md-4 m-auto\">
+
+\t\t\t\t{% for users in users|slice(0,1)|reverse %}
+\t\t\t\t\t<div>
+\t\t\t\t\t\t<p>{{ users.email }} c'est inscrit a notre newsletter</p>
 \t\t\t\t\t</div>
-\t\t\t\t</div>
+\t\t\t\t{% endfor %}
+
 \t\t\t</div>
 \t\t</div>
 \t</div>
-</div>
 {% endblock %}
-", "home/index.html.twig", "C:\\Users\\lunic\\projet-symfony\\Alpha-Betise\\templates\\home\\index.html.twig");
+", "home/index.html.twig", "C:\\wamp64\\www\\Symfony5\\Alpha-Betise\\templates\\home\\index.html.twig");
     }
 }

@@ -1,20 +1,44 @@
+{% block head %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" integrity="sha256-5veQuRbWaECuYxwap/IOE/DAwNxgm4ikX7nrgsqYp88=" crossorigin="anonymous">
+{% endblock %}
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello MeetingController!{% endblock %}
+{% block title %}Calendrier{% endblock %}
 
-{% block body %}
+
+{% block stylesheets %}
+
 <style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+#calendrier { margin: 1em auto; width:75%;  font: 12px/1.5 sans-serif;  background: #F5F5F5; }
 </style>
+{% endblock %}
+{% block body %}
+<center>
+    <a href="{{ path('app_calendar_new') }}">Ajouter un évènement</a> 
+     <a href="{{ path('app_calendar_index') }}">Liste des évènements</a>
+</center>
+<div id="calendrier">
+ </div>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/Users/Jchan/Desktop/Alpha-Betise/src/Controller/MeetingController.php'|file_link(0) }}">src/Controller/MeetingController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/Users/Jchan/Desktop/Alpha-Betise/templates/meeting/index.html.twig'|file_link(0) }}">templates/meeting/index.html.twig</a></code></li>
-    </ul>
-</div>
+<script>
+    window.onload = () => {
+        let calendarElt = document.querySelector("#calendrier")
+        let calendar = new FullCalendar.Calendar(calendarElt, {
+            initialView: 'timeGridWeek',
+            locale: 'fr',
+            timeZone: 'Europe/Caracas',
+            headerToolbar: {
+                start: 'prev,next today',
+                center: 'title',
+                end: 'dayGridMonth,timeGridWeek,timeGridDay'
+            },
+            events: {{ re|raw }},
+            editable: true,
+            eventResizableFromStart: true
+        })
+        
+        calendar.render()
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.0.0-beta.1/main.min.js" integrity="sha256-c4doXULXQ0gMSZGKpmX/LkbOrfilyX1qiMseZ5oloAQ=" crossorigin="anonymous"></script>
 {% endblock %}

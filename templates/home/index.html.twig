@@ -4,162 +4,109 @@
 {% endblock %}
 
 {% block body %}
-	<style>
-		.cardBook {
-			width: 350px;
-		}
-        .carousel {
-			margin-bottom: 4rem;
-		}
-		/* Since positioning the image, we need to help out the caption */
-		.carousel-caption {
-			bottom: 3rem;
-			z-index: 10;
-		}
-
-		/* Declare heights because of positioning of img element */
-		.carousel-item {
-			height: 30rem;
-		}
-		.carousel-item > img {
-			position: absolute;
-			top: 0;
-			left: 0;
-			min-width: 100%;
-			height: 100%;
-		}
-
-		.col-lg-4 img {
-			box-shadow: 2px 5px 5px gray;
-		}
-		.card {
-			box-shadow: 5px 5px 5px gray;
-		}
-	</style>
-{# -----------------Caroussel---------------------- #}
-<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-		<div class="carousel-indicators">
-			<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-			<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-			<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-		</div>
+	{# -----------------Caroussel---------------------- #}
+	<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-inner">
+
 			<div class="carousel-item active">
-				<img src="/assets/images/boutiqueSlide1.jpg">
-				<div class="container">
-					<div class="carousel-caption text-start">
-						<h2>Achats en ligne.</h2>
-						<p>Achetez l'article de vos rèves en quelques clics</p>
-						<p>
-							<a class="btn btn-lg btn-warning border-dark btn-outline-dark" href="#">Boutique</a>
-						</p>
-					</div>
-				</div>
+				<img class="img-fluid" src="/assets/images/librairie-enfant.jpg" alt="image d'enfant en pleine lecture">
 			</div>
+
 			<div class="carousel-item">
-				<img src="/assets/images/boutiqueSlide2.jpg">
-				<div class="container">
-					<div class="carousel-caption">
-						<h2>Livraison</h2>
-						<p>Envoyez ou Reçevez vos achats où que vous soyez !</p>
-						<p>
-							<a class="btn btn-lg btn-warning border-dark btn-outline-dark" href="#">Livrer</a>
-						</p>
-					</div>
-				</div>
+				<img class="img-fluid" src="/assets/images/slider2.png" alt="image d'enfant en pleine lecture">
 			</div>
+
 			<div class="carousel-item">
-				<img src="/assets/images/boutiqueSlide3.jpg">
-				<div class="container">
-					<div class="carousel-caption text-end">
-						<h2>Ventes</h2>
-						<p>Gagner de l'argent facilement en vendant vos objets</p>
-						<p>
-							<a class="btn btn-lg btn-warning border-dark btn-outline-dark" href="#">Ventes d'articles</a>
-						</p>
-					</div>
-				</div>
+				<img class="img-fluid" src="/assets/images/slider1.png" alt="image d'enfant en pleine lecture">
 			</div>
 		</div>
+
 		<button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 			<span class="visually-hidden">Previous</span>
 		</button>
+		
 		<button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
 			<span class="carousel-control-next-icon" aria-hidden="true"></span>
 			<span class="visually-hidden">Next</span>
 		</button>
 	</div>
 
+	{# -----------------------Prochain évenement----------------------- #}
 
-{# ------------------- Apercu de livre ---------------- #}
-	.<div class="container">
-		.<div class="row">
-			<div class="col">
-				<div class="cardBook">
-					<div class="card">
-						<img class="card-img-top" src="holder.js/100x180/" alt='Image du livre"..."'>
-						<div class="card-body">
-							<h4 class="card-title">Titre</h4>
-							<p class="card-text">Auteur</p>
-							<p class="card-text">Description du livre</p>
-							<p class="card-text">prix</p>
-							<a name="" id="" class="btn btn-primary" href="#" role="button">details</a>
-						</div>
+	<div class="card mb-3 border-warning">
+		<div class="row g-0">
+			<div class="col-md-4 m-auto">
+			<h3>Prochain évenement :</h3>
+				{% for calendars in calendars|slice(0,1)|reverse %}
+					<div>
+						<u><h6 class="text-danger">{{ calendars.title }}</h6></u>
+
+						<p>Le : {{ calendars.start ? calendars.start|date('d-m-Y') : '' }}</p>
 					</div>
-				</div>
-			</div>
-&nbsp
-			<div class="col">
-				<div class="cardBook">
-					<div class="card">
-						<img class="card-img-top" src="holder.js/100x180/" alt='Image du livre"..."'>
-						<div class="card-body">
-							<h4 class="card-title">Titre</h4>
-							<p class="card-text">Auteur</p>
-							<p class="card-text">Description du livre</p>
-							<p class="card-text">prix</p>
-							<a name="" id="" class="btn btn-primary" href="#" role="button">details</a>
-						</div>
-					</div>
-				</div>
+				{% endfor %}
 			</div>
 		</div>
 	</div>
-</div>
 
-	.<div class="container">
-		.<div class="row">
-			<div class="col">
-				<div class="cardBook">
-					<div class="card">
-						<img class="card-img-top" src="holder.js/100x180/" alt='Image du livre"..."'>
-						<div class="card-body">
-							<h4 class="card-title">Titre</h4>
-							<p class="card-text">Auteur</p>
-							<p class="card-text">Description du livre</p>
-							<p class="card-text">prix</p>
-							<a name="" id="" class="btn btn-primary" href="#" role="button">details</a>
+
+	{# ------------------- Apercu de livre ---------------- #}
+	<div class="container-fluid">
+		<div class="row">
+
+			{% for book in books|reverse|slice(0,4) %}
+
+				<div class=" card card-fluid mb-4 " style="max-width:900px; margin:auto; min-height:450px;">
+					<div class="row">
+						<div class="col-sm-5 ">
+							<img src="/assets/uploads/book/{{book.couvertureBook}}" class="img-fluid rounded" alt="Image du livre {{ book.title }}" style="max-height:400px;">
+							<center>
+								<p class="card-text" style="font-size:1.9em;">
+									<strong>{{ book.priceBook /100 }}&nbsp; €</strong>
+								</p>
+							</center>
+							<br>
 						</div>
+
+
+						<div class="col-sm-7">
+							<div class="card-body">
+								<h3 class="card-title" style="font-size:2em;">{{ book.title | upper}}&nbsp;{{ book.rate }}</h3>
+								<p class="card-text">
+									<strong>{{book.author | upper}}</strong>
+								</p>
+								<p class="card-text">{{ book.commentLibraire|striptags|slice(0, 150)~ '...' }}</p>
+								<p class="card-text">
+									<a href="{{ path('app_details_book', {'id': book.id}) }}">
+										<small class="text-muted">Plus de Détails>></small>
+									</a>
+								</p>
+							</div>
+						</div>
+
+
 					</div>
 				</div>
-			</div>
-&nbsp
-			<div class="col">
-				<div class="cardBook">
-					<div class="card">
-						<img class="card-img-top" src="holder.js/100x180/" alt='Image du livre"..."'>
-						<div class="card-body">
-							<h4 class="card-title">Titre</h4>
-							<p class="card-text">Auteur</p>
-							<p class="card-text">Description du livre</p>
-							<p class="card-text">prix</p>
-							<a name="" id="" class="btn btn-primary" href="#" role="button">details</a>
-						</div>
+			{% endfor %}
+		</div>
+	</div>
+	<center>
+		<a href="/conseils">
+			<button class="btn btn-outline-secondary my-2 my-sm-0">Afficher plus >></button>
+		</a>
+	</center><br>
+	{# --------------newsletter------------ #}
+	<div class="card mb-3 border-success">
+		<div class="row g-0">
+			<div class="col-md-4 m-auto">
+
+				{% for users in users|slice(0,1)|reverse %}
+					<div>
+						<p>{{ users.email }} c'est inscrit a notre newsletter</p>
 					</div>
-				</div>
+				{% endfor %}
+
 			</div>
 		</div>
 	</div>
-</div>
 {% endblock %}
