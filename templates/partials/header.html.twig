@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #000;">
-	<a class="navbar-brand" href="#">Logo</a>
+<nav class="navbar navbar-expand-sm navbar-dark" id="navbar">
+	<a class="navbar-brand" id="imgLogo" href="/"><img src="https://i.goopics.net/kwkwyv.png" alt="Logo AlphaBetise" width="50vw"></a>
 	<button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
 	<div class="collapse navbar-collapse" id="collapsibleNavId">
 		<ul class="navbar-nav me-auto mt-2 mt-lg-0">
@@ -40,9 +40,37 @@
 			<a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
 				<img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
 			</a>
-			<ul class="dropdown-menu text-small">
+			<ul id="burger" class="dropdown-menu text-small">
 				<li>
-					<a class="dropdown-item" href="#">Panier</a>
+					<a class="dropdown-item" id="panier" href="/cart">Panier <i class="fa-solid fa-cart-arrow-down fa-beat"></i>
+						{# <a href="/cart">Panier <i class="fa-solid fa-cart-arrow-down fa-beat"></i></a> #}
+						{% if app.session.get('cart') %}
+							{{ app.session.get('cartData').data.quantity_cart }}
+						{% else %}
+							0
+						{% endif %}
+					</a>
+            <div class="cart_box dropdown-menu dropdown-menu-right">
+				<ul class="cart_list">
+					{% if app.session.get('cartData') %}
+						{% for element in app.session.get('cartData').data.quantity_cart %}
+					<li>
+						<a href="{{ path('cartDeleteAll', {'id':element.book.id})}}" class="item_remove"><i class="ion-close"></i></a>
+										<a href="#"><img src="/assets/uploads/book/{{ element.book.couvertureBook}}" alt="{{ element.book.title}}">{{ element.book.title}}</a>
+										<span class="cart_quantity">{{ element.quantity }}<span class="cart_amount"> x <span class="price_symbole">€</span></span>{{ element.book.priceBook/100 }}</span>
+									</li>
+						{% endfor %}
+					{% else %}
+						<li>Votre panier est vide !</li>
+					{% endif %}
+        </ul>
+        {% if app.session.get('cartData') %}
+        <div class="cart_footer">
+                <p class="cart_total"><strong>Soustotal HT:</strong> <span class="cart_price"> <span class="price_symbole">€</span></span>{{ app.session.get('cartData').data.subTotalTTC }}</p>
+                <p class="cart_buttons"><a href="/cart" class="btn btn-fill-line rounded-0 view-cart">Retour panier</a><a href="" class="btn btn-fill-out rounded-0 checkout">Valider</a></p>
+            </div>
+        {% endif %}                           
+    </div>
 				</li>
 				<li>
 					<a class="dropdown-item" href="#">Paramètre</a>

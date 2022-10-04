@@ -85,56 +85,29 @@ class __TwigTemplate_446572e0fff3db9ea764e92d76cf524d6cb729b77eb75cd3210d6c551bb
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "<style>
-    #form,#description{
-        width:400px;
-        height:300px;
-        margin:auto;
-        margin-top: 100px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        align-content: center;
-    }
-    #form{
-        background-color: beige;
-        border-radius : 10px;
-        padding: 15px;
-    }
-    .separation{
-        width:70%;
-        height:1px;
-        background-color: black;
-    }
-
-    ";
-        // line 38
         echo "
-</style>
     <div id=\"form\">
         <h1>Contactez-nous</h1>
         <div class=\"separation\"></div>
         <label> Email : </label>";
-        // line 43
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock(twig_get_attribute($this->env, $this->source, (isset($context["formulaire"]) || array_key_exists("formulaire", $context) ? $context["formulaire"] : (function () { throw new RuntimeError('Variable "formulaire" does not exist.', 43, $this->source); })()), "email", [], "any", false, false, false, 43), 'form');
+        // line 10
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock(twig_get_attribute($this->env, $this->source, (isset($context["formulaire"]) || array_key_exists("formulaire", $context) ? $context["formulaire"] : (function () { throw new RuntimeError('Variable "formulaire" does not exist.', 10, $this->source); })()), "email", [], "any", false, false, false, 10), 'form');
         echo "
         <label> Message : </label> ";
-        // line 44
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock(twig_get_attribute($this->env, $this->source, (isset($context["formulaire"]) || array_key_exists("formulaire", $context) ? $context["formulaire"] : (function () { throw new RuntimeError('Variable "formulaire" does not exist.', 44, $this->source); })()), "message", [], "any", false, false, false, 44), 'form');
+        // line 11
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock(twig_get_attribute($this->env, $this->source, (isset($context["formulaire"]) || array_key_exists("formulaire", $context) ? $context["formulaire"] : (function () { throw new RuntimeError('Variable "formulaire" does not exist.', 11, $this->source); })()), "message", [], "any", false, false, false, 11), 'form');
         echo "
 
         <input name=\"\" id=\"\" class=\"btn btn-primary\" type=\"button\" value=\"Envoyer\">
-
-    
     </div>
 
     <div id=\"description\">
-        <p>Numéro de téléphone : 0690123465 <br>
-        Le siege social se situe au : <br/> CWTC Complexe World Trade Center <br/>
+        <p>Numéro de téléphone : 0690.12.34.65 </p>
+        <p>Horaire d'ouverture : 08h00 à 22h00 </p>
+        <p>Le siege social se situe au : <br/> CWTC Complexe World Trade Center <br/>
         Route du CWTC 97122 ZI de Jarry <br/> Baie Mahault, 97122, Guadeloupe <br/>
         </p>
-        <img src=\"assets/images/librairie-enfant.jpg\" style=\"max-width:400px;\">
+        <img id=\"tofCont\" src=\"assets/images/librairie-enfant.jpg\" alt=\"photo de la librairie\">
     </div>
 ";
         
@@ -157,7 +130,7 @@ class __TwigTemplate_446572e0fff3db9ea764e92d76cf524d6cb729b77eb75cd3210d6c551bb
 
     public function getDebugInfo()
     {
-        return array (  124 => 44,  120 => 43,  113 => 38,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  98 => 11,  94 => 10,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -167,40 +140,7 @@ class __TwigTemplate_446572e0fff3db9ea764e92d76cf524d6cb729b77eb75cd3210d6c551bb
 {% block title %}Contact{% endblock %}
 
 {% block body %}
-<style>
-    #form,#description{
-        width:400px;
-        height:300px;
-        margin:auto;
-        margin-top: 100px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        align-content: center;
-    }
-    #form{
-        background-color: beige;
-        border-radius : 10px;
-        padding: 15px;
-    }
-    .separation{
-        width:70%;
-        height:1px;
-        background-color: black;
-    }
 
-    {# .img{
-        width:250px;
-        height:250px;
-        margin:auto;
-        background-image: url(../assets/images/librairie-enfant.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    } #}
-
-</style>
     <div id=\"form\">
         <h1>Contactez-nous</h1>
         <div class=\"separation\"></div>
@@ -208,18 +148,17 @@ class __TwigTemplate_446572e0fff3db9ea764e92d76cf524d6cb729b77eb75cd3210d6c551bb
         <label> Message : </label> {{form(formulaire.message)}}
 
         <input name=\"\" id=\"\" class=\"btn btn-primary\" type=\"button\" value=\"Envoyer\">
-
-    
     </div>
 
     <div id=\"description\">
-        <p>Numéro de téléphone : 0690123465 <br>
-        Le siege social se situe au : <br/> CWTC Complexe World Trade Center <br/>
+        <p>Numéro de téléphone : 0690.12.34.65 </p>
+        <p>Horaire d'ouverture : 08h00 à 22h00 </p>
+        <p>Le siege social se situe au : <br/> CWTC Complexe World Trade Center <br/>
         Route du CWTC 97122 ZI de Jarry <br/> Baie Mahault, 97122, Guadeloupe <br/>
         </p>
-        <img src=\"assets/images/librairie-enfant.jpg\" style=\"max-width:400px;\">
+        <img id=\"tofCont\" src=\"assets/images/librairie-enfant.jpg\" alt=\"photo de la librairie\">
     </div>
 {% endblock %}
-", "contacts/index.html.twig", "C:\\wamp64\\www\\Symfony5\\Alpha-Betise\\templates\\contacts\\index.html.twig");
+", "contacts/index.html.twig", "C:\\Users\\ydumi\\Desktop\\Alpha-Betise\\templates\\contacts\\index.html.twig");
     }
 }

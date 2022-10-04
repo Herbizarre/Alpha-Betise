@@ -3,40 +3,7 @@
 {% block title %}Contact{% endblock %}
 
 {% block body %}
-<style>
-    #form,#description{
-        width:400px;
-        height:300px;
-        margin:auto;
-        margin-top: 100px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        align-content: center;
-    }
-    #form{
-        background-color: beige;
-        border-radius : 10px;
-        padding: 15px;
-    }
-    .separation{
-        width:70%;
-        height:1px;
-        background-color: black;
-    }
 
-    {# .img{
-        width:250px;
-        height:250px;
-        margin:auto;
-        background-image: url(../assets/images/librairie-enfant.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    } #}
-
-</style>
     <div id="form">
         <h1>Contactez-nous</h1>
         <div class="separation"></div>
@@ -44,15 +11,14 @@
         <label> Message : </label> {{form(formulaire.message)}}
 
         <input name="" id="" class="btn btn-primary" type="button" value="Envoyer">
-
-    
     </div>
 
     <div id="description">
-        <p>Numéro de téléphone : 0690123465 <br>
-        Le siege social se situe au : <br/> CWTC Complexe World Trade Center <br/>
+        <p>Numéro de téléphone : 0690.12.34.65 </p>
+        <p>Horaire d'ouverture : 08h00 à 22h00 </p>
+        <p>Le siege social se situe au : <br/> CWTC Complexe World Trade Center <br/>
         Route du CWTC 97122 ZI de Jarry <br/> Baie Mahault, 97122, Guadeloupe <br/>
         </p>
-        <img src="assets/images/librairie-enfant.jpg" style="max-width:400px;">
+        <img id="tofCont" src="assets/images/librairie-enfant.jpg" alt="photo de la librairie">
     </div>
 {% endblock %}
