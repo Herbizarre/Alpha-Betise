@@ -88,7 +88,7 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
         // line 7
         echo "\t";
         // line 8
-        echo "\t<div id=\"myCarousel\" class=\"carousel slide\" data-bs-ride=\"carousel\">
+        echo "\t<div id=\"myCarousel\" class=\"carousel-fluid slide\" data-bs-ride=\"carousel\">
 \t\t<div class=\"carousel-inner\">
 
 \t\t\t<div class=\"carousel-item active\">
@@ -295,7 +295,7 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 
 {% block body %}
 \t{# -----------------Caroussel---------------------- #}
-\t<div id=\"myCarousel\" class=\"carousel slide\" data-bs-ride=\"carousel\">
+\t<div id=\"myCarousel\" class=\"carousel-fluid slide\" data-bs-ride=\"carousel\">
 \t\t<div class=\"carousel-inner\">
 
 \t\t\t<div class=\"carousel-item active\">
@@ -405,6 +405,6 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 \t</a>
 
 {% endblock %}
-", "home/index.html.twig", "C:\\Users\\ydumi\\Desktop\\Alpha-Betise\\templates\\home\\index.html.twig");
+", "home/index.html.twig", "C:\\wamp64\\www\\Symfony5\\Alpha-Betise\\templates\\home\\index.html.twig");
     }
 }

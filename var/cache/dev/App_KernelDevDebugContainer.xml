@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services https://symfony.com/schema/dic/services/services-1.0.xsd">
   <parameters>
-    <parameter key="kernel.project_dir">C:\Users\ydumi\Desktop\Alpha-Betise</parameter>
+    <parameter key="kernel.project_dir">C:\wamp64\www\Symfony5\Alpha-Betise</parameter>
     <parameter key="kernel.environment">dev</parameter>
     <parameter key="kernel.runtime_environment">%env(default:kernel.environment:APP_RUNTIME_ENV)%</parameter>
     <parameter key="kernel.debug">true</parameter>
-    <parameter key="kernel.build_dir">C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev</parameter>
-    <parameter key="kernel.cache_dir">C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev</parameter>
-    <parameter key="kernel.logs_dir">C:\Users\ydumi\Desktop\Alpha-Betise\var\log</parameter>
+    <parameter key="kernel.build_dir">C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev</parameter>
+    <parameter key="kernel.cache_dir">C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev</parameter>
+    <parameter key="kernel.logs_dir">C:\wamp64\www\Symfony5\Alpha-Betise\var\log</parameter>
     <parameter key="kernel.bundles" type="collection">
       <parameter key="FrameworkBundle">Symfony\Bundle\FrameworkBundle\FrameworkBundle</parameter>
       <parameter key="DoctrineBundle">Doctrine\Bundle\DoctrineBundle\DoctrineBundle</parameter>
@@ -25,55 +25,55 @@
     </parameter>
     <parameter key="kernel.bundles_metadata" type="collection">
       <parameter key="FrameworkBundle" type="collection">
-        <parameter key="path">C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\framework-bundle</parameter>
+        <parameter key="path">C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\framework-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\FrameworkBundle</parameter>
       </parameter>
       <parameter key="DoctrineBundle" type="collection">
-        <parameter key="path">C:\Users\ydumi\Desktop\Alpha-Betise\vendor\doctrine\doctrine-bundle</parameter>
+        <parameter key="path">C:\wamp64\www\Symfony5\Alpha-Betise\vendor\doctrine\doctrine-bundle</parameter>
         <parameter key="namespace">Doctrine\Bundle\DoctrineBundle</parameter>
       </parameter>
       <parameter key="DoctrineMigrationsBundle" type="collection">
-        <parameter key="path">C:\Users\ydumi\Desktop\Alpha-Betise\vendor\doctrine\doctrine-migrations-bundle</parameter>
+        <parameter key="path">C:\wamp64\www\Symfony5\Alpha-Betise\vendor\doctrine\doctrine-migrations-bundle</parameter>
         <parameter key="namespace">Doctrine\Bundle\MigrationsBundle</parameter>
       </parameter>
       <parameter key="DebugBundle" type="collection">
-        <parameter key="path">C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\debug-bundle</parameter>
+        <parameter key="path">C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\debug-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\DebugBundle</parameter>
       </parameter>
       <parameter key="TwigBundle" type="collection">
-        <parameter key="path">C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\twig-bundle</parameter>
+        <parameter key="path">C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\twig-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\TwigBundle</parameter>
       </parameter>
       <parameter key="WebProfilerBundle" type="collection">
-        <parameter key="path">C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\web-profiler-bundle</parameter>
+        <parameter key="path">C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\web-profiler-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\WebProfilerBundle</parameter>
       </parameter>
       <parameter key="TwigExtraBundle" type="collection">
-        <parameter key="path">C:\Users\ydumi\Desktop\Alpha-Betise\vendor\twig\extra-bundle</parameter>
+        <parameter key="path">C:\wamp64\www\Symfony5\Alpha-Betise\vendor\twig\extra-bundle</parameter>
         <parameter key="namespace">Twig\Extra\TwigExtraBundle</parameter>
       </parameter>
       <parameter key="SecurityBundle" type="collection">
-        <parameter key="path">C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-bundle</parameter>
+        <parameter key="path">C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\SecurityBundle</parameter>
       </parameter>
       <parameter key="MonologBundle" type="collection">
-        <parameter key="path">C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\monolog-bundle</parameter>
+        <parameter key="path">C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\monolog-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\MonologBundle</parameter>
       </parameter>
       <parameter key="MakerBundle" type="collection">
-        <parameter key="path">C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\maker-bundle\src</parameter>
+        <parameter key="path">C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\maker-bundle\src</parameter>
         <parameter key="namespace">Symfony\Bundle\MakerBundle</parameter>
       </parameter>
       <parameter key="SensioFrameworkExtraBundle" type="collection">
-        <parameter key="path">C:\Users\ydumi\Desktop\Alpha-Betise\vendor\sensio\framework-extra-bundle\src</parameter>
+        <parameter key="path">C:\wamp64\www\Symfony5\Alpha-Betise\vendor\sensio\framework-extra-bundle\src</parameter>
         <parameter key="namespace">Sensio\Bundle\FrameworkExtraBundle</parameter>
       </parameter>
       <parameter key="SymfonyCastsVerifyEmailBundle" type="collection">
-        <parameter key="path">C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src</parameter>
+        <parameter key="path">C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src</parameter>
         <parameter key="namespace">SymfonyCasts\Bundle\VerifyEmail</parameter>
       </parameter>
       <parameter key="EasyAdminBundle" type="collection">
-        <parameter key="path">C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src</parameter>
+        <parameter key="path">C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src</parameter>
         <parameter key="namespace">EasyCorp\Bundle\EasyAdminBundle</parameter>
       </parameter>
     </parameter>
@@ -114,17 +114,17 @@
     <parameter key="asset.request_context.base_path">null</parameter>
     <parameter key="asset.request_context.secure">null</parameter>
     <parameter key="translator.logging">false</parameter>
-    <parameter key="translator.default_path">C:\Users\ydumi\Desktop\Alpha-Betise/translations</parameter>
+    <parameter key="translator.default_path">C:\wamp64\www\Symfony5\Alpha-Betise/translations</parameter>
     <parameter key="debug.error_handler.throw_at">-1</parameter>
-    <parameter key="debug.container.dump">C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev/App_KernelDevDebugContainer.xml</parameter>
+    <parameter key="debug.container.dump">C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev/App_KernelDevDebugContainer.xml</parameter>
     <parameter key="router.request_context.host">localhost</parameter>
     <parameter key="router.request_context.scheme">http</parameter>
     <parameter key="router.request_context.base_url"></parameter>
     <parameter key="router.resource">kernel::loadRoutes</parameter>
     <parameter key="request_listener.http_port">80</parameter>
     <parameter key="request_listener.https_port">443</parameter>
-    <parameter key="serializer.mapping.cache.file">C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev/serialization.php</parameter>
-    <parameter key="cache.prefix.seed">_C:\Users\ydumi\Desktop\Alpha-Betise.App_KernelDevDebugContainer</parameter>
+    <parameter key="serializer.mapping.cache.file">C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev/serialization.php</parameter>
+    <parameter key="cache.prefix.seed">_C:\wamp64\www\Symfony5\Alpha-Betise.App_KernelDevDebugContainer</parameter>
     <parameter key="session.metadata.storage_key">_sf2_meta</parameter>
     <parameter key="session.storage.options" type="collection">
       <parameter key="cache_limiter" type="string">0</parameter>
@@ -133,15 +133,15 @@
       <parameter key="cookie_samesite">lax</parameter>
       <parameter key="gc_probability">1</parameter>
     </parameter>
-    <parameter key="session.save_path">C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev/sessions</parameter>
+    <parameter key="session.save_path">C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev/sessions</parameter>
     <parameter key="session.metadata.update_threshold">0</parameter>
     <parameter key="form.type_extension.csrf.enabled">true</parameter>
     <parameter key="form.type_extension.csrf.field_name">_token</parameter>
-    <parameter key="validator.mapping.cache.file">C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev/validation.php</parameter>
+    <parameter key="validator.mapping.cache.file">C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev/validation.php</parameter>
     <parameter key="validator.translation_domain">validators</parameter>
     <parameter key="profiler_listener.only_exceptions">false</parameter>
     <parameter key="profiler_listener.only_main_requests">false</parameter>
-    <parameter key="profiler.storage.dsn">file:C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev/profiler</parameter>
+    <parameter key="profiler.storage.dsn">file:C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev/profiler</parameter>
     <parameter key="doctrine.dbal.logger.chain.class">Doctrine\DBAL\Logging\LoggerChain</parameter>
     <parameter key="doctrine.dbal.logger.profiling.class">Doctrine\DBAL\Logging\DebugStack</parameter>
     <parameter key="doctrine.dbal.logger.class">Symfony\Bridge\Doctrine\Logger\DbalLogger</parameter>
@@ -215,7 +215,7 @@
     <parameter key="doctrine.orm.second_level_cache.cache_configuration.class">Doctrine\ORM\Cache\CacheConfiguration</parameter>
     <parameter key="doctrine.orm.second_level_cache.regions_configuration.class">Doctrine\ORM\Cache\RegionsConfiguration</parameter>
     <parameter key="doctrine.orm.auto_generate_proxy_classes">true</parameter>
-    <parameter key="doctrine.orm.proxy_dir">C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev/doctrine/orm/Proxies</parameter>
+    <parameter key="doctrine.orm.proxy_dir">C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev/doctrine/orm/Proxies</parameter>
     <parameter key="doctrine.orm.proxy_namespace">Proxies</parameter>
     <parameter key="doctrine.migrations.preferred_em">null</parameter>
     <parameter key="doctrine.migrations.preferred_connection">null</parameter>
@@ -223,7 +223,7 @@
     <parameter key="twig.form.resources" type="collection">
       <parameter>form_div_layout.html.twig</parameter>
     </parameter>
-    <parameter key="twig.default_path">C:\Users\ydumi\Desktop\Alpha-Betise/templates</parameter>
+    <parameter key="twig.default_path">C:\wamp64\www\Symfony5\Alpha-Betise/templates</parameter>
     <parameter key="web_profiler.debug_toolbar.intercept_redirects">false</parameter>
     <parameter key="web_profiler.debug_toolbar.mode">2</parameter>
     <parameter key="security.role_hierarchy.roles" type="collection"/>
@@ -594,7 +594,7 @@
       </argument>
     </service>
     <service id="http_cache.store" class="Symfony\Component\HttpKernel\HttpCache\Store">
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev/http_cache</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev/http_cache</argument>
     </service>
     <service id="url_helper" class="Symfony\Component\HttpFoundation\UrlHelper">
       <argument type="service" id="request_stack"/>
@@ -604,7 +604,7 @@
       <tag name="container.no_preload"/>
       <argument type="tagged_iterator" tag="kernel.cache_warmer"/>
       <argument>true</argument>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev/App_KernelDevDebugContainerDeprecations.log</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev/App_KernelDevDebugContainerDeprecations.log</argument>
     </service>
     <service id="cache_clearer" class="Symfony\Component\HttpKernel\CacheClearer\ChainCacheClearer" public="true">
       <tag name="container.private" package="symfony/framework-bundle" version="5.2"/>
@@ -653,6 +653,7 @@
         <argument key="twig.form.engine" type="service" id="twig.form.engine" on-invalid="ignore_uninitialized"/>
         <argument key="security.token_storage" type="service" id="security.token_storage" on-invalid="ignore_uninitialized"/>
         <argument key="cache.security_expression_language" type="service" id="cache.security_expression_language" on-invalid="ignore_uninitialized"/>
+        <argument key="cache.security_token_verifier" type="service" id="cache.security_token_verifier" on-invalid="ignore_uninitialized"/>
         <argument key="monolog.handler.main" type="service" id="monolog.handler.main" on-invalid="ignore_uninitialized"/>
         <argument key="monolog.handler.console" type="service" id="monolog.handler.console" on-invalid="ignore_uninitialized"/>
         <argument key=".debug.http_client" type="service" id=".debug.http_client" on-invalid="ignore_uninitialized"/>
@@ -723,6 +724,9 @@
           <argument>setToken</argument>
         </argument>
         <argument key="cache.security_expression_language" type="collection">
+          <argument>reset</argument>
+        </argument>
+        <argument key="cache.security_token_verifier" type="collection">
           <argument>reset</argument>
         </argument>
         <argument key="monolog.handler.main" type="collection">
@@ -804,7 +808,7 @@
       </argument>
       <argument>UTF-8</argument>
       <argument type="service" id="debug.file_link_formatter" on-invalid="null"/>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise</argument>
       <argument type="service">
         <service>
           <argument type="service" id="request_stack"/>
@@ -837,7 +841,7 @@
       <tag name="console.command"/>
       <tag name="container.no_preload"/>
       <argument type="service" id="filesystem"/>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise</argument>
       <call method="setName">
         <argument>assets:install</argument>
       </call>
@@ -873,6 +877,7 @@
         <argument>cache.doctrine.orm.default.result</argument>
         <argument>cache.doctrine.orm.default.query</argument>
         <argument>cache.security_expression_language</argument>
+        <argument>cache.security_token_verifier</argument>
       </argument>
       <call method="setName">
         <argument>cache:pool:clear</argument>
@@ -908,6 +913,7 @@
         <argument>cache.doctrine.orm.default.result</argument>
         <argument>cache.doctrine.orm.default.query</argument>
         <argument>cache.security_expression_language</argument>
+        <argument>cache.security_token_verifier</argument>
       </argument>
       <call method="setName">
         <argument>cache:pool:delete</argument>
@@ -931,6 +937,7 @@
         <argument>cache.doctrine.orm.default.result</argument>
         <argument>cache.doctrine.orm.default.query</argument>
         <argument>cache.security_expression_language</argument>
+        <argument>cache.security_token_verifier</argument>
       </argument>
       <call method="setName">
         <argument>cache:pool:list</argument>
@@ -1006,7 +1013,7 @@
       <tag name="console.command"/>
       <tag name="container.no_preload"/>
       <argument>dev</argument>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise</argument>
       <call method="setName">
         <argument>debug:dotenv</argument>
       </call>
@@ -1181,16 +1188,16 @@
       <argument type="service" id="translator.data_collector"/>
       <argument type="service" id="translation.reader"/>
       <argument type="service" id="translation.extractor"/>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise/translations</argument>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise/templates</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise/translations</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise/templates</argument>
       <argument type="collection">
-        <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations</argument>
-        <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations</argument>
-        <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations</argument>
+        <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations</argument>
+        <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations</argument>
+        <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations</argument>
       </argument>
       <argument type="collection">
-        <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\twig-bridge/Resources/views/Email</argument>
-        <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\twig-bridge/Resources/views/Form</argument>
+        <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\twig-bridge/Resources/views/Email</argument>
+        <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\twig-bridge/Resources/views/Form</argument>
       </argument>
       <argument type="collection"/>
       <call method="setName">
@@ -1207,16 +1214,16 @@
       <argument type="service" id="translation.reader"/>
       <argument type="service" id="translation.extractor"/>
       <argument>en</argument>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise/translations</argument>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise/templates</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise/translations</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise/templates</argument>
       <argument type="collection">
-        <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations</argument>
-        <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations</argument>
-        <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations</argument>
+        <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations</argument>
+        <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations</argument>
+        <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations</argument>
       </argument>
       <argument type="collection">
-        <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\twig-bridge/Resources/views/Email</argument>
-        <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\twig-bridge/Resources/views/Form</argument>
+        <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\twig-bridge/Resources/views/Email</argument>
+        <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\twig-bridge/Resources/views/Form</argument>
       </argument>
       <argument type="collection"/>
       <call method="setName">
@@ -1457,7 +1464,7 @@
       <argument></argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev/pools/system</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -1487,7 +1494,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev/pools/app</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev/pools/app</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
@@ -1586,6 +1593,7 @@
         <argument key="cache.property_info" type="service" id="cache.property_info" on-invalid="ignore_uninitialized"/>
         <argument key="cache.validator_expression_language" type="service" id="cache.validator_expression_language" on-invalid="ignore_uninitialized"/>
         <argument key="cache.security_expression_language" type="service" id="cache.security_expression_language" on-invalid="ignore_uninitialized"/>
+        <argument key="cache.security_token_verifier" type="service" id="cache.security_token_verifier" on-invalid="ignore_uninitialized"/>
       </argument>
     </service>
     <service id="cache.global_clearer" class="Symfony\Component\HttpKernel\CacheClearer\Psr6CacheClearer" public="true">
@@ -1602,6 +1610,7 @@
         <argument key="cache.doctrine.orm.default.result" type="service" id="cache.doctrine.orm.default.result" on-invalid="ignore_uninitialized"/>
         <argument key="cache.doctrine.orm.default.query" type="service" id="cache.doctrine.orm.default.query" on-invalid="ignore_uninitialized"/>
         <argument key="cache.security_expression_language" type="service" id="cache.security_expression_language" on-invalid="ignore_uninitialized"/>
+        <argument key="cache.security_token_verifier" type="service" id="cache.security_token_verifier" on-invalid="ignore_uninitialized"/>
       </argument>
     </service>
     <service id="identity_translator" class="Symfony\Component\Translation\IdentityTranslator"/>
@@ -1772,378 +1781,378 @@
         </argument>
       </argument>
       <argument type="collection">
-        <argument key="cache_dir">C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev/translations</argument>
+        <argument key="cache_dir">C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev/translations</argument>
         <argument key="debug">true</argument>
         <argument key="resource_files" type="collection">
           <argument key="af" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.af.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.af.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.af.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.af.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.af.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.af.xlf</argument>
           </argument>
           <argument key="ar" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.ar.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.ar.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.ar.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.ar.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.ar.php</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.ar.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.ar.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.ar.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.ar.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.ar.php</argument>
           </argument>
           <argument key="az" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.az.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.az.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.az.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.az.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.az.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.az.xlf</argument>
           </argument>
           <argument key="be" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.be.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.be.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.be.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.be.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.be.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.be.xlf</argument>
           </argument>
           <argument key="bg" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.bg.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.bg.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.bg.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.bg.php</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.bg.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.bg.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.bg.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.bg.php</argument>
           </argument>
           <argument key="bs" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.bs.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.bs.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.bs.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.bs.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.bs.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.bs.xlf</argument>
           </argument>
           <argument key="ca" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.ca.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.ca.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.ca.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.ca.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.ca.php</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.ca.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.ca.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.ca.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.ca.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.ca.php</argument>
           </argument>
           <argument key="cs" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.cs.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.cs.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.cs.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.cs.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.cs.php</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.cs.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.cs.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.cs.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.cs.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.cs.php</argument>
           </argument>
           <argument key="cy" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.cy.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.cy.xlf</argument>
           </argument>
           <argument key="da" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.da.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.da.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.da.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.da.php</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.da.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.da.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.da.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.da.php</argument>
           </argument>
           <argument key="de" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.de.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.de.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.de.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.de.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.de.php</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.de.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.de.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.de.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.de.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.de.php</argument>
           </argument>
           <argument key="el" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.el.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.el.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.el.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.el.php</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.el.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.el.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.el.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.el.php</argument>
           </argument>
           <argument key="en" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.en.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.en.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.en.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.en.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.en.php</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.en.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.en.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.en.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.en.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.en.php</argument>
           </argument>
           <argument key="es" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.es.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.es.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.es.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.es.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.es.php</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.es.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.es.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.es.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.es.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.es.php</argument>
           </argument>
           <argument key="et" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.et.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.et.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.et.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.et.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.et.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.et.xlf</argument>
           </argument>
           <argument key="eu" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.eu.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.eu.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.eu.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.eu.php</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.eu.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.eu.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.eu.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.eu.php</argument>
           </argument>
           <argument key="fa" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.fa.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.fa.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.fa.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.fa.php</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.fa.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.fa.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.fa.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.fa.php</argument>
           </argument>
           <argument key="fi" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.fi.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.fi.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.fi.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.fi.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.fi.php</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.fi.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.fi.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.fi.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.fi.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.fi.php</argument>
           </argument>
           <argument key="fr" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.fr.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.fr.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.fr.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.fr.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.fr.php</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.fr.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.fr.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.fr.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.fr.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.fr.php</argument>
           </argument>
           <argument key="gl" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.gl.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.gl.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.gl.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.gl.php</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.gl.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.gl.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.gl.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.gl.php</argument>
           </argument>
           <argument key="he" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.he.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.he.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.he.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.he.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.he.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.he.xlf</argument>
           </argument>
           <argument key="hr" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.hr.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.hr.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.hr.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.hr.php</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.hr.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.hr.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.hr.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.hr.php</argument>
           </argument>
           <argument key="hu" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.hu.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.hu.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.hu.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.hu.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.hu.php</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.hu.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.hu.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.hu.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.hu.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.hu.php</argument>
           </argument>
           <argument key="hy" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.hy.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.hy.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.hy.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.hy.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.hy.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.hy.xlf</argument>
           </argument>
           <argument key="id" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.id.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.id.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.id.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.id.php</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.id.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.id.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.id.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.id.php</argument>
           </argument>
           <argument key="it" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.it.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.it.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.it.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.it.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.it.php</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.it.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.it.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.it.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.it.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.it.php</argument>
           </argument>
           <argument key="ja" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.ja.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.ja.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.ja.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.ja.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.ja.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.ja.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.ja.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.ja.xlf</argument>
           </argument>
           <argument key="lb" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.lb.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.lb.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.lb.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.lb.php</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.lb.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.lb.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.lb.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.lb.php</argument>
           </argument>
           <argument key="lt" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.lt.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.lt.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.lt.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.lt.php</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.lt.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.lt.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.lt.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.lt.php</argument>
           </argument>
           <argument key="lv" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.lv.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.lv.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.lv.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.lv.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.lv.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.lv.xlf</argument>
           </argument>
           <argument key="mn" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.mn.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.mn.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.mn.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.mn.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.mn.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.mn.xlf</argument>
           </argument>
           <argument key="my" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.my.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.my.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.my.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.my.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.my.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.my.xlf</argument>
           </argument>
           <argument key="nb" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.nb.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.nb.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.nb.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.nb.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.nb.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.nb.xlf</argument>
           </argument>
           <argument key="nl" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.nl.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.nl.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.nl.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle+intl-icu.nl.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.nl.php</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.nl.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.nl.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.nl.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle+intl-icu.nl.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.nl.php</argument>
           </argument>
           <argument key="nn" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.nn.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.nn.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.nn.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.nn.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.nn.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.nn.xlf</argument>
           </argument>
           <argument key="no" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.no.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.no.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.no.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.no.php</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.no.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.no.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.no.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.no.php</argument>
           </argument>
           <argument key="pl" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.pl.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.pl.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.pl.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.pl.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.pl.php</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.pl.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.pl.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.pl.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.pl.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.pl.php</argument>
           </argument>
           <argument key="pt" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.pt.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.pt.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.pt.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.pt.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.pt.php</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.pt.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.pt.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.pt.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.pt.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.pt.php</argument>
           </argument>
           <argument key="pt_BR" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.pt_BR.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.pt_BR.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.pt_BR.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.pt_BR.php</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.pt_BR.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.pt_BR.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.pt_BR.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.pt_BR.php</argument>
           </argument>
           <argument key="ro" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.ro.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.ro.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.ro.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.ro.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.ro.php</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.ro.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.ro.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.ro.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.ro.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.ro.php</argument>
           </argument>
           <argument key="ru" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.ru.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.ru.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.ru.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.ru.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.ru.php</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.ru.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.ru.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.ru.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.ru.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.ru.php</argument>
           </argument>
           <argument key="sk" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.sk.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.sk.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.sk.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.sk.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.sk.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.sk.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.sk.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.sk.xlf</argument>
           </argument>
           <argument key="sl" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.sl.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.sl.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.sl.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.sl.php</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.sl.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.sl.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.sl.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.sl.php</argument>
           </argument>
           <argument key="sq" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.sq.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.sq.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.sq.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.sq.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.sq.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.sq.xlf</argument>
           </argument>
           <argument key="sr_Cyrl" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.sr_Cyrl.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.sr_Cyrl.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.sr_Cyrl.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.sr_Cyrl.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.sr_Cyrl.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.sr_Cyrl.xlf</argument>
           </argument>
           <argument key="sr_Latn" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.sr_Latn.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.sr_Latn.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.sr_Latn.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.sr_Latn.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.sr_Latn.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.sr_Latn.xlf</argument>
           </argument>
           <argument key="sv" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.sv.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.sv.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.sv.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.sv.php</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.sv.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.sv.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.sv.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.sv.php</argument>
           </argument>
           <argument key="th" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.th.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.th.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.th.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.th.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.th.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.th.xlf</argument>
           </argument>
           <argument key="tl" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.tl.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.tl.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.tl.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.tl.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.tl.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.tl.xlf</argument>
           </argument>
           <argument key="tr" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.tr.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.tr.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.tr.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.tr.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.tr.php</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.tr.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.tr.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.tr.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.tr.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.tr.php</argument>
           </argument>
           <argument key="uk" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.uk.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.uk.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.uk.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.uk.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.uk.php</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.uk.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.uk.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.uk.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.uk.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.uk.php</argument>
           </argument>
           <argument key="uz" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.uz.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.uz.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.uz.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.uz.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.uz.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.uz.xlf</argument>
           </argument>
           <argument key="vi" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.vi.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.vi.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.vi.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.vi.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.vi.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.vi.xlf</argument>
           </argument>
           <argument key="zh_CN" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.zh_CN.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.zh_CN.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.zh_CN.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.zh_CN.php</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.zh_CN.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.zh_CN.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.zh_CN.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.zh_CN.php</argument>
           </argument>
           <argument key="zh_TW" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.zh_TW.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.zh_TW.xlf</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.zh_TW.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations\validators.zh_TW.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations\validators.zh_TW.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations\security.zh_TW.xlf</argument>
           </argument>
           <argument key="sr" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.sr.xlf</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations\VerifyEmailBundle.sr.xlf</argument>
           </argument>
           <argument key="sr_RS" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.sr_RS.php</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations\EasyAdminBundle.sr_RS.php</argument>
           </argument>
         </argument>
         <argument key="scanned_directories" type="collection">
-          <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations</argument>
-          <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations</argument>
-          <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations</argument>
-          <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations</argument>
-          <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations</argument>
-          <argument>C:\Users\ydumi\Desktop\Alpha-Betise/translations</argument>
-          <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\framework-bundle/translations</argument>
-          <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\doctrine\doctrine-bundle/translations</argument>
-          <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\doctrine\doctrine-migrations-bundle/translations</argument>
-          <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\debug-bundle/translations</argument>
-          <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\twig-bundle/translations</argument>
-          <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\web-profiler-bundle/translations</argument>
-          <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\twig\extra-bundle/translations</argument>
-          <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-bundle/translations</argument>
-          <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\monolog-bundle/translations</argument>
-          <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\maker-bundle\src/translations</argument>
-          <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\sensio\framework-extra-bundle\src/translations</argument>
+          <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations</argument>
+          <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations</argument>
+          <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations</argument>
+          <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations</argument>
+          <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations</argument>
+          <argument>C:\wamp64\www\Symfony5\Alpha-Betise/translations</argument>
+          <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\framework-bundle/translations</argument>
+          <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\doctrine\doctrine-bundle/translations</argument>
+          <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\doctrine\doctrine-migrations-bundle/translations</argument>
+          <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\debug-bundle/translations</argument>
+          <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\twig-bundle/translations</argument>
+          <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\web-profiler-bundle/translations</argument>
+          <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\twig\extra-bundle/translations</argument>
+          <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-bundle/translations</argument>
+          <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\monolog-bundle/translations</argument>
+          <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\maker-bundle\src/translations</argument>
+          <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\sensio\framework-extra-bundle\src/translations</argument>
         </argument>
         <argument key="cache_vary" type="collection">
           <argument key="scanned_directories" type="collection">
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\validator/Resources/translations</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/translations</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-core/Resources/translations</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\validator/Resources/translations</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/translations</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-core/Resources/translations</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfonycasts\verify-email-bundle\src/Resources/translations</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/translations</argument>
             <argument>translations</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\framework-bundle/translations</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\doctrine\doctrine-bundle/translations</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\doctrine\doctrine-migrations-bundle/translations</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\debug-bundle/translations</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\twig-bundle/translations</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\web-profiler-bundle/translations</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\twig\extra-bundle/translations</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-bundle/translations</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\monolog-bundle/translations</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\maker-bundle\src/translations</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\sensio\framework-extra-bundle\src/translations</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\framework-bundle/translations</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\doctrine\doctrine-bundle/translations</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\doctrine\doctrine-migrations-bundle/translations</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\debug-bundle/translations</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\twig-bundle/translations</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\web-profiler-bundle/translations</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\twig\extra-bundle/translations</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-bundle/translations</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\monolog-bundle/translations</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\maker-bundle\src/translations</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\sensio\framework-extra-bundle\src/translations</argument>
           </argument>
         </argument>
       </argument>
@@ -2376,7 +2385,7 @@
     <service id="debug.file_link_formatter" class="Symfony\Component\HttpKernel\Debug\FileLinkFormatter">
       <argument>null</argument>
       <argument type="service" id="request_stack" on-invalid="ignore"/>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise</argument>
       <argument type="service_closure" id="debug.file_link_formatter.url_format"/>
     </service>
     <service id="debug.stopwatch" class="Symfony\Component\Stopwatch\Stopwatch">
@@ -3069,7 +3078,7 @@
       <argument type="service" id=".service_locator.491LSII.router.default"/>
       <argument>kernel::loadRoutes</argument>
       <argument type="collection">
-        <argument key="cache_dir">C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev</argument>
+        <argument key="cache_dir">C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev</argument>
         <argument key="debug">true</argument>
         <argument key="generator_class">Symfony\Component\Routing\Generator\CompiledUrlGenerator</argument>
         <argument key="generator_dumper_class">Symfony\Component\Routing\Generator\Dumper\CompiledUrlGeneratorDumper</argument>
@@ -3119,7 +3128,7 @@
       <argument type="service" id="request_stack"/>
       <argument type="service" id="router.request_context" on-invalid="ignore"/>
       <argument type="service" id="monolog.logger.request" on-invalid="ignore"/>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise</argument>
       <argument>true</argument>
     </service>
     <service id="Symfony\Bundle\FrameworkBundle\Controller\RedirectController" class="Symfony\Bundle\FrameworkBundle\Controller\RedirectController" public="true">
@@ -3187,13 +3196,13 @@
     <service id="annotations.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\AnnotationsCacheWarmer">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="annotations.reader"/>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev/annotations.php</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev/annotations.php</argument>
       <argument>#^Symfony\\(?:Component\\HttpKernel\\|Bundle\\FrameworkBundle\\Controller\\(?!.*Controller$))#</argument>
       <argument>true</argument>
     </service>
     <service id="annotations.cache_adapter" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter">
       <tag name="container.hot_path"/>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev/annotations.php</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev/annotations.php</argument>
       <argument type="service" id="cache.annotations"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
@@ -3211,7 +3220,7 @@
     </service>
     <service id="secrets.vault" class="Symfony\Bundle\FrameworkBundle\Secrets\SodiumVault">
       <tag name="container.env_var_loader"/>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise/config/secrets/%env(default:kernel.environment:APP_RUNTIME_ENV)%</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise/config/secrets/%env(default:kernel.environment:APP_RUNTIME_ENV)%</argument>
       <argument type="service" id="secrets.decryption_key" on-invalid="ignore"/>
     </service>
     <service id="secrets.decryption_key" class="Symfony\Component\String\LazyString">
@@ -3220,7 +3229,7 @@
       <factory class="Symfony\Component\String\LazyString" method="fromCallable"/>
     </service>
     <service id="secrets.local_vault" class="Symfony\Bundle\FrameworkBundle\Secrets\DotenvVault">
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise/.env.dev.local</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise/.env.dev.local</argument>
     </service>
     <service id="serializer" class="Symfony\Component\Serializer\Serializer" public="true">
       <tag name="container.private" package="symfony/framework-bundle" version="5.2"/>
@@ -3333,10 +3342,10 @@
           </service>
         </argument>
       </argument>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev/serialization.php</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev/serialization.php</argument>
     </service>
     <service id="serializer.mapping.cache.symfony" class="Psr\Cache\CacheItemPoolInterface">
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev/serialization.php</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev/serialization.php</argument>
       <argument type="service" id="cache.serializer"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
@@ -3489,7 +3498,7 @@
       <argument>true</argument>
     </service>
     <service id="session.storage.factory.mock_file" class="Symfony\Component\HttpFoundation\Session\Storage\MockFileSessionStorageFactory">
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev/sessions</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev/sessions</argument>
       <argument>MOCKSESSID</argument>
       <argument type="service">
         <service class="Symfony\Component\HttpFoundation\Session\Storage\MetadataBag">
@@ -3521,7 +3530,7 @@
     <service id="session.handler.native_file" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\StrictSessionHandler">
       <argument type="service">
         <service class="Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeFileSessionHandler">
-          <argument>C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev/sessions</argument>
+          <argument>C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev/sessions</argument>
         </service>
       </argument>
     </service>
@@ -3684,7 +3693,7 @@
       </call>
       <call method="addXmlMappings">
         <argument type="collection">
-          <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\form/Resources/config/validation.xml</argument>
+          <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\form/Resources/config/validation.xml</argument>
         </argument>
       </call>
       <call method="enableAnnotationMapping">
@@ -3712,10 +3721,10 @@
     <service id="validator.mapping.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\ValidatorCacheWarmer">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="validator.builder"/>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev/validation.php</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev/validation.php</argument>
     </service>
     <service id="validator.mapping.cache.adapter" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter">
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev/validation.php</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev/validation.php</argument>
       <argument type="service" id="cache.validator"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
@@ -4103,7 +4112,7 @@
       </call>
     </service>
     <service id="profiler.storage" class="Symfony\Component\HttpKernel\Profiler\FileProfilerStorage">
-      <argument>file:C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev/profiler</argument>
+      <argument>file:C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev/profiler</argument>
     </service>
     <service id="profiler_listener" class="Symfony\Component\HttpKernel\EventListener\ProfilerListener">
       <tag name="kernel.event_subscriber"/>
@@ -4150,7 +4159,7 @@
       <tag name="monolog.logger" channel="profiler"/>
       <tag name="data_collector" template="@WebProfiler/Collector/logger.html.twig" id="logger" priority="300"/>
       <argument type="service" id="monolog.logger.profiler" on-invalid="ignore"/>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev/App_KernelDevDebugContainer</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev/App_KernelDevDebugContainer</argument>
       <argument type="service" id="request_stack" on-invalid="ignore"/>
     </service>
     <service id="data_collector.time" class="Symfony\Component\HttpKernel\DataCollector\TimeDataCollector">
@@ -4211,6 +4220,10 @@
       <call method="addInstance">
         <argument>cache.security_expression_language</argument>
         <argument type="service" id="cache.security_expression_language"/>
+      </call>
+      <call method="addInstance">
+        <argument>cache.security_token_verifier</argument>
+        <argument type="service" id="cache.security_token_verifier"/>
       </call>
     </service>
     <service id="cache_pool_clearer.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\CachePoolClearerCacheWarmer">
@@ -4452,7 +4465,7 @@
       <tag name="doctrine.event_subscriber"/>
       <argument type="tagged_iterator" tag="messenger.receiver"/>
     </service>
-    <service id=".1_ServiceLocator~p6qyMbu" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".1_ServiceLocator~ujxk.la" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <argument type="collection"/>
     </service>
     <service id="doctrine.orm.proxy_cache_warmer" class="Symfony\Bridge\Doctrine\CacheWarmer\ProxyCacheWarmer">
@@ -4663,7 +4676,7 @@
         <argument type="service" id=".doctrine.orm.default_metadata_driver"/>
       </call>
       <call method="setProxyDir">
-        <argument>C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev/doctrine/orm/Proxies</argument>
+        <argument>C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev/doctrine/orm/Proxies</argument>
       </call>
       <call method="setProxyNamespace">
         <argument>Proxies</argument>
@@ -4696,7 +4709,7 @@
     <service id="doctrine.orm.default_annotation_metadata_driver" class="Doctrine\ORM\Mapping\Driver\AnnotationDriver">
       <argument type="service" id="annotations.cached_reader"/>
       <argument type="collection">
-        <argument>C:\Users\ydumi\Desktop\Alpha-Betise\src\Entity</argument>
+        <argument>C:\wamp64\www\Symfony5\Alpha-Betise\src\Entity</argument>
       </argument>
     </service>
     <service id="cache.doctrine.orm.default.metadata" class="Symfony\Component\Cache\Adapter\ArrayAdapter"/>
@@ -4762,7 +4775,7 @@
     <service id="doctrine.migrations.configuration" class="Doctrine\Migrations\Configuration\Configuration">
       <call method="addMigrationsDirectory">
         <argument>DoctrineMigrations</argument>
-        <argument>C:\Users\ydumi\Desktop\Alpha-Betise/migrations</argument>
+        <argument>C:\wamp64\www\Symfony5\Alpha-Betise/migrations</argument>
       </call>
       <call method="setAllOrNothing">
         <argument>false</argument>
@@ -4941,7 +4954,7 @@
         <argument key="source" type="service">
           <service class="Symfony\Component\VarDumper\Dumper\ContextProvider\SourceContextProvider">
             <argument>UTF-8</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise</argument>
             <argument type="service" id="debug.file_link_formatter" on-invalid="null"/>
           </service>
         </argument>
@@ -4963,7 +4976,7 @@
         <argument key="source" type="service">
           <service class="Symfony\Component\VarDumper\Dumper\ContextProvider\SourceContextProvider">
             <argument>UTF-8</argument>
-            <argument>C:\Users\ydumi\Desktop\Alpha-Betise</argument>
+            <argument>C:\wamp64\www\Symfony5\Alpha-Betise</argument>
             <argument type="service" id="debug.file_link_formatter" on-invalid="null"/>
           </service>
         </argument>
@@ -5028,7 +5041,7 @@
       <argument type="service" id="twig.loader.native_filesystem"/>
       <argument type="collection">
         <argument key="autoescape">name</argument>
-        <argument key="cache">C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev/twig</argument>
+        <argument key="cache">C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev/twig</argument>
         <argument key="charset">UTF-8</argument>
         <argument key="debug">true</argument>
         <argument key="strict_variables">true</argument>
@@ -5137,10 +5150,10 @@
     <service id="twig.template_iterator" class="Symfony\Bundle\TwigBundle\TemplateIterator">
       <argument type="service" id="kernel"/>
       <argument type="collection">
-        <argument key="C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\twig-bridge/Resources/views/Email">email</argument>
-        <argument key="C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\twig-bridge/Resources/views/Form">null</argument>
+        <argument key="C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\twig-bridge/Resources/views/Email">email</argument>
+        <argument key="C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\twig-bridge/Resources/views/Form">null</argument>
       </argument>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise/templates</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise/templates</argument>
     </service>
     <service id="twig.template_cache_warmer" class="Symfony\Bundle\TwigBundle\CacheWarmer\TemplateCacheWarmer">
       <tag name="kernel.cache_warmer"/>
@@ -5151,68 +5164,68 @@
     <service id="twig.loader.native_filesystem" class="Twig\Loader\FilesystemLoader">
       <tag name="twig.loader"/>
       <argument type="collection"/>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise</argument>
       <call method="addPath">
-        <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\doctrine\doctrine-bundle/Resources/views</argument>
+        <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\doctrine\doctrine-bundle/Resources/views</argument>
         <argument>Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\doctrine\doctrine-bundle/Resources/views</argument>
+        <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\doctrine\doctrine-bundle/Resources/views</argument>
         <argument>!Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\doctrine\doctrine-migrations-bundle/Resources/views</argument>
+        <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\doctrine\doctrine-migrations-bundle/Resources/views</argument>
         <argument>DoctrineMigrations</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\doctrine\doctrine-migrations-bundle/Resources/views</argument>
+        <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\doctrine\doctrine-migrations-bundle/Resources/views</argument>
         <argument>!DoctrineMigrations</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\debug-bundle/Resources/views</argument>
+        <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\debug-bundle/Resources/views</argument>
         <argument>Debug</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\debug-bundle/Resources/views</argument>
+        <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\debug-bundle/Resources/views</argument>
         <argument>!Debug</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\web-profiler-bundle/Resources/views</argument>
+        <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\web-profiler-bundle/Resources/views</argument>
         <argument>WebProfiler</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\web-profiler-bundle/Resources/views</argument>
+        <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\web-profiler-bundle/Resources/views</argument>
         <argument>!WebProfiler</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-bundle/Resources/views</argument>
+        <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-bundle/Resources/views</argument>
         <argument>Security</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\security-bundle/Resources/views</argument>
+        <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\security-bundle/Resources/views</argument>
         <argument>!Security</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/views</argument>
+        <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/views</argument>
         <argument>EasyAdmin</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/views</argument>
+        <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\easycorp\easyadmin-bundle\src/Resources/views</argument>
         <argument>!EasyAdmin</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\ydumi\Desktop\Alpha-Betise/templates</argument>
+        <argument>C:\wamp64\www\Symfony5\Alpha-Betise/templates</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\twig-bridge/Resources/views/Email</argument>
+        <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\twig-bridge/Resources/views/Email</argument>
         <argument>email</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\twig-bridge/Resources/views/Email</argument>
+        <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\twig-bridge/Resources/views/Email</argument>
         <argument>!email</argument>
       </call>
       <call method="addPath">
-        <argument>C:\Users\ydumi\Desktop\Alpha-Betise\vendor\symfony\twig-bridge/Resources/views/Form</argument>
+        <argument>C:\wamp64\www\Symfony5\Alpha-Betise\vendor\symfony\twig-bridge/Resources/views/Form</argument>
       </call>
     </service>
     <service id="twig.loader.chain" class="Twig\Loader\ChainLoader"/>
@@ -5238,7 +5251,7 @@
     <service id="twig.extension.code" class="Symfony\Bridge\Twig\Extension\CodeExtension">
       <tag name="twig.extension"/>
       <argument type="service" id="debug.file_link_formatter" on-invalid="ignore"/>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise</argument>
       <argument>UTF-8</argument>
     </service>
     <service id="twig.extension.routing" class="Symfony\Bridge\Twig\Extension\RoutingExtension">
@@ -5324,9 +5337,9 @@
       <tag name="console.command"/>
       <tag name="container.no_preload"/>
       <argument type="service" id="twig"/>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise</argument>
       <argument>%kernel.bundles_metadata%</argument>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise/templates</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise/templates</argument>
       <argument type="service" id="debug.file_link_formatter" on-invalid="null"/>
       <call method="setName">
         <argument>debug:twig</argument>
@@ -5360,7 +5373,7 @@
       <argument type="service" id="twig"/>
       <argument>%data_collector.templates%</argument>
       <argument type="service" id="web_profiler.csp.handler"/>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise</argument>
     </service>
     <service id="web_profiler.controller.router" class="Symfony\Bundle\WebProfilerBundle\Controller\RouterController" public="true">
       <argument type="service" id="profiler" on-invalid="null"/>
@@ -5933,6 +5946,7 @@
       <argument type="collection">
         <argument key="main" type="collection">
           <argument type="service" id="App\Security\LoginAuthenticator"/>
+          <argument type="service" id="security.authenticator.remember_me.main"/>
         </argument>
       </argument>
       <argument>true</argument>
@@ -5984,6 +5998,7 @@
       <argument>null</argument>
       <argument>null</argument>
       <argument type="collection">
+        <argument>remember_me</argument>
         <argument>App\Security\LoginAuthenticator</argument>
       </argument>
       <argument>null</argument>
@@ -6023,6 +6038,46 @@
         <argument type="collection">
           <argument type="service_closure" id="security.logout.listener.session.main"/>
           <argument>onLogout</argument>
+        </argument>
+        <argument>0</argument>
+      </call>
+      <call method="addListener">
+        <argument>Symfony\Component\Security\Http\Event\LoginSuccessEvent</argument>
+        <argument type="collection">
+          <argument type="service_closure" id="security.listener.check_remember_me_conditions.main"/>
+          <argument>onSuccessfulLogin</argument>
+        </argument>
+        <argument>-32</argument>
+      </call>
+      <call method="addListener">
+        <argument>Symfony\Component\Security\Http\Event\LoginSuccessEvent</argument>
+        <argument type="collection">
+          <argument type="service_closure" id="security.listener.remember_me.main"/>
+          <argument>onSuccessfulLogin</argument>
+        </argument>
+        <argument>-64</argument>
+      </call>
+      <call method="addListener">
+        <argument>Symfony\Component\Security\Http\Event\LoginFailureEvent</argument>
+        <argument type="collection">
+          <argument type="service_closure" id="security.listener.remember_me.main"/>
+          <argument>clearCookie</argument>
+        </argument>
+        <argument>0</argument>
+      </call>
+      <call method="addListener">
+        <argument>Symfony\Component\Security\Http\Event\LogoutEvent</argument>
+        <argument type="collection">
+          <argument type="service_closure" id="security.listener.remember_me.main"/>
+          <argument>clearCookie</argument>
+        </argument>
+        <argument>0</argument>
+      </call>
+      <call method="addListener">
+        <argument>Symfony\Component\Security\Http\Event\TokenDeauthenticatedEvent</argument>
+        <argument type="collection">
+          <argument type="service_closure" id="security.listener.remember_me.main"/>
+          <argument>clearCookie</argument>
         </argument>
         <argument>0</argument>
       </call>
@@ -6085,6 +6140,7 @@
     </service>
     <service id="security.context_listener.0" class="Symfony\Component\Security\Http\Firewall\ContextListener">
       <tag name="kernel.event_listener" event="kernel.response" method="onKernelResponse"/>
+      <tag name="security.remember_me_aware" id="main" provider="none"/>
       <tag name="container.hot_path"/>
       <argument type="service" id="security.untracked_token_storage"/>
       <argument type="iterator">
@@ -6121,10 +6177,116 @@
     <service id="security.logout.listener.session.main" class="Symfony\Component\Security\Http\EventListener\SessionLogoutListener">
       <tag name="kernel.event_subscriber" dispatcher="security.event_dispatcher.main"/>
     </service>
+    <service id="security.authenticator.remember_me_signature_hasher" class="Symfony\Component\Security\Core\Signature\SignatureHasher">
+      <argument type="service" id="property_accessor"/>
+      <argument type="abstract">signature properties</argument>
+      <argument>%env(APP_SECRET)%</argument>
+      <argument>null</argument>
+      <argument>null</argument>
+    </service>
+    <service id="security.authenticator.signature_remember_me_handler" class="Symfony\Component\Security\Http\RememberMe\SignatureRememberMeHandler" abstract="true">
+      <tag name="monolog.logger" channel="security"/>
+      <argument type="abstract">signature hasher</argument>
+      <argument type="abstract">user provider</argument>
+      <argument type="service" id="request_stack"/>
+      <argument type="abstract">options</argument>
+      <argument type="service" id="monolog.logger.security" on-invalid="null"/>
+    </service>
+    <service id="security.authenticator.persistent_remember_me_handler" class="Symfony\Component\Security\Http\RememberMe\PersistentRememberMeHandler" abstract="true">
+      <tag name="monolog.logger" channel="security"/>
+      <argument type="abstract">token provider</argument>
+      <argument>%env(APP_SECRET)%</argument>
+      <argument type="abstract">user provider</argument>
+      <argument type="service" id="request_stack"/>
+      <argument type="abstract">options</argument>
+      <argument type="service" id="monolog.logger.security" on-invalid="null"/>
+      <argument type="abstract">token verifier</argument>
+    </service>
+    <service id="security.authenticator.firewall_aware_remember_me_handler" class="Symfony\Bundle\SecurityBundle\RememberMe\FirewallAwareRememberMeHandler">
+      <argument type="service" id="security.firewall.map"/>
+      <argument type="service" id=".service_locator.tl8I8bj"/>
+      <argument type="service" id="request_stack"/>
+    </service>
+    <service id="security.listener.check_remember_me_conditions" class="Symfony\Component\Security\Http\EventListener\CheckRememberMeConditionsListener" abstract="true">
+      <argument type="abstract">options</argument>
+      <argument type="service" id="monolog.logger" on-invalid="null"/>
+    </service>
+    <service id="security.listener.remember_me" class="Symfony\Component\Security\Http\EventListener\RememberMeListener" abstract="true">
+      <tag name="monolog.logger" channel="security"/>
+      <argument type="abstract">remember me handler</argument>
+      <argument type="service" id="monolog.logger.security" on-invalid="null"/>
+    </service>
+    <service id="security.authenticator.remember_me" class="Symfony\Component\Security\Http\Authenticator\RememberMeAuthenticator" abstract="true">
+      <tag name="monolog.logger" channel="security"/>
+      <argument type="abstract">remember me handler</argument>
+      <argument>%env(APP_SECRET)%</argument>
+      <argument type="service" id="security.token_storage"/>
+      <argument type="abstract">options</argument>
+      <argument type="service" id="monolog.logger.security" on-invalid="null"/>
+    </service>
+    <service id="cache.security_token_verifier" class="Symfony\Component\Cache\Adapter\TraceableAdapter">
+      <tag name="cache.pool"/>
+      <tag name="kernel.reset" method="reset"/>
+      <argument type="service" id="cache.security_token_verifier.recorder_inner"/>
+    </service>
+    <service id="security.authenticator.remember_me_signature_hasher.main" class="Symfony\Component\Security\Core\Signature\SignatureHasher">
+      <argument type="service" id="property_accessor"/>
+      <argument type="collection">
+        <argument>password</argument>
+      </argument>
+      <argument>%env(APP_SECRET)%</argument>
+      <argument>null</argument>
+      <argument>null</argument>
+    </service>
+    <service id="security.authenticator.remember_me_handler.main" class="Symfony\Component\Security\Http\RememberMe\SignatureRememberMeHandler">
+      <tag name="security.remember_me_handler" firewall="main"/>
+      <argument type="service" id="security.authenticator.remember_me_signature_hasher.main"/>
+      <argument type="service" id="security.user.provider.concrete.app_user_provider"/>
+      <argument type="service" id="request_stack"/>
+      <argument type="collection">
+        <argument key="secret">%env(APP_SECRET)%</argument>
+        <argument key="lifetime">1815400</argument>
+        <argument key="user_providers" type="collection"/>
+        <argument key="catch_exceptions">true</argument>
+        <argument key="signature_properties" type="collection">
+          <argument>password</argument>
+        </argument>
+        <argument key="name">REMEMBERME</argument>
+        <argument key="path">/</argument>
+        <argument key="domain">null</argument>
+        <argument key="secure">null</argument>
+        <argument key="httponly">true</argument>
+        <argument key="samesite">lax</argument>
+        <argument key="always_remember_me">false</argument>
+        <argument key="remember_me_parameter">_remember_me</argument>
+      </argument>
+      <argument type="service" id="monolog.logger.security" on-invalid="null"/>
+    </service>
+    <service id="security.listener.check_remember_me_conditions.main" class="Symfony\Component\Security\Http\EventListener\CheckRememberMeConditionsListener">
+      <tag name="kernel.event_subscriber" dispatcher="security.event_dispatcher.main"/>
+      <argument type="collection">
+        <argument key="always_remember_me">false</argument>
+        <argument key="remember_me_parameter">_remember_me</argument>
+      </argument>
+      <argument type="service" id="monolog.logger" on-invalid="null"/>
+    </service>
+    <service id="security.listener.remember_me.main" class="Symfony\Component\Security\Http\EventListener\RememberMeListener">
+      <tag name="kernel.event_subscriber" dispatcher="security.event_dispatcher.main"/>
+      <argument type="service" id="security.authenticator.remember_me_handler.main"/>
+      <argument type="service" id="monolog.logger.security" on-invalid="null"/>
+    </service>
+    <service id="security.authenticator.remember_me.main" class="Symfony\Component\Security\Http\Authenticator\RememberMeAuthenticator">
+      <argument type="service" id="security.authenticator.remember_me_handler.main"/>
+      <argument>%env(APP_SECRET)%</argument>
+      <argument type="service" id="security.token_storage"/>
+      <argument>REMEMBERME</argument>
+      <argument type="service" id="monolog.logger.security" on-invalid="null"/>
+    </service>
     <service id="security.authenticator.manager.main" class="Symfony\Component\Security\Http\Authentication\AuthenticatorManager">
       <tag name="monolog.logger" channel="security"/>
       <argument type="collection">
         <argument type="service" id="App\Security\LoginAuthenticator"/>
+        <argument type="service" id="security.authenticator.remember_me.main"/>
       </argument>
       <argument type="service" id="security.token_storage"/>
       <argument type="service" id="security.event_dispatcher.main"/>
@@ -6249,7 +6411,7 @@
     <service id="monolog.processor.psr_log_message" class="Monolog\Processor\PsrLogMessageProcessor"/>
     <service id="monolog.handler.main" class="Monolog\Handler\StreamHandler">
       <tag name="kernel.reset" method="reset"/>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise\var\log/dev.log</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise\var\log/dev.log</argument>
       <argument>100</argument>
       <argument>true</argument>
       <argument>null</argument>
@@ -6271,8 +6433,8 @@
       <argument type="service" id="filesystem"/>
       <argument type="service" id="maker.autoloader_util"/>
       <argument type="service" id="maker.file_link_formatter"/>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise</argument>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise/templates</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise/templates</argument>
     </service>
     <service id="maker.autoloader_finder" class="Symfony\Bundle\MakerBundle\Util\ComposerAutoloaderFinder">
       <argument>App</argument>
@@ -6435,7 +6597,7 @@
     </service>
     <service id="maker.maker.make_migration" class="Symfony\Bundle\MakerBundle\Maker\MakeMigration">
       <tag name="maker.command"/>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise</argument>
     </service>
     <service id="maker.maker.make_stimulus_controller" class="Symfony\Bundle\MakerBundle\Maker\MakeStimulusController">
       <tag name="maker.command"/>
@@ -6529,7 +6691,7 @@
       <tag name="console.command"/>
       <tag name="container.no_preload"/>
       <argument type="service" id="EasyCorp\Bundle\EasyAdminBundle\Maker\Migrator"/>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise</argument>
       <call method="setName">
         <argument>make:admin:migration</argument>
       </call>
@@ -6541,7 +6703,7 @@
       <tag name="console.command"/>
       <tag name="container.no_preload"/>
       <argument type="service" id="EasyCorp\Bundle\EasyAdminBundle\Maker\ClassMaker"/>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise</argument>
       <call method="setName">
         <argument>make:admin:dashboard</argument>
       </call>
@@ -6552,7 +6714,7 @@
     <service id="EasyCorp\Bundle\EasyAdminBundle\Command\MakeCrudControllerCommand" class="EasyCorp\Bundle\EasyAdminBundle\Command\MakeCrudControllerCommand" public="true">
       <tag name="console.command"/>
       <tag name="container.no_preload"/>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise</argument>
       <argument type="service" id="EasyCorp\Bundle\EasyAdminBundle\Maker\ClassMaker"/>
       <argument type="service" id="doctrine"/>
       <call method="setName">
@@ -6564,7 +6726,7 @@
     </service>
     <service id="EasyCorp\Bundle\EasyAdminBundle\Maker\ClassMaker" class="EasyCorp\Bundle\EasyAdminBundle\Maker\ClassMaker">
       <argument type="service" id="kernel"/>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise</argument>
     </service>
     <service id="EasyCorp\Bundle\EasyAdminBundle\Maker\Migrator" class="EasyCorp\Bundle\EasyAdminBundle\Maker\Migrator"/>
     <service id="EasyCorp\Bundle\EasyAdminBundle\Cache\CacheWarmer" class="EasyCorp\Bundle\EasyAdminBundle\Cache\CacheWarmer">
@@ -6625,7 +6787,7 @@
       <argument type="service" id="twig"/>
     </service>
     <service id="EasyCorp\Bundle\EasyAdminBundle\Factory\AdminContextFactory" class="EasyCorp\Bundle\EasyAdminBundle\Factory\AdminContextFactory">
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev</argument>
       <argument type="service" id="translator.data_collector"/>
       <argument type="service" id="security.token_storage" on-invalid="null"/>
       <argument type="service" id="EasyCorp\Bundle\EasyAdminBundle\Factory\MenuFactory"/>
@@ -6701,7 +6863,7 @@
     </service>
     <service id="EasyCorp\Bundle\EasyAdminBundle\Form\Type\FileUploadType" class="EasyCorp\Bundle\EasyAdminBundle\Form\Type\FileUploadType">
       <tag name="form.type"/>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise</argument>
     </service>
     <service id="EasyCorp\Bundle\EasyAdminBundle\Filter\Configurator\ChoiceConfigurator" class="EasyCorp\Bundle\EasyAdminBundle\Filter\Configurator\ChoiceConfigurator">
       <tag name="ea.filter_configurator"/>
@@ -6800,7 +6962,7 @@
     </service>
     <service id="EasyCorp\Bundle\EasyAdminBundle\Field\Configurator\ImageConfigurator" class="EasyCorp\Bundle\EasyAdminBundle\Field\Configurator\ImageConfigurator">
       <tag name="ea.field_configurator"/>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise</argument>
     </service>
     <service id="EasyCorp\Bundle\EasyAdminBundle\Field\Configurator\IntegerConfigurator" class="EasyCorp\Bundle\EasyAdminBundle\Field\Configurator\IntegerConfigurator">
       <tag name="ea.field_configurator"/>
@@ -8004,7 +8166,7 @@
     <service id="monolog.handler.null_internal" class="Monolog\Handler\NullHandler"/>
     <service id="EasyCorp\Bundle\EasyAdminBundle\Registry\DashboardControllerRegistry" class="EasyCorp\Bundle\EasyAdminBundle\Registry\DashboardControllerRegistry">
       <argument>%env(APP_SECRET)%</argument>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev</argument>
       <argument type="collection">
         <argument>App\Controller\Admin\DashboardController</argument>
       </argument>
@@ -8315,6 +8477,12 @@
       <argument type="collection">
         <argument key="security.authorization_checker" type="service_closure" id="security.authorization_checker"/>
         <argument key="security.token_storage" type="service_closure" id="security.token_storage"/>
+      </argument>
+    </service>
+    <service id=".service_locator.tl8I8bj" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="main" type="service_closure" id="security.authenticator.remember_me_handler.main"/>
       </argument>
     </service>
     <service id="debug.validator.inner" class="Symfony\Component\Validator\Validator\ValidatorInterface">
@@ -9152,78 +9320,86 @@
       </argument>
     </service>
     <service id="cache.app.recorder_inner" class="Symfony\Component\Cache\Adapter\FilesystemAdapter">
-      <argument>qZ2np1R9TL</argument>
+      <argument>lqB5hTVnR9</argument>
       <argument>0</argument>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev/pools/app</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev/pools/app</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       </call>
     </service>
     <service id="cache.system.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>IVbytKZ-4L</argument>
+      <argument>gyl18jRrsF</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev/pools/system</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.validator.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>OSFkuagz0D</argument>
+      <argument>6gdNMEyQ5g</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev/pools/system</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.serializer.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>57bDeLazqY</argument>
+      <argument>-zQ3f9qHEq</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev/pools/system</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.annotations.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>5U1vrSadm9</argument>
+      <argument>trKo3TdhDT</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev/pools/system</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.property_info.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>NfXk+fUKwf</argument>
+      <argument>NUw-Co8Kmq</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev/pools/system</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.messenger.restart_workers_signal.recorder_inner" class="Symfony\Component\Cache\Adapter\FilesystemAdapter">
-      <argument>2RIgVwJkqV</argument>
+      <argument>pqS4sKjQXf</argument>
       <argument>0</argument>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev/pools/app</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev/pools/app</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       </call>
     </service>
     <service id="cache.validator_expression_language.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>Iox40EVf33</argument>
+      <argument>SyKhBgjSnM</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev/pools/system</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.doctrine.orm.default.result.recorder_inner" class="Symfony\Component\Cache\Adapter\ArrayAdapter"/>
     <service id="cache.doctrine.orm.default.query.recorder_inner" class="Symfony\Component\Cache\Adapter\ArrayAdapter"/>
     <service id="cache.security_expression_language.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
-      <argument>k89hPsCHrY</argument>
+      <argument>vsaLNEZNcj</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\ydumi\Desktop\Alpha-Betise\var\cache\dev/pools/system</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev/pools/system</argument>
+      <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
+      <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
+    </service>
+    <service id="cache.security_token_verifier.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface">
+      <argument>lihKGx5-Gf</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>C:\wamp64\www\Symfony5\Alpha-Betise\var\cache\dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -9397,6 +9573,7 @@
     <service id="security.user_providers" alias="security.user.provider.concrete.app_user_provider"/>
     <service id="Symfony\Component\Security\Core\User\UserProviderInterface" alias="security.user.provider.concrete.app_user_provider"/>
     <service id="security.authentication.session_strategy.main" alias="security.authentication.session_strategy"/>
+    <service id="Symfony\Component\Security\Http\RememberMe\RememberMeHandlerInterface" alias="security.authenticator.firewall_aware_remember_me_handler"/>
     <service id="security.user_checker.main" alias="security.user_checker"/>
     <service id="security.firewall.context_locator" alias=".service_locator.zJyh7qS"/>
     <service id="Symfony\Component\Security\Core\User\UserCheckerInterface" alias="security.user_checker"/>
