@@ -133,6 +133,6 @@ class __TwigTemplate_056e7e216a9ca3ceb9f4a7f42ffab94d34014a63c23490e04f32358188a
 
     <a href=\"{{ path('app_book_index') }}\">back to list</a>
 {% endblock %}
-", "book/new.html.twig", "C:\\Users\\Stagiaire01\\Alpha-Betise\\templates\\book\\new.html.twig");
+", "book/new.html.twig", "C:\\Users\\ydumi\\Desktop\\Alpha-Betise\\templates\\book\\new.html.twig");
     }
 }

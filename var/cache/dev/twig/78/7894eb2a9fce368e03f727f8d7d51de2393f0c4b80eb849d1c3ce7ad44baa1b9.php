@@ -370,6 +370,6 @@ class __TwigTemplate_a5287c37b6c95b6e4393e417790d75ef095bab68b0278c2d166eef3c8cb
 
     {{ include('book/_delete_form.html.twig') }}
 {% endblock %}
-", "book/show.html.twig", "C:\\Users\\Stagiaire01\\Alpha-Betise\\templates\\book\\show.html.twig");
+", "book/show.html.twig", "C:\\Users\\ydumi\\Desktop\\Alpha-Betise\\templates\\book\\show.html.twig");
     }
 }

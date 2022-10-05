@@ -88,6 +88,9 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
         // line 7
         echo "\t";
         // line 8
+        echo "\t<div id=\"ancre\"></div>
+\t";
+        // line 10
         echo "\t<div id=\"myCarousel\" class=\"carousel slide\" data-bs-ride=\"carousel\">
 \t\t<div class=\"carousel-inner\">
 
@@ -114,29 +117,29 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 \t\t\t<span class=\"visually-hidden\">Next</span>
 \t\t</button>
 \t</div>
-\t<div id=\"ancre\"></div>
+
 \t";
-        // line 36
+        // line 38
         echo "
 \t<div class=\"card mb-3 border-warning\">
 \t\t<div class=\"row g-0\">
 \t\t\t<div class=\"col-md-4 m-auto\">
 \t\t\t<h3>Prochain évenement :</h3>
 \t\t\t\t";
-        // line 41
+        // line 43
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(twig_reverse_filter($this->env, twig_slice($this->env, $context["calendars"], 0, 1)));
         foreach ($context['_seq'] as $context["_key"] => $context["calendars"]) {
-            // line 42
+            // line 44
             echo "\t\t\t\t\t<div>
 \t\t\t\t\t\t<u><h6 class=\"text-danger\">";
-            // line 43
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["calendars"], "title", [], "any", false, false, false, 43), "html", null, true);
+            // line 45
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["calendars"], "title", [], "any", false, false, false, 45), "html", null, true);
             echo "</h6></u>
 
 \t\t\t\t\t\t<p>Le : ";
-            // line 45
-            ((twig_get_attribute($this->env, $this->source, $context["calendars"], "start", [], "any", false, false, false, 45)) ? (print (twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["calendars"], "start", [], "any", false, false, false, 45), "d-m-Y"), "html", null, true))) : (print ("")));
+            // line 47
+            ((twig_get_attribute($this->env, $this->source, $context["calendars"], "start", [], "any", false, false, false, 47)) ? (print (twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["calendars"], "start", [], "any", false, false, false, 47), "d-m-Y"), "html", null, true))) : (print ("")));
             echo "</p>
 \t\t\t\t\t</div>
 \t\t\t\t";
@@ -144,38 +147,38 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['calendars'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 48
+        // line 50
         echo "\t\t\t</div>
 \t\t</div>
 \t</div>
 
 
 \t";
-        // line 54
+        // line 56
         echo "\t<div class=\"container-fluid\">
 \t\t<div class=\"row\">
 
 \t\t\t";
-        // line 57
+        // line 59
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_slice($this->env, twig_reverse_filter($this->env, (isset($context["books"]) || array_key_exists("books", $context) ? $context["books"] : (function () { throw new RuntimeError('Variable "books" does not exist.', 57, $this->source); })())), 0, 4));
+        $context['_seq'] = twig_ensure_traversable(twig_slice($this->env, twig_reverse_filter($this->env, (isset($context["books"]) || array_key_exists("books", $context) ? $context["books"] : (function () { throw new RuntimeError('Variable "books" does not exist.', 59, $this->source); })())), 0, 4));
         foreach ($context['_seq'] as $context["_key"] => $context["book"]) {
-            // line 58
+            // line 60
             echo "
 \t\t\t\t<div class=\" card card-fluid mb-4 \" style=\"max-width:900px; margin:auto; min-height:450px;\">
 \t\t\t\t\t<div class=\"row\">
 \t\t\t\t\t\t<div class=\"col-sm-5 \">
 \t\t\t\t\t\t\t<img src=\"/assets/uploads/book/";
-            // line 62
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "couvertureBook", [], "any", false, false, false, 62), "html", null, true);
+            // line 64
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "couvertureBook", [], "any", false, false, false, 64), "html", null, true);
             echo "\" class=\"img-fluid rounded\" alt=\"Image du livre ";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "title", [], "any", false, false, false, 62), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "title", [], "any", false, false, false, 64), "html", null, true);
             echo "\" style=\"max-height:400px;\">
 \t\t\t\t\t\t\t<center>
 \t\t\t\t\t\t\t\t<p class=\"card-text\" style=\"font-size:1.9em;\">
 \t\t\t\t\t\t\t\t\t<strong>";
-            // line 65
-            echo twig_escape_filter($this->env, (twig_get_attribute($this->env, $this->source, $context["book"], "priceBook", [], "any", false, false, false, 65) / 100), "html", null, true);
+            // line 67
+            echo twig_escape_filter($this->env, (twig_get_attribute($this->env, $this->source, $context["book"], "priceBook", [], "any", false, false, false, 67) / 100), "html", null, true);
             echo "&nbsp; €</strong>
 \t\t\t\t\t\t\t\t</p>
 \t\t\t\t\t\t\t</center>
@@ -186,25 +189,25 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 \t\t\t\t\t\t<div class=\"col-sm-7\">
 \t\t\t\t\t\t\t<div class=\"card-body\">
 \t\t\t\t\t\t\t\t<h3 class=\"card-title\" style=\"font-size:2em;\">";
-            // line 74
-            echo twig_escape_filter($this->env, twig_upper_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "title", [], "any", false, false, false, 74)), "html", null, true);
+            // line 76
+            echo twig_escape_filter($this->env, twig_upper_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "title", [], "any", false, false, false, 76)), "html", null, true);
             echo "&nbsp;";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "rate", [], "any", false, false, false, 74), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "rate", [], "any", false, false, false, 76), "html", null, true);
             echo "</h3>
 \t\t\t\t\t\t\t\t<p class=\"card-text\">
 \t\t\t\t\t\t\t\t\t<strong>";
-            // line 76
-            echo twig_escape_filter($this->env, twig_upper_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "author", [], "any", false, false, false, 76)), "html", null, true);
+            // line 78
+            echo twig_escape_filter($this->env, twig_upper_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "author", [], "any", false, false, false, 78)), "html", null, true);
             echo "</strong>
 \t\t\t\t\t\t\t\t</p>
 \t\t\t\t\t\t\t\t<p class=\"card-text\">";
-            // line 78
-            echo twig_escape_filter($this->env, (twig_slice($this->env, twig_striptags(twig_get_attribute($this->env, $this->source, $context["book"], "commentLibraire", [], "any", false, false, false, 78)), 0, 150) . "..."), "html", null, true);
+            // line 80
+            echo twig_escape_filter($this->env, (twig_slice($this->env, twig_striptags(twig_get_attribute($this->env, $this->source, $context["book"], "commentLibraire", [], "any", false, false, false, 80)), 0, 150) . "..."), "html", null, true);
             echo "</p>
 \t\t\t\t\t\t\t\t<p class=\"card-text\">
 \t\t\t\t\t\t\t\t\t<a href=\"";
-            // line 80
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_details_book", ["id" => twig_get_attribute($this->env, $this->source, $context["book"], "id", [], "any", false, false, false, 80)]), "html", null, true);
+            // line 82
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_details_book", ["id" => twig_get_attribute($this->env, $this->source, $context["book"], "id", [], "any", false, false, false, 82)]), "html", null, true);
             echo "\">
 \t\t\t\t\t\t\t\t\t\t<small class=\"text-muted\">Plus de Détails>></small>
 \t\t\t\t\t\t\t\t\t</a>
@@ -220,7 +223,7 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['book'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 91
+        // line 93
         echo "\t\t</div>
 \t</div>
 \t<center>
@@ -229,21 +232,21 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 \t\t</a>
 \t</center><br>
 \t";
-        // line 99
+        // line 101
         echo "\t<div class=\"card mb-3 border-success\">
 \t\t<div class=\"row g-0\">
 \t\t\t<div class=\"col-md-4 m-auto\">
 
 \t\t\t\t";
-        // line 103
+        // line 105
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(twig_reverse_filter($this->env, twig_slice($this->env, $context["users"], 0, 1)));
         foreach ($context['_seq'] as $context["_key"] => $context["users"]) {
-            // line 104
+            // line 106
             echo "\t\t\t\t\t<div>
 \t\t\t\t\t\t<p>";
-            // line 105
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["users"], "email", [], "any", false, false, false, 105), "html", null, true);
+            // line 107
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["users"], "email", [], "any", false, false, false, 107), "html", null, true);
             echo " c'est inscrit a notre newsletter</p>
 \t\t\t\t\t</div>
 \t\t\t\t";
@@ -251,13 +254,13 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['users'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 108
+        // line 110
         echo "
 \t\t\t</div>
 \t\t</div>
 \t</div>
 ";
-        // line 113
+        // line 115
         echo "\t<a href=\"#ancre\">
 \t\t<i class=\"fa-solid fa-arrow-up\"></i>
 \t</a>
@@ -283,7 +286,7 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 
     public function getDebugInfo()
     {
-        return array (  261 => 113,  255 => 108,  246 => 105,  243 => 104,  239 => 103,  233 => 99,  224 => 91,  207 => 80,  202 => 78,  197 => 76,  190 => 74,  178 => 65,  170 => 62,  164 => 58,  160 => 57,  155 => 54,  148 => 48,  139 => 45,  134 => 43,  131 => 42,  127 => 41,  120 => 36,  91 => 8,  89 => 7,  79 => 6,  59 => 3,  36 => 1,);
+        return array (  264 => 115,  258 => 110,  249 => 107,  246 => 106,  242 => 105,  236 => 101,  227 => 93,  210 => 82,  205 => 80,  200 => 78,  193 => 76,  181 => 67,  173 => 64,  167 => 60,  163 => 59,  158 => 56,  151 => 50,  142 => 47,  137 => 45,  134 => 44,  130 => 43,  123 => 38,  94 => 10,  91 => 8,  89 => 7,  79 => 6,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -294,6 +297,8 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 {% endblock %}
 
 {% block body %}
+\t{# DEBUT ANCRE #}
+\t<div id=\"ancre\"></div>
 \t{# -----------------Caroussel---------------------- #}
 \t<div id=\"myCarousel\" class=\"carousel slide\" data-bs-ride=\"carousel\">
 \t\t<div class=\"carousel-inner\">
@@ -321,7 +326,7 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 \t\t\t<span class=\"visually-hidden\">Next</span>
 \t\t</button>
 \t</div>
-\t<div id=\"ancre\"></div>
+
 \t{# -----------------------Prochain évenement----------------------- #}
 
 \t<div class=\"card mb-3 border-warning\">
