@@ -87,51 +87,53 @@ class __TwigTemplate_e92cd471bc0c0593c3ef359b15a876d91b609491cc2fe5170955f7bac6a
         // line 6
         echo "    <h1>Conseils de Lecture</h1>
 
+    <div id=\"ancre\"></div>
+
     ";
-        // line 8
+        // line 10
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($context["book"]);
         foreach ($context['_seq'] as $context["_key"] => $context["book"]) {
-            // line 9
+            // line 11
             echo "<div class=\"card mb-3\" style=\"min-width: 540px;\">
     <div class=\"row g-0\">
         <div class=\"col-md-4\">
             <img id=\"book\" src=\"/assets/uploads/book/";
-            // line 12
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "couvertureBook", [], "any", false, false, false, 12), "html", null, true);
+            // line 14
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "couvertureBook", [], "any", false, false, false, 14), "html", null, true);
             echo "\" alt=\"";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "title", [], "any", false, false, false, 12), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "title", [], "any", false, false, false, 14), "html", null, true);
             echo "\" class=\"img-fluid rounded-start\">
         </div>
         <div class=\"col-md-8\">
             <div class=\"card-body\">
                 <h3 class=\"mb-0\">";
-            // line 16
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "title", [], "any", false, false, false, 16), "html", null, true);
+            // line 18
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "title", [], "any", false, false, false, 18), "html", null, true);
             echo "</h3>
                 <span class=\"mb-1 text-muted\">";
-            // line 17
-            echo twig_escape_filter($this->env, (twig_get_attribute($this->env, $this->source, $context["book"], "priceBook", [], "any", false, false, false, 17) / 100), "html", null, true);
+            // line 19
+            echo twig_escape_filter($this->env, (twig_get_attribute($this->env, $this->source, $context["book"], "priceBook", [], "any", false, false, false, 19) / 100), "html", null, true);
             echo " €</span>
                 <p class=\"card-text mb-auto\"><strong>";
-            // line 18
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "author", [], "any", false, false, false, 18), "html", null, true);
+            // line 20
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "author", [], "any", false, false, false, 20), "html", null, true);
             echo "</strong></p>
                 <p class=\"card-text mb-auto\">";
-            // line 19
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "editeur", [], "any", false, false, false, 19), "html", null, true);
-            echo "</p>
-                <p class=\"card-text mb-auto\">";
-            // line 20
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "rate", [], "any", false, false, false, 20), "html", null, true);
-            echo "</p>
-                <p class=\"card-text mb-auto\">";
             // line 21
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "commentLibraire", [], "any", false, false, false, 21), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "editeur", [], "any", false, false, false, 21), "html", null, true);
+            echo "</p>
+                <p class=\"card-text mb-auto\">";
+            // line 22
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "rate", [], "any", false, false, false, 22), "html", null, true);
+            echo "</p>
+                <p class=\"card-text mb-auto\">";
+            // line 23
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "commentLibraire", [], "any", false, false, false, 23), "html", null, true);
             echo "</p>
                 <a href=\"";
-            // line 22
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("cartAdd", ["id" => twig_get_attribute($this->env, $this->source, $context["book"], "id", [], "any", false, false, false, 22)]), "html", null, true);
+            // line 24
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("cartAdd", ["id" => twig_get_attribute($this->env, $this->source, $context["book"], "id", [], "any", false, false, false, 24)]), "html", null, true);
             echo "\"><i class=\"fa-solid fa-basket-shopping fa-beat\"></i> Ajouter au panier</a>
             </div>
         </div>
@@ -143,8 +145,13 @@ class __TwigTemplate_e92cd471bc0c0593c3ef359b15a876d91b609491cc2fe5170955f7bac6a
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['book'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 29
+        // line 31
         echo "
+";
+        // line 33
+        echo "<a href=\"#ancre\">
+\t<i class=\"fa-solid fa-arrow-up\"></i>
+</a>
 
 ";
         
@@ -167,7 +174,7 @@ class __TwigTemplate_e92cd471bc0c0593c3ef359b15a876d91b609491cc2fe5170955f7bac6a
 
     public function getDebugInfo()
     {
-        return array (  147 => 29,  134 => 22,  130 => 21,  126 => 20,  122 => 19,  118 => 18,  114 => 17,  110 => 16,  101 => 12,  96 => 9,  92 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  152 => 33,  149 => 31,  136 => 24,  132 => 23,  128 => 22,  124 => 21,  120 => 20,  116 => 19,  112 => 18,  103 => 14,  98 => 11,  94 => 10,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -178,6 +185,8 @@ class __TwigTemplate_e92cd471bc0c0593c3ef359b15a876d91b609491cc2fe5170955f7bac6a
 
 {% block body %}
     <h1>Conseils de Lecture</h1>
+
+    <div id=\"ancre\"></div>
 
     {% for book in book %}
 <div class=\"card mb-3\" style=\"min-width: 540px;\">
@@ -201,6 +210,10 @@ class __TwigTemplate_e92cd471bc0c0593c3ef359b15a876d91b609491cc2fe5170955f7bac6a
 
     {% endfor %}
 
+{# --------------ANCRE------------ #}
+<a href=\"#ancre\">
+\t<i class=\"fa-solid fa-arrow-up\"></i>
+</a>
 
 {% endblock %}
 ", "conseils/index.html.twig", "C:\\Users\\ydumi\\Desktop\\Alpha-Betise\\templates\\conseils\\index.html.twig");

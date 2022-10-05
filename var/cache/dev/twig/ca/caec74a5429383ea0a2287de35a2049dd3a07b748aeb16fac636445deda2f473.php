@@ -114,7 +114,7 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 \t\t\t<span class=\"visually-hidden\">Next</span>
 \t\t</button>
 \t</div>
-
+\t<div id=\"ancre\"></div>
 \t";
         // line 36
         echo "
@@ -257,6 +257,12 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 \t\t</div>
 \t</div>
 ";
+        // line 113
+        echo "\t<a href=\"#ancre\">
+\t\t<i class=\"fa-solid fa-arrow-up\"></i>
+\t</a>
+
+";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -277,7 +283,7 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 
     public function getDebugInfo()
     {
-        return array (  255 => 108,  246 => 105,  243 => 104,  239 => 103,  233 => 99,  224 => 91,  207 => 80,  202 => 78,  197 => 76,  190 => 74,  178 => 65,  170 => 62,  164 => 58,  160 => 57,  155 => 54,  148 => 48,  139 => 45,  134 => 43,  131 => 42,  127 => 41,  120 => 36,  91 => 8,  89 => 7,  79 => 6,  59 => 3,  36 => 1,);
+        return array (  261 => 113,  255 => 108,  246 => 105,  243 => 104,  239 => 103,  233 => 99,  224 => 91,  207 => 80,  202 => 78,  197 => 76,  190 => 74,  178 => 65,  170 => 62,  164 => 58,  160 => 57,  155 => 54,  148 => 48,  139 => 45,  134 => 43,  131 => 42,  127 => 41,  120 => 36,  91 => 8,  89 => 7,  79 => 6,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -315,7 +321,7 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 \t\t\t<span class=\"visually-hidden\">Next</span>
 \t\t</button>
 \t</div>
-
+\t<div id=\"ancre\"></div>
 \t{# -----------------------Prochain évenement----------------------- #}
 
 \t<div class=\"card mb-3 border-warning\">
@@ -393,6 +399,11 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 \t\t\t</div>
 \t\t</div>
 \t</div>
+{# --------------ANCRE------------ #}
+\t<a href=\"#ancre\">
+\t\t<i class=\"fa-solid fa-arrow-up\"></i>
+\t</a>
+
 {% endblock %}
 ", "home/index.html.twig", "C:\\Users\\ydumi\\Desktop\\Alpha-Betise\\templates\\home\\index.html.twig");
     }

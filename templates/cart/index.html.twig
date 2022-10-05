@@ -26,8 +26,8 @@
                                 {% for element in cart.books %}
                                     <tr>
                                     
-                                        <td class="book-thumbnail"><a href="#"><img src="/assets/uploads/book/{{element.book.couvertureBook}}" alt="{{element.book.title}}" height=300></a></td>
-                                        <td class="book-name" data-title="Book"><a href="#">{{element.book.title}}</a></td>
+                                        <td class="book-thumbnail"><a href="/conseils"><img src="/assets/uploads/book/{{element.book.couvertureBook}}" alt="{{element.book.title}}" height=300></a></td>
+                                        <td class="book-name" data-title="Book"><a href="conseils">{{element.book.title}}</a></td>
                                         <td class="book-priceBook" data-title="priceBook">{{element.book.priceBook/100}}</td>
                                         <td class="book-quantity" data-title="Quantity"><div class="quantity">
                                         <a href="{{ path('cartDelete', {'id':element.book.id})}}" type="button" value="-" class="minus"> - </a>

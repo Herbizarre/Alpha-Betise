@@ -14,11 +14,12 @@
 {% endblock %}
 {% block body %}
 <center>
+    <div id="ancre"></div>
     <a href="{{ path('app_calendar_new') }}">Ajouter un évènement</a> 
-     <a href="{{ path('app_calendar_index') }}">Liste des évènements</a>
+    <a href="{{ path('app_calendar_index') }}">Liste des évènements</a>
 </center>
-<div id="calendrier">
- </div>
+
+<div id="calendrier"></div>
 
 <script>
     window.onload = () => {
@@ -41,4 +42,9 @@
     }
 </script>
 <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.0.0-beta.1/main.min.js" integrity="sha256-c4doXULXQ0gMSZGKpmX/LkbOrfilyX1qiMseZ5oloAQ=" crossorigin="anonymous"></script>
+{# --------------ANCRE------------ #}
+<a href="#ancre">
+	<i class="fa-solid fa-arrow-up"></i>
+</a>
+
 {% endblock %}

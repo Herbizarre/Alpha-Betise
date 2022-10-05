@@ -133,17 +133,18 @@ class __TwigTemplate_e56a76cb0137ef841b5e8054cce754d60ab0aebaa92fc3008da90cb2313
 
         // line 16
         echo "<center>
+    <div id=\"ancre\"></div>
     <a href=\"";
-        // line 17
+        // line 18
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_calendar_new");
         echo "\">Ajouter un évènement</a> 
-     <a href=\"";
-        // line 18
+    <a href=\"";
+        // line 19
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_calendar_index");
         echo "\">Liste des évènements</a>
 </center>
-<div id=\"calendrier\">
- </div>
+
+<div id=\"calendrier\"></div>
 
 <script>
     window.onload = () => {
@@ -158,8 +159,8 @@ class __TwigTemplate_e56a76cb0137ef841b5e8054cce754d60ab0aebaa92fc3008da90cb2313
                 end: 'dayGridMonth,timeGridWeek,timeGridDay'
             },
             events: ";
-        // line 35
-        echo (isset($context["re"]) || array_key_exists("re", $context) ? $context["re"] : (function () { throw new RuntimeError('Variable "re" does not exist.', 35, $this->source); })());
+        // line 36
+        echo (isset($context["re"]) || array_key_exists("re", $context) ? $context["re"] : (function () { throw new RuntimeError('Variable "re" does not exist.', 36, $this->source); })());
         echo ",
             editable: true,
             eventResizableFromStart: true
@@ -169,6 +170,12 @@ class __TwigTemplate_e56a76cb0137ef841b5e8054cce754d60ab0aebaa92fc3008da90cb2313
     }
 </script>
 <script src=\"https://cdn.jsdelivr.net/npm/fullcalendar@6.0.0-beta.1/main.min.js\" integrity=\"sha256-c4doXULXQ0gMSZGKpmX/LkbOrfilyX1qiMseZ5oloAQ=\" crossorigin=\"anonymous\"></script>
+";
+        // line 46
+        echo "<a href=\"#ancre\">
+\t<i class=\"fa-solid fa-arrow-up\"></i>
+</a>
+
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -190,7 +197,7 @@ class __TwigTemplate_e56a76cb0137ef841b5e8054cce754d60ab0aebaa92fc3008da90cb2313
 
     public function getDebugInfo()
     {
-        return array (  162 => 35,  142 => 18,  138 => 17,  135 => 16,  125 => 15,  111 => 10,  101 => 9,  82 => 6,  71 => 2,  61 => 1,  38 => 4,);
+        return array (  175 => 46,  163 => 36,  143 => 19,  139 => 18,  135 => 16,  125 => 15,  111 => 10,  101 => 9,  82 => 6,  71 => 2,  61 => 1,  38 => 4,);
     }
 
     public function getSourceContext()
@@ -211,11 +218,12 @@ class __TwigTemplate_e56a76cb0137ef841b5e8054cce754d60ab0aebaa92fc3008da90cb2313
 {% endblock %}
 {% block body %}
 <center>
+    <div id=\"ancre\"></div>
     <a href=\"{{ path('app_calendar_new') }}\">Ajouter un évènement</a> 
-     <a href=\"{{ path('app_calendar_index') }}\">Liste des évènements</a>
+    <a href=\"{{ path('app_calendar_index') }}\">Liste des évènements</a>
 </center>
-<div id=\"calendrier\">
- </div>
+
+<div id=\"calendrier\"></div>
 
 <script>
     window.onload = () => {
@@ -238,6 +246,11 @@ class __TwigTemplate_e56a76cb0137ef841b5e8054cce754d60ab0aebaa92fc3008da90cb2313
     }
 </script>
 <script src=\"https://cdn.jsdelivr.net/npm/fullcalendar@6.0.0-beta.1/main.min.js\" integrity=\"sha256-c4doXULXQ0gMSZGKpmX/LkbOrfilyX1qiMseZ5oloAQ=\" crossorigin=\"anonymous\"></script>
+{# --------------ANCRE------------ #}
+<a href=\"#ancre\">
+\t<i class=\"fa-solid fa-arrow-up\"></i>
+</a>
+
 {% endblock %}
 ", "meeting/index.html.twig", "C:\\Users\\ydumi\\Desktop\\Alpha-Betise\\templates\\meeting\\index.html.twig");
     }
