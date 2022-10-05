@@ -124,7 +124,7 @@ class __TwigTemplate_39bcfa78438613d5ea58efbd9b71ad757ce9ae010e35bf64be7590e2f64
     public function getSourceContext()
     {
         return new Source("<hr>
-{# <div class=\"container\"> #}
+{# <div class=\"container bg-blue\"> #}
 \t<footer>
 \t\t<div class=\"row\">
 \t\t\t<div class=\"col-md-3 offset-md-1 mb-3\">

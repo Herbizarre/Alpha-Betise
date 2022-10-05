@@ -40,8 +40,11 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "partials/header.html.twig "));
 
         // line 1
-        echo "<nav class=\"navbar navbar-expand-sm navbar-dark\" style=\"background-color: #000;\">
-\t<a class=\"navbar-brand\" href=\"#\">Logo</a>
+        echo "<nav class=\"navbar navbar-expand-sm navbar-dark bg-blue\">
+\t<a class=\"navbar-brand\" href=\"#\">
+\t\t<img src=\"../assets/images/Logo.png\" alt=\"logo alpha-betise\">
+\t</a>
+
 \t<button class=\"navbar-toggler d-lg-none\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapsibleNavId\" aria-controls=\"collapsibleNavId\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"></button>
 \t<div class=\"collapse navbar-collapse\" id=\"collapsibleNavId\">
 \t\t<ul class=\"navbar-nav me-auto mt-2 mt-lg-0\">
@@ -64,23 +67,23 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
 \t\t\t</li>
 \t\t</ul>
 \t\t<form class=\"d-flex my-2 my-lg-0\">
-\t\t\t<input class=\"form-control me-sm-2\" type=\"text\" placeholder=\"Search\">
-\t\t\t<button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Search</button>
+\t\t\t<input class=\"form-control me-sm-2\" type=\"text\" placeholder=\"Recherche par mots-clès\">
+\t\t\t<button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Lancer la recherche</button>
 \t\t</form>
 \t\t<a href=\"/login\">
-\t\t\t<button class=\"btn btn-outline-success my-2 my-sm-0\">connexion</button>
+\t\t\t<button class=\"btn btn-outline-success my-2 my-sm-0\">Connexion</button>
 \t\t</a>
 \t\t<a href=\"/register\">
-\t\t\t<button class=\"btn btn-outline-success my-2 my-sm-0\">inscription</button>
+\t\t\t<button class=\"btn btn-outline-success my-2 my-sm-0\">Inscription</button>
 \t\t</a>
 
 
 \t</div>
 \t&nbsp &nbsp
 \t";
-        // line 38
+        // line 41
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_USER")) {
-            // line 39
+            // line 42
             echo "\t\t<div class=\"dropdown text-end\">
 \t\t\t<a href=\"#\" class=\"d-block link-dark text-decoration-none dropdown-toggle\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
 \t\t\t\t<img src=\"https://github.com/mdo.png\" alt=\"mdo\" width=\"32\" height=\"32\" class=\"rounded-circle\">
@@ -97,24 +100,24 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
 \t\t\t\t</li>
 \t\t\t";
         }
-        // line 54
+        // line 57
         echo "\t\t\t";
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
-            // line 55
+            // line 58
             echo "\t\t\t\t<li>
 \t\t\t\t\t<a class=\"dropdown-item\" href=\"";
-            // line 56
+            // line 59
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin");
             echo "\">Dashboard</a>
 \t\t\t\t</li>
 \t\t\t";
         }
-        // line 59
+        // line 62
         echo "\t\t\t<li><hr></li>
 \t\t\t";
-        // line 60
+        // line 63
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_USER")) {
-            // line 61
+            // line 64
             echo "\t\t\t\t<a class=\"dropdown-item\" href=\"";
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
             echo "\">Déconnexion</a>
@@ -123,7 +126,7 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
 \t</div>
     ";
         }
-        // line 66
+        // line 69
         echo "        </div>   
     </div>
 </nav>
@@ -148,13 +151,16 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
 
     public function getDebugInfo()
     {
-        return array (  127 => 66,  118 => 61,  116 => 60,  113 => 59,  107 => 56,  104 => 55,  101 => 54,  84 => 39,  82 => 38,  43 => 1,);
+        return array (  130 => 69,  121 => 64,  119 => 63,  116 => 62,  110 => 59,  107 => 58,  104 => 57,  87 => 42,  85 => 41,  43 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<nav class=\"navbar navbar-expand-sm navbar-dark\" style=\"background-color: #000;\">
-\t<a class=\"navbar-brand\" href=\"#\">Logo</a>
+        return new Source("<nav class=\"navbar navbar-expand-sm navbar-dark bg-blue\">
+\t<a class=\"navbar-brand\" href=\"#\">
+\t\t<img src=\"../assets/images/Logo.png\" alt=\"logo alpha-betise\">
+\t</a>
+
 \t<button class=\"navbar-toggler d-lg-none\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapsibleNavId\" aria-controls=\"collapsibleNavId\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"></button>
 \t<div class=\"collapse navbar-collapse\" id=\"collapsibleNavId\">
 \t\t<ul class=\"navbar-nav me-auto mt-2 mt-lg-0\">
@@ -177,14 +183,14 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
 \t\t\t</li>
 \t\t</ul>
 \t\t<form class=\"d-flex my-2 my-lg-0\">
-\t\t\t<input class=\"form-control me-sm-2\" type=\"text\" placeholder=\"Search\">
-\t\t\t<button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Search</button>
+\t\t\t<input class=\"form-control me-sm-2\" type=\"text\" placeholder=\"Recherche par mots-clès\">
+\t\t\t<button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Lancer la recherche</button>
 \t\t</form>
 \t\t<a href=\"/login\">
-\t\t\t<button class=\"btn btn-outline-success my-2 my-sm-0\">connexion</button>
+\t\t\t<button class=\"btn btn-outline-success my-2 my-sm-0\">Connexion</button>
 \t\t</a>
 \t\t<a href=\"/register\">
-\t\t\t<button class=\"btn btn-outline-success my-2 my-sm-0\">inscription</button>
+\t\t\t<button class=\"btn btn-outline-success my-2 my-sm-0\">Inscription</button>
 \t\t</a>
 
 
