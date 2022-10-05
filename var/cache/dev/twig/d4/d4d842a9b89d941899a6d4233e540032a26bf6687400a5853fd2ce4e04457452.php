@@ -40,9 +40,11 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "partials/header.html.twig "));
 
         // line 1
-        echo "<nav class=\"navbar navbar-expand-sm navbar-dark\" id=\"navbar\">
-\t<a class=\"navbar-brand\" id=\"imgLogo\" href=\"/\"><img src=\"https://i.goopics.net/kwkwyv.png\" alt=\"Logo AlphaBetise\" width=\"50vw\"></a>
-\t<button class=\"navbar-toggler d-lg-none\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapsibleNavId\" aria-controls=\"collapsibleNavId\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"></button>
+        echo "<nav class=\"navbar navbar-expand-lg navbar-dark\" id=\"navbar\">
+<a class=\"navbar-brand\" href=\"/\"><img id=\"imgLogo\"src=\"assets/images/Alpha.png\" alt=\"Logo AlphaBetise\"></a>
+
+<button class=\"navbar-toggler d-lg-none\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapsibleNavId\" aria-controls=\"collapsibleNavId\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><i class=\"fa-solid fa-bars\"></i></button>
+
 \t<div class=\"collapse navbar-collapse\" id=\"collapsibleNavId\">
 \t\t<ul class=\"navbar-nav me-auto mt-2 mt-lg-0\">
 \t\t\t<li class=\"nav-item\">
@@ -78,9 +80,9 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
 \t</div>
 \t&nbsp &nbsp
 \t";
-        // line 38
+        // line 40
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_USER")) {
-            // line 39
+            // line 41
             echo "\t\t<div class=\"dropdown text-end\">
 \t\t\t<a href=\"#\" class=\"d-block link-dark text-decoration-none dropdown-toggle\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
 \t\t\t\t<img src=\"https://github.com/mdo.png\" alt=\"mdo\" width=\"32\" height=\"32\" class=\"rounded-circle\">
@@ -89,50 +91,50 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
 \t\t\t\t<li>
 \t\t\t\t\t<a class=\"dropdown-item\" id=\"panier\" href=\"/cart\">Panier <i class=\"fa-solid fa-cart-arrow-down fa-beat\"></i>
 \t\t\t\t\t\t";
-            // line 47
+            // line 49
             echo "\t\t\t\t\t\t";
-            if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 47, $this->source); })()), "session", [], "any", false, false, false, 47), "get", [0 => "cart"], "method", false, false, false, 47)) {
-                // line 48
+            if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 49, $this->source); })()), "session", [], "any", false, false, false, 49), "get", [0 => "cart"], "method", false, false, false, 49)) {
+                // line 50
                 echo "\t\t\t\t\t\t\t";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 48, $this->source); })()), "session", [], "any", false, false, false, 48), "get", [0 => "cartData"], "method", false, false, false, 48), "data", [], "any", false, false, false, 48), "quantity_cart", [], "any", false, false, false, 48), "html", null, true);
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 50, $this->source); })()), "session", [], "any", false, false, false, 50), "get", [0 => "cartData"], "method", false, false, false, 50), "data", [], "any", false, false, false, 50), "quantity_cart", [], "any", false, false, false, 50), "html", null, true);
                 echo "
 \t\t\t\t\t\t";
             } else {
-                // line 50
+                // line 52
                 echo "\t\t\t\t\t\t\t0
 \t\t\t\t\t\t";
             }
-            // line 52
+            // line 54
             echo "\t\t\t\t\t</a>
             <div class=\"cart_box dropdown-menu dropdown-menu-right\">
 \t\t\t\t<ul class=\"cart_list\">
 \t\t\t\t\t";
-            // line 55
-            if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 55, $this->source); })()), "session", [], "any", false, false, false, 55), "get", [0 => "cartData"], "method", false, false, false, 55)) {
-                // line 56
+            // line 57
+            if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 57, $this->source); })()), "session", [], "any", false, false, false, 57), "get", [0 => "cartData"], "method", false, false, false, 57)) {
+                // line 58
                 echo "\t\t\t\t\t\t";
                 $context['_parent'] = $context;
-                $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 56, $this->source); })()), "session", [], "any", false, false, false, 56), "get", [0 => "cartData"], "method", false, false, false, 56), "data", [], "any", false, false, false, 56), "quantity_cart", [], "any", false, false, false, 56));
+                $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 58, $this->source); })()), "session", [], "any", false, false, false, 58), "get", [0 => "cartData"], "method", false, false, false, 58), "data", [], "any", false, false, false, 58), "quantity_cart", [], "any", false, false, false, 58));
                 foreach ($context['_seq'] as $context["_key"] => $context["element"]) {
-                    // line 57
+                    // line 59
                     echo "\t\t\t\t\t<li>
 \t\t\t\t\t\t<a href=\"";
-                    // line 58
-                    echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("cartDeleteAll", ["id" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["element"], "book", [], "any", false, false, false, 58), "id", [], "any", false, false, false, 58)]), "html", null, true);
+                    // line 60
+                    echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("cartDeleteAll", ["id" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["element"], "book", [], "any", false, false, false, 60), "id", [], "any", false, false, false, 60)]), "html", null, true);
                     echo "\" class=\"item_remove\"><i class=\"ion-close\"></i></a>
 \t\t\t\t\t\t\t\t\t\t<a href=\"#\"><img src=\"/assets/uploads/book/";
-                    // line 59
-                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["element"], "book", [], "any", false, false, false, 59), "couvertureBook", [], "any", false, false, false, 59), "html", null, true);
+                    // line 61
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["element"], "book", [], "any", false, false, false, 61), "couvertureBook", [], "any", false, false, false, 61), "html", null, true);
                     echo "\" alt=\"";
-                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["element"], "book", [], "any", false, false, false, 59), "title", [], "any", false, false, false, 59), "html", null, true);
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["element"], "book", [], "any", false, false, false, 61), "title", [], "any", false, false, false, 61), "html", null, true);
                     echo "\">";
-                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["element"], "book", [], "any", false, false, false, 59), "title", [], "any", false, false, false, 59), "html", null, true);
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["element"], "book", [], "any", false, false, false, 61), "title", [], "any", false, false, false, 61), "html", null, true);
                     echo "</a>
 \t\t\t\t\t\t\t\t\t\t<span class=\"cart_quantity\">";
-                    // line 60
-                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["element"], "quantity", [], "any", false, false, false, 60), "html", null, true);
+                    // line 62
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["element"], "quantity", [], "any", false, false, false, 62), "html", null, true);
                     echo "<span class=\"cart_amount\"> x <span class=\"price_symbole\">€</span></span>";
-                    echo twig_escape_filter($this->env, (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["element"], "book", [], "any", false, false, false, 60), "priceBook", [], "any", false, false, false, 60) / 100), "html", null, true);
+                    echo twig_escape_filter($this->env, (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["element"], "book", [], "any", false, false, false, 62), "priceBook", [], "any", false, false, false, 62) / 100), "html", null, true);
                     echo "</span>
 \t\t\t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t";
@@ -140,29 +142,29 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
                 $_parent = $context['_parent'];
                 unset($context['_seq'], $context['_iterated'], $context['_key'], $context['element'], $context['_parent'], $context['loop']);
                 $context = array_intersect_key($context, $_parent) + $_parent;
-                // line 63
+                // line 65
                 echo "\t\t\t\t\t";
             } else {
-                // line 64
+                // line 66
                 echo "\t\t\t\t\t\t<li>Votre panier est vide !</li>
 \t\t\t\t\t";
             }
-            // line 66
+            // line 68
             echo "        </ul>
         ";
-            // line 67
-            if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 67, $this->source); })()), "session", [], "any", false, false, false, 67), "get", [0 => "cartData"], "method", false, false, false, 67)) {
-                // line 68
+            // line 69
+            if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 69, $this->source); })()), "session", [], "any", false, false, false, 69), "get", [0 => "cartData"], "method", false, false, false, 69)) {
+                // line 70
                 echo "        <div class=\"cart_footer\">
                 <p class=\"cart_total\"><strong>Soustotal HT:</strong> <span class=\"cart_price\"> <span class=\"price_symbole\">€</span></span>";
-                // line 69
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 69, $this->source); })()), "session", [], "any", false, false, false, 69), "get", [0 => "cartData"], "method", false, false, false, 69), "data", [], "any", false, false, false, 69), "subTotalTTC", [], "any", false, false, false, 69), "html", null, true);
+                // line 71
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 71, $this->source); })()), "session", [], "any", false, false, false, 71), "get", [0 => "cartData"], "method", false, false, false, 71), "data", [], "any", false, false, false, 71), "subTotalTTC", [], "any", false, false, false, 71), "html", null, true);
                 echo "</p>
                 <p class=\"cart_buttons\"><a href=\"/cart\" class=\"btn btn-fill-line rounded-0 view-cart\">Retour panier</a><a href=\"\" class=\"btn btn-fill-out rounded-0 checkout\">Valider</a></p>
             </div>
         ";
             }
-            // line 72
+            // line 74
             echo "                           
     </div>
 \t\t\t\t</li>
@@ -174,24 +176,24 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
 \t\t\t\t</li>
 \t\t\t";
         }
-        // line 82
+        // line 84
         echo "\t\t\t";
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
-            // line 83
+            // line 85
             echo "\t\t\t\t<li>
 \t\t\t\t\t<a class=\"dropdown-item\" href=\"";
-            // line 84
+            // line 86
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin");
             echo "\">Dashboard</a>
 \t\t\t\t</li>
 \t\t\t";
         }
-        // line 87
+        // line 89
         echo "\t\t\t<li><hr></li>
 \t\t\t";
-        // line 88
+        // line 90
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_USER")) {
-            // line 89
+            // line 91
             echo "\t\t\t\t<a class=\"dropdown-item\" href=\"";
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
             echo "\">Déconnexion</a>
@@ -200,7 +202,7 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
 \t</div>
     ";
         }
-        // line 94
+        // line 96
         echo "        </div>   
     </div>
 </nav>
@@ -225,14 +227,16 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
 
     public function getDebugInfo()
     {
-        return array (  204 => 94,  195 => 89,  193 => 88,  190 => 87,  184 => 84,  181 => 83,  178 => 82,  166 => 72,  159 => 69,  156 => 68,  154 => 67,  151 => 66,  147 => 64,  144 => 63,  133 => 60,  125 => 59,  121 => 58,  118 => 57,  113 => 56,  111 => 55,  106 => 52,  102 => 50,  96 => 48,  93 => 47,  84 => 39,  82 => 38,  43 => 1,);
+        return array (  206 => 96,  197 => 91,  195 => 90,  192 => 89,  186 => 86,  183 => 85,  180 => 84,  168 => 74,  161 => 71,  158 => 70,  156 => 69,  153 => 68,  149 => 66,  146 => 65,  135 => 62,  127 => 61,  123 => 60,  120 => 59,  115 => 58,  113 => 57,  108 => 54,  104 => 52,  98 => 50,  95 => 49,  86 => 41,  84 => 40,  43 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<nav class=\"navbar navbar-expand-sm navbar-dark\" id=\"navbar\">
-\t<a class=\"navbar-brand\" id=\"imgLogo\" href=\"/\"><img src=\"https://i.goopics.net/kwkwyv.png\" alt=\"Logo AlphaBetise\" width=\"50vw\"></a>
-\t<button class=\"navbar-toggler d-lg-none\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapsibleNavId\" aria-controls=\"collapsibleNavId\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"></button>
+        return new Source("<nav class=\"navbar navbar-expand-lg navbar-dark\" id=\"navbar\">
+<a class=\"navbar-brand\" href=\"/\"><img id=\"imgLogo\"src=\"assets/images/Alpha.png\" alt=\"Logo AlphaBetise\"></a>
+
+<button class=\"navbar-toggler d-lg-none\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapsibleNavId\" aria-controls=\"collapsibleNavId\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"><i class=\"fa-solid fa-bars\"></i></button>
+
 \t<div class=\"collapse navbar-collapse\" id=\"collapsibleNavId\">
 \t\t<ul class=\"navbar-nav me-auto mt-2 mt-lg-0\">
 \t\t\t<li class=\"nav-item\">
