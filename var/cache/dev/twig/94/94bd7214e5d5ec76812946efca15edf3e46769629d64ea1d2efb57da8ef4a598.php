@@ -79,6 +79,6 @@ class __TwigTemplate_f2fa71b9fbc79f38965d95aef052b6c292da27f2c111dc240c3825836bd
     <input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token('delete' ~ book.id) }}\">
     <button class=\"btn\">Delete</button>
 </form>
-", "book/_delete_form.html.twig", "C:\\Users\\Stagiaire01\\Alpha-Betise\\templates\\book\\_delete_form.html.twig");
+", "book/_delete_form.html.twig", "C:\\Users\\ydumi\\Desktop\\Alpha-Betise\\templates\\book\\_delete_form.html.twig");
     }
 }

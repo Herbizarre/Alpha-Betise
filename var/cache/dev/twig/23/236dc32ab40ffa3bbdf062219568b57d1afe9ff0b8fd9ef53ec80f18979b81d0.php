@@ -56,10 +56,11 @@ class __TwigTemplate_8e9c3150c869d1f4e9fca035a62975b18c9e4a0d016082cddeb3babe0b9
         <link rel=\"stylesheet\" href=\"assets/bootstrap/css/style.css\">
             <!--ICONES-->
         <script src=\"https://kit.fontawesome.com/cb75c9308b.js\" crossorigin=\"anonymous\"></script>
-
-        <link rel=\"icon\" href=\"assets/images/favicon.ico\">
+        ";
+        // line 11
+        echo "        <link rel=\"icon\" href=\"assets/images/favicon.ico\">
         <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css\"
-    integrity=\"sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx\" crossorigin=\"anonymous\">
+        integrity=\"sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx\" crossorigin=\"anonymous\">
         ";
         // line 15
         echo "        ";
@@ -195,7 +196,7 @@ class __TwigTemplate_8e9c3150c869d1f4e9fca035a62975b18c9e4a0d016082cddeb3babe0b9
 
     public function getDebugInfo()
     {
-        return array (  169 => 25,  156 => 20,  146 => 19,  133 => 16,  123 => 15,  104 => 5,  85 => 27,  82 => 26,  79 => 25,  77 => 24,  73 => 22,  71 => 19,  68 => 18,  65 => 15,  53 => 5,  47 => 1,);
+        return array (  170 => 25,  157 => 20,  147 => 19,  134 => 16,  124 => 15,  105 => 5,  86 => 27,  83 => 26,  80 => 25,  78 => 24,  74 => 22,  72 => 19,  69 => 18,  66 => 15,  61 => 11,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -209,10 +210,10 @@ class __TwigTemplate_8e9c3150c869d1f4e9fca035a62975b18c9e4a0d016082cddeb3babe0b9
         <link rel=\"stylesheet\" href=\"assets/bootstrap/css/style.css\">
             <!--ICONES-->
         <script src=\"https://kit.fontawesome.com/cb75c9308b.js\" crossorigin=\"anonymous\"></script>
-
+        {# FAVICON PERSO #}
         <link rel=\"icon\" href=\"assets/images/favicon.ico\">
         <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css\"
-    integrity=\"sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx\" crossorigin=\"anonymous\">
+        integrity=\"sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx\" crossorigin=\"anonymous\">
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
