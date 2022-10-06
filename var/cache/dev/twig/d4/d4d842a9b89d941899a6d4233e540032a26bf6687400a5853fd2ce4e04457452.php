@@ -74,15 +74,12 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
 \t\t<a href=\"/login\">
 \t\t\t<button class=\"btn btn-outline-success my-2 my-sm-0\">connexion</button>
 \t\t</a>
-\t\t<a href=\"/register\">
-\t\t\t<button class=\"btn btn-outline-success my-2 my-sm-0\">inscription</button>
-\t\t</a>
 
 
 \t</div>
 \t&nbsp &nbsp
 \t";
-        // line 42
+        // line 37
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_USER")) {
             // line 43
             echo "\t\t<div class=\"dropstart text-end\">
@@ -306,9 +303,6 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
 \t\t<a href=\"/login\">
 \t\t\t<button class=\"btn btn-outline-success my-2 my-sm-0\">connexion</button>
 \t\t</a>
-\t\t<a href=\"/register\">
-\t\t\t<button class=\"btn btn-outline-success my-2 my-sm-0\">inscription</button>
-\t\t</a>
 
 
 \t</div>
@@ -399,8 +393,10 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
 \t\t\t</li>
 \t\t</ul>
 \t</div>
-
-{% endif %}</div></div></nav>
-", "partials/header.html.twig ", "C:\\Users\\ydumi\\Desktop\\Alpha-Betise\\templates\\partials\\header.html.twig");
+    {% endif %}
+        </div>   
+    </div>
+</nav>
+", "partials/header.html.twig ", "C:\\wamp64\\www\\Symfony5\\Alpha-Betise\\templates\\partials\\header.html.twig");
     }
 }

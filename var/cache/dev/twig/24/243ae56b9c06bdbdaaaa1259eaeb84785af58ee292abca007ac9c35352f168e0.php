@@ -187,6 +187,6 @@ class __TwigTemplate_a6d4f79c4b5114888df97d6dea1dad2afd650d672624379d6f860baa98a
         <button type=\"submit\" class=\"btn\">Register</button>
     {{ form_end(registrationForm) }}
 {% endblock %}
-", "registration/register.html.twig", "C:\\Users\\ydumi\\Desktop\\Alpha-Betise\\templates\\registration\\register.html.twig");
+", "registration/register.html.twig", "C:\\wamp64\\www\\Symfony5\\Alpha-Betise\\templates\\registration\\register.html.twig");
     }
 }
