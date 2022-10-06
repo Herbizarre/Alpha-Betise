@@ -1,5 +1,5 @@
 <nav class="navbar-expand-lg navbar fixed-top sticky-top" style="padding: 0px 40px;
-													background-color: #9de8ab;">
+																											background-color: #9de8ab;">
 	<img src="https://i.goopics.net/56i7af.png" class="rounded-circle" width="50">
 	<button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
 		<i class="fa-solid fa-bars"></i>
@@ -35,29 +35,29 @@
 
 
 	</div>
-	&nbsp &nbsp
+	&nbsp; &nbsp;
 	{% if is_granted("ROLE_USER") %}
 		<div class="dropstart text-end">
 			<a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
 				<img src="https://github.com/mdo.png" alt="mdo" width="40" height="40" class="rounded-circle">
-					{% if app.session.get('cart') %}
-				<span class="dropdown-item" style="
-							background-color: rgba(255, 255, 0, 0.85);
-							border-radius: 50%;
-							padding: 2px 4px;
-							width: fit-content;
-							top: 26px;
-							position: absolute;
-							right: -4px;
-							font-size: 12px;
-							font-weight: bold;
-							line-height: initial;
-						">
+				{% if app.session.get('cart') %}
+					<span class="dropdown-item" style="
+									background-color: rgba(255, 255, 0, 0.85);
+									border-radius: 50%;
+									padding: 2px 4px;
+									width: fit-content;
+									top: 26px;
+									position: absolute;
+									right: -4px;
+									font-size: 12px;
+									font-weight: bold;
+									line-height: initial;
+									">
 						{{ app.session.get('cartData').data.quantity_cart }}
 					{% endif %}
 				</span>
 			</a>
-				<ul id="burger" class="dropdown-menu dropdown-menu-right text-small">
+			<ul id="burger" class="dropdown-menu dropdown-menu-right text-small">
 				<li>
 					<a class="dropdown-item" href="/cart">Panier
 						<i class="fa-solid fa-cart-arrow-down fa-beat"></i>
