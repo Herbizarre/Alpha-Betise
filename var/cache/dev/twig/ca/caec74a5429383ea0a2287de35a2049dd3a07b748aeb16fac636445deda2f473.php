@@ -125,7 +125,7 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 \t\t\t\t";
         // line 41
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_reverse_filter($this->env, twig_slice($this->env, $context["calendars"], 0, 1)));
+        $context['_seq'] = twig_ensure_traversable(twig_reverse_filter($this->env, $context["calendars"]));
         foreach ($context['_seq'] as $context["_key"] => $context["calendars"]) {
             // line 42
             echo "\t\t\t\t\t<div>
@@ -133,7 +133,10 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
             // line 43
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["calendars"], "title", [], "any", false, false, false, 43), "html", null, true);
             echo "</h6></u>
-
+\t\t\t\t\t\t<img src=\"/assets/uploads/event/";
+            // line 44
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["calendars"], "eventCover", [], "any", false, false, false, 44), "html", null, true);
+            echo "\" width=35%>
 \t\t\t\t\t\t<p>Le : ";
             // line 45
             ((twig_get_attribute($this->env, $this->source, $context["calendars"], "start", [], "any", false, false, false, 45)) ? (print (twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["calendars"], "start", [], "any", false, false, false, 45), "d-m-Y"), "html", null, true))) : (print ("")));
@@ -283,7 +286,7 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 
     public function getDebugInfo()
     {
-        return array (  261 => 113,  255 => 108,  246 => 105,  243 => 104,  239 => 103,  233 => 99,  224 => 91,  207 => 80,  202 => 78,  197 => 76,  190 => 74,  178 => 65,  170 => 62,  164 => 58,  160 => 57,  155 => 54,  148 => 48,  139 => 45,  134 => 43,  131 => 42,  127 => 41,  120 => 36,  91 => 8,  89 => 7,  79 => 6,  59 => 3,  36 => 1,);
+        return array (  264 => 113,  258 => 108,  249 => 105,  246 => 104,  242 => 103,  236 => 99,  227 => 91,  210 => 80,  205 => 78,  200 => 76,  193 => 74,  181 => 65,  173 => 62,  167 => 58,  163 => 57,  158 => 54,  151 => 48,  142 => 45,  138 => 44,  134 => 43,  131 => 42,  127 => 41,  120 => 36,  91 => 8,  89 => 7,  79 => 6,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -328,10 +331,10 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 \t\t<div class=\"row g-0\">
 \t\t\t<div class=\"col-md-4 m-auto\">
 \t\t\t<h3>Prochain évenement :</h3>
-\t\t\t\t{% for calendars in calendars|slice(0,1)|reverse %}
+\t\t\t\t{% for calendars in calendars|reverse %}
 \t\t\t\t\t<div>
-\t\t\t\t\t\t<u><h6 class=\"text-danger\">{{ calendars.title }}</h6></u>
-
+\t\t\t\t\t\t<u><h6 class=\"text-danger\">{{calendars.title}}</h6></u>
+\t\t\t\t\t\t<img src=\"/assets/uploads/event/{{calendars.eventCover}}\" width=35%>
 \t\t\t\t\t\t<p>Le : {{ calendars.start ? calendars.start|date('d-m-Y') : '' }}</p>
 \t\t\t\t\t</div>
 \t\t\t\t{% endfor %}

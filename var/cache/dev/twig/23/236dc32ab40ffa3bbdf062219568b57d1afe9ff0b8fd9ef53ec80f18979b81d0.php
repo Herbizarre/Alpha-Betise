@@ -79,10 +79,10 @@ class __TwigTemplate_8e9c3150c869d1f4e9fca035a62975b18c9e4a0d016082cddeb3babe0b9
         // line 25
         echo "        ";
         $this->displayBlock('body', $context, $blocks);
-        // line 26
-        echo "    ";
-        $this->loadTemplate("partials/footer.html.twig ", "base.html.twig", 26)->display($context);
         // line 27
+        echo "    ";
+        $this->loadTemplate("partials/footer.html.twig ", "base.html.twig", 27)->display($context);
+        // line 28
         echo "    <script src=\"https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js\"
     integrity=\"sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk\" crossorigin=\"anonymous\">
   </script>
@@ -176,6 +176,8 @@ class __TwigTemplate_8e9c3150c869d1f4e9fca035a62975b18c9e4a0d016082cddeb3babe0b9
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
+        // line 26
+        echo "        ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -196,7 +198,7 @@ class __TwigTemplate_8e9c3150c869d1f4e9fca035a62975b18c9e4a0d016082cddeb3babe0b9
 
     public function getDebugInfo()
     {
-        return array (  170 => 25,  157 => 20,  147 => 19,  134 => 16,  124 => 15,  105 => 5,  86 => 27,  83 => 26,  80 => 25,  78 => 24,  74 => 22,  72 => 19,  69 => 18,  66 => 15,  61 => 11,  53 => 5,  47 => 1,);
+        return array (  180 => 26,  170 => 25,  157 => 20,  147 => 19,  134 => 16,  124 => 15,  105 => 5,  86 => 28,  83 => 27,  80 => 25,  78 => 24,  74 => 22,  72 => 19,  69 => 18,  66 => 15,  61 => 11,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -225,7 +227,8 @@ class __TwigTemplate_8e9c3150c869d1f4e9fca035a62975b18c9e4a0d016082cddeb3babe0b9
     </head>
     <body>
     {% include \"partials/header.html.twig \" %}
-        {% block body %}{% endblock %}
+        {% block body %}
+        {% endblock %}
     {% include \"partials/footer.html.twig \" %}
     <script src=\"https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js\"
     integrity=\"sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk\" crossorigin=\"anonymous\">

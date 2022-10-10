@@ -57,6 +57,43 @@ class Calendar
      */
     private $text_color;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $event_cover;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $event_place;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $audience;
+
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $reservation;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $max_people;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $price;
+
+    /**
+     * @ORM\Column(type="boolean", nullable=true)
+     */
+    private $free;
+
+  
+
     public function getId(): ?int
     {
         return $this->id;
@@ -157,4 +194,89 @@ class Calendar
 
         return $this;
     }
+
+    public function getEventCover(): ?string
+    {
+        return $this->event_cover;
+    }
+
+    public function setEventCover(string $event_cover): self
+    {
+        $this->event_cover = $event_cover;
+
+        return $this;
+    }
+
+    public function getEventPlace(): ?string
+    {
+        return $this->event_place;
+    }
+
+    public function setEventPlace(string $event_place): self
+    {
+        $this->event_place = $event_place;
+
+        return $this;
+    }
+
+    public function getAudience(): ?string
+    {
+        return $this->audience;
+    }
+
+    public function setAudience(string $audience): self
+    {
+        $this->audience = $audience;
+
+        return $this;
+    }
+
+    public function isReservation(): ?bool
+    {
+        return $this->reservation;
+    }
+
+    public function setReservation(bool $reservation): self
+    {
+        $this->reservation = $reservation;
+
+        return $this;
+    }
+
+    public function getMaxPeople(): ?int
+    {
+        return $this->max_people;
+    }
+
+    public function setMaxPeople(?int $max_people): self
+    {
+        $this->max_people = $max_people;
+
+        return $this;
+    }
+
+    public function getPrice(): ?int
+    {
+        return $this->price;
+    }
+
+    public function setPrice(?int $price): self
+    {
+        $this->price = $price;
+
+        return $this;
+    }
+
+    public function isFree(): ?bool
+    {
+        return $this->free;
+    }
+
+    public function setFree(?bool $free): self
+    {
+        $this->free = $free;
+
+        return $this;
+    }
+
 }
