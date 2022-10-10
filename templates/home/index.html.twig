@@ -60,6 +60,13 @@
 								</div>
 							</div>
 						{% endfor %}
+			<div class="col-md-4 m-auto">
+			<h3>Prochain évenement :</h3>
+				{% for calendars in calendars|reverse %}
+					<div>
+						<u><h6 class="text-danger">{{calendars.title}}</h6></u>
+						<img src="/assets/uploads/event/{{calendars.eventCover}}" width=35%>
+						<p>Le : {{ calendars.start ? calendars.start|date('d-m-Y') : '' }}</p>
 					</div>
 				</div>
 

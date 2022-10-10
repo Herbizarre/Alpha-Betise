@@ -123,35 +123,26 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
         echo "
 \t<div class=\"card mb-3 border-warning\">
 \t\t<div class=\"row g-0\">
-\t\t\t<div class=\"col-md-5 m-auto\">
-
-\t\t\t\t<div class=\"carousel-fluid slide \" data-bs-ride=\"carousel\">
-\t\t\t\t\t<div class=\"carousel-inner\">
-
-\t\t\t\t\t\t<div class=\"carousel-item active\" style=\"height:120px;\">
-\t\t\t\t\t\t\t<h3>Les Evenements</h3>
-\t\t\t\t\t\t\t<p>Atelier Parent/Enfants, Rencontre d'Auteurs et autres</p>
-\t\t\t\t\t\t\t<small>
-\t\t\t\t\t\t\t\t<u>Inscription libre</u>
-\t\t\t\t\t\t\t</small>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t\t";
-        // line 53
+\t\t\t<div class=\"col-md-4 m-auto\">
+\t\t\t<h3>Prochain évenement :</h3>
+\t\t\t\t";
+        // line 41
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_reverse_filter($this->env, twig_slice($this->env, $context["calendars"], 0, 5)));
+        $context['_seq'] = twig_ensure_traversable(twig_reverse_filter($this->env, $context["calendars"]));
         foreach ($context['_seq'] as $context["_key"] => $context["calendars"]) {
-            // line 54
-            echo "\t\t\t\t\t\t\t<div class=\"carousel-item\" style=\"height:120px;\">
-\t\t\t\t\t\t\t\t<div class=\"carousel-text \">
-\t\t\t\t\t\t\t\t\t<h3>Prochain évenement :</h3>
-\t\t\t\t\t\t\t\t\t<h5 class=\"text-danger\">";
-            // line 57
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["calendars"], "title", [], "any", false, false, false, 57), "html", null, true);
-            echo "</h5>
-\t\t\t\t\t\t\t\t\t<p>Le :
-\t\t\t\t\t\t\t\t\t\t";
-            // line 59
-            ((twig_get_attribute($this->env, $this->source, $context["calendars"], "start", [], "any", false, false, false, 59)) ? (print (twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["calendars"], "start", [], "any", false, false, false, 59), "d-m-Y"), "html", null, true))) : (print ("")));
+            // line 42
+            echo "\t\t\t\t\t<div>
+\t\t\t\t\t\t<u><h6 class=\"text-danger\">";
+            // line 43
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["calendars"], "title", [], "any", false, false, false, 43), "html", null, true);
+            echo "</h6></u>
+\t\t\t\t\t\t<img src=\"/assets/uploads/event/";
+            // line 44
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["calendars"], "eventCover", [], "any", false, false, false, 44), "html", null, true);
+            echo "\" width=35%>
+\t\t\t\t\t\t<p>Le : ";
+            // line 45
+            ((twig_get_attribute($this->env, $this->source, $context["calendars"], "start", [], "any", false, false, false, 45)) ? (print (twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["calendars"], "start", [], "any", false, false, false, 45), "d-m-Y"), "html", null, true))) : (print ("")));
             echo "</p>
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t</div>
@@ -303,7 +294,7 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 
     public function getDebugInfo()
     {
-        return array (  281 => 132,  275 => 127,  265 => 123,  262 => 122,  258 => 121,  252 => 117,  243 => 109,  226 => 98,  221 => 96,  216 => 94,  209 => 92,  197 => 83,  189 => 80,  183 => 76,  179 => 75,  174 => 72,  164 => 63,  154 => 59,  149 => 57,  144 => 54,  140 => 53,  123 => 38,  94 => 10,  91 => 8,  89 => 7,  79 => 6,  59 => 3,  36 => 1,);
+        return array (  264 => 113,  258 => 108,  249 => 105,  246 => 104,  242 => 103,  236 => 99,  227 => 91,  210 => 80,  205 => 78,  200 => 76,  193 => 74,  181 => 65,  173 => 62,  167 => 58,  163 => 57,  158 => 54,  151 => 48,  142 => 45,  138 => 44,  134 => 43,  131 => 42,  127 => 41,  120 => 36,  91 => 8,  89 => 7,  79 => 6,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -444,6 +435,6 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 \t</a>
 
 {% endblock %}
-", "home/index.html.twig", "C:\\Users\\ydumi\\Desktop\\Alpha-Betise\\templates\\home\\index.html.twig");
+", "home/index.html.twig", "C:\\Users\\lunic\\projet-symfony\\Alpha-Betise\\templates\\home\\index.html.twig");
     }
 }

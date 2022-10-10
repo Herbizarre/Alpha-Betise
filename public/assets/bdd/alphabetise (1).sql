@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : mar. 04 oct. 2022 à 13:10
+-- Généré le : lun. 10 oct. 2022 à 14:25
 -- Version du serveur : 8.0.27
 -- Version de PHP : 7.4.26
 
@@ -49,8 +49,6 @@ CREATE TABLE IF NOT EXISTS `book` (
   `poids` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `langue` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `langue_originale` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `is_best` tinyint(1) NOT NULL,
-  `is_new` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -58,11 +56,11 @@ CREATE TABLE IF NOT EXISTS `book` (
 -- Déchargement des données de la table `book`
 --
 
-INSERT INTO `book` (`id`, `title`, `rate`, `author`, `home_edition`, `disponibility`, `price_book`, `couverture_book`, `comment_libraire`, `comment_user`, `code_ean`, `code_isbn`, `editeur`, `publication_date`, `collection`, `page_number`, `dimension`, `poids`, `langue`, `langue_originale`, `is_best`, `is_new`) VALUES
-(1, 'Les Profs - tome 24: Oral de rattrapage', NULL, 'Erroc & Sti', 'Bamboo Edition', 'en stock', 1190, '9604f4a8c06e5b27ff9a3be6f73510c3e0164a90.jpg', 'Suite à une énième explosion due à au prof de chimie, le lycée Fanfaron est inopérationnel… Mais pas question pour la fine fleur professorale que leurs élèves n’aient pas de continuité pédagogique… Visioconférences gênées par les pleurs du bébé Polochon que même ses baby-sitters Boulard et Louise n’arrivent pas à calmer, cours dans le parc municipal ou le bistrot du coin, ils ne les lâcheront pas, quitte à aller les rechercher à la fête foraine qui vient de s’installer en ville… Ah les élèves veulent un tour gratuit ? Eh bien, ça sera avec Gladys… Le train fantôme ne fera jamais aussi peur !', NULL, 978281, 281898, 'Bamboo; Illustrated édition', '2021-11-03', 'Bamboo humour', 48, '21.6 x 0.7 x 29.3 cm', '369 g', 'Français', 'Français', 0, 0),
-(2, 'Nana, tome 1', NULL, 'Yazawa Aï', 'Delcourt', 'épuisé', 699, '773fa68f9b18e68917466b73d65fc3874752bcb9.jpg', 'Ces deux jeunes filles s\'appellent Nana. Elles ont le même âge, éprouvent toutes deux une grande attirance pour Tokyo, et font très attention à leur look. La première est une étudiante rêveuse et tête en l\'air, à la recherche désespérée du prince charmant. Quant à l\'autre, plus déterminée et solitaire, c\'est grâce à son premier amour qu\'elle est devenue chanteuse dans un groupe de rock amateur. Toutes deux ont pour objectif d\'aller s\'installer à Tokyo...à savoir Des personnages influencés par les dernières modes tokyoïtes,...', NULL, 9782840, 284055, 'Delcourt', '2004-01-01', 'Sakura', 192, '11cm x 17cm', '150 g', 'Française', 'Japonaise', 0, 0),
-(3, 'GTO (Great Teacher Onizuka) - Tome 01', NULL, 'Tôru Fujisawa', 'Pika', 'en stock', 695, 'cc516a47df291c62ad13a2a636b0b77c58f07dd0.jpg', '1997, Eikichi Onizuka, 22 ans, « célibataire et libre comme l\'air », est un jeune professeur au passé douteux qui est nommé pour son premier poste dans une classe difficile ; il montre rapidement une vision de l\'enseignement totalement décalée avec les pratiques habituelles. Ses réactions anticonformistes et directes, souvent humoristiques, sont l\'axe central de cette série. Il va évoluer avec cette classe, dont la spécialité est de faire craquer moralement leurs professeurs, en tentant de la rallier peu à peu à sa cause.', NULL, 2147483647, 2147483647, 'Pika', '2017-09-06', 'Pika Shônen, Numéro 1', 192, '12cm x 18cm', '0,1800kg', 'Français', 'Japonais', 0, 0),
-(4, 'T\'choupi - Tome 44 : T\'choupi s\'habille tout seul', NULL, 'Thierry Courtin', 'Nathan Edition', 'épuisé', 595, 'b207cfc1f641f0022b5e2491a289c1cc8fbd566d.jpg', 'T\'choupi, l\'ami des petits, accompagne l\'enfant qui grandit !Des histoires qui racontent la vie des enfants de 2 à 4 ans, les grandes joies, les temps forts de la vie de famille et les petits tracas du quotidien. Grâce à T\'choupi, de nombreux petits problèmes trouvent leur solution tout en douceur.', NULL, 2147483647, 2092570927, 'Nathan', '2017-01-12', 'Les Albums T\'choupi', 24, '16cm x 16cm', '0,1400kg', 'Français', 'Français', 0, 0);
+INSERT INTO `book` (`id`, `title`, `rate`, `author`, `home_edition`, `disponibility`, `price_book`, `couverture_book`, `comment_libraire`, `comment_user`, `code_ean`, `code_isbn`, `editeur`, `publication_date`, `collection`, `page_number`, `dimension`, `poids`, `langue`, `langue_originale`) VALUES
+(1, 'Les Profs - tome 24: Oral de rattrapage', NULL, 'Erroc & Sti', 'Bamboo Edition', 'en stock', 1190, '9604f4a8c06e5b27ff9a3be6f73510c3e0164a90.jpg', 'Suite à une énième explosion due à au prof de chimie, le lycée Fanfaron est inopérationnel… Mais pas question pour la fine fleur professorale que leurs élèves n’aient pas de continuité pédagogique… Visioconférences gênées par les pleurs du bébé Polochon que même ses baby-sitters Boulard et Louise n’arrivent pas à calmer, cours dans le parc municipal ou le bistrot du coin, ils ne les lâcheront pas, quitte à aller les rechercher à la fête foraine qui vient de s’installer en ville… Ah les élèves veulent un tour gratuit ? Eh bien, ça sera avec Gladys… Le train fantôme ne fera jamais aussi peur !', NULL, 978281, 281898, 'Bamboo; Illustrated édition', '2021-11-03', 'Bamboo humour', 48, '21.6 x 0.7 x 29.3 cm', '369 g', 'Français', 'Français'),
+(2, 'Nana, tome 1', NULL, 'Yazawa Aï', 'Delcourt', 'épuisé', 699, '773fa68f9b18e68917466b73d65fc3874752bcb9.jpg', 'Ces deux jeunes filles s\'appellent Nana. Elles ont le même âge, éprouvent toutes deux une grande attirance pour Tokyo, et font très attention à leur look. La première est une étudiante rêveuse et tête en l\'air, à la recherche désespérée du prince charmant. Quant à l\'autre, plus déterminée et solitaire, c\'est grâce à son premier amour qu\'elle est devenue chanteuse dans un groupe de rock amateur. Toutes deux ont pour objectif d\'aller s\'installer à Tokyo...à savoir Des personnages influencés par les dernières modes tokyoïtes,...', NULL, 9782840, 284055, 'Delcourt', '2004-01-01', 'Sakura', 192, '11cm x 17cm', '150 g', 'Française', 'Japonaise'),
+(3, 'GTO (Great Teacher Onizuka) - Tome 01', NULL, 'Tôru Fujisawa', 'Pika', 'en stock', 695, 'cc516a47df291c62ad13a2a636b0b77c58f07dd0.jpg', '1997, Eikichi Onizuka, 22 ans, « célibataire et libre comme l\'air », est un jeune professeur au passé douteux qui est nommé pour son premier poste dans une classe difficile ; il montre rapidement une vision de l\'enseignement totalement décalée avec les pratiques habituelles. Ses réactions anticonformistes et directes, souvent humoristiques, sont l\'axe central de cette série. Il va évoluer avec cette classe, dont la spécialité est de faire craquer moralement leurs professeurs, en tentant de la rallier peu à peu à sa cause.', NULL, 2147483647, 2147483647, 'Pika', '2017-09-06', 'Pika Shônen, Numéro 1', 192, '12cm x 18cm', '0,1800kg', 'Français', 'Japonais'),
+(4, 'T\'choupi - Tome 44 : T\'choupi s\'habille tout seul', NULL, 'Thierry Courtin', 'Nathan Edition', 'épuisé', 595, 'b207cfc1f641f0022b5e2491a289c1cc8fbd566d.jpg', 'T\'choupi, l\'ami des petits, accompagne l\'enfant qui grandit !Des histoires qui racontent la vie des enfants de 2 à 4 ans, les grandes joies, les temps forts de la vie de famille et les petits tracas du quotidien. Grâce à T\'choupi, de nombreux petits problèmes trouvent leur solution tout en douceur.', NULL, 2147483647, 2092570927, 'Nathan', '2017-01-12', 'Les Albums T\'choupi', 24, '16cm x 16cm', '0,1400kg', 'Français', 'Français');
 
 -- --------------------------------------------------------
 
@@ -81,15 +79,24 @@ CREATE TABLE IF NOT EXISTS `calendar` (
   `background_color` varchar(7) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `border_color` varchar(7) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `text_color` varchar(7) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `event_cover` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `event_place` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `audience` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `reservation` tinyint(1) NOT NULL,
+  `max_people` int DEFAULT NULL,
+  `price` int DEFAULT NULL,
+  `free` tinyint(1) DEFAULT NULL,
+  `image` longtext COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '(DC2Type:object)',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Déchargement des données de la table `calendar`
 --
 
-INSERT INTO `calendar` (`id`, `title`, `start`, `end`, `description`, `all_day`, `background_color`, `border_color`, `text_color`) VALUES
-(1, 'Anniversaire Jessy', '2022-10-10 00:05:00', '2022-10-10 23:59:00', 'youpi', 1, '#ffffff', '#daa71b', '#000000');
+INSERT INTO `calendar` (`id`, `title`, `start`, `end`, `description`, `all_day`, `background_color`, `border_color`, `text_color`, `event_cover`, `event_place`, `audience`, `reservation`, `max_people`, `price`, `free`, `image`) VALUES
+(1, 'Anniversaire Jessy', '2022-10-10 00:05:00', '2022-10-10 23:59:00', 'youpi', 1, '#ffffff', '#daa71b', '#000000', '', '', '', 0, NULL, NULL, NULL, ''),
+(8, 'Avant première', '2022-10-08 08:00:00', '2022-10-08 12:00:00', 'Nouveau livre', 0, 'brown', 'black', 'white', 'ff7dedfc22d1a559ddcba7bce282120cc049d807.jpg', 'Bibliothèque', 'Enfants/Ados', 0, NULL, NULL, 1, '');
 
 -- --------------------------------------------------------
 
@@ -100,7 +107,7 @@ INSERT INTO `calendar` (`id`, `title`, `start`, `end`, `description`, `all_day`,
 DROP TABLE IF EXISTS `category`;
 CREATE TABLE IF NOT EXISTS `category` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -121,8 +128,8 @@ INSERT INTO `category` (`id`, `name`) VALUES
 DROP TABLE IF EXISTS `contact`;
 CREATE TABLE IF NOT EXISTS `contact` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `message` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `message` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -134,7 +141,7 @@ CREATE TABLE IF NOT EXISTS `contact` (
 
 DROP TABLE IF EXISTS `doctrine_migration_versions`;
 CREATE TABLE IF NOT EXISTS `doctrine_migration_versions` (
-  `version` varchar(191) COLLATE utf8_unicode_ci NOT NULL,
+  `version` varchar(191) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `executed_at` datetime DEFAULT NULL,
   `execution_time` int DEFAULT NULL,
   PRIMARY KEY (`version`)
@@ -145,7 +152,9 @@ CREATE TABLE IF NOT EXISTS `doctrine_migration_versions` (
 --
 
 INSERT INTO `doctrine_migration_versions` (`version`, `executed_at`, `execution_time`) VALUES
-('DoctrineMigrations\\Version20221004010850', '2022-10-04 01:09:16', 211);
+('DoctrineMigrations\\Version20221004010850', '2022-10-04 01:09:16', 211),
+('DoctrineMigrations\\Version20221005145545', '2022-10-05 14:56:49', 617),
+('DoctrineMigrations\\Version20221005163714', '2022-10-05 16:37:26', 38);
 
 -- --------------------------------------------------------
 
@@ -156,9 +165,9 @@ INSERT INTO `doctrine_migration_versions` (`version`, `executed_at`, `execution_
 DROP TABLE IF EXISTS `messenger_messages`;
 CREATE TABLE IF NOT EXISTS `messenger_messages` (
   `id` bigint NOT NULL AUTO_INCREMENT,
-  `body` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
-  `headers` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
-  `queue_name` varchar(190) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `body` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `headers` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `queue_name` varchar(190) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` datetime NOT NULL,
   `available_at` datetime NOT NULL,
   `delivered_at` datetime DEFAULT NULL,
@@ -185,8 +194,8 @@ DROP TABLE IF EXISTS `newsletters`;
 CREATE TABLE IF NOT EXISTS `newsletters` (
   `id` int NOT NULL AUTO_INCREMENT,
   `category_id` int NOT NULL,
-  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `content` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `content` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` datetime NOT NULL COMMENT '(DC2Type:datetime_immutable)',
   `is_sent` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`),
@@ -202,11 +211,11 @@ CREATE TABLE IF NOT EXISTS `newsletters` (
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE IF NOT EXISTS `user` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `email` varchar(180) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(180) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `roles` json NOT NULL,
-  `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `nom` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `prenom` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `password` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `nom` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `prenom` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `age` int NOT NULL,
   `is_verified` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`),
@@ -229,10 +238,10 @@ INSERT INTO `user` (`id`, `email`, `roles`, `password`, `nom`, `prenom`, `age`, 
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `email` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` datetime NOT NULL COMMENT '(DC2Type:datetime_immutable)',
   `is_rgpd` tinyint(1) NOT NULL,
-  `validation_token` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `validation_token` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `is_valid` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

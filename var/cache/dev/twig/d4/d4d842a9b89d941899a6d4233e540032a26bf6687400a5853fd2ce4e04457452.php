@@ -393,8 +393,10 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
 \t\t\t</li>
 \t\t</ul>
 \t</div>
-
-{% endif %}</div></div></nav>
-", "partials/header.html.twig ", "C:\\Users\\ydumi\\Desktop\\Alpha-Betise\\templates\\partials\\header.html.twig");
+    {% endif %}
+        </div>   
+    </div>
+</nav>
+", "partials/header.html.twig ", "C:\\Users\\lunic\\projet-symfony\\Alpha-Betise\\templates\\partials\\header.html.twig");
     }
 }
