@@ -95,15 +95,15 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 \t\t<div class=\"carousel-inner\">
 
 \t\t\t<div class=\"carousel-item active\">
-\t\t\t\t<img class=\"img-fluid\" src=\"/assets/images/librairie-enfant.jpg\" alt=\"image d'enfant en pleine lecture\">
+\t\t\t\t<img  src=\"/assets/images/librairie-enfant.jpg\" alt=\"image d'enfant en pleine lecture\">
 \t\t\t</div>
 
 \t\t\t<div class=\"carousel-item\">
-\t\t\t\t<img class=\"img-fluid\" src=\"/assets/images/slider2.png\" alt=\"image d'enfant en pleine lecture\">
+\t\t\t\t<img  src=\"/assets/images/slider2.png\" alt=\"image d'enfant en pleine lecture\">
 \t\t\t</div>
 
 \t\t\t<div class=\"carousel-item\">
-\t\t\t\t<img class=\"img-fluid\" src=\"/assets/images/slider1.png\" alt=\"image d'enfant en pleine lecture\">
+\t\t\t\t<img  src=\"/assets/images/slider1.png\" alt=\"image d'enfant en pleine lecture\">
 \t\t\t</div>
 \t\t</div>
 
@@ -321,15 +321,15 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 \t\t<div class=\"carousel-inner\">
 
 \t\t\t<div class=\"carousel-item active\">
-\t\t\t\t<img class=\"img-fluid\" src=\"/assets/images/librairie-enfant.jpg\" alt=\"image d'enfant en pleine lecture\">
+\t\t\t\t<img  src=\"/assets/images/librairie-enfant.jpg\" alt=\"image d'enfant en pleine lecture\">
 \t\t\t</div>
 
 \t\t\t<div class=\"carousel-item\">
-\t\t\t\t<img class=\"img-fluid\" src=\"/assets/images/slider2.png\" alt=\"image d'enfant en pleine lecture\">
+\t\t\t\t<img  src=\"/assets/images/slider2.png\" alt=\"image d'enfant en pleine lecture\">
 \t\t\t</div>
 
 \t\t\t<div class=\"carousel-item\">
-\t\t\t\t<img class=\"img-fluid\" src=\"/assets/images/slider1.png\" alt=\"image d'enfant en pleine lecture\">
+\t\t\t\t<img  src=\"/assets/images/slider1.png\" alt=\"image d'enfant en pleine lecture\">
 \t\t\t</div>
 \t\t</div>
 
@@ -444,6 +444,6 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 \t</a>
 
 {% endblock %}
-", "home/index.html.twig", "C:\\wamp64\\www\\Symfony5\\Alpha-Betise\\templates\\home\\index.html.twig");
+", "home/index.html.twig", "C:\\Users\\ydumi\\Desktop\\Alpha-Betise\\templates\\home\\index.html.twig");
     }
 }
