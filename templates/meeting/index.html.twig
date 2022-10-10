@@ -4,38 +4,49 @@
 
 
 {% block stylesheets %}
-
+{# -------------- Style du calendrier -------------- #}
 <style>
 #calendrier { margin: 1em auto; width:75%;  font: 12px/1.5 sans-serif;  background: #F5F5F5; }
 </style>
 {% endblock %}
 {% block body %}
+{# -------------- DEBUT ANCRE------------ #}
+<div id="ancre"></div>
 
-
+{# -------------- Affichage du callendrier et des évènements --------------#}
 <div id="calendrier"></div>
 
 <script>
     window.onload = () => {
         let calendarElt = document.querySelector("#calendrier")
         let calendar = new FullCalendar.Calendar(calendarElt, {
+            /* --------------Configuration de la vue innitiale -------------- */
             initialView: 'timeGridWeek',
+
+            /* -------------- Langue -------------- */
             locale: 'fr',
+
+            /* -------------- Fuseau horaire -------------- */
             timeZone: 'Europe/Caracas',
+
+            /* -------------- Header du Calendrier -------------- */
             headerToolbar: {
                 start: 'prev,next today',
                 center: 'title',
                 end: 'dayGridMonth,timeGridWeek,timeGridDay'
             },
+            /*-------------- Affichage des évènements --------------*/
             events: {{ re|raw }},
             editable: true,
             eventResizableFromStart: true
         })
-        
+        /*-------------- Le rendu total -------------- */
         calendar.render()
     }
 </script>
+{# -------------- CDN du Calendrier -------------- #}
 <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.0.0-beta.1/main.min.js" integrity="sha256-c4doXULXQ0gMSZGKpmX/LkbOrfilyX1qiMseZ5oloAQ=" crossorigin="anonymous"></script>
-{# --------------ANCRE------------ #}
+{# -------------- FIN ANCRE------------ #}
 <a href="#ancre">
 	<i class="fa-solid fa-arrow-up"></i>
 </a>

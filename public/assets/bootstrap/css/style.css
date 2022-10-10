@@ -4,6 +4,9 @@
     text-align: center;
     /* overflow-x: hidden; */
 }
+li{
+    list-style: none!important;
+}
 
 /* PAGE PARTIALS/HEADER.HTML.TWIG */
 #navbar {
@@ -110,4 +113,12 @@
     width: 360px;
     margin: auto;
     padding: 25px;
+}
+
+
+/* ---------------BOOK-------------- */
+
+.price, .author{
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
 }

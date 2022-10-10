@@ -1,33 +1,41 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello Conseils!
-{% endblock %}
+{% block title %}Conseils de Lecture !{% endblock %}
 
 {% block body %}
-	<h1>Conseils de Lecture</h1>
-
+{# -------------- DEBUT ANCRE------------ #}
 	<div id="ancre"></div>
 
+	<h1>Conseils de Lecture</h1>
+
 	{% for book in book|sort %}
+	{# --------------aperçu d'un livre------------ #}
 		<div class="card mb-3" style="min-width: 540px;">
 			<div class="row g-0">
+				{# --------------IMAGE BOOK------------ #}
 				<div class="col-md-4">
 					<img id="book" src="/assets/uploads/book/{{book.couvertureBook}}" alt="{{book.title}}" class="img-fluid rounded-start">
 				</div>
+
 				<div class="col-md-8">
 					<div class="card-body">
+						{# --------------BOOK TITRE------------ #}
 						<h3 class="mb-0">{{book.title}}</h3>
-						<span class="mb-1 text-muted">{{book.priceBook /100 }}
-							€</span>
-						<p class="card-text mb-auto">
-							<strong>{{book.author}}</strong>
-						</p>
+						{# --------------BOOK PRIX------------ #}
+						<span class="mb-1 text-muted">{{book.priceBook /100 }} €</span>
+						{# --------------BOOK AUTEUR------------ #}
+						<p class="card-text mb-auto"><strong>{{book.author}}</strong></p>
+						{# --------------BOOK EDITEUR------------ #}
 						<p class="card-text mb-auto">{{book.editeur}}</p>
+						{# --------------BOOK NOTE------------ #}
 						<p class="card-text mb-auto">{{book.rate}}</p>
+						{# --------------BOOK COMMENTAIRE DU LIBRAIRE------------ #}
 						<p class="card-text mb-auto">{{book.commentLibraire}}</p>
+						{# --------------PANIER/CART------------ #}
 						<a href="{{path('cartAdd',{'id':book.id})}}">
 							<i class="fa-solid fa-basket-shopping fa-beat"></i>
 							Ajouter au panier</a>
+
 					</div>
 				</div>
 			</div>
@@ -35,7 +43,7 @@
 
 	{% endfor %}
 
-	{# --------------ANCRE------------ #}
+	{# -------------- FIN ANCRE------------ #}
 	<a href="#ancre">
 		<i class="fa-solid fa-arrow-up"></i>
 	</a>

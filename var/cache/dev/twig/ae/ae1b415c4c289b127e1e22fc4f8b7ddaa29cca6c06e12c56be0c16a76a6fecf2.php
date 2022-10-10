@@ -102,8 +102,8 @@ class __TwigTemplate_446572e0fff3db9ea764e92d76cf524d6cb729b77eb75cd3210d6c551bb
     </div>
 
     <div id=\"description\">
-        <p>Numéro de téléphone : 0690.12.34.65 </p>
-        <p>Horaire d'ouverture : 08h00 à 22h00 </p>
+        <p>Numéro de téléphone : <a href=\"tel: 05.90.12.34.56\" target=\"_blank\">0590.12.34.65</a></p>
+        <p>Horaire d'ouverture : 7h à 18h </p>
         <p>Le siege social se situe au : <br/> CWTC Complexe World Trade Center <br/>
         Route du CWTC 97122 ZI de Jarry <br/> Baie Mahault, 97122, Guadeloupe <br/>
         </p>
@@ -151,8 +151,8 @@ class __TwigTemplate_446572e0fff3db9ea764e92d76cf524d6cb729b77eb75cd3210d6c551bb
     </div>
 
     <div id=\"description\">
-        <p>Numéro de téléphone : 0690.12.34.65 </p>
-        <p>Horaire d'ouverture : 08h00 à 22h00 </p>
+        <p>Numéro de téléphone : <a href=\"tel: 05.90.12.34.56\" target=\"_blank\">0590.12.34.65</a></p>
+        <p>Horaire d'ouverture : 7h à 18h </p>
         <p>Le siege social se situe au : <br/> CWTC Complexe World Trade Center <br/>
         Route du CWTC 97122 ZI de Jarry <br/> Baie Mahault, 97122, Guadeloupe <br/>
         </p>

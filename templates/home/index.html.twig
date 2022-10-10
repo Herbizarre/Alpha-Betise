@@ -4,30 +4,33 @@
 {% endblock %}
 
 {% block body %}
-	{# DEBUT ANCRE #}
+	{# --------------DEBUT ANCRE------------ #}
 	<div id="ancre"></div>
-	{# -----------------Caroussel---------------------- #}
-	<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-		<div class="carousel-inner">
 
+	{# -----------------Caroussel---------------------- #}
+
+	<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+		<div
+			class="carousel-inner">
+			{# premiere image de caroussel #}
 			<div class="carousel-item active">
 				<img src="/assets/images/librairie-enfant.jpg" alt="image d'enfant en pleine lecture">
 			</div>
-
+			{# image de caroussel 2 #}
 			<div class="carousel-item">
 				<img src="/assets/images/slider2.png" alt="image d'enfant en pleine lecture">
 			</div>
-
+			{# image de caroussel 3 #}
 			<div class="carousel-item">
 				<img src="/assets/images/slider1.png" alt="image d'enfant en pleine lecture">
 			</div>
 		</div>
-
+		{# Boutton de navigation "précédent" #}
 		<button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 			<span class="visually-hidden">Previous</span>
 		</button>
-
+		{# Boutton de navigation "suivant" #}
 		<button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
 			<span class="carousel-control-next-icon" aria-hidden="true"></span>
 			<span class="visually-hidden">Next</span>
@@ -36,31 +39,41 @@
 
 	{# -----------------------Prochain évenement----------------------- #}
 
+	{# Caroussel events #}
 	<div class="card mb-3 border-warning">
 		<div class="row g-0">
 			<div class="col-md-5 m-auto">
 
 				<div class="carousel-fluid slide " data-bs-ride="carousel">
-					<div class="carousel-inner">
-
+					<div
+						class="carousel-inner">
+						{# Texte d'accueil des évenements #}
 						<div class="carousel-item active" style="height:120px;">
 							<h3>Les Evenements</h3>
 							<p>Atelier Parent/Enfants, Rencontre d'Auteurs et autres</p>
 							<small>
-								<u>Inscription libre</u>
+								<p>Inscription libre</p>
 							</small>
 						</div>
+						{# -----Boucle d'affichage par ID des évenements ---- #}
+
+						{# Renvoie des 5 dernier ID #}
 						{% for calendars in calendars|slice(0,5)|reverse %}
+							{# Pour chaque évenements trouvé effectue  le code suivants #}
 							<div class="carousel-item" style="height:200px;">
 								<div class="carousel-text ">
 									<h3>Prochain évenement :</h3>
-									<img src="/assets/uploads/event/{{calendars.eventCover}}" width="35%">
+									{# Images d'évenement #}
+									<img
+									src="/assets/uploads/event/{{calendars.eventCover}}" width="35%">
+									{# Titre d'évenement #}
 									<h5 class="text-danger">{{ calendars.title }}</h5>
-									<p>Le :
-										{{ calendars.start ? calendars.start|date('d-m-Y') : '' }}</p>
+									{# Date de début d'évenements#}
+									<p>Le :{{ calendars.start ? calendars.start|date('d-m-Y') : '' }}</p>
 								</div>
 							</div>
 						{% endfor %}
+						{# fin de boucle #}
 					</div>
 				</div>
 			</div>
@@ -68,19 +81,24 @@
 	</div>
 
 
-	{# ------------------- Apercu de livre ---------------- #}
+	{# ----------------------- Apercu de livre -------------------- #}
+
 	<div class="container-fluid">
 		<div class="row">
+			{# -----Boucle d'affichage par ID des livres ---- #}
 
-			{% for book in books|reverse|slice(0,4) %}
-
-				<div class=" card card-fluid mb-4 " style="max-width:900px; margin:auto; min-height:450px;">
-					<div class="row">
-						<div class="col-sm-5 ">
+			{# Renvoie des 4 dernier ID #}
+				{% for book in books|reverse|slice(0,4) %}
+				{# Pour chaque livre trouvé effectue  le code suivants dans une Card #}
+					<div class=" card card-fluid mb-4 " style="max-width:900px; margin:auto; min-height:450px;"> <div class="row">
+						<div
+							class="col-sm-5 ">
+							{# Images de couverture ainsi que son titre en accéssibilité #}
 							<img src="/assets/uploads/book/{{book.couvertureBook}}" class="img-fluid rounded" alt="Image du livre {{ book.title }}" style="max-height:400px;">
 							<center>
-								<p class="card-text" style="font-size:1.9em;">
-									<strong>{{ book.priceBook /100 }}&nbsp; €</strong>
+								{# Prix du livre #}
+								<p class="card-text price" style="font-size:1.9em;">
+									{{ book.priceBook /100 }}&nbsp;€
 								</p>
 							</center>
 							<br>
@@ -88,13 +106,20 @@
 
 
 						<div class="col-sm-7">
-							<div class="card-body">
+							<div
+								class="card-body">
+								{# titre du livre et notes du livre  #}
 								<h3 class="card-title" style="font-size:2em;">{{ book.title | upper}}&nbsp;{{ book.rate }}</h3>
-								<p class="card-text">
-									<strong>{{book.author | upper}}</strong>
+								<p
+									class="card-text author">
+									{# Nom d'auteur#}
+									{{book.author | upper}}
 								</p>
+								{# Apercu du Commentaire de la librairie (les 150 premiers caracteres #}
 								<p class="card-text">{{ book.commentLibraire|striptags|slice(0, 150)~ '...' }}</p>
 								<p class="card-text">
+
+								{# Liens d'acces au details complet du livre => ID du livre récupéré  #}
 									<a href="{{ path('app_details_book', {'id': book.id}) }}">
 										<small class="text-muted">Plus de Détails>></small>
 									</a>
@@ -105,10 +130,13 @@
 
 					</div>
 				</div>
+				{# Fin de boucle #}
 			{% endfor %}
 		</div>
 	</div>
 	<center>
+
+	{# Redirection page Conseils de lecture #}
 		<a href="/conseils">
 			<button class="btn btn-outline-secondary my-2 my-sm-0">Afficher plus >></button>
 		</a>
@@ -117,7 +145,9 @@
 	<div class="card mb-3 border-success">
 		<div class="row g-0">
 			<div class="col-md-4 m-auto">
+{# -----Boucle d'affichage par ID des inscriptions a la newsletters  ---- #}
 
+			{# Renvoie le dernier ID #}
 				{% for users in users|slice(0,1)|reverse %}
 					<div>
 						<p>{{ users.email }}
@@ -128,7 +158,7 @@
 			</div>
 		</div>
 	</div>
-	{# --------------ANCRE------------ #}
+	{# --------------FIN ANCRE------------ #}
 	<a href="#ancre">
 		<i class="fa-solid fa-arrow-up"></i>
 	</a>

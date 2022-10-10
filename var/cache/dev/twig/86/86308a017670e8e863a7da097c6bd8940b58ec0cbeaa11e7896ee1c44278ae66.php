@@ -85,9 +85,8 @@ class __TwigTemplate_e56a76cb0137ef841b5e8054cce754d60ab0aebaa92fc3008da90cb2313
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        // line 7
-        echo "
-<style>
+        // line 8
+        echo "<style>
 #calendrier { margin: 1em auto; width:75%;  font: 12px/1.5 sans-serif;  background: #F5F5F5; }
 </style>
 ";
@@ -109,37 +108,49 @@ class __TwigTemplate_e56a76cb0137ef841b5e8054cce754d60ab0aebaa92fc3008da90cb2313
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 13
-        echo "
+        // line 14
+        echo "<div id=\"ancre\"></div>
 
-<div id=\"calendrier\"></div>
+";
+        // line 17
+        echo "<div id=\"calendrier\"></div>
 
 <script>
     window.onload = () => {
         let calendarElt = document.querySelector(\"#calendrier\")
         let calendar = new FullCalendar.Calendar(calendarElt, {
+            /* --------------Configuration de la vue innitiale -------------- */
             initialView: 'timeGridWeek',
+
+            /* -------------- Langue -------------- */
             locale: 'fr',
+
+            /* -------------- Fuseau horaire -------------- */
             timeZone: 'Europe/Caracas',
+
+            /* -------------- Header du Calendrier -------------- */
             headerToolbar: {
                 start: 'prev,next today',
                 center: 'title',
                 end: 'dayGridMonth,timeGridWeek,timeGridDay'
             },
+            /*-------------- Affichage des évènements --------------*/
             events: ";
-        // line 29
-        echo (isset($context["re"]) || array_key_exists("re", $context) ? $context["re"] : (function () { throw new RuntimeError('Variable "re" does not exist.', 29, $this->source); })());
+        // line 39
+        echo (isset($context["re"]) || array_key_exists("re", $context) ? $context["re"] : (function () { throw new RuntimeError('Variable "re" does not exist.', 39, $this->source); })());
         echo ",
             editable: true,
             eventResizableFromStart: true
         })
-        
+        /*-------------- Le rendu total -------------- */
         calendar.render()
     }
 </script>
-<script src=\"https://cdn.jsdelivr.net/npm/fullcalendar@6.0.0-beta.1/main.min.js\" integrity=\"sha256-c4doXULXQ0gMSZGKpmX/LkbOrfilyX1qiMseZ5oloAQ=\" crossorigin=\"anonymous\"></script>
 ";
-        // line 39
+        // line 48
+        echo "<script src=\"https://cdn.jsdelivr.net/npm/fullcalendar@6.0.0-beta.1/main.min.js\" integrity=\"sha256-c4doXULXQ0gMSZGKpmX/LkbOrfilyX1qiMseZ5oloAQ=\" crossorigin=\"anonymous\"></script>
+";
+        // line 50
         echo "<a href=\"#ancre\">
 \t<i class=\"fa-solid fa-arrow-up\"></i>
 </a>
@@ -165,7 +176,7 @@ class __TwigTemplate_e56a76cb0137ef841b5e8054cce754d60ab0aebaa92fc3008da90cb2313
 
     public function getDebugInfo()
     {
-        return array (  143 => 39,  131 => 29,  113 => 13,  103 => 12,  89 => 7,  79 => 6,  60 => 3,  37 => 1,);
+        return array (  154 => 50,  151 => 48,  140 => 39,  116 => 17,  112 => 14,  102 => 12,  89 => 8,  79 => 6,  60 => 3,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -176,43 +187,54 @@ class __TwigTemplate_e56a76cb0137ef841b5e8054cce754d60ab0aebaa92fc3008da90cb2313
 
 
 {% block stylesheets %}
-
+{# -------------- Style du calendrier -------------- #}
 <style>
 #calendrier { margin: 1em auto; width:75%;  font: 12px/1.5 sans-serif;  background: #F5F5F5; }
 </style>
 {% endblock %}
 {% block body %}
+{# -------------- DEBUT ANCRE------------ #}
+<div id=\"ancre\"></div>
 
-
+{# -------------- Affichage du callendrier et des évènements --------------#}
 <div id=\"calendrier\"></div>
 
 <script>
     window.onload = () => {
         let calendarElt = document.querySelector(\"#calendrier\")
         let calendar = new FullCalendar.Calendar(calendarElt, {
+            /* --------------Configuration de la vue innitiale -------------- */
             initialView: 'timeGridWeek',
+
+            /* -------------- Langue -------------- */
             locale: 'fr',
+
+            /* -------------- Fuseau horaire -------------- */
             timeZone: 'Europe/Caracas',
+
+            /* -------------- Header du Calendrier -------------- */
             headerToolbar: {
                 start: 'prev,next today',
                 center: 'title',
                 end: 'dayGridMonth,timeGridWeek,timeGridDay'
             },
+            /*-------------- Affichage des évènements --------------*/
             events: {{ re|raw }},
             editable: true,
             eventResizableFromStart: true
         })
-        
+        /*-------------- Le rendu total -------------- */
         calendar.render()
     }
 </script>
+{# -------------- CDN du Calendrier -------------- #}
 <script src=\"https://cdn.jsdelivr.net/npm/fullcalendar@6.0.0-beta.1/main.min.js\" integrity=\"sha256-c4doXULXQ0gMSZGKpmX/LkbOrfilyX1qiMseZ5oloAQ=\" crossorigin=\"anonymous\"></script>
-{# --------------ANCRE------------ #}
+{# -------------- FIN ANCRE------------ #}
 <a href=\"#ancre\">
 \t<i class=\"fa-solid fa-arrow-up\"></i>
 </a>
 
 {% endblock %}
-", "meeting/index.html.twig", "C:\\Users\\lunic\\projet-symfony\\Alpha-Betise\\templates\\meeting\\index.html.twig");
+", "meeting/index.html.twig", "C:\\wamp64\\www\\Symfony5\\Alpha-Betise\\templates\\meeting\\index.html.twig");
     }
 }

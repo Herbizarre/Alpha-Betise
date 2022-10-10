@@ -10,7 +10,6 @@ use Symfony\Component\Routing\Annotation\Route;
 use App\Entity\Book;
 use App\Entity\Calendar;
 
-
 class DashboardController extends AbstractDashboardController
 {
     /**
@@ -29,9 +28,10 @@ class DashboardController extends AbstractDashboardController
 
     public function configureMenuItems(): iterable
     {
-        yield MenuItem::linkToDashboard('Dashboard', 'fa fa-home');
-        yield MenuItem::linkToCrud('Book', 'fas fa-list', Book::class);
-        yield MenuItem::linkToCrud('Calendar', 'fas fa-list', Calendar::class);
+        yield MenuItem::linkToDashboard('Dashboard', 'fas fa-house-user');
+        yield MenuItem::linkToCrud('Book', 'fas fa-book', Book::class);
+        yield MenuItem::linkToCrud('Calendar', 'fas fa-calendar', Calendar::class);
+        yield MenuItem::linktoRoute('Revenir sur le site', 'fas fa-home', 'app_home');
         // yield MenuItem::linkToCrud('The Label', 'fas fa-list', EntityClass::class);
     }
 }

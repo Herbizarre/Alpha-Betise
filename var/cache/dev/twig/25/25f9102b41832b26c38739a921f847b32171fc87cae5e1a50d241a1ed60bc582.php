@@ -84,13 +84,15 @@ class __TwigTemplate_48a3adb97e225dd2faeda80758abc29a19e11fbbe1bafc80c2e581a77cd
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 6
+        // line 7
         echo "<style>
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
-<div class=\"example-wrapper\">
+";
+        // line 13
+        echo "<div class=\"example-wrapper\">
     <h1>Bonjour à tous </h1>
 
     Si vous êtes sur cette page c'est sans doute pour en savoir un peu plus à notre sujet. Vous ne serez pas décu !
@@ -98,8 +100,13 @@ class __TwigTemplate_48a3adb97e225dd2faeda80758abc29a19e11fbbe1bafc80c2e581a77cd
         <li>Nous sommes un petit groupe de collaborateurs et ensensemble nous avons eu pour projet la création d'un site web permettant l'achat de livres pour enfants et adolescent sur internet</li>
         <li>Cette idées nous est venue suite à une problématique que rencontrait certains parent quand il se rendaient directement en librairie</li>
     </ul>
-    <ul>Nous sommes joignables du lundi au samedi de 7h à 18h au numéro suivant :
-    <li> 0690123465 ou par mail via la page <a href=\"/contacts\">Contact</a>
+<ul>Nous sommes joignables du lundi au samedi de 7h à 18h au numéro suivant :
+\t<li>
+\t\t<a href=\"tel: 05.90.12.34.56\" target=\"_blank\">0590.12.34.65</a>
+\t\tou par mail via la page
+\t\t<a href=\"/contacts\">Contact</a>
+\t</li>
+
     </li>
     </ul>
     <p>
@@ -130,21 +137,23 @@ class __TwigTemplate_48a3adb97e225dd2faeda80758abc29a19e11fbbe1bafc80c2e581a77cd
 
     public function getDebugInfo()
     {
-        return array (  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  95 => 13,  88 => 7,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
-
+{# -------------- Titre de page -------------- #}
 {% block title %}A propos de nous !{% endblock %}
 
 {% block body %}
+{# -------------- style de la page -------------- #}
 <style>
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
+{# -------------- Texte -------------- #}
 <div class=\"example-wrapper\">
     <h1>Bonjour à tous </h1>
 
@@ -153,8 +162,13 @@ class __TwigTemplate_48a3adb97e225dd2faeda80758abc29a19e11fbbe1bafc80c2e581a77cd
         <li>Nous sommes un petit groupe de collaborateurs et ensensemble nous avons eu pour projet la création d'un site web permettant l'achat de livres pour enfants et adolescent sur internet</li>
         <li>Cette idées nous est venue suite à une problématique que rencontrait certains parent quand il se rendaient directement en librairie</li>
     </ul>
-    <ul>Nous sommes joignables du lundi au samedi de 7h à 18h au numéro suivant :
-    <li> 0690123465 ou par mail via la page <a href=\"/contacts\">Contact</a>
+<ul>Nous sommes joignables du lundi au samedi de 7h à 18h au numéro suivant :
+\t<li>
+\t\t<a href=\"tel: 05.90.12.34.56\" target=\"_blank\">0590.12.34.65</a>
+\t\tou par mail via la page
+\t\t<a href=\"/contacts\">Contact</a>
+\t</li>
+
     </li>
     </ul>
     <p>

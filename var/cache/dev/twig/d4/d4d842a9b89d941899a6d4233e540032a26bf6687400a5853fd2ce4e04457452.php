@@ -222,7 +222,7 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
 \t\t\t\t\t<a class=\"dropdown-item\" href=\"";
             // line 116
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin");
-            echo "\">Dashboard</a>
+            echo "\"><i class=\"fa-solid fa-house-user\"></i> Dashboard</a>
 \t\t\t\t</li>
 \t\t\t";
         }
@@ -384,7 +384,7 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
 \t\t\t{% endif %}
 \t\t\t{% if is_granted(\"ROLE_ADMIN\") %}
 \t\t\t\t<li>
-\t\t\t\t\t<a class=\"dropdown-item\" href=\"{{ path('admin') }}\">Dashboard</a>
+\t\t\t\t\t<a class=\"dropdown-item\" href=\"{{ path('admin') }}\"><i class=\"fa-solid fa-house-user\"></i> Dashboard</a>
 \t\t\t\t</li>
 \t\t\t{% endif %}
 \t\t\t<li><hr></li>
@@ -393,10 +393,8 @@ class __TwigTemplate_9e843e3257d71797bb9b0d1cdc2023e7c1f6aeb4ad408c60ce18b62fa96
 \t\t\t</li>
 \t\t</ul>
 \t</div>
-    {% endif %}
-        </div>   
-    </div>
-</nav>
-", "partials/header.html.twig ", "C:\\Users\\lunic\\projet-symfony\\Alpha-Betise\\templates\\partials\\header.html.twig");
+
+{% endif %}</div></div></nav>
+", "partials/header.html.twig ", "C:\\wamp64\\www\\Symfony5\\Alpha-Betise\\templates\\partials\\header.html.twig");
     }
 }
