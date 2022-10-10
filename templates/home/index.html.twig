@@ -51,25 +51,18 @@
 							</small>
 						</div>
 						{% for calendars in calendars|slice(0,5)|reverse %}
-							<div class="carousel-item" style="height:120px;">
+							<div class="carousel-item" style="height:200px;">
 								<div class="carousel-text ">
 									<h3>Prochain évenement :</h3>
+									<img src="/assets/uploads/event/{{calendars.eventCover}}" width="35%">
 									<h5 class="text-danger">{{ calendars.title }}</h5>
 									<p>Le :
 										{{ calendars.start ? calendars.start|date('d-m-Y') : '' }}</p>
 								</div>
 							</div>
 						{% endfor %}
-			<div class="col-md-4 m-auto">
-			<h3>Prochain évenement :</h3>
-				{% for calendars in calendars|reverse %}
-					<div>
-						<u><h6 class="text-danger">{{calendars.title}}</h6></u>
-						<img src="/assets/uploads/event/{{calendars.eventCover}}" width=35%>
-						<p>Le : {{ calendars.start ? calendars.start|date('d-m-Y') : '' }}</p>
 					</div>
 				</div>
-
 			</div>
 		</div>
 	</div>
