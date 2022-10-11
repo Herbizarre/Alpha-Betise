@@ -159,7 +159,7 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
             // line 62
             echo "\t\t\t\t\t\t\t";
             // line 63
-            echo "\t\t\t\t\t\t\t<div class=\"carousel-item\" style=\"height:200px;\">
+            echo "\t\t\t\t\t\t\t<div class=\"carousel-item\" style=\"max-height:250px;\">
 \t\t\t\t\t\t\t\t<div class=\"carousel-text \">
 \t\t\t\t\t\t\t\t\t<h3>Prochain évenement :</h3>
 \t\t\t\t\t\t\t\t\t";
@@ -168,7 +168,7 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 \t\t\t\t\t\t\t\t\tsrc=\"/assets/uploads/event/";
             // line 68
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["calendars"], "eventCover", [], "any", false, false, false, 68), "html", null, true);
-            echo "\" width=\"35%\">
+            echo "\" width=\"20%\">
 \t\t\t\t\t\t\t\t\t";
             // line 70
             echo "\t\t\t\t\t\t\t\t\t<h5 class=\"text-danger\">";
@@ -420,12 +420,12 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 \t\t\t\t\t\t{# Renvoie des 5 dernier ID #}
 \t\t\t\t\t\t{% for calendars in calendars|slice(0,5)|reverse %}
 \t\t\t\t\t\t\t{# Pour chaque évenements trouvé effectue  le code suivants #}
-\t\t\t\t\t\t\t<div class=\"carousel-item\" style=\"height:200px;\">
+\t\t\t\t\t\t\t<div class=\"carousel-item\" style=\"max-height:250px;\">
 \t\t\t\t\t\t\t\t<div class=\"carousel-text \">
 \t\t\t\t\t\t\t\t\t<h3>Prochain évenement :</h3>
 \t\t\t\t\t\t\t\t\t{# Images d'évenement #}
 \t\t\t\t\t\t\t\t\t<img
-\t\t\t\t\t\t\t\t\tsrc=\"/assets/uploads/event/{{calendars.eventCover}}\" width=\"35%\">
+\t\t\t\t\t\t\t\t\tsrc=\"/assets/uploads/event/{{calendars.eventCover}}\" width=\"20%\">
 \t\t\t\t\t\t\t\t\t{# Titre d'évenement #}
 \t\t\t\t\t\t\t\t\t<h5 class=\"text-danger\">{{ calendars.title }}</h5>
 \t\t\t\t\t\t\t\t\t{# Date de début d'évenements#}
@@ -524,6 +524,6 @@ class __TwigTemplate_1f873466f6bb2114b5aa7355959dfd746aa1fa46a587c1c0621233d94d3
 \t</a>
 
 {% endblock %}
-", "home/index.html.twig", "C:\\wamp64\\www\\Symfony5\\Alpha-Betise\\templates\\home\\index.html.twig");
+", "home/index.html.twig", "C:\\Users\\ydumi\\Desktop\\Alpha-Betise\\templates\\home\\index.html.twig");
     }
 }

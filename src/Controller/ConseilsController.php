@@ -15,7 +15,9 @@ class ConseilsController extends AbstractController
      */
     public function index(BookRepository $bookRepository): Response
     {
-        $book = $bookRepository->findAll();
+        $book = $bookRepository->findBy(
+            [], ['publicationDate' => 'DESC'], null, null );
+
         return $this->render('conseils/index.html.twig', [
             'controller_name' => 'ConseilsController',
             'book' => $book,

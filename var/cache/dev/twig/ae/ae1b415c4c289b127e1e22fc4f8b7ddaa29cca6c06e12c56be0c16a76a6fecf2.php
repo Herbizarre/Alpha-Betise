@@ -98,7 +98,7 @@ class __TwigTemplate_446572e0fff3db9ea764e92d76cf524d6cb729b77eb75cd3210d6c551bb
         echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock(twig_get_attribute($this->env, $this->source, (isset($context["formulaire"]) || array_key_exists("formulaire", $context) ? $context["formulaire"] : (function () { throw new RuntimeError('Variable "formulaire" does not exist.', 11, $this->source); })()), "message", [], "any", false, false, false, 11), 'form');
         echo "
 
-        <input name=\"\" id=\"\" class=\"btn btn-primary\" type=\"button\" value=\"Envoyer\">
+        <input name=\"\" id=\"\" class=\"btn btn-outline-primary\" type=\"button\" value=\"Envoyer\">
     </div>
 
     <div id=\"description\">
@@ -147,7 +147,7 @@ class __TwigTemplate_446572e0fff3db9ea764e92d76cf524d6cb729b77eb75cd3210d6c551bb
         <label> Email : </label>{{form(formulaire.email)}}
         <label> Message : </label> {{form(formulaire.message)}}
 
-        <input name=\"\" id=\"\" class=\"btn btn-primary\" type=\"button\" value=\"Envoyer\">
+        <input name=\"\" id=\"\" class=\"btn btn-outline-primary\" type=\"button\" value=\"Envoyer\">
     </div>
 
     <div id=\"description\">
@@ -159,6 +159,6 @@ class __TwigTemplate_446572e0fff3db9ea764e92d76cf524d6cb729b77eb75cd3210d6c551bb
         <img id=\"tofCont\" src=\"assets/images/librairie-enfant.jpg\" alt=\"photo de la librairie\">
     </div>
 {% endblock %}
-", "contacts/index.html.twig", "C:\\wamp64\\www\\Symfony5\\Alpha-Betise\\templates\\contacts\\index.html.twig");
+", "contacts/index.html.twig", "C:\\Users\\ydumi\\Desktop\\Alpha-Betise\\templates\\contacts\\index.html.twig");
     }
 }

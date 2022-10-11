@@ -60,12 +60,12 @@
 						{# Renvoie des 5 dernier ID #}
 						{% for calendars in calendars|slice(0,5)|reverse %}
 							{# Pour chaque évenements trouvé effectue  le code suivants #}
-							<div class="carousel-item" style="height:200px;">
+							<div class="carousel-item" style="max-height:250px;">
 								<div class="carousel-text ">
 									<h3>Prochain évenement :</h3>
 									{# Images d'évenement #}
 									<img
-									src="/assets/uploads/event/{{calendars.eventCover}}" width="35%">
+									src="/assets/uploads/event/{{calendars.eventCover}}" width="20%">
 									{# Titre d'évenement #}
 									<h5 class="text-danger">{{ calendars.title }}</h5>
 									{# Date de début d'évenements#}

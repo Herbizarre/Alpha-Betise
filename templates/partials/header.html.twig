@@ -1,5 +1,6 @@
-<nav class="navbar-expand-lg navbar fixed-top sticky-top" style="padding: 0px 40px;
-																											background-color: #9de8ab;">
+<nav class="navbar-expand-lg navbar fixed-top sticky-top" style="padding: 5px 40px;
+																background-color: #9de8ab;
+																font-weight: 700;">
 	<img src="https://i.goopics.net/56i7af.png" class="rounded-circle" width="50">
 	<button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
 		<i class="fa-solid fa-bars"></i>
@@ -25,12 +26,20 @@
 				<a class="nav-link" href="/contacts">Contact</a>
 			</li>
 		</ul>
+		{# STYLE DE LA NAVAR #}
+		<style>
+			.nav-link:hover{
+					color: rgba(0, 60, 255, 0.605)!important;
+					background-color: rgba(255, 255, 255, 0.5)!important;
+					border-radius: 10px;
+					margin: 0px 5px; }
+		</style>
 		<form class="d-flex my-2 my-lg-0">
 			<input class="form-control me-sm-2" type="text" placeholder="Search">
-			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			<button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
 		</form>
 		<a href="/login">
-			<button class="btn btn-outline-success my-2 my-sm-0">connexion</button>
+			<button class="btn btn-outline-primary my-2 my-sm-0">connexion</button>
 		</a>
 
 

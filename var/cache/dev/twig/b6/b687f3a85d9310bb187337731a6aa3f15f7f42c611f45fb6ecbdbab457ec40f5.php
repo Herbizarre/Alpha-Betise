@@ -53,48 +53,30 @@ class __TwigTemplate_39bcfa78438613d5ea58efbd9b71ad757ce9ae010e35bf64be7590e2f64
 \t\t\t</div>
       <div class=\"col-md-3\"></div>
 \t\t\t<div class=\"col-6 col-md-2 mb-3\">
-\t\t\t\t<h5>Section</h5>
+\t\t\t\t<h5>Alpha-Bétise</h5>
 \t\t\t\t<ul class=\"nav flex-column\">
 \t\t\t\t\t<li class=\"nav-item mb-2\">
-\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">Home</a>
+\t\t\t\t\t\t<a href=\"/\" class=\"nav-link p-0 text-muted\">Accueil</a>
 \t\t\t\t\t</li>
 \t\t\t\t\t<li class=\"nav-item mb-2\">
-\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">Features</a>
+\t\t\t\t\t\t<a href=\"/meeting\" class=\"nav-link p-0 text-muted\">Rencontres</a>
 \t\t\t\t\t</li>
 \t\t\t\t\t<li class=\"nav-item mb-2\">
-\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">Pricing</a>
+\t\t\t\t\t\t<a href=\"/conseils\" class=\"nav-link p-0 text-muted\">Conseils de lecture</a>
 \t\t\t\t\t</li>
 \t\t\t\t\t<li class=\"nav-item mb-2\">
-\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">FAQs</a>
+\t\t\t\t\t\t<a href=\"/library\" class=\"nav-link p-0 text-muted\">La librairie</a>
 \t\t\t\t\t</li>
 \t\t\t\t\t<li class=\"nav-item mb-2\">
-\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">About</a>
+\t\t\t\t\t\t<a href=\"/contacts\" class=\"nav-link p-0 text-muted\">Contact</a>
 \t\t\t\t\t</li>
 \t\t\t\t</ul>
 \t\t\t</div>
 
 
-\t\t\t<div class=\"col-6 col-md-2 mb-3\">
-\t\t\t\t<h5>Section</h5>
-\t\t\t\t<ul class=\"nav flex-column\">
-\t\t\t\t\t<li class=\"nav-item mb-2\">
-\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">Home</a>
-\t\t\t\t\t</li>
-\t\t\t\t\t<li class=\"nav-item mb-2\">
-\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">Features</a>
-\t\t\t\t\t</li>
-\t\t\t\t\t<li class=\"nav-item mb-2\">
-\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">Pricing</a>
-\t\t\t\t\t</li>
-\t\t\t\t\t<li class=\"nav-item mb-2\">
-\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">FAQs</a>
-\t\t\t\t\t</li>
-\t\t\t\t\t<li class=\"nav-item mb-2\">
-\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">About</a>
-\t\t\t\t\t</li>
-\t\t\t\t</ul>
-\t\t\t</div>
-
+\t\t\t";
+        // line 54
+        echo "
 
 \t\t</div>
 
@@ -118,7 +100,7 @@ class __TwigTemplate_39bcfa78438613d5ea58efbd9b71ad757ce9ae010e35bf64be7590e2f64
 
     public function getDebugInfo()
     {
-        return array (  46 => 3,  43 => 1,);
+        return array (  79 => 54,  46 => 3,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -135,6 +117,28 @@ class __TwigTemplate_39bcfa78438613d5ea58efbd9b71ad757ce9ae010e35bf64be7590e2f64
 \t\t\t</div>
       <div class=\"col-md-3\"></div>
 \t\t\t<div class=\"col-6 col-md-2 mb-3\">
+\t\t\t\t<h5>Alpha-Bétise</h5>
+\t\t\t\t<ul class=\"nav flex-column\">
+\t\t\t\t\t<li class=\"nav-item mb-2\">
+\t\t\t\t\t\t<a href=\"/\" class=\"nav-link p-0 text-muted\">Accueil</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"nav-item mb-2\">
+\t\t\t\t\t\t<a href=\"/meeting\" class=\"nav-link p-0 text-muted\">Rencontres</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"nav-item mb-2\">
+\t\t\t\t\t\t<a href=\"/conseils\" class=\"nav-link p-0 text-muted\">Conseils de lecture</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"nav-item mb-2\">
+\t\t\t\t\t\t<a href=\"/library\" class=\"nav-link p-0 text-muted\">La librairie</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"nav-item mb-2\">
+\t\t\t\t\t\t<a href=\"/contacts\" class=\"nav-link p-0 text-muted\">Contact</a>
+\t\t\t\t\t</li>
+\t\t\t\t</ul>
+\t\t\t</div>
+
+
+\t\t\t{# <div class=\"col-6 col-md-2 mb-3\">
 \t\t\t\t<h5>Section</h5>
 \t\t\t\t<ul class=\"nav flex-column\">
 \t\t\t\t\t<li class=\"nav-item mb-2\">
@@ -153,29 +157,7 @@ class __TwigTemplate_39bcfa78438613d5ea58efbd9b71ad757ce9ae010e35bf64be7590e2f64
 \t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">About</a>
 \t\t\t\t\t</li>
 \t\t\t\t</ul>
-\t\t\t</div>
-
-
-\t\t\t<div class=\"col-6 col-md-2 mb-3\">
-\t\t\t\t<h5>Section</h5>
-\t\t\t\t<ul class=\"nav flex-column\">
-\t\t\t\t\t<li class=\"nav-item mb-2\">
-\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">Home</a>
-\t\t\t\t\t</li>
-\t\t\t\t\t<li class=\"nav-item mb-2\">
-\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">Features</a>
-\t\t\t\t\t</li>
-\t\t\t\t\t<li class=\"nav-item mb-2\">
-\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">Pricing</a>
-\t\t\t\t\t</li>
-\t\t\t\t\t<li class=\"nav-item mb-2\">
-\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">FAQs</a>
-\t\t\t\t\t</li>
-\t\t\t\t\t<li class=\"nav-item mb-2\">
-\t\t\t\t\t\t<a href=\"#\" class=\"nav-link p-0 text-muted\">About</a>
-\t\t\t\t\t</li>
-\t\t\t\t</ul>
-\t\t\t</div>
+\t\t\t</div> #}
 
 
 \t\t</div>
@@ -185,6 +167,6 @@ class __TwigTemplate_39bcfa78438613d5ea58efbd9b71ad757ce9ae010e35bf64be7590e2f64
 \t\t</div>
 \t</footer>
 {# </div> #}
-", "partials/footer.html.twig ", "C:\\wamp64\\www\\Symfony5\\Alpha-Betise\\templates\\partials\\footer.html.twig");
+", "partials/footer.html.twig ", "C:\\Users\\ydumi\\Desktop\\Alpha-Betise\\templates\\partials\\footer.html.twig");
     }
 }

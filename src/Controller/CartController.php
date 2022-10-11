@@ -39,7 +39,7 @@ class CartController extends AbstractController
     {
         $this->cartServices->addToCart($id);
 
-        return $this->redirectToRoute('panier');
+        return $this->redirectToRoute('app_conseils');
     }
 
     /**

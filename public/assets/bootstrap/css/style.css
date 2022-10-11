@@ -7,6 +7,12 @@
 li{
     list-style: none!important;
 }
+.nav-link:hover{
+    color: rgba(0, 60, 255, 0.605)!important;
+    background-color: rgba(255, 255, 255, 0.5)!important;
+    border-radius: 10px;
+    margin: 0px 5px;
+}
 
 /* PAGE PARTIALS/HEADER.HTML.TWIG */
 #navbar {
@@ -86,7 +92,7 @@ li{
 }
 
 #form{
-    background-color: beige;
+    background-color: #9de8abaf;
     border-radius : 10px;
     padding: 15px;
 }

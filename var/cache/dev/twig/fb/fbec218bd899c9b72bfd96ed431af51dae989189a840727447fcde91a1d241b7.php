@@ -92,7 +92,7 @@ class __TwigTemplate_e92cd471bc0c0593c3ef359b15a876d91b609491cc2fe5170955f7bac6a
 \t";
         // line 11
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_sort_filter($this->env, $context["book"]));
+        $context['_seq'] = twig_ensure_traversable($context["book"]);
         foreach ($context['_seq'] as $context["_key"] => $context["book"]) {
             // line 12
             echo "\t";
@@ -142,10 +142,16 @@ class __TwigTemplate_e92cd471bc0c0593c3ef359b15a876d91b609491cc2fe5170955f7bac6a
             echo "\t\t\t\t\t\t<p class=\"card-text mb-auto\">";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["book"], "commentLibraire", [], "any", false, false, false, 33), "html", null, true);
             echo "</p>
+\t\t\t\t\t\t<a href=\"";
+            // line 34
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_details_book", ["id" => twig_get_attribute($this->env, $this->source, $context["book"], "id", [], "any", false, false, false, 34)]), "html", null, true);
+            echo "\">
+\t\t\t\t\t\t\t\t\t\t<small class=\"text-muted\">Plus de Détails</small></a>
+\t\t\t\t\t\t<br/>
 \t\t\t\t\t\t";
-            // line 35
+            // line 38
             echo "\t\t\t\t\t\t<a href=\"";
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("cartAdd", ["id" => twig_get_attribute($this->env, $this->source, $context["book"], "id", [], "any", false, false, false, 35)]), "html", null, true);
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("cartAdd", ["id" => twig_get_attribute($this->env, $this->source, $context["book"], "id", [], "any", false, false, false, 38)]), "html", null, true);
             echo "\">
 \t\t\t\t\t\t\t<i class=\"fa-solid fa-basket-shopping fa-beat\"></i>
 \t\t\t\t\t\t\tAjouter au panier</a>
@@ -160,10 +166,10 @@ class __TwigTemplate_e92cd471bc0c0593c3ef359b15a876d91b609491cc2fe5170955f7bac6a
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['book'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 45
+        // line 48
         echo "
 \t";
-        // line 47
+        // line 50
         echo "\t<a href=\"#ancre\">
 \t\t<i class=\"fa-solid fa-arrow-up\"></i>
 \t</a>
@@ -189,7 +195,7 @@ class __TwigTemplate_e92cd471bc0c0593c3ef359b15a876d91b609491cc2fe5170955f7bac6a
 
     public function getDebugInfo()
     {
-        return array (  167 => 47,  164 => 45,  147 => 35,  142 => 33,  137 => 31,  132 => 29,  127 => 27,  122 => 25,  117 => 23,  107 => 17,  104 => 16,  100 => 13,  98 => 12,  94 => 11,  88 => 7,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  173 => 50,  170 => 48,  153 => 38,  147 => 34,  142 => 33,  137 => 31,  132 => 29,  127 => 27,  122 => 25,  117 => 23,  107 => 17,  104 => 16,  100 => 13,  98 => 12,  94 => 11,  88 => 7,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -204,7 +210,7 @@ class __TwigTemplate_e92cd471bc0c0593c3ef359b15a876d91b609491cc2fe5170955f7bac6a
 
 \t<h1>Conseils de Lecture</h1>
 
-\t{% for book in book|sort %}
+\t{% for book in book %}
 \t{# --------------aperçu d'un livre------------ #}
 \t\t<div class=\"card mb-3\" style=\"min-width: 540px;\">
 \t\t\t<div class=\"row g-0\">
@@ -227,6 +233,9 @@ class __TwigTemplate_e92cd471bc0c0593c3ef359b15a876d91b609491cc2fe5170955f7bac6a
 \t\t\t\t\t\t<p class=\"card-text mb-auto\">{{book.rate}}</p>
 \t\t\t\t\t\t{# --------------BOOK COMMENTAIRE DU LIBRAIRE------------ #}
 \t\t\t\t\t\t<p class=\"card-text mb-auto\">{{book.commentLibraire}}</p>
+\t\t\t\t\t\t<a href=\"{{ path('app_details_book', {'id': book.id}) }}\">
+\t\t\t\t\t\t\t\t\t\t<small class=\"text-muted\">Plus de Détails</small></a>
+\t\t\t\t\t\t<br/>
 \t\t\t\t\t\t{# --------------PANIER/CART------------ #}
 \t\t\t\t\t\t<a href=\"{{path('cartAdd',{'id':book.id})}}\">
 \t\t\t\t\t\t\t<i class=\"fa-solid fa-basket-shopping fa-beat\"></i>
@@ -245,6 +254,6 @@ class __TwigTemplate_e92cd471bc0c0593c3ef359b15a876d91b609491cc2fe5170955f7bac6a
 \t</a>
 
 {% endblock %}
-", "conseils/index.html.twig", "C:\\wamp64\\www\\Symfony5\\Alpha-Betise\\templates\\conseils\\index.html.twig");
+", "conseils/index.html.twig", "C:\\Users\\ydumi\\Desktop\\Alpha-Betise\\templates\\conseils\\index.html.twig");
     }
 }

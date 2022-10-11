@@ -235,6 +235,6 @@ class __TwigTemplate_e56a76cb0137ef841b5e8054cce754d60ab0aebaa92fc3008da90cb2313
 </a>
 
 {% endblock %}
-", "meeting/index.html.twig", "C:\\wamp64\\www\\Symfony5\\Alpha-Betise\\templates\\meeting\\index.html.twig");
+", "meeting/index.html.twig", "C:\\Users\\ydumi\\Desktop\\Alpha-Betise\\templates\\meeting\\index.html.twig");
     }
 }

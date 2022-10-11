@@ -8,7 +8,7 @@
 
 	<h1>Conseils de Lecture</h1>
 
-	{% for book in book|sort %}
+	{% for book in book %}
 	{# --------------aperçu d'un livre------------ #}
 		<div class="card mb-3" style="min-width: 540px;">
 			<div class="row g-0">
@@ -31,6 +31,9 @@
 						<p class="card-text mb-auto">{{book.rate}}</p>
 						{# --------------BOOK COMMENTAIRE DU LIBRAIRE------------ #}
 						<p class="card-text mb-auto">{{book.commentLibraire}}</p>
+						<a href="{{ path('app_details_book', {'id': book.id}) }}">
+										<small class="text-muted">Plus de Détails</small></a>
+						<br/>
 						{# --------------PANIER/CART------------ #}
 						<a href="{{path('cartAdd',{'id':book.id})}}">
 							<i class="fa-solid fa-basket-shopping fa-beat"></i>
